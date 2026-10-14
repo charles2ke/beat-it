@@ -1,0 +1,446 @@
+[
+  {
+    "id": "breast",
+    "name": "Breast cancer",
+    "group": "Solid tumors",
+    "aliases": ["breast carcinoma", "DCIS", "ductal carcinoma", "lobular carcinoma", "triple-negative", "HER2", "TNBC"],
+    "nci": "https://www.cancer.gov/types/breast",
+    "summary": "Cancer that forms in the cells of the breast, most often in the ducts or lobules. It is one of the most common cancers worldwide and is classified by hormone-receptor (ER/PR) and HER2 status, which guide treatment.",
+    "symptoms": ["New lump in the breast or underarm", "Change in breast size or shape", "Skin dimpling or redness", "Nipple discharge or inversion"],
+    "riskFactors": ["Older age", "BRCA1/BRCA2 and other inherited mutations", "Family history", "Hormone exposure", "Alcohol use", "Dense breast tissue"],
+    "screening": "Mammography is the standard screening test; recommended start age and interval vary by guideline and personal risk.",
+    "treatments": ["Surgery (lumpectomy or mastectomy)", "Radiation therapy", "Hormone (endocrine) therapy", "Chemotherapy", "HER2-targeted therapy", "Immunotherapy (some triple-negative cases)"],
+    "medicines": [
+      {"name": "Tamoxifen", "use": "Hormone therapy (SERM) for hormone-receptor-positive disease"},
+      {"name": "Letrozole / Anastrozole / Exemestane", "use": "Aromatase inhibitors for hormone-receptor-positive disease"},
+      {"name": "Trastuzumab, Pertuzumab", "use": "HER2-targeted antibodies"},
+      {"name": "Trastuzumab deruxtecan", "use": "HER2-directed antibody-drug conjugate"},
+      {"name": "Palbociclib / Ribociclib / Abemaciclib", "use": "CDK4/6 inhibitors with hormone therapy"},
+      {"name": "Olaparib", "use": "PARP inhibitor for BRCA-mutated disease"},
+      {"name": "Pembrolizumab", "use": "Immunotherapy for some triple-negative breast cancer"},
+      {"name": "Sacituzumab govitecan", "use": "Antibody-drug conjugate for metastatic triple-negative disease"}
+    ],
+    "query": "breast cancer"
+  },
+  {
+    "id": "lung",
+    "name": "Lung cancer",
+    "group": "Solid tumors",
+    "aliases": ["NSCLC", "SCLC", "non-small cell", "small cell", "adenocarcinoma of the lung", "EGFR", "ALK", "KRAS"],
+    "nci": "https://www.cancer.gov/types/lung",
+    "summary": "Cancer that forms in the tissues of the lung. The two main types are non-small cell lung cancer (about 85%) and small cell lung cancer. It is a leading cause of cancer death worldwide; biomarker testing (EGFR, ALK, KRAS, PD-L1 and others) guides treatment.",
+    "symptoms": ["Persistent cough", "Coughing up blood", "Shortness of breath", "Chest pain", "Unexplained weight loss"],
+    "riskFactors": ["Tobacco smoking", "Secondhand smoke", "Radon exposure", "Asbestos and other workplace exposures", "Air pollution", "Family history"],
+    "screening": "Low-dose CT screening is recommended for some adults with a significant smoking history.",
+    "treatments": ["Surgery", "Radiation therapy (including stereotactic body radiation)", "Chemotherapy", "Targeted therapy for driver mutations", "Immunotherapy (checkpoint inhibitors)"],
+    "medicines": [
+      {"name": "Osimertinib", "use": "EGFR inhibitor for EGFR-mutated NSCLC"},
+      {"name": "Alectinib / Lorlatinib", "use": "ALK inhibitors for ALK-positive NSCLC"},
+      {"name": "Sotorasib / Adagrasib", "use": "KRAS G12C inhibitors"},
+      {"name": "Pembrolizumab / Nivolumab / Atezolizumab", "use": "PD-1/PD-L1 immunotherapy"},
+      {"name": "Durvalumab", "use": "PD-L1 immunotherapy, e.g. after chemoradiation for stage III NSCLC"},
+      {"name": "Carboplatin / Cisplatin, Pemetrexed", "use": "Chemotherapy"}
+    ],
+    "query": "lung cancer"
+  },
+  {
+    "id": "prostate",
+    "name": "Prostate cancer",
+    "group": "Solid tumors",
+    "aliases": ["prostate adenocarcinoma", "PSA", "castration-resistant", "mCRPC"],
+    "nci": "https://www.cancer.gov/types/prostate",
+    "summary": "Cancer that forms in the prostate gland. Many prostate cancers grow slowly; options range from active surveillance to surgery, radiation and hormone-based therapies.",
+    "symptoms": ["Often none in early stages", "Frequent or difficult urination", "Weak urine flow", "Blood in urine or semen", "Bone pain (advanced disease)"],
+    "riskFactors": ["Older age", "Family history", "Inherited mutations (e.g., BRCA2)", "Being of African ancestry"],
+    "screening": "PSA blood testing may be offered after shared decision-making with a clinician.",
+    "treatments": ["Active surveillance", "Surgery (prostatectomy)", "Radiation therapy", "Androgen deprivation (hormone) therapy", "Chemotherapy", "Radiopharmaceuticals"],
+    "medicines": [
+      {"name": "Leuprolide / Degarelix / Relugolix", "use": "Androgen deprivation therapy"},
+      {"name": "Abiraterone", "use": "Androgen synthesis inhibitor"},
+      {"name": "Enzalutamide / Apalutamide / Darolutamide", "use": "Androgen receptor inhibitors"},
+      {"name": "Docetaxel", "use": "Chemotherapy"},
+      {"name": "Olaparib", "use": "PARP inhibitor for some DNA-repair-mutated mCRPC"},
+      {"name": "Lutetium Lu 177 vipivotide tetraxetan", "use": "PSMA-targeted radioligand therapy"},
+      {"name": "Radium-223", "use": "Radiopharmaceutical for bone metastases"}
+    ],
+    "query": "prostate cancer"
+  },
+  {
+    "id": "colorectal",
+    "name": "Colorectal cancer",
+    "group": "Solid tumors",
+    "aliases": ["colon cancer", "rectal cancer", "bowel cancer", "MSI-H", "dMMR"],
+    "nci": "https://www.cancer.gov/types/colorectal",
+    "summary": "Cancer of the colon or rectum, usually developing from polyps over many years. Screening can find and remove polyps before they become cancer.",
+    "symptoms": ["Change in bowel habits", "Blood in stool", "Abdominal pain or cramping", "Unexplained weight loss", "Fatigue or anemia"],
+    "riskFactors": ["Older age", "Family history or Lynch syndrome", "Inflammatory bowel disease", "Diets high in red/processed meat", "Smoking, alcohol, obesity, inactivity"],
+    "screening": "Options include colonoscopy and stool-based tests (FIT, stool DNA); many guidelines begin screening at age 45-50 for average-risk adults.",
+    "treatments": ["Surgery", "Chemotherapy", "Radiation therapy (especially rectal cancer)", "Targeted therapy", "Immunotherapy for MSI-H/dMMR tumors"],
+    "medicines": [
+      {"name": "Fluorouracil / Capecitabine", "use": "Chemotherapy backbone"},
+      {"name": "Oxaliplatin (FOLFOX/CAPOX), Irinotecan (FOLFIRI)", "use": "Combination chemotherapy"},
+      {"name": "Bevacizumab", "use": "Anti-VEGF targeted therapy"},
+      {"name": "Cetuximab / Panitumumab", "use": "Anti-EGFR antibodies for RAS wild-type tumors"},
+      {"name": "Pembrolizumab", "use": "Immunotherapy for MSI-H/dMMR tumors"},
+      {"name": "Encorafenib + Cetuximab", "use": "For BRAF V600E-mutated metastatic disease"},
+      {"name": "Trifluridine/tipiracil, Regorafenib", "use": "Later-line options"}
+    ],
+    "query": "colorectal cancer"
+  },
+  {
+    "id": "melanoma",
+    "name": "Skin cancer (melanoma)",
+    "group": "Solid tumors",
+    "aliases": ["melanoma", "skin cancer", "basal cell", "squamous cell skin", "BRAF"],
+    "nci": "https://www.cancer.gov/types/skin",
+    "summary": "Melanoma begins in pigment-producing cells (melanocytes) and is the most serious common skin cancer. Basal and squamous cell skin cancers are more common and usually less aggressive.",
+    "symptoms": ["New or changing mole", "Asymmetry, irregular borders, multiple colors", "Diameter larger than a pencil eraser", "Sore that does not heal"],
+    "riskFactors": ["UV exposure and sunburns", "Tanning beds", "Fair skin", "Many or atypical moles", "Family history"],
+    "screening": "Regular skin self-checks; clinicians may recommend skin exams for higher-risk people.",
+    "treatments": ["Surgical excision", "Immunotherapy", "Targeted therapy (BRAF/MEK)", "Radiation therapy", "Cell therapy (TIL)"],
+    "medicines": [
+      {"name": "Nivolumab / Pembrolizumab", "use": "PD-1 immunotherapy"},
+      {"name": "Ipilimumab", "use": "CTLA-4 immunotherapy, often combined with nivolumab"},
+      {"name": "Nivolumab + Relatlimab", "use": "PD-1 + LAG-3 combination"},
+      {"name": "Dabrafenib + Trametinib, Encorafenib + Binimetinib", "use": "BRAF/MEK inhibitors for BRAF V600-mutated melanoma"},
+      {"name": "Lifileucel", "use": "Tumor-infiltrating lymphocyte (TIL) cell therapy"}
+    ],
+    "query": "melanoma"
+  },
+  {
+    "id": "leukemia",
+    "name": "Leukemia",
+    "group": "Blood cancers",
+    "aliases": ["AML", "CML", "CLL", "acute myeloid", "acute lymphoblastic", "chronic myeloid", "chronic lymphocytic", "blood cancer"],
+    "nci": "https://www.cancer.gov/types/leukemia",
+    "summary": "Cancers of blood-forming tissue that produce abnormal white blood cells. Main types are acute myeloid (AML), acute lymphoblastic (ALL), chronic myeloid (CML) and chronic lymphocytic (CLL) leukemia.",
+    "symptoms": ["Fatigue and weakness", "Frequent infections", "Easy bruising or bleeding", "Fever or night sweats", "Swollen lymph nodes or enlarged spleen"],
+    "riskFactors": ["Prior chemotherapy or radiation", "Benzene exposure", "Smoking", "Certain genetic disorders (e.g., Down syndrome)", "Older age (for most types)"],
+    "screening": "No routine screening; often found through blood tests.",
+    "treatments": ["Chemotherapy", "Targeted therapy", "Immunotherapy and CAR T-cell therapy", "Stem cell transplant", "Watchful waiting (some CLL)"],
+    "medicines": [
+      {"name": "Imatinib / Dasatinib / Nilotinib", "use": "BCR-ABL tyrosine kinase inhibitors for CML and Ph+ ALL"},
+      {"name": "Ibrutinib / Acalabrutinib / Zanubrutinib", "use": "BTK inhibitors for CLL"},
+      {"name": "Venetoclax", "use": "BCL-2 inhibitor for CLL and AML"},
+      {"name": "Cytarabine + Daunorubicin", "use": "Induction chemotherapy for AML"},
+      {"name": "Midostaurin / Gilteritinib", "use": "FLT3 inhibitors for FLT3-mutated AML"},
+      {"name": "Blinatumomab", "use": "Bispecific antibody for B-cell ALL"},
+      {"name": "Tisagenlecleucel", "use": "CAR T-cell therapy for some B-cell ALL"}
+    ],
+    "query": "leukemia"
+  },
+  {
+    "id": "lymphoma",
+    "name": "Lymphoma",
+    "group": "Blood cancers",
+    "aliases": ["Hodgkin", "non-Hodgkin", "NHL", "DLBCL", "follicular lymphoma", "lymphatic cancer"],
+    "nci": "https://www.cancer.gov/types/lymphoma",
+    "summary": "Cancers that begin in lymphocytes of the immune system. They are grouped into Hodgkin lymphoma and many subtypes of non-Hodgkin lymphoma, such as diffuse large B-cell and follicular lymphoma.",
+    "symptoms": ["Painless swollen lymph nodes", "Fever", "Drenching night sweats", "Unexplained weight loss", "Itching or fatigue"],
+    "riskFactors": ["Weakened immune system", "Certain infections (EBV, HIV, H. pylori)", "Autoimmune disease", "Age and family history"],
+    "screening": "No routine screening.",
+    "treatments": ["Chemotherapy and chemo-immunotherapy", "Radiation therapy", "Antibody-drug conjugates", "CAR T-cell therapy", "Bispecific antibodies", "Stem cell transplant"],
+    "medicines": [
+      {"name": "R-CHOP (rituximab, cyclophosphamide, doxorubicin, vincristine, prednisone)", "use": "Standard regimen for DLBCL"},
+      {"name": "Polatuzumab vedotin", "use": "Antibody-drug conjugate for DLBCL"},
+      {"name": "ABVD / Brentuximab vedotin", "use": "Hodgkin lymphoma treatment"},
+      {"name": "Nivolumab / Pembrolizumab", "use": "Immunotherapy for relapsed classical Hodgkin lymphoma"},
+      {"name": "Axicabtagene ciloleucel / Lisocabtagene maraleucel", "use": "CAR T-cell therapies"},
+      {"name": "Glofitamab / Epcoritamab", "use": "CD20xCD3 bispecific antibodies"}
+    ],
+    "query": "lymphoma"
+  },
+  {
+    "id": "myeloma",
+    "name": "Multiple myeloma",
+    "group": "Blood cancers",
+    "aliases": ["myeloma", "plasma cell"],
+    "nci": "https://www.cancer.gov/types/myeloma",
+    "summary": "A cancer of plasma cells in the bone marrow that can damage bones, kidneys and the immune system.",
+    "symptoms": ["Bone pain", "Fatigue/anemia", "Frequent infections", "Kidney problems", "High calcium levels"],
+    "riskFactors": ["Older age", "MGUS (precursor condition)", "Being male", "Being of African ancestry", "Family history"],
+    "screening": "No routine screening; MGUS may be monitored.",
+    "treatments": ["Combination drug therapy", "Autologous stem cell transplant", "CAR T-cell therapy", "Bispecific antibodies", "Bone-strengthening drugs"],
+    "medicines": [
+      {"name": "Lenalidomide / Pomalidomide", "use": "Immunomodulatory drugs"},
+      {"name": "Bortezomib / Carfilzomib", "use": "Proteasome inhibitors"},
+      {"name": "Daratumumab", "use": "Anti-CD38 antibody"},
+      {"name": "Dexamethasone", "use": "Corticosteroid used in combinations"},
+      {"name": "Teclistamab / Elranatamab / Talquetamab", "use": "Bispecific antibodies"},
+      {"name": "Idecabtagene vicleucel / Ciltacabtagene autoleucel", "use": "BCMA-directed CAR T-cell therapies"}
+    ],
+    "query": "multiple myeloma"
+  },
+  {
+    "id": "pancreatic",
+    "name": "Pancreatic cancer",
+    "group": "Solid tumors",
+    "aliases": ["pancreas", "PDAC", "pancreatic adenocarcinoma", "pancreatic neuroendocrine"],
+    "nci": "https://www.cancer.gov/types/pancreatic",
+    "summary": "Cancer that forms in the pancreas, most commonly pancreatic ductal adenocarcinoma. It is often diagnosed at an advanced stage.",
+    "symptoms": ["Jaundice (yellow skin/eyes)", "Abdominal or back pain", "Weight loss and poor appetite", "New-onset diabetes", "Light-colored stools"],
+    "riskFactors": ["Smoking", "Obesity", "Long-standing diabetes", "Chronic pancreatitis", "Family history and inherited mutations"],
+    "screening": "No routine screening for average-risk people; surveillance may be offered to some high-risk individuals.",
+    "treatments": ["Surgery (e.g., Whipple procedure)", "Chemotherapy", "Radiation therapy", "Targeted therapy for specific mutations"],
+    "medicines": [
+      {"name": "FOLFIRINOX / NALIRIFOX", "use": "Combination chemotherapy"},
+      {"name": "Gemcitabine + nab-paclitaxel", "use": "Combination chemotherapy"},
+      {"name": "Olaparib", "use": "Maintenance for germline BRCA-mutated metastatic disease"},
+      {"name": "Everolimus / Sunitinib", "use": "For pancreatic neuroendocrine tumors"}
+    ],
+    "query": "pancreatic cancer"
+  },
+  {
+    "id": "ovarian",
+    "name": "Ovarian cancer",
+    "group": "Solid tumors",
+    "aliases": ["ovary", "fallopian tube", "primary peritoneal", "high-grade serous"],
+    "nci": "https://www.cancer.gov/types/ovarian",
+    "summary": "Cancer that forms in the ovaries, fallopian tubes or peritoneum. Symptoms are often vague, so many cases are found at a later stage.",
+    "symptoms": ["Bloating", "Pelvic or abdominal pain", "Feeling full quickly", "Urinary urgency or frequency"],
+    "riskFactors": ["BRCA1/BRCA2 mutations and Lynch syndrome", "Family history", "Older age", "Endometriosis"],
+    "screening": "No proven screening test for average-risk people.",
+    "treatments": ["Surgery (debulking)", "Chemotherapy", "PARP inhibitor maintenance", "Anti-angiogenic therapy", "Antibody-drug conjugates"],
+    "medicines": [
+      {"name": "Carboplatin + Paclitaxel", "use": "First-line chemotherapy"},
+      {"name": "Olaparib / Niraparib / Rucaparib", "use": "PARP inhibitors"},
+      {"name": "Bevacizumab", "use": "Anti-VEGF therapy"},
+      {"name": "Mirvetuximab soravtansine", "use": "ADC for folate receptor-alpha-positive platinum-resistant disease"}
+    ],
+    "query": "ovarian cancer"
+  },
+  {
+    "id": "cervical",
+    "name": "Cervical cancer",
+    "group": "Solid tumors",
+    "aliases": ["cervix", "HPV"],
+    "nci": "https://www.cancer.gov/types/cervical",
+    "summary": "Cancer of the cervix, almost always caused by long-lasting infection with high-risk types of human papillomavirus (HPV). It is largely preventable through vaccination and screening.",
+    "symptoms": ["Often none early", "Abnormal vaginal bleeding", "Pelvic pain", "Pain during intercourse"],
+    "riskFactors": ["Persistent HPV infection", "Smoking", "Weakened immune system", "No regular screening"],
+    "screening": "HPV testing and/or Pap tests; HPV vaccination prevents most cases.",
+    "treatments": ["Surgery", "Chemoradiation", "Immunotherapy", "Targeted therapy", "Antibody-drug conjugates"],
+    "medicines": [
+      {"name": "HPV vaccine", "use": "Prevention"},
+      {"name": "Cisplatin", "use": "Given with radiation (chemoradiation)"},
+      {"name": "Pembrolizumab", "use": "Immunotherapy for PD-L1-positive or locally advanced disease"},
+      {"name": "Bevacizumab", "use": "Anti-VEGF therapy for advanced disease"},
+      {"name": "Tisotumab vedotin", "use": "ADC for recurrent or metastatic disease"}
+    ],
+    "query": "cervical cancer"
+  },
+  {
+    "id": "uterine",
+    "name": "Uterine (endometrial) cancer",
+    "group": "Solid tumors",
+    "aliases": ["endometrial", "uterus", "womb cancer", "uterine sarcoma"],
+    "nci": "https://www.cancer.gov/types/uterine",
+    "summary": "Cancer that most commonly begins in the lining of the uterus (endometrium). It is often found early because of abnormal bleeding.",
+    "symptoms": ["Postmenopausal bleeding", "Abnormal vaginal bleeding or discharge", "Pelvic pain"],
+    "riskFactors": ["Obesity", "Unopposed estrogen exposure", "Older age", "Lynch syndrome", "Tamoxifen use"],
+    "screening": "No routine screening for average-risk people; report abnormal bleeding promptly.",
+    "treatments": ["Surgery (hysterectomy)", "Radiation therapy", "Chemotherapy", "Hormone therapy", "Immunotherapy"],
+    "medicines": [
+      {"name": "Carboplatin + Paclitaxel", "use": "Chemotherapy"},
+      {"name": "Dostarlimab / Pembrolizumab / Durvalumab", "use": "Immunotherapy, especially for dMMR/MSI-H tumors"},
+      {"name": "Pembrolizumab + Lenvatinib", "use": "For advanced non-MSI-H disease after prior therapy"},
+      {"name": "Megestrol / Medroxyprogesterone", "use": "Progestin hormone therapy"}
+    ],
+    "query": "endometrial cancer"
+  },
+  {
+    "id": "bladder",
+    "name": "Bladder cancer",
+    "group": "Solid tumors",
+    "aliases": ["urothelial", "bladder", "transitional cell"],
+    "nci": "https://www.cancer.gov/types/bladder",
+    "summary": "Cancer that most often begins in the urothelial cells lining the bladder. It is classified as non-muscle-invasive or muscle-invasive.",
+    "symptoms": ["Blood in urine", "Frequent or painful urination", "Lower back pain"],
+    "riskFactors": ["Smoking", "Chemical exposures (dyes, rubber, paint industries)", "Chronic bladder irritation", "Older age"],
+    "screening": "No routine screening for average-risk people.",
+    "treatments": ["Transurethral resection (TURBT)", "Intravesical therapy", "Cystectomy", "Chemotherapy", "Immunotherapy and ADCs"],
+    "medicines": [
+      {"name": "BCG (intravesical)", "use": "Immunotherapy for non-muscle-invasive disease"},
+      {"name": "Gemcitabine + Cisplatin", "use": "Chemotherapy"},
+      {"name": "Enfortumab vedotin + Pembrolizumab", "use": "First-line advanced urothelial cancer"},
+      {"name": "Avelumab", "use": "Maintenance immunotherapy"},
+      {"name": "Erdafitinib", "use": "FGFR inhibitor for FGFR3-altered disease"}
+    ],
+    "query": "bladder cancer"
+  },
+  {
+    "id": "kidney",
+    "name": "Kidney cancer",
+    "group": "Solid tumors",
+    "aliases": ["renal cell carcinoma", "RCC", "renal", "Wilms tumor"],
+    "nci": "https://www.cancer.gov/types/kidney",
+    "summary": "Cancer that forms in the kidneys, most commonly renal cell carcinoma in adults and Wilms tumor in children.",
+    "symptoms": ["Blood in urine", "Flank pain", "Lump in the side or abdomen", "Weight loss, fever"],
+    "riskFactors": ["Smoking", "Obesity", "High blood pressure", "Von Hippel-Lindau disease and other inherited conditions"],
+    "screening": "No routine screening for average-risk people.",
+    "treatments": ["Surgery (partial or radical nephrectomy)", "Ablation", "Active surveillance for small tumors", "Immunotherapy", "Targeted therapy"],
+    "medicines": [
+      {"name": "Pembrolizumab + Axitinib", "use": "First-line advanced RCC"},
+      {"name": "Nivolumab + Ipilimumab", "use": "Combination immunotherapy"},
+      {"name": "Nivolumab + Cabozantinib, Pembrolizumab + Lenvatinib", "use": "First-line combinations"},
+      {"name": "Pembrolizumab", "use": "Adjuvant therapy after surgery for high-risk RCC"},
+      {"name": "Belzutifan", "use": "HIF-2α inhibitor (VHL-associated and advanced RCC)"},
+      {"name": "Sunitinib / Pazopanib", "use": "VEGF-targeted therapy"}
+    ],
+    "query": "renal cell carcinoma"
+  },
+  {
+    "id": "liver",
+    "name": "Liver cancer",
+    "group": "Solid tumors",
+    "aliases": ["hepatocellular carcinoma", "HCC", "bile duct", "cholangiocarcinoma"],
+    "nci": "https://www.cancer.gov/types/liver",
+    "summary": "Cancer that begins in the liver, most commonly hepatocellular carcinoma, often in people with chronic liver disease.",
+    "symptoms": ["Upper abdominal pain or swelling", "Jaundice", "Weight loss", "Fatigue"],
+    "riskFactors": ["Chronic hepatitis B or C", "Cirrhosis", "Heavy alcohol use", "Fatty liver disease", "Aflatoxin exposure"],
+    "screening": "Ultrasound surveillance (with or without AFP) is recommended for people with cirrhosis or chronic hepatitis B.",
+    "treatments": ["Surgery or liver transplant", "Ablation", "Embolization (TACE/TARE)", "Immunotherapy", "Targeted therapy"],
+    "medicines": [
+      {"name": "Atezolizumab + Bevacizumab", "use": "First-line advanced HCC"},
+      {"name": "Durvalumab + Tremelimumab", "use": "First-line advanced HCC"},
+      {"name": "Sorafenib / Lenvatinib", "use": "Multikinase inhibitors"},
+      {"name": "Regorafenib / Cabozantinib / Ramucirumab", "use": "Later-line options"},
+      {"name": "Hepatitis B vaccine", "use": "Prevention"}
+    ],
+    "query": "hepatocellular carcinoma"
+  },
+  {
+    "id": "stomach",
+    "name": "Stomach (gastric) cancer",
+    "group": "Solid tumors",
+    "aliases": ["gastric", "stomach", "gastroesophageal junction", "GEJ"],
+    "nci": "https://www.cancer.gov/types/stomach",
+    "summary": "Cancer that forms in the lining of the stomach. Infection with Helicobacter pylori is a major cause worldwide.",
+    "symptoms": ["Indigestion or heartburn", "Feeling full after small meals", "Nausea", "Unexplained weight loss", "Black stools"],
+    "riskFactors": ["H. pylori infection", "Smoking", "Diets high in salted or smoked foods", "Family history"],
+    "screening": "Endoscopic screening is used in some high-incidence countries (e.g., Japan, South Korea).",
+    "treatments": ["Surgery (gastrectomy)", "Chemotherapy", "Immunotherapy", "Targeted therapy (HER2, CLDN18.2)"],
+    "medicines": [
+      {"name": "FOLFOX / CAPOX / FLOT", "use": "Chemotherapy regimens"},
+      {"name": "Nivolumab / Pembrolizumab", "use": "Immunotherapy combined with chemotherapy"},
+      {"name": "Trastuzumab", "use": "For HER2-positive disease"},
+      {"name": "Zolbetuximab", "use": "Claudin 18.2-targeted antibody"},
+      {"name": "Ramucirumab", "use": "Anti-VEGFR2, second line"}
+    ],
+    "query": "gastric cancer"
+  },
+  {
+    "id": "esophageal",
+    "name": "Esophageal cancer",
+    "group": "Solid tumors",
+    "aliases": ["esophagus", "oesophageal", "Barrett"],
+    "nci": "https://www.cancer.gov/types/esophageal",
+    "summary": "Cancer of the esophagus, either squamous cell carcinoma or adenocarcinoma (often linked to Barrett's esophagus).",
+    "symptoms": ["Difficulty swallowing", "Weight loss", "Chest pain or burning", "Hoarseness or cough"],
+    "riskFactors": ["Smoking and alcohol", "Chronic acid reflux / Barrett's esophagus", "Obesity"],
+    "screening": "Endoscopic surveillance may be recommended for people with Barrett's esophagus.",
+    "treatments": ["Surgery (esophagectomy)", "Chemoradiation", "Immunotherapy", "Targeted therapy"],
+    "medicines": [
+      {"name": "Carboplatin + Paclitaxel", "use": "Given with radiation before surgery"},
+      {"name": "Nivolumab", "use": "Adjuvant immunotherapy after surgery"},
+      {"name": "Pembrolizumab / Nivolumab + chemotherapy", "use": "Advanced disease"},
+      {"name": "Trastuzumab", "use": "HER2-positive adenocarcinoma"}
+    ],
+    "query": "esophageal cancer"
+  },
+  {
+    "id": "head-neck",
+    "name": "Head and neck cancer",
+    "group": "Solid tumors",
+    "aliases": ["oral cancer", "mouth cancer", "throat cancer", "oropharyngeal", "laryngeal", "nasopharyngeal"],
+    "nci": "https://www.cancer.gov/types/head-and-neck",
+    "summary": "Cancers that usually begin in the squamous cells lining the mouth, throat, larynx, nose or salivary glands.",
+    "symptoms": ["Sore in the mouth that does not heal", "Persistent sore throat", "Lump in the neck", "Hoarseness", "Trouble swallowing"],
+    "riskFactors": ["Tobacco and alcohol use", "HPV infection (oropharyngeal)", "Epstein-Barr virus (nasopharyngeal)", "Betel quid chewing"],
+    "screening": "Dental and medical check-ups may detect early oral changes.",
+    "treatments": ["Surgery", "Radiation therapy", "Chemoradiation", "Targeted therapy", "Immunotherapy"],
+    "medicines": [
+      {"name": "Cisplatin", "use": "Given with radiation"},
+      {"name": "Cetuximab", "use": "Anti-EGFR antibody"},
+      {"name": "Pembrolizumab / Nivolumab", "use": "Immunotherapy for recurrent or metastatic disease"},
+      {"name": "HPV vaccine", "use": "Prevention of HPV-related cancers"}
+    ],
+    "query": "head and neck squamous cell carcinoma"
+  },
+  {
+    "id": "thyroid",
+    "name": "Thyroid cancer",
+    "group": "Solid tumors",
+    "aliases": ["papillary", "follicular thyroid", "medullary thyroid", "anaplastic thyroid"],
+    "nci": "https://www.cancer.gov/types/thyroid",
+    "summary": "Cancer of the thyroid gland. Most cases are papillary thyroid cancer, which usually has an excellent outlook.",
+    "symptoms": ["Lump in the neck", "Hoarseness", "Trouble swallowing", "Swollen neck lymph nodes"],
+    "riskFactors": ["Radiation exposure", "Family history and inherited syndromes (e.g., MEN2)", "Being female"],
+    "screening": "No routine screening for average-risk people.",
+    "treatments": ["Surgery (thyroidectomy)", "Radioactive iodine", "Thyroid hormone therapy", "Targeted therapy"],
+    "medicines": [
+      {"name": "Radioactive iodine (I-131)", "use": "Ablation of remaining thyroid tissue"},
+      {"name": "Levothyroxine", "use": "Hormone replacement / TSH suppression"},
+      {"name": "Lenvatinib / Sorafenib", "use": "For radioactive iodine-refractory disease"},
+      {"name": "Selpercatinib / Pralsetinib", "use": "RET inhibitors"},
+      {"name": "Dabrafenib + Trametinib", "use": "BRAF V600E-mutated anaplastic thyroid cancer"}
+    ],
+    "query": "thyroid cancer"
+  },
+  {
+    "id": "brain",
+    "name": "Brain and spinal cord tumors",
+    "group": "Solid tumors",
+    "aliases": ["glioblastoma", "GBM", "glioma", "astrocytoma", "meningioma", "brain tumor"],
+    "nci": "https://www.cancer.gov/types/brain",
+    "summary": "Tumors that form in the brain or spinal cord. Gliomas, including glioblastoma, are the most common malignant primary brain tumors.",
+    "symptoms": ["Headaches", "Seizures", "Changes in vision, speech or personality", "Weakness or numbness", "Nausea"],
+    "riskFactors": ["Prior radiation to the head", "Certain inherited syndromes", "Older age (for glioblastoma)"],
+    "screening": "No routine screening.",
+    "treatments": ["Surgery", "Radiation therapy", "Chemotherapy", "Targeted therapy", "Tumor treating fields (device)"],
+    "medicines": [
+      {"name": "Temozolomide", "use": "Chemotherapy with radiation for glioblastoma"},
+      {"name": "Lomustine", "use": "Chemotherapy"},
+      {"name": "Bevacizumab", "use": "For recurrent glioblastoma"},
+      {"name": "Vorasidenib", "use": "IDH1/2 inhibitor for some grade 2 gliomas"}
+    ],
+    "query": "glioblastoma OR glioma"
+  },
+  {
+    "id": "sarcoma",
+    "name": "Sarcoma",
+    "group": "Solid tumors",
+    "aliases": ["soft tissue sarcoma", "osteosarcoma", "Ewing", "GIST", "bone cancer"],
+    "nci": "https://www.cancer.gov/types/soft-tissue-sarcoma",
+    "summary": "Rare cancers that start in bone or soft tissues such as fat, muscle, nerves and blood vessels. There are many subtypes.",
+    "symptoms": ["Painless lump that grows", "Bone pain or swelling", "Abdominal pain (GIST)"],
+    "riskFactors": ["Prior radiation", "Inherited syndromes (e.g., Li-Fraumeni)", "Chemical exposures"],
+    "screening": "No routine screening.",
+    "treatments": ["Surgery", "Radiation therapy", "Chemotherapy", "Targeted therapy"],
+    "medicines": [
+      {"name": "Doxorubicin / Ifosfamide", "use": "Chemotherapy"},
+      {"name": "Imatinib", "use": "KIT inhibitor for GIST"},
+      {"name": "Pazopanib", "use": "For some advanced soft tissue sarcomas"},
+      {"name": "Trabectedin", "use": "For liposarcoma or leiomyosarcoma"}
+    ],
+    "query": "sarcoma"
+  },
+  {
+    "id": "childhood",
+    "name": "Childhood cancers",
+    "group": "Childhood cancers",
+    "aliases": ["pediatric", "paediatric", "neuroblastoma", "retinoblastoma", "Wilms", "children"],
+    "nci": "https://www.cancer.gov/types/childhood-cancers",
+    "summary": "Cancers in children and adolescents differ from adult cancers. Leukemia, brain tumors, lymphoma, neuroblastoma and Wilms tumor are among the most common.",
+    "symptoms": ["Unusual lump or swelling", "Unexplained fever or paleness", "Easy bruising", "Persistent pain or limping", "Changes in vision or behavior"],
+    "riskFactors": ["Most cases have no known cause", "Some inherited genetic conditions"],
+    "screening": "No routine screening; genetic syndromes may warrant surveillance.",
+    "treatments": ["Treatment at specialized pediatric cancer centers", "Chemotherapy", "Surgery", "Radiation therapy", "Immunotherapy and CAR T-cell therapy", "Clinical trials"],
+    "medicines": [
+      {"name": "Dinutuximab", "use": "Anti-GD2 antibody for high-risk neuroblastoma"},
+      {"name": "Tisagenlecleucel", "use": "CAR T-cell therapy for relapsed B-cell ALL"},
+      {"name": "Vincristine / Dactinomycin", "use": "Chemotherapy (e.g., Wilms tumor)"}
+    ],
+    "query": "pediatric cancer"
+  }
+]

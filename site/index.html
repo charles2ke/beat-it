@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Beat It – Cancer information, treatments &amp; latest research</title>
+  <meta name="description" content="Search cancer questions, treatments, medicines, clinical trials and the latest research, grouped by cancer type. Updated weekly.">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; base-uri 'none'; form-action 'none'">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="hero">
+    <div class="wrap">
+      <h1><a href="#" id="home-link">🎗️ Beat It</a></h1>
+      <p class="tagline">Search cancer questions, treatments, medicines and the latest research worldwide — grouped by cancer type.</p>
+      <form id="search-form" role="search" class="search">
+        <label for="q" class="sr-only">Search</label>
+        <input id="q" type="search" autocomplete="off" placeholder="e.g. immunotherapy for lung cancer, tamoxifen, HPV, glioblastoma trials…">
+        <button type="submit">Search</button>
+      </form>
+      <nav id="type-nav" aria-label="Cancer types"></nav>
+    </div>
+  </header>
+
+  <main id="main" class="wrap" tabindex="-1">
+    <p id="status" class="status" role="status" aria-live="polite"></p>
+    <div id="view"></div>
+  </main>
+
+  <footer class="wrap footer">
+    <p><strong>Medical disclaimer:</strong> This site is for general information only and is not medical advice. Treatment depends on the cancer's type, stage, biomarkers and the individual. Always talk to a qualified healthcare professional.</p>
+    <p>Latest research from <a href="https://pubmed.ncbi.nlm.nih.gov/" rel="noopener">PubMed</a>, trials from <a href="https://clinicaltrials.gov/" rel="noopener">ClinicalTrials.gov</a>, and news from public RSS feeds. <span id="updated"></span></p>
+    <p><a href="https://github.com/charles2ke/beat-it" rel="noopener">Source on GitHub</a></p>
+  </footer>
+  <script src="assets/app.js"></script>
+</body>
+</html>

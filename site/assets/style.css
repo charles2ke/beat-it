@@ -1,0 +1,62 @@
+:root {
+  --pink: #c2185b;
+  --pink-dark: #880e4f;
+  --bg: #fafafa;
+  --card: #fff;
+  --text: #1f2933;
+  --muted: #5f6b7a;
+  --border: #e3e7ed;
+  --radius: 10px;
+}
+* { box-sizing: border-box; }
+body { margin: 0; font: 16px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; color: var(--text); background: var(--bg); }
+a { color: var(--pink-dark); }
+.wrap { max-width: 1100px; margin: 0 auto; padding: 0 1rem; }
+.skip { position: absolute; left: -999px; }
+.skip:focus { left: 1rem; top: 1rem; background: #fff; padding: .5rem; z-index: 10; }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+
+.hero { background: linear-gradient(135deg, var(--pink-dark), var(--pink)); color: #fff; padding: 1.5rem 0 1rem; }
+.hero h1 { margin: 0; font-size: 2rem; }
+.hero h1 a { color: #fff; text-decoration: none; }
+.tagline { margin: .25rem 0 1rem; opacity: .95; }
+.search { display: flex; gap: .5rem; }
+.search input { flex: 1; padding: .8rem 1rem; font-size: 1.05rem; border: 0; border-radius: var(--radius); }
+.search button { padding: 0 1.4rem; font-size: 1rem; border: 0; border-radius: var(--radius); background: #fff; color: var(--pink-dark); font-weight: 600; cursor: pointer; }
+#type-nav { margin-top: 1rem; display: flex; flex-wrap: wrap; gap: .4rem; }
+.chip { display: inline-block; padding: .25rem .7rem; border-radius: 999px; font-size: .85rem; text-decoration: none; border: 1px solid rgba(255,255,255,.6); color: #fff; background: rgba(255,255,255,.08); }
+.chip[aria-current="true"] { background: #fff; color: var(--pink-dark); font-weight: 600; }
+.chip-group { font-size: .75rem; text-transform: uppercase; letter-spacing: .05em; opacity: .85; align-self: center; margin-left: .3rem; }
+
+main { padding: 1.5rem 1rem 2rem; }
+.status { color: var(--muted); margin: 0 0 1rem; min-height: 1.2em; }
+h2 { margin: 1.5rem 0 .75rem; font-size: 1.35rem; }
+h3 { margin: 0 0 .4rem; font-size: 1.05rem; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 1rem; }
+.card { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 1rem; }
+.card p { margin: .3rem 0; }
+.card a.title { font-weight: 600; text-decoration: none; }
+.card a.title:hover { text-decoration: underline; }
+.meta { color: var(--muted); font-size: .85rem; }
+.tag { display: inline-block; font-size: .72rem; padding: .05rem .5rem; border-radius: 999px; background: #fce4ec; color: var(--pink-dark); margin-right: .25rem; text-decoration: none; }
+.kind { display: inline-block; font-size: .72rem; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); margin-bottom: .2rem; }
+ul.list { padding-left: 1.2rem; margin: .3rem 0; }
+.two-col { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap: 1rem; }
+table.meds { width: 100%; border-collapse: collapse; }
+table.meds th, table.meds td { text-align: left; padding: .45rem .5rem; border-bottom: 1px solid var(--border); vertical-align: top; }
+.items { list-style: none; padding: 0; margin: 0; }
+.items li { padding: .6rem 0; border-bottom: 1px solid var(--border); }
+.items li:last-child { border-bottom: 0; }
+.empty { color: var(--muted); font-style: italic; }
+.notice { background: #fff8e1; border: 1px solid #ffe082; border-radius: var(--radius); padding: .75rem 1rem; }
+.ext { display: flex; flex-wrap: wrap; gap: .5rem; }
+.ext a { padding: .35rem .8rem; border: 1px solid var(--border); border-radius: 999px; background: #fff; text-decoration: none; font-size: .9rem; }
+details.faq { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: .6rem 1rem; margin-bottom: .5rem; }
+details.faq summary { cursor: pointer; font-weight: 600; }
+.footer { color: var(--muted); font-size: .85rem; border-top: 1px solid var(--border); padding-top: 1rem; padding-bottom: 2rem; }
+mark { background: #fff3a3; padding: 0 1px; }
+
+@media (max-width: 600px) {
+  .hero h1 { font-size: 1.6rem; }
+  .search button { padding: 0 .9rem; }
+}
