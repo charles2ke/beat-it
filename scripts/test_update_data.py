@@ -56,6 +56,17 @@ class FeedTests(unittest.TestCase):
 
 
 class ApiParsingTests(unittest.TestCase):
+    def test_get_json_failure_does_not_expose_url_or_exception(self):
+        secret = "sensitive-api-key"
+        url = f"https://example.org/data?api_key={secret}"
+        error = RuntimeError(f"request failed for {url}")
+        with mock.patch.object(ud, "http_get", side_effect=error), \
+                mock.patch.object(ud.time, "sleep"):
+            with self.assertRaises(RuntimeError) as raised:
+                ud.get_json(url, retries=1)
+        self.assertNotIn(secret, str(raised.exception))
+        self.assertNotIn(url, str(raised.exception))
+
     def test_parse_pubmed_summary(self):
         data = {"result": {"uids": ["123", "456"],
                            "123": {"title": "Trial of X", "fulljournalname": "J Onc", "pubdate": "2026 Oct"},

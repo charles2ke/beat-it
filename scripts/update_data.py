@@ -68,14 +68,12 @@ def http_get(url: str) -> bytes:
 
 
 def get_json(url: str, retries: int = 3) -> dict:
-    last_err: Exception | None = None
     for attempt in range(retries):
         try:
             return json.loads(http_get(url).decode("utf-8"))
-        except Exception as err:  # network / rate-limit errors
-            last_err = err
+        except Exception:  # network / rate-limit errors
             time.sleep(2 * (attempt + 1))
-    raise RuntimeError(f"GET {url} failed: {last_err}")
+    raise RuntimeError(f"GET request failed after {retries} attempts") from None
 
 
 def safe_url(url: str | None) -> str | None:
