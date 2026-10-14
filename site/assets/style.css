@@ -41,7 +41,7 @@ h3 { margin: 0 0 .4rem; font-size: 1.05rem; }
 .tag { display: inline-block; font-size: .72rem; padding: .05rem .5rem; border-radius: 999px; background: #fce4ec; color: var(--pink-dark); margin-right: .25rem; text-decoration: none; }
 .kind { display: inline-block; font-size: .72rem; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); margin-bottom: .2rem; }
 ul.list { padding-left: 1.2rem; margin: .3rem 0; }
-.two-col { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1rem; }
+.two-col { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap: 1rem; }
 table.meds { width: 100%; border-collapse: collapse; }
 table.meds th, table.meds td { text-align: left; padding: .45rem .5rem; border-bottom: 1px solid var(--border); vertical-align: top; }
 .items { list-style: none; padding: 0; margin: 0; }

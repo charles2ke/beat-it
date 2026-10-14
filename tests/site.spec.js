@@ -60,6 +60,28 @@ test("search finds medicines and questions across types", async ({ page }) => {
   await shot(page, "search");
 });
 
+test("search requires every query token", async ({ page }) => {
+  await page.goto("/#/search/tamoxifen%20zzzzqqq");
+  await expect(page.locator("#status")).toContainText("No results");
+  await expect(page.locator("#results .result")).toHaveCount(0);
+});
+
+test("skip link focuses main without changing the route", async ({ page }) => {
+  await page.goto("/#/type/lung");
+  await page.keyboard.press("Tab");
+  await expect(page.getByRole("link", { name: "Skip to content" })).toBeFocused();
+  await page.keyboard.press("Enter");
+  await expect(page).toHaveURL(/#\/type\/lung$/);
+  await expect(page.locator("#main")).toBeFocused();
+});
+
+test("two-column sections fit narrow viewports", async ({ page }) => {
+  await page.setViewportSize({ width: 320, height: 720 });
+  await page.goto("/#/type/lung");
+  const grid = page.locator(".two-col").first();
+  await expect.poll(() => grid.evaluate((el) => el.scrollWidth <= el.clientWidth)).toBe(true);
+});
+
 test("unknown queries offer live external search", async ({ page }) => {
   await page.goto("/#/search/zzzzqqq");
   await expect(page.locator("#status")).toContainText("No results");

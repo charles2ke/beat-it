@@ -252,7 +252,8 @@ def filter_news(items: list[dict], cancers: list[dict], now: dt.datetime) -> lis
         blob = f"{item['title']} {item.get('summary', '')}"
         if not CANCER_WORDS.search(blob):
             continue
-        if item["date"] and dt.datetime.fromisoformat(item["date"]) < cutoff:
+        published = parse_date(item.get("date", ""))
+        if not published or not cutoff <= published <= now:
             continue
         key = re.sub(r"\W+", "", item["title"].lower())[:80]
         if key in seen:
@@ -264,9 +265,10 @@ def filter_news(items: list[dict], cancers: list[dict], now: dt.datetime) -> lis
     return out[:NEWS_MAX]
 
 
-def fetch_news(cancers: list[dict], now: dt.datetime) -> tuple[list[dict], list[str]]:
+def fetch_news(cancers: list[dict], now: dt.datetime) -> tuple[list[dict], list[str], list[str]]:
     collected: list[dict] = []
     ok_sources = []
+    failed_sources = []
     for name, url in NEWS_FEEDS:
         try:
             items = parse_feed(http_get(url), name)
@@ -275,7 +277,8 @@ def fetch_news(cancers: list[dict], now: dt.datetime) -> tuple[list[dict], list[
             log(f"  news: {name}: {len(items)} items")
         except Exception as err:
             log(f"  news: {name} FAILED: {err}")
-    return filter_news(collected, cancers, now), ok_sources
+            failed_sources.append(name)
+    return filter_news(collected, cancers, now), ok_sources, failed_sources
 
 
 # ------------------------------------------------------------------------------ Main
@@ -305,17 +308,19 @@ def build(cancers: list[dict], previous: dict, now: dt.datetime) -> tuple[dict, 
         log(f"{cid}: {len(entry['research'])} papers, {len(entry['trials'])} trials")
         by_type[cid] = entry
 
-    news, ok_sources = fetch_news(cancers, now)
-    if not ok_sources:
-        errors.append("news: all feeds failed")
+    news, ok_sources, failed_sources = fetch_news(cancers, now)
+    news_sources = ok_sources
+    if failed_sources:
+        errors.extend(f"news/{source}: feed failed" for source in failed_sources)
         news = previous.get("news", [])
+        news_sources = previous.get("sources", {}).get("news", [])
 
     return {
         "generatedAt": now.replace(microsecond=0).isoformat().replace("+00:00", "Z"),
         "sources": {
             "research": "PubMed (NCBI)",
             "trials": "ClinicalTrials.gov",
-            "news": ok_sources or previous.get("sources", {}).get("news", []),
+            "news": news_sources,
         },
         "byType": by_type,
         "news": news,

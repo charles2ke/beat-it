@@ -23,7 +23,7 @@ jobs:
       - name: Live data fetch smoke test
         # Verifies PubMed, ClinicalTrials.gov and news feeds are reachable and parse correctly.
         # Output goes to a temp file; committed data is not modified.
-        run: python3 scripts/update_data.py --output "$RUNNER_TEMP/updates.json"
+        run: python3 scripts/update_data.py --strict --output "$RUNNER_TEMP/updates.json"
 
       - uses: actions/setup-node@v4
         with:

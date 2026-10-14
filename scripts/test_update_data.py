@@ -54,6 +54,25 @@ class FeedTests(unittest.TestCase):
         self.assertIn("lung", news[0]["types"])
         self.assertIn("melanoma", news[1]["types"])
 
+    def test_filter_news_requires_date_within_window(self):
+        items = [
+            {"title": "Cancer study missing date", "date": ""},
+            {"title": "Cancer study invalid date", "date": "not a date"},
+            {"title": "Cancer study in the future", "date": "2026-10-15T00:00:00Z"},
+            {"title": "Cancer study at cutoff", "date": (NOW - dt.timedelta(days=ud.NEWS_DAYS)).isoformat()},
+        ]
+        news = ud.filter_news(items, CANCERS, NOW)
+        self.assertEqual([item["title"] for item in news], ["Cancer study at cutoff"])
+
+    def test_fetch_news_reports_partial_feed_failures(self):
+        feeds = [("Healthy", "https://example.org/healthy"), ("Failed", "https://example.org/failed")]
+        with mock.patch.object(ud, "NEWS_FEEDS", feeds), \
+                mock.patch.object(ud, "http_get", side_effect=[RSS, RuntimeError("offline")]):
+            news, succeeded, failed = ud.fetch_news(CANCERS, NOW)
+        self.assertTrue(news)
+        self.assertEqual(succeeded, ["Healthy"])
+        self.assertEqual(failed, ["Failed"])
+
 
 class ApiParsingTests(unittest.TestCase):
     def test_get_json_failure_does_not_expose_url_or_exception(self):
@@ -103,6 +122,17 @@ class BuildTests(unittest.TestCase):
         self.assertEqual(data["news"], [{"title": "old news"}])
         self.assertTrue(errors)
         self.assertEqual(set(data["byType"]), {c["id"] for c in CANCERS})
+
+    def test_build_keeps_previous_news_when_any_feed_fails(self):
+        previous = {"news": [{"title": "saved news"}], "sources": {"news": ["Previous feed"]}}
+        with mock.patch.object(ud, "fetch_pubmed", return_value=[]), \
+                mock.patch.object(ud, "fetch_trials", return_value=[]), \
+                mock.patch.object(ud, "fetch_news", return_value=([{"title": "new news"}], ["Working"], ["Failed"])), \
+                mock.patch.object(ud.time, "sleep"):
+            data, errors = ud.build(CANCERS, previous, NOW)
+        self.assertEqual(data["news"], [{"title": "saved news"}])
+        self.assertEqual(data["sources"]["news"], ["Previous feed"])
+        self.assertIn("news/Failed: feed failed", errors)
 
 
 if __name__ == "__main__":

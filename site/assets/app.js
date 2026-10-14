@@ -101,8 +101,7 @@
       return { d, hit, score };
     }).filter((r) => r.hit > 0);
     const all = scored.filter((r) => r.hit === qt.length);
-    const pool = all.length ? all : scored.filter((r) => r.hit >= Math.ceil(qt.length / 2));
-    return pool.sort((a, b) => b.score - a.score).slice(0, 60).map((r) => r.d);
+    return all.sort((a, b) => b.score - a.score).slice(0, 60).map((r) => r.d);
   }
 
   // ---------------------------------------------------------------- views
@@ -253,6 +252,12 @@
       location.hash = q ? "#/search/" + encodeURIComponent(q) : "#/";
     });
     $("#home-link").addEventListener("click", (e) => { e.preventDefault(); location.hash = "#/"; });
+    $(".skip").addEventListener("click", (e) => {
+      e.preventDefault();
+      const main = $("#main");
+      main.focus({ preventScroll: true });
+      main.scrollIntoView();
+    });
     window.addEventListener("hashchange", route);
     route();
   }
