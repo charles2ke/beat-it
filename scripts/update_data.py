@@ -45,7 +45,7 @@ NEWS_MAX = 60
 NEWS_FEEDS = [
     ("Google News", "https://news.google.com/rss/search?q=cancer+research+when:7d&hl=en-US&gl=US&ceid=US:en"),
     ("ScienceDaily", "https://www.sciencedaily.com/rss/health_medicine/cancer.xml"),
-    ("Medical Xpress", "https://medicalxpress.com/rss-feed/oncology-cancer-news/"),
+    ("Medical Xpress", "https://medicalxpress.com/rss-feed/cancer-news/"),
     ("WHO", "https://www.who.int/rss-feeds/news-english.xml"),
 ]
 
