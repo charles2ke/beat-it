@@ -1,0 +1,62 @@
+[
+  {
+    "q": "What is cancer?",
+    "a": "Cancer is a group of diseases in which some of the body's cells grow uncontrollably and can spread to other parts of the body. It can start almost anywhere in the body.",
+    "link": "https://www.cancer.gov/about-cancer/understanding/what-is-cancer"
+  },
+  {
+    "q": "What are the main types of cancer treatment?",
+    "a": "Common treatments include surgery, radiation therapy, chemotherapy, immunotherapy, targeted therapy, hormone therapy, and stem cell transplant. Many people receive a combination.",
+    "link": "https://www.cancer.gov/about-cancer/treatment/types"
+  },
+  {
+    "q": "What is immunotherapy?",
+    "a": "Immunotherapy helps the immune system fight cancer. Examples include immune checkpoint inhibitors (such as anti-PD-1 drugs), CAR T-cell therapy, and bispecific antibodies.",
+    "link": "https://www.cancer.gov/about-cancer/treatment/types/immunotherapy"
+  },
+  {
+    "q": "What is targeted therapy?",
+    "a": "Targeted therapy uses drugs that act on specific changes in cancer cells, such as EGFR, ALK, HER2 or BRAF. Biomarker testing of the tumor helps determine whether a targeted drug may work.",
+    "link": "https://www.cancer.gov/about-cancer/treatment/types/targeted-therapies"
+  },
+  {
+    "q": "What is biomarker testing?",
+    "a": "Biomarker (tumor or genomic) testing looks for genes, proteins or other markers in a tumor that can help guide treatment choices.",
+    "link": "https://www.cancer.gov/about-cancer/treatment/types/biomarker-testing-cancer-treatment"
+  },
+  {
+    "q": "How can I find a clinical trial?",
+    "a": "Clinical trials test new treatments. You can search ClinicalTrials.gov or the WHO International Clinical Trials Registry Platform, and ask your care team whether a trial is right for you.",
+    "link": "https://clinicaltrials.gov/"
+  },
+  {
+    "q": "Can cancer be prevented?",
+    "a": "Not all cancer can be prevented, but risk can be reduced by not using tobacco, limiting alcohol, staying active, maintaining a healthy weight, protecting skin from the sun, getting vaccinated against HPV and hepatitis B, and following recommended screening.",
+    "link": "https://www.who.int/news-room/fact-sheets/detail/cancer"
+  },
+  {
+    "q": "What is cancer staging?",
+    "a": "Staging describes how large a cancer is and how far it has spread. The TNM system (tumor, nodes, metastasis) is widely used; stages generally range from 0 to IV.",
+    "link": "https://www.cancer.gov/about-cancer/diagnosis-staging/staging"
+  },
+  {
+    "q": "What are common side effects of treatment?",
+    "a": "Side effects vary by treatment and can include fatigue, nausea, hair loss, infection risk, nerve problems, and skin changes. Immunotherapy can cause immune-related inflammation of organs. Tell your care team about any new symptoms.",
+    "link": "https://www.cancer.gov/about-cancer/treatment/side-effects"
+  },
+  {
+    "q": "What is palliative care?",
+    "a": "Palliative care focuses on relieving symptoms and improving quality of life at any stage of a serious illness, alongside cancer treatment.",
+    "link": "https://www.cancer.gov/about-cancer/advanced-cancer/care-choices/palliative-care-fact-sheet"
+  },
+  {
+    "q": "Is cancer hereditary?",
+    "a": "Most cancers are not inherited, but about 5-10% are linked to inherited gene changes such as BRCA1/2 or Lynch syndrome. Genetic counseling can help people with a strong family history.",
+    "link": "https://www.cancer.gov/about-cancer/causes-prevention/genetics"
+  },
+  {
+    "q": "Where can I get support?",
+    "a": "Cancer organizations offer helplines, support groups and resources for patients and caregivers. In the US, NCI's Cancer Information Service is available at 1-800-4-CANCER; many countries have national cancer societies.",
+    "link": "https://www.cancer.gov/contact"
+  }
+]

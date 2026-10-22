@@ -1,0 +1,16 @@
+{
+  "name": "beat-it",
+  "version": "1.0.0",
+  "private": true,
+  "license": "AGPL-3.0-only",
+  "description": "Beat Cancer – searchable cancer information, treatments and weekly-updated research",
+  "scripts": {
+    "serve": "python3 -m http.server 8080 --directory site",
+    "test": "playwright test",
+    "test:py": "python3 -m unittest discover -s scripts -v",
+    "update-data": "python3 scripts/update_data.py"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.64.1"
+  }
+}
