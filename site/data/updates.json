@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-26T12:32:21Z",
+ "generatedAt": "2026-10-27T02:24:26Z",
  "sources": {
   "research": "PubMed (NCBI)",
   "trials": "ClinicalTrials.gov",
@@ -292,6 +292,13 @@
      "pmid": "42858932"
     },
     {
+     "title": "Colorectal cancers with distinct metastatic potential trigger divergent early T cell responses.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/42929781/",
+     "journal": "The Journal of experimental medicine",
+     "date": "2027 Jan 4",
+     "pmid": "42929781"
+    },
+    {
      "title": "Design, synthesis, and preliminary in vitro screening of novel tolmetin hydrazones against colon cancer.",
      "url": "https://pubmed.ncbi.nlm.nih.gov/42826819/",
      "journal": "Bioorganic & medicinal chemistry letters",
@@ -311,13 +318,6 @@
      "journal": "Cancer biology & therapy",
      "date": "2026 Dec 31",
      "pmid": "42845214"
-    },
-    {
-     "title": "World's first case report of live birth following autologous ovarian tissue cryopreservation and transplantation in a patient with colon carcinoma.",
-     "url": "https://pubmed.ncbi.nlm.nih.gov/42832379/",
-     "journal": "Gynecological endocrinology : the official journal of the International Society of Gynecological Endocrinology",
-     "date": "2026 Dec 31",
-     "pmid": "42832379"
     }
    ],
    "trials": [
@@ -1950,548 +1950,545 @@
  },
  "news": [
   {
-   "title": "Ultramarathoner takes on 50 marathons in 24 days for cancer research - WYFF",
-   "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOcEphbWJNdGlmQ2JmSUJYM0lBWENfbnh4d3ZSaEFrTlpyVk9YLXlMTDd1THBoN2RFRHNBd0pqQkRXRmNiYzhGbmNCUzZ3NWRPd1lBdGFTZ3ZobERTdHlKNXhMelM3U0pUTGFESnBvQVRCcjN3VjNEQVhFVFhzbzNrd3MwWVVFTnhNT2ww?oc=5",
-   "source": "WYFF",
-   "date": "2026-10-26T11:03:51+00:00",
-   "summary": "Ultramarathoner takes on 50 marathons in 24 days for cancer research &nbsp;&nbsp; WYFF",
-   "types": []
-  },
-  {
-   "title": "AI detects “invisible” signs of pancreatic cancer years before diagnosis",
-   "url": "https://www.sciencedaily.com/releases/2026/10/261024222031.htm",
-   "source": "ScienceDaily",
-   "date": "2026-10-26T09:25:21+00:00",
-   "summary": "A powerful new AI system could help doctors detect pancreatic cancer years before it becomes visible on conventional scans. The technology, called REDMOD, identified hidden warning signs an average of 475 days before diagnosis and was nearly twice as sensitive as experienced radiologists. By spottin",
-   "types": [
-    "pancreatic"
-   ]
-  },
-  {
-   "title": "How Can Functional Modeling, AI Accelerate Translational Breast Cancer Research? - CancerNetwork",
-   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOZVhweWFad0tPY09UQjM1TVBYYXZWRHpoM0RzdnBpa1JUd2NPWEhUbzg5QVZEUE0yZDV0Z18tSHo4MUtXY1NpZFBrM1dQMkRTOEttc1Fxb0g4Znc1WERmTWxKdEdDVzVjRmxmVk1rcURMM0dMTjdyTXdsaVFRSGtXTGxiT053Z1lLdkFScFFra2RIM1V5VUplZzFCYW5XTEVQRmdjUEFRdGt5U0JaN1BaVG9lams?oc=5",
-   "source": "CancerNetwork",
-   "date": "2026-10-26T07:21:43+00:00",
-   "summary": "How Can Functional Modeling, AI Accelerate Translational Breast Cancer Research? &nbsp;&nbsp; CancerNetwork",
+   "title": "Tomosynthesis detects breast cancer more frequently during screening",
+   "url": "https://medicalxpress.com/news/2026-10-tomosynthesis-breast-cancer-frequently-screening.html",
+   "source": "Medical Xpress",
+   "date": "2026-10-27T02:00:06+00:00",
+   "summary": "With around 75,000 new cases per year, breast cancer is by far the most common cancer among women in Germany. Using digital breast tomosynthesis in the breast cancer screening program could prevent around a quarter of invasive interval cancers that occur within two years after a digital mammogram.",
    "types": [
     "breast"
    ]
   },
   {
-   "title": "Fewer US men are diagnosed with low-risk prostate cancer, and more of them now choose surveillance over treatment",
-   "url": "https://medicalxpress.com/news/2026-10-men-prostate-cancer-surveillance-treatment.html",
+   "title": "Scientists discover hidden weaknesses in microtubules stabilized by a cancer drug - Asia Research News |",
+   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQRE41WmZxUDlCNUhnbHRKNlBqNDdldE9XUllFMVlxMUdsaWpBRVQzQ1R3TkpDSjhiOWUwVThPV2xpRHNKcVZaTGp3TUtuOEFnaldCNXVYbDdiUmVNMjFKRUlaRWc1UzRTV3RNWE9LV0Y1UUp3dmMzdmhMbUNYNnFvWTlxeE83ZkFlR25fMHlwRk5yeDBtWmJuVThvV0NUODNvZjZkYlNMOUx6c3BQZzNkQUhtMlQ?oc=5",
+   "source": "Asia Research News |",
+   "date": "2026-10-27T00:56:15+00:00",
+   "summary": "Scientists discover hidden weaknesses in microtubules stabilized by a cancer drug &nbsp;&nbsp; Asia Research News |",
+   "types": []
+  },
+  {
+   "title": "‘You’re not alone’: LA Cancer Challenge sees runners race for loved ones - Daily Bruin",
+   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQUjVpXzhDdEFqQ0hVdXVuX3gwRG9fMHdwMmg3ZHZ6MjhwRXNiQXFqUUxvYU5CNXJjc3BaTmdCTV84NUI3WC1vSlNaV1NqeDdHRXdGQi1fSldETnptYmUxVVZjY3FzekFSb3BHZzNUVE1JcGxaLXBCdGF0QXE2dXVnbGpYZEt3LXBBUE5EMHI1d0xpbnNNZ3drWnFDTk1qeF9jUUU5OQ?oc=5",
+   "source": "Daily Bruin",
+   "date": "2026-10-27T00:36:00+00:00",
+   "summary": "‘You’re not alone’: LA Cancer Challenge sees runners race for loved ones &nbsp;&nbsp; Daily Bruin",
+   "types": []
+  },
+  {
+   "title": "Sara Tolaney: Breast Cancer Insights From ESMO 2026 - Oncodaily",
+   "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFA0U19LTXpHX2J3UVowOVpldjV3eC10aEd3UHp0NFotQmQ0UndiaVVVSm9CNnFPTGUtU3N0WlJWUnl2Yk9ZNGJnTlE1bE02Qjlpcm11eTlNLTFSUTd6a19CRVJHcVZzZjhpeWc4aHN1ekY?oc=5",
+   "source": "Oncodaily",
+   "date": "2026-10-26T22:16:02+00:00",
+   "summary": "Sara Tolaney: Breast Cancer Insights From ESMO 2026 &nbsp;&nbsp; Oncodaily",
+   "types": [
+    "breast"
+   ]
+  },
+  {
+   "title": "Alliance webinar showcases latest cancer research from 2026 ASCO Meeting - Bioengineer.org",
+   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQeml2RnI0TmcteTQwaWE4RU02Ti1HcGlZckVHQ2pmekdzWGc3aDRUanFqY0doUGVzMy16VjFGSndCQmozRnVYeEdyNkNyLTVKOTIyVWhwZG9VMURkcm51bmN0OHFaSnc4TzhXODVSN3JYWlVwN2dhQjBzQ0dnTjVuZFNtdkJxRVFfaTNYRjhPd3pqclRsb1p0RVk5SWFJZw?oc=5",
+   "source": "Bioengineer.org",
+   "date": "2026-10-26T22:14:07+00:00",
+   "summary": "Alliance webinar showcases latest cancer research from 2026 ASCO Meeting &nbsp;&nbsp; Bioengineer.org",
+   "types": []
+  },
+  {
+   "title": "Can What You Eat Help Lower Breast Cancer Risk? The Role of a Plant-Forward Diet - Baptist Health",
+   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNSUo5aVFfNXBqY05KMFJoa0djdHZNOE9rei1TYVpPSFNHRkJBcTdLVnpTR2N4SFZSWndDUXBsMzZFbS1TWlA5Vl9xenQtTVBONDU2R3ZrRFB3NUU3Y1JQR1lxbS1qY1lsTUFSMElaeEl2d19odmVwdFFlSjg5NmptZWhIZm5RR2xTSW00enlCTFNpaTFoejVjOFQteWFuSWltU19kVW1VdW5lWnFQY0k0MWlmVmVBT2pRRWd1V2taRW0xZ0k?oc=5",
+   "source": "Baptist Health",
+   "date": "2026-10-26T22:03:52+00:00",
+   "summary": "Can What You Eat Help Lower Breast Cancer Risk? The Role of a Plant-Forward Diet &nbsp;&nbsp; Baptist Health",
+   "types": [
+    "breast"
+   ]
+  },
+  {
+   "title": "National Leader in Cancer Symptom Management, Ishwaria Subbiah, MD, Joins Perlmutter Cancer Center - NYU Langone Health",
+   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQNXU1RzhhNkh6VWlwaFhGWU1xcXBwU1kyMS1CQ1FUMTBhNmY3Y2ZsZy1aTEw0NFdGclZJTVVEZ1V6WF9JTXJFbmpEZ2luR2tPeUNSTTI2bW5yQUdsS1F3UlZ5NFBWZDYzcTQ2THpVUTlGVHJRWkVpdG9IQ09FXzJmNFN2eFhNUHNVVktWRGJzemh4akxXU2ZQT0o5MFJ0blRYTGkzc05RUUlLb0Mtb0hXMVQ1ZnpQMXNTSmdqcw?oc=5",
+   "source": "NYU Langone Health",
+   "date": "2026-10-26T21:24:26+00:00",
+   "summary": "National Leader in Cancer Symptom Management, Ishwaria Subbiah, MD, Joins Perlmutter Cancer Center &nbsp;&nbsp; NYU Langone Health",
+   "types": []
+  },
+  {
+   "title": "How Melanoma Became the Proving Ground for a Personalized Cancer Vaccine - Bloomberg.com",
+   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNU2lJcXFnOGFFREw4NzlJalV3WlBLSzdUckRjWWcycHpOTy16QTMwdXFoYjRJenZTWHJMaHJ6Y2l3aFdDYzhDeFNDOW0zQmFMdHZKXzg3cENISHZYVWZlTWhkclhKQ2xQcGpoM0Q2UDFmd0ZwVm11bjN0QldTQzNFQjRYVlJmR1FpcEtTZW9acDN0aWJLNlVYbEhRa0U0RmlCdFVFMXJ2amVxNHBSTUJ4TzRUbkk2anpJRC1jQldQVzZKTE0?oc=5",
+   "source": "Bloomberg.com",
+   "date": "2026-10-26T21:20:49+00:00",
+   "summary": "How Melanoma Became the Proving Ground for a Personalized Cancer Vaccine &nbsp;&nbsp; Bloomberg.com",
+   "types": [
+    "melanoma"
+   ]
+  },
+  {
+   "title": "Personalized cancer vaccine plus immunotherapy reduces melanoma recurrence after surgery",
+   "url": "https://medicalxpress.com/news/2026-10-personalized-cancer-vaccine-immunotherapy-melanoma.html",
    "source": "Medical Xpress",
-   "date": "2026-10-26T07:10:01+00:00",
-   "summary": "An analysis of United States data reveals a broad shift away from overtreatment of low-risk prostate cancer. The analysis published in CANCER indicates a shift toward surveillance in response to concerns of overdiagnosis and overtreatment that have hindered screening in the recent past.",
+   "date": "2026-10-26T21:20:05+00:00",
+   "summary": "Adding a personalized mRNA-based cancer vaccine to immunotherapy after surgery for high-risk melanoma reduced the risk of recurrence or death by 42%, according to results from the phase 3 INTerpath-001 trial presented at the ESMO Congress 2026. The vaccine, intismeran autogene, was given alongside p",
+   "types": [
+    "melanoma"
+   ]
+  },
+  {
+   "title": "Tallahassee-raised author’s new thriller will support cancer research - Tallahassee Democrat",
+   "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNUWVNR2R3TXNWdnZaeXh4ZXRuVUdjUi1mVFdWTUduSW00a3FPMEJYckx1Z2RrY3lZRjRXTVFqSTBvblAxWmJDYlg4R29PNENEOHpScndEdFF3cThfR2tpRkRTZnRJd19jZENmNERNYkFZV2l6UFFNVGQ0V1QyTzFHR3dianhRTmRWaXFOdW0tSVYxRFYwTXhIXzljUENhWm4wYTF3OHpZaUhJclZHdXB4SXpHd3R6SWhjSF9oRE9fTlBRNzhsQjg0bktveHNRNl9IRmFEdw?oc=5",
+   "source": "Tallahassee Democrat",
+   "date": "2026-10-26T21:11:34+00:00",
+   "summary": "Tallahassee-raised author’s new thriller will support cancer research &nbsp;&nbsp; Tallahassee Democrat",
+   "types": []
+  },
+  {
+   "title": "New test could flag which men need aggressive prostate cancer treatment and which don't - Fox News",
+   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPeEhmWDRRNXdVY0xXcUlmTDRwaVg1d0Y1cFlVVUF1cGM5ck9RanI2bEJuS3otN2F3YnFFQm9zUTI5UVRmVHN4Vy1YOGxaZy1aV2lZNV9VWnZ5REhqVFhaTi1hd292c2tGb2d3alYxY29rVlBkOE85eWR1RUlqclpGY3BYb21WVmFLSnRkSWpLajBTSjVUTTdDa1FMS2vSAaIBQVVfeXFMUFVrTHVwMDBMa1R1MExmaUtMaHBLZk5QT3FydnQ4Z25fT29IRjI2VS16N3YwbE91ZW41b0lhMXphRnh3Ni1XUks2VXZGNnJXbVNYUjA5aU45NDN1NWs1TTdEajNSYUpac2t5ZXVpYUVaX1BmN2F2R0RuNjRrdVdyUXk2NUNBN2JnRFpXczBneEhUTWJxVWpUWlNFOXM1ZV96Rkp3?oc=5",
+   "source": "Fox News",
+   "date": "2026-10-26T21:06:25+00:00",
+   "summary": "New test could flag which men need aggressive prostate cancer treatment and which don't &nbsp;&nbsp; Fox News",
    "types": [
     "prostate"
    ]
   },
   {
-   "title": "Dallas Drummathon raises $55,000 for breast cancer research - CBS News",
-   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPdUZNMUt0UkZKXzRwTW1HeWItS0J2WE1KcFk5ZjVtbVJVMkRCM0lqdlZUdlZoWW5XU0NFV1BNNTBtbFI1bFJCWGlReTZKaDlURkhRWWRobklvMlZYVGdoSmN4VUpScUFUUVpldjdfOGVGLUdMVFZuUEwxVVhxaU1VbEdEWTZjVkRsaHowaWRyWDBlWUVseWdncTRB?oc=5",
-   "source": "CBS News",
-   "date": "2026-10-26T03:27:00+00:00",
-   "summary": "Dallas Drummathon raises $55,000 for breast cancer research &nbsp;&nbsp; CBS News",
-   "types": [
-    "breast"
-   ]
-  },
-  {
-   "title": "Pfizer Atirmociclib Breast Cancer Research Grants 2027: $8 Million Funding Pool - Oncodaily",
-   "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1JQjVWR0hZemdoSTAyUGxYdWVVRFlkZTdrMC1iZDMzdV9GSEYtbVFXbU0tS19sdWV3ZFhDNlNaOEV3MUU3T2xtQlEtWDN3TDRuMVlJbU1rUkdMS09TV0tTeXBUUlluMmFx?oc=5",
-   "source": "Oncodaily",
-   "date": "2026-10-25T22:23:18+00:00",
-   "summary": "Pfizer Atirmociclib Breast Cancer Research Grants 2027: $8 Million Funding Pool &nbsp;&nbsp; Oncodaily",
-   "types": [
-    "breast"
-   ]
-  },
-  {
-   "title": "Dayton STEPS run supports childhood cancer research - WDTN.com",
-   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQbjhRX1cxQVNwZ3VUSDRCYm5BdkZiN1RCaDFmYjVCVXF4Vy1HTXd3NUVFLVY0QTVfaGFZYUVhdWlTSHRXZXFCZUhtYi1UQXdGaS1BSjFOMnpYS1VOYV9WY1VTYkxWUlNzeGlKYjRibEhVVjIzY2ppNkZHV3JKeXlPa1BWRE3SAYoBQVVfeXFMTXQxZWQ3bU1GRWNVTGJPSTNnd3FZQm5ZS1JaZVVGQnJhRkpEUzZfckZMZk1BSjU4ZHBPc0EwSnpSS1gwZl9lcHMxbVdJZGtEMTVZOTRWTTY3ZEllbWFtMm1qNUp3SjJpYVFKakVFcWxjS2pYeXI0VU9aR2Z2S3dUc0E1V0F0cmRQa2NR?oc=5",
-   "source": "WDTN.com",
-   "date": "2026-10-25T20:14:33+00:00",
-   "summary": "Dayton STEPS run supports childhood cancer research &nbsp;&nbsp; WDTN.com",
+   "title": "Tallahassee-raised author’s new thriller will support cancer research - Yahoo",
+   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQRnVVT3lhVXJVWVFwZjFEcnFRTXd5NUdTZ2E2elpHdWZVUkdqRkhlRV9VT0FFVHhvZUNPOEcwMkxiRm9vVk5sdTB6Zy1pSkFCRFJ1aUdaODUzYjVGTTRyU0JLUFhmZWFBTGhVOFJjSUJJTlRiWmNwd2E3Z3pwQ0RrMTIwS3JqZmM3eWUtbHc3b0pZZml3UFVKLVZNZlZpQUF5S3MwUw?oc=5",
+   "source": "Yahoo",
+   "date": "2026-10-26T21:00:33+00:00",
+   "summary": "Tallahassee-raised author’s new thriller will support cancer research &nbsp;&nbsp; Yahoo",
    "types": []
   },
   {
-   "title": "Young adults with cancer report putting off appointments, getting dismissed by doctors",
-   "url": "https://medicalxpress.com/news/2026-10-young-adults-cancer-dismissed-doctors.html",
+   "title": "Patients given apalutamide and hormone therapy around surgery may cut their risk of metastasis or death - Medical Xpress",
+   "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOZnAxbC1EQXlZU0dpQjlTMkxZZEp6SGRGbElrVHNZZXlsQWpkLXF1eUNrZll2bTNfeUZLaHEzdWlEbnVtdU00WmJJWW9GRHZJMXJud2JkaktBUEFXNjZnT0h2dU5ZbGp0OU51dXRJOHRZTTlzY21KMXB0MVJ6RWJqMWhDaFk3YWI1MjRibHR1MkxKUQ?oc=5",
    "source": "Medical Xpress",
-   "date": "2026-10-25T19:00:01+00:00",
-   "summary": "When Natasha Allard's close friend Dave was diagnosed with stage 4 testicular cancer at age 26, the University at Buffalo postdoctoral associate started paying more attention to how cancer was upending the lives of young people.",
+   "date": "2026-10-26T21:00:06+00:00",
+   "summary": "Patients given apalutamide and hormone therapy around surgery may cut their risk of metastasis or death &nbsp;&nbsp; Medical Xpress",
    "types": []
   },
   {
-   "title": "Scientists Develop a Clever New Way To Kill Cancer Cells From the Inside - SciTechDaily",
-   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOdERubEd3UktkWlVXU1YxenR4cTFKUV9FNDNFRWJqLVctQThBYnNDRzN3UklKRFhCQjVSN0ZXcThzQUIzTDlIalFINzlWTEhZalBKRXVWdG12RVlKdHFjallzcmcyaEFXVTJ5MWppekhoT3UwcDA3YURZMXpfNk5xRmNldG1tLTlXVzJPQVlhaTNwMTdxT3ZPdUwxR3dyVnc?oc=5",
-   "source": "SciTechDaily",
-   "date": "2026-10-25T17:45:12+00:00",
-   "summary": "Scientists Develop a Clever New Way To Kill Cancer Cells From the Inside &nbsp;&nbsp; SciTechDaily",
-   "types": []
-  },
-  {
-   "title": "Thousands to walk in ‘More Than Pink’ walk for cancer research - WFSB",
-   "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPWkdGMlZtOFhPengxZ2R0emVia1BLZmJXSEJ0bVV0ME0xcTZyUkdIZUEyRWJBRWNXRE5xOElnUkhpeW1pcmJSTmI5d2ZzNmRoZW9CdmM5Ynh3V29uTDhLOTBUU0dXZDNBa0dXcEo3X2RsUVVsc0dyTzUwMk05T212QUdYNnl2bnZuT1Jz?oc=5",
-   "source": "WFSB",
-   "date": "2026-10-25T11:42:00+00:00",
-   "summary": "Thousands to walk in ‘More Than Pink’ walk for cancer research &nbsp;&nbsp; WFSB",
-   "types": []
-  },
-  {
-   "title": "Komen walk returns to Bushnell Park to fund cancer research, care - WFSB",
-   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNRGc4Y0NrYU1BOTVUR05ZdGJwQk1YSWt2Q0I1U3dOYTltdG5jeFlCdEdXRUpGNFJ6V1lzWkhsUC1TU3VYU01ObVJmUHZYZW1HTGNnZUJpYV9jbVllRTRodGsxQlNvUWI5M2tNM1NJbkRQUFpPQzc4VzA0SmRfalMtMTRPX05UQUJ2Nk03OE1ET29Fd3IxczVic3BmY0V6UQ?oc=5",
-   "source": "WFSB",
-   "date": "2026-10-25T11:13:21+00:00",
-   "summary": "Komen walk returns to Bushnell Park to fund cancer research, care &nbsp;&nbsp; WFSB",
-   "types": []
-  },
-  {
-   "title": "Scientists discover how pancreatic cancer rewrites its DNA to escape treatment",
-   "url": "https://www.sciencedaily.com/releases/2026/10/261024221849.htm",
-   "source": "ScienceDaily",
-   "date": "2026-10-25T11:00:25+00:00",
-   "summary": "Scientists have discovered how pancreatic cancer cells continually reshape their genetic makeup to become more aggressive, spread, and evade treatment. In laboratory experiments, blocking a key gene reversed some of these dangerous changes, revealing a potential new way to fight the deadly disease.",
+   "title": "New targeted therapy improved survival for patients with KRAS-mutated lung cancer",
+   "url": "https://medicalxpress.com/news/2026-10-therapy-survival-patients-kras-mutated.html",
+   "source": "Medical Xpress",
+   "date": "2026-10-26T20:40:01+00:00",
+   "summary": "Patients with previously treated advanced KRAS G12C-mutant non-small cell lung cancer (NSCLC) lived significantly longer and saw improved disease control when treated with the next-generation KRAS-targeted therapy divarasib, according to researchers from The University of Texas MD Anderson Cancer Ce",
    "types": [
-    "pancreatic"
+    "lung"
    ]
   },
   {
-   "title": "ESMO 2026: The Breast Cancer Research We’re Watching - Breast Cancer.org",
-   "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1zVGZnajBhdTBhazk3MmNOcGRQRDIzZHJPZ2VSZXB5Rm14VDJfN0RVYnFpd1QyVFhiLUJKd2lMV24zWl8tSS1WYU9wRE90VGdIN2J6Qmt2Rk5fc1RhaWc3Mnh3UmM?oc=5",
-   "source": "Breast Cancer.org",
-   "date": "2026-10-25T08:34:59+00:00",
-   "summary": "ESMO 2026: The Breast Cancer Research We’re Watching &nbsp;&nbsp; Breast Cancer.org",
-   "types": [
-    "breast"
-   ]
-  },
-  {
-   "title": "Arion Carter donations to cancer research for Tennessee football after South Carolina - Knoxville News Sentinel",
-   "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxQN2tNQkF3c2g3eVRNbzV3Qm5QUnhJR05aYi1RejJubFVmWGRoc0VQd0REWHBjZ3dkT2dUNm1LeVRady0xVU5LQ2ltb0RVbEFJbTBJTFByWmdybnpTcG5ONGw2U3BzQTBjdmg3RmFHWDVTN1NOS0lKUXpaMW8zXzl1SWllRnk0QlFzOEl1Ry1tb3dBWTE5SGN1TU1vVk1WRjNnTjhsZ2pqU3hRWnN1eWRSbEVNV0VkRlFTc2V4T2hEYnExdlAtWDc4RVBtX1JBeVAtTlVYdGlqaEZmM2ZidWM1cXlaWVdnVjlpNTRDdVNIeFlPNUo2MVpXYlNwX0dDYVlv?oc=5",
-   "source": "Knoxville News Sentinel",
-   "date": "2026-10-25T02:13:00+00:00",
-   "summary": "Arion Carter donations to cancer research for Tennessee football after South Carolina &nbsp;&nbsp; Knoxville News Sentinel",
-   "types": []
-  },
-  {
-   "title": "Thousands walk in ‘More Than Pink’ walk for cancer research - WFSB",
-   "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQRTFyRjVLeGoyS3p1MzZ0M3JCODdqLWkzOXRFeVN1ckpwbEJBai1tQm9BNlhlQzRHdU90bUpKcVViU3BYSlRyUFpPUS1MNTVvekdYckxiZDE5dkpmc1dIOHdSLXMtemxNT0JFeEd0QTdzeDRzOWNnX05HeS1KeHpXcjQ1Zm5ybGdxNDBzaG9iT3Fud2M?oc=5",
-   "source": "WFSB",
-   "date": "2026-10-25T00:45:40+00:00",
-   "summary": "Thousands walk in ‘More Than Pink’ walk for cancer research &nbsp;&nbsp; WFSB",
-   "types": []
-  },
-  {
-   "title": "Paris Hilton and Kathy Hilton Host Pink Fundraiser for Breast Cancer Research in Beverly Hills - Oncodaily",
-   "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE45amtTT3hRNlJjazJFblZzT0Y3Y005S09SM3RvREYtcHdMUnRuUmtudlB1MlpIWlhjZE54UlNwMG1ELXQyQTlsd0NLZ1I3aU1NaEZkWDhVbEZ4YXR4YkN3NzdyTkllemphbVdZS1VnRHN1dXJOQk1Remxtaw?oc=5",
-   "source": "Oncodaily",
-   "date": "2026-10-24T18:48:40+00:00",
-   "summary": "Paris Hilton and Kathy Hilton Host Pink Fundraiser for Breast Cancer Research in Beverly Hills &nbsp;&nbsp; Oncodaily",
-   "types": [
-    "breast"
-   ]
-  },
-  {
-   "title": "Narrowing Breast Cancer Disparities Through Collaborative Research and Trial Representation - CancerNetwork",
-   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxONE9qWkJMcjV5a0JBaTlJRWJNWVdMWG9Uam0tdmpnWTVBT3NoU1ZfdmxyanRvYWpSc0N0WGtkcUxGY2VzeS1IU3dxRS00dUJEdThqOVE4NW1wYW5xazNQS1B6UU5JbEkzd0dSQkZkV3NJU2t3dThVYTZEZTNDS0JEZE1VMGxpaGEwS3VFeWE4NG5oS0FrTmJHLVIwS1JFVld3LUZVaVYycE5YN0xXUGczNGN5dTdDWHZfYTUzd2xoVmlJZ1Vw?oc=5",
+   "title": "Integrating Functional Testing and Genomic Profiling to Guide Cancer Treatment - CancerNetwork",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOVHBPMmNOb2hrVmRXT0ZLSjMzX0h1WkJhYWpPajdZUFBabzh6X3g1Z0g2M09xVWJHcVlQNUlmTEFkWFI3ajVPMFp0eXdRM2RzM29IVGp2SzhYQ1o4SkZjbFBGSEczUnlSemFuV05FTnRnaUEtR1pwNkQ4V0JpOXpHSmptc0dlclJfOGpWYjRuU19ON0hoNTg0Mk10cDIzdnVpYUpIMzFRVGdNaVB2QktsVUJDaw?oc=5",
    "source": "CancerNetwork",
-   "date": "2026-10-24T14:07:26+00:00",
-   "summary": "Narrowing Breast Cancer Disparities Through Collaborative Research and Trial Representation &nbsp;&nbsp; CancerNetwork",
-   "types": [
-    "breast"
-   ]
+   "date": "2026-10-26T20:03:22+00:00",
+   "summary": "Integrating Functional Testing and Genomic Profiling to Guide Cancer Treatment &nbsp;&nbsp; CancerNetwork",
+   "types": []
   },
   {
-   "title": "ESMO 2026: Immunotherapy combination extends survival in advanced endometrial cancer - UT MD Anderson",
-   "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxOcUptUjFfZzZmSEtIQWRHWlE5YjE0OHN6X1lYWjN1SmY3U29rVjl6RlZITWNyMzF4dHRmX0NWLWJoOE1oMHpzVWN5R2RsSU5GVVF1UFI2VTc1VUx0eTc0MWdSdnhjTmtFakNYUGl4U2htR3g2X1A0WHdKMjV4aDdzbWgtenI2R29NX0Zqc0ZaTVg1LU9UZkZ2Q0Z2RU1KRjkxdmN5cFVpSkZfU3BWdmZqNDZ0QXR2Zzd6TjJ5MVhEUFQzNmtqR0FDcEFUMTBibzE3SGJ6bmptU3N1ZDB6YmwxTVg5QmI3OVVtZUdyMnRB?oc=5",
-   "source": "UT MD Anderson",
-   "date": "2026-10-24T13:51:58+00:00",
-   "summary": "ESMO 2026: Immunotherapy combination extends survival in advanced endometrial cancer &nbsp;&nbsp; UT MD Anderson",
+   "title": "TuHURA Reports Early Responses in Deep-Seated Merkel Cell Cancer Study - Yahoo Finance",
+   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPR3Z0azlRREh1aTV1Q2lhazFPY0NReU4zaVFtNFV1VVlCZjdfczlpS1F5bmZwejBvTk5oM2xOMENnRVBiaDNuUzhVdkpDdW55NTh1Q2tRbnRTQVNRN0ZsbEhLQUF5MzhSVlNRU05iRXduRUl2YWEteU5mdV9OQi1ZcGJSRDNNeVVSNldSUkFXcF9rVWdmTTRHMXB5MVA?oc=5",
+   "source": "Yahoo Finance",
+   "date": "2026-10-26T20:02:52+00:00",
+   "summary": "TuHURA Reports Early Responses in Deep-Seated Merkel Cell Cancer Study &nbsp;&nbsp; Yahoo Finance",
+   "types": []
+  },
+  {
+   "title": "Location of rare cancer impacts survival, study suggests - Medical Xpress",
+   "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1aV0JGZFVyemJYYno3bTBYWEoza0EwMnhQQ0Y0bmxvQUFFNUt2cm9WLVllaDFHbkpaWHozbU14WTNMMXQ2azYzQ1pxZVV2SzdESnVrRVBGOFY1T1Nub2xmRG5WZGRIbDIwWXB3MGhiUzlselhMQ0MxVTJKTHQ?oc=5",
+   "source": "Medical Xpress",
+   "date": "2026-10-26T19:50:01+00:00",
+   "summary": "Location of rare cancer impacts survival, study suggests &nbsp;&nbsp; Medical Xpress",
+   "types": []
+  },
+  {
+   "title": "Location of rare cancer impacts survival, study suggests",
+   "url": "https://medicalxpress.com/news/2026-10-rare-cancer-impacts-survival.html",
+   "source": "Medical Xpress",
+   "date": "2026-10-26T19:50:01+00:00",
+   "summary": "A rare, aggressive cancer, commonly found in the uterus, limbs and abdomen, behaves differently depending on where it is found in the body, according to new research.",
    "types": [
     "uterine"
    ]
   },
   {
-   "title": "How The 'Pink Man' Raised $120,000 For Breast Cancer Research - Breast Cancer Research Foundation | BCRF",
-   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNcmlJb19vV1JvNlpqQ2lsd0NWVFY4MGlQOS1QX1MzN20zSERZNjJaX1J3QnU3bVhZaEpSRmJyRXVpekFNYmgyYWxoWnhzX01jWnpKbWxudUxWWXNTRy1wNmszOHBZNjVEQ0w0dTF5TUpKYTN3eU14MW1YeXNJelE5bnB0Wnl6RmxWaWMyU0cyQQ?oc=5",
-   "source": "Breast Cancer Research Foundation | BCRF",
-   "date": "2026-10-24T06:07:27+00:00",
-   "summary": "How The 'Pink Man' Raised $120,000 For Breast Cancer Research &nbsp;&nbsp; Breast Cancer Research Foundation | BCRF",
+   "title": "Martha Raymond: Big Questions in Oncology at ESMO 2026 - Oncodaily",
+   "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1JSjNhMlNvdEhMY3BWcnpOdFFHVEFGWG1ZMy1yWk5RUGo4b0pmMHhMVm9fb2ZiX3pmUGZZNFlIYlJ3elBRY2E3Mi1aTFNhT0xsRGNmeVlrcndpanQ2YXYyQkVnaw?oc=5",
+   "source": "Oncodaily",
+   "date": "2026-10-26T19:49:50+00:00",
+   "summary": "Martha Raymond: Big Questions in Oncology at ESMO 2026 &nbsp;&nbsp; Oncodaily",
+   "types": []
+  },
+  {
+   "title": "NJ Cancer Research Legislation - On New Jersey",
+   "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1SYmZCRTFrbjRWeFVxYURxSkJlbjc0ejE3cGlxbDdMNHFjS1RCazcxSV81QTl2eS1hRG9zUFBmaFMyd0Y5T05xZmxkMlJRZFc1YURqelptUlNyV05YVF9Ma2UxUnhTTUJuaFQ0?oc=5",
+   "source": "On New Jersey",
+   "date": "2026-10-26T19:47:32+00:00",
+   "summary": "NJ Cancer Research Legislation &nbsp;&nbsp; On New Jersey",
+   "types": []
+  },
+  {
+   "title": "Q&A: Could a new melanoma vaccine change cancer treatment? - UVA Today",
+   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPc2pqa05waXZEcS1HVTJrX0dUQndWWXB6YjZQVnVZNjVDQU9nTGsxS2NtZVRJcy1yVkc4NkJtV2R5WGE5bWdWVW5IbGx0aHU3RXZaYjZRSjUyNUV4cmFCUTRlRTltMXkwRnFuUUdJR2RqVWRCNl9SWl9BOC1tN1NvYXhqaUZYUDVjOVFzbGw5cXU?oc=5",
+   "source": "UVA Today",
+   "date": "2026-10-26T19:34:11+00:00",
+   "summary": "Q&A: Could a new melanoma vaccine change cancer treatment? &nbsp;&nbsp; UVA Today",
+   "types": [
+    "melanoma"
+   ]
+  },
+  {
+   "title": "New drug effectively decreases recurrence of and death from endometrial cancer - News-Medical",
+   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPenVuMHpMRmRLNFEwUmhaNldTdHhZTVB3YmVqTmx5bTdUT2lqRG1iNnNYb3dWRlRGZXU1THZKYXF3UlZndjlLM0lCM19uQmpVUnlCVXQwRUk0NjgwQm9KVUt3ZjRhRlRyQ01fbzFMT2poeXd3N2IwM0VOY3FhYUJCNVkwYy16czR2NVlORW1ubVpza2RtMDBObUlpWW41NVMwOFY0TzRYNmhSWWl1WTJhTl9oNjlXajl5RndoNHVBQkFPdlBX?oc=5",
+   "source": "News-Medical",
+   "date": "2026-10-26T19:34:00+00:00",
+   "summary": "New drug effectively decreases recurrence of and death from endometrial cancer &nbsp;&nbsp; News-Medical",
+   "types": [
+    "uterine"
+   ]
+  },
+  {
+   "title": "Pembrolizumab Improves PFS Over Chemo in dMMR Endometrial Cancer - CancerNetwork",
+   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNU2VtSGxkeUdyajExWFNlVGl1NUFhUHpHbVN2R3Nkd3licXlSbGExSG9jU093OHRSeGhrM0NhN0pZaHVHaWFOTHZuT0YxZVpkVnpsTTNQRl9leGtPdUNiQVJzSnVodXVVaURkTmhHVTc5Znp1VTdIb0ljOVZqTHNmUXdiems0YV9pZmhIU2tObENNM2pSOXFxQUgzRzkyd2ZK?oc=5",
+   "source": "CancerNetwork",
+   "date": "2026-10-26T19:33:22+00:00",
+   "summary": "Pembrolizumab Improves PFS Over Chemo in dMMR Endometrial Cancer &nbsp;&nbsp; CancerNetwork",
+   "types": [
+    "colorectal",
+    "uterine"
+   ]
+  },
+  {
+   "title": "New treatment approach shows promise in reducing prostate cancer spread",
+   "url": "https://medicalxpress.com/news/2026-10-treatment-approach-prostate-cancer.html",
+   "source": "Medical Xpress",
+   "date": "2026-10-26T19:00:10+00:00",
+   "summary": "Adding darolutamide to standard treatment for aggressive prostate cancer reduced the risk of the disease spreading in an international phase 3 trial.",
+   "types": [
+    "prostate"
+   ]
+  },
+  {
+   "title": "'Pink the Rink' event sees Brandon Wheat Kings skate on pink ice for breast cancer research - CBC",
+   "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQT0xFNkw0SDJhTzgzdHItN282VGtVRnUwYi1uT1d2X2pnR2tESTRmaW01Mk9Rb1draXFzTWlrUnJMaXEzTWhic0RSU2VXRG9KYzByeE1acHlCVnZqSm85TzlfbEZ5UkVRX2dfWWxKNzFEUzRMWnJGNGhJdU4zWlhYM3hhUlA3aVhPS2c2VFd3?oc=5",
+   "source": "CBC",
+   "date": "2026-10-26T18:59:07+00:00",
+   "summary": "'Pink the Rink' event sees Brandon Wheat Kings skate on pink ice for breast cancer research &nbsp;&nbsp; CBC",
    "types": [
     "breast"
    ]
   },
   {
-   "title": "Of Note in the Oncology Community: September/October 2026 - The ASCO Post",
-   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPcFJCUUlhNTFUU1RZaWI4ZEJWbjFCME5YSTZFNVNyVm5MWUNxc0sxMFY1TS16TWFLY256blFxZzN4RWRTSXRwSklsMWstZmhGOHp1YzNtZE13RXRKNFRudExJTTBWWDFHbGdUQWx3UFJaNWlGNF9wWldDYjFxWHg1d01vbGNQbExYZ0VXLVVISnVLQUdJX2hQTEtPN21CQkZ3VlE?oc=5",
-   "source": "The ASCO Post",
-   "date": "2026-10-24T03:07:16+00:00",
-   "summary": "Of Note in the Oncology Community: September/October 2026 &nbsp;&nbsp; The ASCO Post",
+   "title": "Tumor boards: What they are, how they work and why they matter - UT MD Anderson",
+   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQTThtMl9vZTRwVEc3OWFvaUNhZGlCMXZLM2NyX095SmNyVEVVVDZJVVRfY2xSNFV6alg1MkZvWWxLU0tjMVVtTi1KMXZyY1l3OTlnb0g0ek12QkpBNnFCVnVHUmVyUWlEc3FMYnJvWTYtVXpVbmk3clVZLTRUbXFnQkhUYVVrLWdUV0k0blAyMVhuNXM2eWVvLTBnd3ZEMm5LMGwwTFVfNHZwQ2ktcDMtYzJvS01Qa29oS2ZZ?oc=5",
+   "source": "UT MD Anderson",
+   "date": "2026-10-26T18:54:48+00:00",
+   "summary": "Tumor boards: What they are, how they work and why they matter &nbsp;&nbsp; UT MD Anderson",
    "types": []
   },
   {
-   "title": "Two cancer researchers receive esteemed $500K Albany Prize - NEWS10 ABC",
-   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPTFZfb0tjZFRQYWV1V29aczRvUmJzalZoTkwwbzh3TEFSZ2IydXd3WWEtRi0td2VqWTE4V2pKREQ1UHRmdjBoMXdRSDg1MHZoQXFLbHdzTzZtcVBjclY4eWkxV2ZHUG85ekpydG9faFhadklabDI0RlNhMzFocG5Jd1loQ3V3d1pJZFBvMTdwdEJhb3VKOXcwSkFUYkFwd9IBowFBVV95cUxOdWFFemJweDNfYnpqM0JRdWxia1k0N0lRekxmanFENFl6enR6ZUtKVk9NUGljTGRaMGljR19NaVlyczZwSmNienJmU0JNa25ZTW1LTjE4T0lUd3Vuc0tPSTcxT1dFOHVzRkt4aDViN3VOVEc5NkxxR3VDM0p5VE9BaDdyZS16YnQ0Nm5aV2h6NHU0c2sxZjVOT3NWdHczWHNZZFhr?oc=5",
-   "source": "NEWS10 ABC",
-   "date": "2026-10-24T02:50:42+00:00",
-   "summary": "Two cancer researchers receive esteemed $500K Albany Prize &nbsp;&nbsp; NEWS10 ABC",
-   "types": []
-  },
-  {
-   "title": "Researchers identify molecular target to improve pancreatic cancer treatment - News-Medical",
-   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPVkVJVHFKT1M1Y09jSHdwNVQ0Si1CeU1ySHRuSDJRVElYeXQtUzdNMElHUno4a1VzUWd1NlFVc3lHcXk3ZG41VjQ2TEFhXzM1MnlBMUVZeDV0NnRCSkxPb19HUzNNLUdOc2tlZHA5WXdXMU5WU01wYldJYk5abW1TRnNiRGNYUjlVamhUMVE4Tk5sQW44ZWs4LWlrUEJkODJDU1JYMjNicEJCU2FHSjA4UldqZEFneFVfY3lsVXpXQ1E2Zw?oc=5",
+   "title": "Friends play a direct role in encouraging regular cancer screening - News-Medical",
+   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOVTBPS0RNQkpiemdqeW4xNl91MUdHa2E4TTl5TlhTZDdhclZsQWpiVHphNjJBam1qdHptZDJocUU5X1htWmI3M1FtT3lQYzhzbXlOdHhDd0NQdHY5c2VOOWs4ZG82RXB2WTI0WE5Gd2JQcWwyTlVNYkxyZlFRN2VUckVNNVR5VExreWZpTlQ0WGtXcGpNd2piekppQ0thUHJQSWdlMFZ1aTZabENreUFnNnRiOXM?oc=5",
    "source": "News-Medical",
-   "date": "2026-10-24T01:55:00+00:00",
-   "summary": "Researchers identify molecular target to improve pancreatic cancer treatment &nbsp;&nbsp; News-Medical",
+   "date": "2026-10-26T18:42:00+00:00",
+   "summary": "Friends play a direct role in encouraging regular cancer screening &nbsp;&nbsp; News-Medical",
+   "types": []
+  },
+  {
+   "title": "Fructose slows liver tumors in mice when key sugar-processing gene is missing, may lead to new treatments",
+   "url": "https://medicalxpress.com/news/2026-10-fructose-liver-tumors-mice-key.html",
+   "source": "Medical Xpress",
+   "date": "2026-10-26T18:40:08+00:00",
+   "summary": "Fructose is an important nutrient that, despite having a chemical structure very similar to that of glucose, is metabolized very differently in the body. Research into fructose metabolism and its regulation of metabolism in the human body has in recent years become a frontier topic in the life scien",
+   "types": []
+  },
+  {
+   "title": "Immunotherapy combo extends survival for patients with aggressive small cell lung cancer, based on trial results",
+   "url": "https://medicalxpress.com/news/2026-10-immunotherapy-combo-survival-patients-aggressive.html",
+   "source": "Medical Xpress",
+   "date": "2026-10-26T18:20:06+00:00",
+   "summary": "In patients with extensive-stage small cell lung cancer (ES-SCLC), tarlatamab, a bispecific T-cell engager, plus durvalumab as first-line maintenance therapy extended median overall survival by more than eight months, more than tripled progression-free survival and reduced the risk of death by 58% c",
+   "types": [
+    "lung"
+   ]
+  },
+  {
+   "title": "Study challenges long-held idea about colorectal cancer - Futurity",
+   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOTDRRakVUWERnQllUc2ZtNzlCOERfMjBhNmhmdzRJUTFEbU5MV1N1d3FKNXhhdWYxN1hvYWJ5dERhdlNXMll0R1gxUk5jLWYyUWhoZGJweUptY2RNcGJNeFBLMjRxLWNTSWY1bkNtNmlqb2V2TF83eTFRcjlPQ3h6N2xlY08?oc=5",
+   "source": "Futurity",
+   "date": "2026-10-26T17:35:47+00:00",
+   "summary": "Study challenges long-held idea about colorectal cancer &nbsp;&nbsp; Futurity",
+   "types": [
+    "colorectal"
+   ]
+  },
+  {
+   "title": "J&J reports promising results in three cancer studies - NJBIZ",
+   "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9GNkFrbUpmWTUxNDVDR0ZGZkdwZ1FDdG1RMXlJdTg2ekRXeW9fTUFacGRDcXliSE5qY2lWM3lwOG1Wc3BNQ1dqaHY2ei02V2JSa183aWUwY0czVUVqMVJLdGx1SWFVUmsta3Y1aW45VDVRVkk?oc=5",
+   "source": "NJBIZ",
+   "date": "2026-10-26T17:34:53+00:00",
+   "summary": "J&J reports promising results in three cancer studies &nbsp;&nbsp; NJBIZ",
+   "types": []
+  },
+  {
+   "title": "Beyond cigarettes: Uncovering the causes of lung cancer in nonsmokers - The Detroit News",
+   "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNbDNTZnZKVlZuaVRwdDJXeWVNcnVHenVuLVNoMjZTWWQyV29pRUVJUC1xeHZkTjczaDdIYUVoekRfeDhoSjFrZDhSWk5sRTRGc1NiUUF4VnVsdUhXQUM3SWZoSzIyV19KbVM5VElBbUVWa21lWDBHaV9rNWp4b1NwWFF4YXlEdHhFWWpNMzJWTE9mS2RJa0E1Ujhmc1FTZ292U2JRQ05aZWtMNm52SWtWZE9MY0ZXcUo3dmNqdkNSc2Nmd3VhdTE3MlJB?oc=5",
+   "source": "The Detroit News",
+   "date": "2026-10-26T17:20:00+00:00",
+   "summary": "Beyond cigarettes: Uncovering the causes of lung cancer in nonsmokers &nbsp;&nbsp; The Detroit News",
+   "types": [
+    "lung"
+   ]
+  },
+  {
+   "title": "FDA Approves Talazoparib/Enzalutamide for HRR Gene-Altered Metastatic Prostate Cancer - CancerNetwork",
+   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNWXltM3ZRenh1M3FIaEtzQjlPZXVSOFZjUERfU1lhcDF1d2MzZlUyeVYzQmNWekpVblk2WE9jVlVISFFkU0ZjNGJUWkxBanJtSGZXajg4RmNRa08xR2VZWW1EdnItVGZTU0ZieFlCTU93Mk1BT2hMM0EtcWpCbWhiZ0RJNXlEUlJzN2ZSdWhXc21XeTNib1lZZ1k3ZkVtX2MyMHRMbm9JeDJxZTRRZHZBcGxUMkhKZXJFQ08xdg?oc=5",
+   "source": "CancerNetwork",
+   "date": "2026-10-26T17:13:11+00:00",
+   "summary": "FDA Approves Talazoparib/Enzalutamide for HRR Gene-Altered Metastatic Prostate Cancer &nbsp;&nbsp; CancerNetwork",
+   "types": [
+    "prostate"
+   ]
+  },
+  {
+   "title": "New Blood Test Can Find One of the Deadliest Cancers Returning—Before Scans - Newsweek",
+   "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOdFlIajM5N090VmVMeklQNVlzZFA5bDYxaWZydGtqM2tZMWpVVzZqejFrX3BpZTBRVkdZX3JzRFk0bkF0cDMxeWIwVnliU3dGWlktLWQ4Vnhra2xmbl9OTVRVc0NRYWoxSXlkU1NPaF9vNUh5VWdGcDEzaFR2V2p2dWpkeGU2R2I4ZEV4Q0hFTWlUbUE?oc=5",
+   "source": "Newsweek",
+   "date": "2026-10-26T17:10:00+00:00",
+   "summary": "New Blood Test Can Find One of the Deadliest Cancers Returning—Before Scans &nbsp;&nbsp; Newsweek",
+   "types": []
+  },
+  {
+   "title": "Metabolic vulnerability identified in small cell lung cancer",
+   "url": "https://medicalxpress.com/news/2026-10-metabolic-vulnerability-small-cell-lung.html",
+   "source": "Medical Xpress",
+   "date": "2026-10-26T16:40:01+00:00",
+   "summary": "Researchers at the University of Cologne have demonstrated that, while various cellular states of small cell lung cancer are equally dependent on the amino acid cysteine, they react differently when deprived of it. While some cancer cells subsequently die via ferroptosis—a form of cell death in whic",
+   "types": [
+    "lung"
+   ]
+  },
+  {
+   "title": "Closing the Gap in Cancer Care - Metatrends",
+   "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE4zMFpudG9qQW5VdWJaUmxoZG1HMW9yaDMzSlhKeHd6aWk5U1RmR0Y0Ujl1ZU9mYkdCM25IdEZ2eWp2WGc0T2VoQ1VFZGRjQms5LXFTck5ueHBac2c3ZHRDUFZxYnRmQ0Z3ekhONUpMd25oQQ?oc=5",
+   "source": "Metatrends",
+   "date": "2026-10-26T16:32:28+00:00",
+   "summary": "Closing the Gap in Cancer Care &nbsp;&nbsp; Metatrends",
+   "types": []
+  },
+  {
+   "title": "Dolphins Cancer Challenge Marks $100 Million Milestone at Crucial Catch Game - University of Miami",
+   "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQOS1la1hWNlRiQmtZNnBGV0pfdGsxMkpqSEF0ZWJkLXJwem5hdklzZW5NR210b19zUVd6S3pKUzJ2MFNNRk5RMW1IVDB1Q0lmQ1l2bW8wWmJUTkFGTXU4YThUbFpkN2JGRUpYek9FNDJadDNXRkx4dGtJeWNfQXI4YQ?oc=5",
+   "source": "University of Miami",
+   "date": "2026-10-26T16:16:29+00:00",
+   "summary": "Dolphins Cancer Challenge Marks $100 Million Milestone at Crucial Catch Game &nbsp;&nbsp; University of Miami",
+   "types": []
+  },
+  {
+   "title": "Black patients can face longer breast cancer care delays, study finds - Medical Xpress",
+   "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQd3BaUHE5QVdHQUhub1U1eU5DZ1dJdFZ2LWJqSVp3clJwdmo0dFNlZmlRR2JMekhIZExKNEZoZ1BiMk5fZHZ5WXdsckZZZDl5SGJ5aVREQjA0R1VzNXZDYlhOSUhNSHJjNVY1ZmYxWjFYOERMUlgwN2NLZ2JjNWotTEpTMDJmUQ?oc=5",
+   "source": "Medical Xpress",
+   "date": "2026-10-26T16:10:01+00:00",
+   "summary": "Black patients can face longer breast cancer care delays, study finds &nbsp;&nbsp; Medical Xpress",
+   "types": [
+    "breast"
+   ]
+  },
+  {
+   "title": "Black patients can face longer breast cancer care delays, study finds",
+   "url": "https://medicalxpress.com/news/2026-10-black-patients-longer-breast-cancer.html",
+   "source": "Medical Xpress",
+   "date": "2026-10-26T16:10:01+00:00",
+   "summary": "Black patients and people with a learning disability face longer waiting times at key stages of breast cancer care, according to a nationwide study led by the University of Surrey.",
+   "types": [
+    "breast"
+   ]
+  },
+  {
+   "title": "Nurse-Led Education Clears Up Clinical Trial Myths in Kidney Cancer - Oncology Nursing News",
+   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOYnBZQUdXMWRFUWtQSmxKNWNySVNJUk0tX2NlSGdHRHdoNGFNQ3pXX0QtVXMweUtPV1VTZmw5X19iWDU0Yy1NcXdOc3FYZ2VYWXBoTjJpQVFTS2ZlVXNOT0pnd2I3dkQ0SnB2cVM5QkhPMHhzV2RtWExoUGlzLW90UmpjM3l2dmJ4Sy1sMkpVOUFqalRmaFBzVlFSMDI1VVE1dHFiR2Nn?oc=5",
+   "source": "Oncology Nursing News",
+   "date": "2026-10-26T16:05:47+00:00",
+   "summary": "Nurse-Led Education Clears Up Clinical Trial Myths in Kidney Cancer &nbsp;&nbsp; Oncology Nursing News",
+   "types": [
+    "kidney"
+   ]
+  },
+  {
+   "title": "ESMO ‘26: A cancer vaccine debate, Roche’s KRAS progress and Amgen’s ‘unprecedented’ data - BioPharma Dive",
+   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPRngtaXNBR2xQbF9zdDd3UHhYSU9seGM1Q3ZOOWFsOVJ6MmtTSGcyeks0dmt5X2VCNTJDZW5iS3JzVWpmVkJxYzJpUjZLVXVKZWFRSjMzQTZ1UUkyRGZlU3h1d3RGQzNSTVJGMmtLeHl5UjBxNXhrTkU0S0lDNVRVbVVnYTJCWl9MeG9vbnlYVl92T28xbktYM1RTeU9CbUtPS3NRZQ?oc=5",
+   "source": "BioPharma Dive",
+   "date": "2026-10-26T16:00:47+00:00",
+   "summary": "ESMO ‘26: A cancer vaccine debate, Roche’s KRAS progress and Amgen’s ‘unprecedented’ data &nbsp;&nbsp; BioPharma Dive",
+   "types": [
+    "lung"
+   ]
+  },
+  {
+   "title": "Europe takes cancer science into immunology - European Biotechnology Magazine",
+   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQU2NWbEotZ00wNVlYWnR2N2ZLaUVVcUNzUVVCNS1Tc3hwRzY2SkNDUGpWMWhucGE4dmdxSWdaUV9rb0ZTaFhOZ0ZKY183Wmk3aVV6YmxoV0dsWlI5Wlc1aUtpQ0VMSWxfLUxUMDBtcU5NUV9BbHNDUGFzQmwxcUxIdUJua19DRm5VMnVLb2N2RS1ueWVj?oc=5",
+   "source": "European Biotechnology Magazine",
+   "date": "2026-10-26T16:00:25+00:00",
+   "summary": "Europe takes cancer science into immunology &nbsp;&nbsp; European Biotechnology Magazine",
+   "types": []
+  },
+  {
+   "title": "AI-based computer model offers new weapon against hard-to-treat cancers - Medical Xpress",
+   "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBzQ1JVRVFEZ2pBMGtyVnZORjUwXzJ4Qy1OdEVmWFo0YzhVOWJKNlhKYWducWctZjRJb1pwd1NpT2J3S0JmYW01RkFiVm4ybHhtTnVTc1BUeHRnaFE5VTh1X0JLbnBUMHRSdGM4Sk9nSVBIWUZrdlJGM2hYMUQ?oc=5",
+   "source": "Medical Xpress",
+   "date": "2026-10-26T16:00:01+00:00",
+   "summary": "AI-based computer model offers new weapon against hard-to-treat cancers &nbsp;&nbsp; Medical Xpress",
+   "types": []
+  },
+  {
+   "title": "AI-based computer model offers new weapon against hard-to-treat cancers",
+   "url": "https://medicalxpress.com/news/2026-10-ai-based-weapon-hard-cancers.html",
+   "source": "Medical Xpress",
+   "date": "2026-10-26T16:00:01+00:00",
+   "summary": "In a new paper published in Cell Reports Medicine, the UCL team outlines how they, in collaboration with a University of Cambridge team, developed a new type of treatment-predicting computer program that uses an individual's detailed genetic fingerprint to explore which treatments, if any, may kill ",
+   "types": []
+  },
+  {
+   "title": "Las Vegas Rallies for City of Hope's First Walk for Hope in the City, Raising Funds for Lifesaving Cancer Research - Morningstar",
+   "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxNQUd3elJ1SU54cUo0cGVuX0MzSHdHT01VcUpMMU5iWEFRRzNROE5QeGE4X282eFpqTThUb0dBdi1rbWJveFA3c1dpbWRsN1VFWmZWOFFJX0o5SzB5cmFQVER2VDVvS2lnY3lZN1RPU3RNLUNZRUlpVVB0a0xoM2VwdUpYX3AxRzF3ejZMVXBxalZEU2pNTjRDZGZRUjRMd3N2NG1nTDlWNmxPN1gwVTVaN0VIeHdQMDVVUzJWV1Ntd0hqZ3g2R1RtbUpnb2dQWklVNWlBNVcycy1LTkJ5YWJFQ19wSUhTZm9RQ0hYYWV1VndGSUlDcW5EM2FzLUdIWEQyejNfMQ?oc=5",
+   "source": "Morningstar",
+   "date": "2026-10-26T16:00:00+00:00",
+   "summary": "Las Vegas Rallies for City of Hope's First Walk for Hope in the City, Raising Funds for Lifesaving Cancer Research &nbsp;&nbsp; Morningstar",
+   "types": []
+  },
+  {
+   "title": "Seek Labs Expands Oncology Research for Sequence Ablation Therapeutics with Up to $3 Million in Foundation Support - Yahoo Finance",
+   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNT0RKUGFoZ2ZiS2NxdGV3cF9obkVjS0JEUkxWRXNia1E1N2ZVeDU4dHFmT0FJcGlUQWlLRUNkVlZFaVVEbXRqYnBvT3RaQ0Nya1NjcFpEMVpoS3RsdGF3SXhkeXVuYTJLRmd2NDE2amdrd0kzRnI1WUdkaThnTUhFeU52WWNwaEZMWXBNRl8zRjgtcW82LUx0Ukt2eTE?oc=5",
+   "source": "Yahoo Finance",
+   "date": "2026-10-26T15:55:00+00:00",
+   "summary": "Seek Labs Expands Oncology Research for Sequence Ablation Therapeutics with Up to $3 Million in Foundation Support &nbsp;&nbsp; Yahoo Finance",
+   "types": []
+  },
+  {
+   "title": "AI could help identify people at higher risk of common cancers using routine health data",
+   "url": "https://medicalxpress.com/news/2026-10-ai-people-higher-common-cancers.html",
+   "source": "Medical Xpress",
+   "date": "2026-10-26T15:40:20+00:00",
+   "summary": "Machine learning models using routinely collected health information, such as blood tests, medical history and lifestyle factors, could help identify people at higher risk of several common cancers, according to an international study reported at the ESMO Congress 2026.",
+   "types": []
+  },
+  {
+   "title": "Immunotherapy combination extends survival in advanced endometrial cancer",
+   "url": "https://medicalxpress.com/news/2026-10-immunotherapy-combination-survival-advanced-endometrial.html",
+   "source": "Medical Xpress",
+   "date": "2026-10-26T15:40:10+00:00",
+   "summary": "An immunotherapy-based regimen combining durvalumab and the PARP inhibitor olaparib demonstrated encouraging long-term survival outcomes for patients with advanced or recurrent endometrial cancer, according to new trial results presented by researchers from The University of Texas MD Anderson Cancer",
+   "types": [
+    "uterine"
+   ]
+  },
+  {
+   "title": "Hybrid Heart Trail Race Raises Funds for Cancer Research - ActionHub",
+   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOR0tTb3o0aEZUbjFuMVZXeUk2QlVOVzJrcU9nQlhJRnpnOHlIZ2RQLVVQYzJjd3BQSi1pYjlQM1JYajU0akxCMnUtNjdhZ1c0UmkxS19NaURCT1FnVVFBWTBabEdPNkFFVTZDTmo0UHF4NDFFUi14OXQ5aXptYmxsMzNmNVBrZU1wSW9SWnNOV1hnNE1nRHlDRGZJbjVmcm1I?oc=5",
+   "source": "ActionHub",
+   "date": "2026-10-26T15:30:28+00:00",
+   "summary": "Hybrid Heart Trail Race Raises Funds for Cancer Research &nbsp;&nbsp; ActionHub",
+   "types": []
+  },
+  {
+   "title": "Center of Excellence in pancreatic cancer designation, new treatment mark milestones for ECU Health Cancer Care - ECU Health",
+   "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPMlVVZkxFcWtNSUhjcmZJVnZxWEdGTXMtdXF1WTFpTVBHdk41SUN1aXZPOC01SkYtLWxueXo3ZVlwV0JqYW5jaEZKVG1Ga0hScG1XRUphUFJmRlpvQ1pIMTg0ZEtwSDdWSEhZbzI5Rm1SdXZZU0FWU2RhRzY2SVJheFFIcWNNX3A2V1p5X0VMQWNybGFQOXNmT0JKMHNqczNnNDI4ZXJLYnhjczRkM08xQk5GT1gyUENSa1FXOHpBbG5UMmc0Qm90ci1xYVNkRnhLeW5j?oc=5",
+   "source": "ECU Health",
+   "date": "2026-10-26T15:13:48+00:00",
+   "summary": "Center of Excellence in pancreatic cancer designation, new treatment mark milestones for ECU Health Cancer Care &nbsp;&nbsp; ECU Health",
    "types": [
     "pancreatic"
    ]
   },
   {
-   "title": "Glioblastoma breakthrough reveals how brain cancer cells become more aggressive",
-   "url": "https://www.sciencedaily.com/releases/2026/10/261022081300.htm",
-   "source": "ScienceDaily",
-   "date": "2026-10-24T00:48:21+00:00",
-   "summary": "Scientists discovered that the thick, sticky fluid surrounding glioblastoma tumors can make brain cancer cells smaller, more flexible, and better at invading surrounding tissue. Even more troubling, some of these changes persist after the cells leave the thick fluid, revealing a previously overlooke",
+   "title": "Implantable device uses ultrasound to improve drug delivery to the brain",
+   "url": "https://medicalxpress.com/news/2026-10-implantable-device-ultrasound-drug-delivery.html",
+   "source": "Medical Xpress",
+   "date": "2026-10-26T15:00:37+00:00",
+   "summary": "Patients with glioblastoma, an aggressive type of brain tumor, usually undergo surgery to remove the tumor. However, it's difficult for surgeons to remove all of the cancer cells, and the tumor often recurs.",
    "types": [
     "brain"
    ]
   },
   {
-   "title": "Diagnostic test could help doctors refine prostate cancer treatment - Medical Xpress",
-   "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPWFdWSEFNQ0NENUt4V2xFUVY0SW5JTy14TGM4TGpfbVRiZHA0Ym54bEphc0FJaXp5OXZDNmNzWWFaQmdlTS1HT3lVSE5hSUd5cWpZSUF6OXpvM3k2dmxwdEZSYTdndkZzQ3h4SW44ZjVrYTlOOGt4OHBpQU5NVWVOYmdnTFFVcWdYTHRPZ3hB?oc=5",
+   "title": "Next-generation drug reduces endometrial cancer progression and death in trial",
+   "url": "https://medicalxpress.com/news/2026-10-generation-drug-endometrial-cancer-death.html",
    "source": "Medical Xpress",
-   "date": "2026-10-24T00:40:01+00:00",
-   "summary": "Diagnostic test could help doctors refine prostate cancer treatment &nbsp;&nbsp; Medical Xpress",
+   "date": "2026-10-26T15:00:15+00:00",
+   "summary": "A new drug is effective at decreasing the recurrence of, and death from, endometrial cancer, an international study shows. The drug, called sacituzumab tirumotecan (sac-TMT), attaches to a protein on the surface of tumor cells and then delivers a targeted dose of a chemical that leads to cancer cell",
+   "types": [
+    "uterine"
+   ]
+  },
+  {
+   "title": "Proposition 38 seeks $8.4 billion for cancer research - Mustang News",
+   "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1RX3FlMEM3bjU3ZXludC1wQUxnTDdTNEFmRjFaM3E4b2lmZUVueVFFVDNmUkxQczBROWxTWHJHYUlBOHhZbE5STUlNNGliNHJRVVBHV1FDRWVVeVVLNmJWRk1BSDZydw?oc=5",
+   "source": "Mustang News",
+   "date": "2026-10-26T15:00:00+00:00",
+   "summary": "Proposition 38 seeks $8.4 billion for cancer research &nbsp;&nbsp; Mustang News",
+   "types": []
+  },
+  {
+   "title": "Technology Takes Aim at Psychological Distress in Patients with Cancer - Cleveland Clinic",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPS2wwVG5oN1FRSHYwZW1CU3BxUFZuLVVJYzNtWnpkMmpaRVlvSTBOVU1qc0NMVGVPcU5Zd3VtSE9xZWpVWHNmTnBGVERfNEZESEFDTEtLcGpJVDlPR3QtZTBBenpzdEkzdjlScEFDSFBMelM1TmFMSkxLMkFNSkZIZkFZWlBlOTAxWlI5c09XSjczc0dmdm1RN2FROUVxcENub3ZsSnhvajZHR1kw?oc=5",
+   "source": "Cleveland Clinic",
+   "date": "2026-10-26T14:52:21+00:00",
+   "summary": "Technology Takes Aim at Psychological Distress in Patients with Cancer &nbsp;&nbsp; Cleveland Clinic",
+   "types": []
+  },
+  {
+   "title": "Working During Cancer Treatment: Your FMLA and ADA Rights - Cure Today",
+   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNcDlLdUtZLTY1UFprRXYyN2JpeTJ6V0FBWGlMSzRSaElyVFZwVzVkZld4b2g0UUpwWXlXdGNlbXkxX2w0U1lfRjhMS1NweUNxOWtWb1JPaUpxVVJERjRIWUxwLUxfRmlwM3FUTWQxd3N1aW13RzdwdDhjdTZkMEZMY2FHTHN3UVFBcDhpSFh3SjA?oc=5",
+   "source": "Cure Today",
+   "date": "2026-10-26T13:44:10+00:00",
+   "summary": "Working During Cancer Treatment: Your FMLA and ADA Rights &nbsp;&nbsp; Cure Today",
+   "types": []
+  },
+  {
+   "title": "Adding abiraterone to ADT and docetaxel improves survival in metastatic prostate cancer",
+   "url": "https://medicalxpress.com/news/2026-10-adding-abiraterone-adt-docetaxel-survival.html",
+   "source": "Medical Xpress",
+   "date": "2026-10-26T13:40:01+00:00",
+   "summary": "Adding abiraterone to standard treatment provides a lasting survival benefit for men whose prostate cancer has already spread at diagnosis, reinforcing the value of early treatment intensification. The findings come from almost eight years of follow-up in the academically led phase 3 PEACE-1 trial p",
    "types": [
     "prostate"
    ]
   },
   {
-   "title": "Diagnostic test could help doctors refine prostate cancer treatment",
-   "url": "https://medicalxpress.com/news/2026-10-diagnostic-doctors-refine-prostate-cancer.html",
+   "title": "Rahway's Roosevelt Elementary School Unites for Kindness and Cancer Research on Pink Shirt Day - TAPinto",
+   "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxNN3d3VUNJZHM1eVAxaEQ4Z1hudDd3V1dwczZhYlZMZ25teUlEWF9HN19nVFQ2c2hoaWlsQnFGbVhkQkd2TjVZX2lSVEV6LTloV1FnVUVOYmtvbjhfUWF0MWRWS2x2VzAwdjA2RkxEOVNvMXlmSHUzTG0tVTk3bE92Yk52TFM2bnJteXFNcnhVblpveVhtZ1VZc09wUXpHSXVGOTFSNnhHSGNMQVhXZWthSTNreDVlNWFPOUd4akpiMzR5OEptMmxUbDhBT2pSQjRsUHdnZ0pEX2xKZFBOMTRaNkJ1RnVWelBLb0dOalZnNEI?oc=5",
+   "source": "TAPinto",
+   "date": "2026-10-26T13:23:17+00:00",
+   "summary": "Rahway's Roosevelt Elementary School Unites for Kindness and Cancer Research on Pink Shirt Day &nbsp;&nbsp; TAPinto",
+   "types": []
+  },
+  {
+   "title": "Omega-3 EPA linked to longer survival after surgery for colorectal cancer liver metastases",
+   "url": "https://medicalxpress.com/news/2026-10-omega-epa-linked-longer-survival.html",
    "source": "Medical Xpress",
-   "date": "2026-10-24T00:40:01+00:00",
-   "summary": "Prostate cancer is the most common cancer in men—in 2013, it affected more than 1 million men across the world. The cancer does not behave the same way in every patient, and doctors have long faced a difficult balancing act between identifying patients who will benefit from more intensive treatment ",
+   "date": "2026-10-26T13:20:28+00:00",
+   "summary": "Patients assigned to receive high-dose eicosapentaenoic acid (EPA), an omega-3 fatty acid, before and after surgery for colorectal cancer liver metastases had longer overall survival than those assigned to receive placebo, according to results of the phase 3 EMT2 trial presented at the ESMO Congress",
    "types": [
-    "prostate"
+    "colorectal"
    ]
   },
   {
-   "title": "Reprogramming tumor microenvironment could improve prospects for treatment of pancreatic cancer",
-   "url": "https://medicalxpress.com/news/2026-10-reprogramming-tumor-microenvironment-prospects-treatment.html",
-   "source": "Medical Xpress",
-   "date": "2026-10-23T23:40:01+00:00",
-   "summary": "Pancreatic cancer is one of the most aggressive and difficult-to-treat cancers. One reason for its resistance to therapy is the dense tissue surrounding the tumor that acts as a protective barrier and suppresses the immune response. It is a complex tissue made of supporting cells, blood vessels and ",
-   "types": [
-    "pancreatic"
-   ]
-  },
-  {
-   "title": "Standard kidney function tests underestimate chronic kidney disease in people with cancer",
-   "url": "https://medicalxpress.com/news/2026-10-standard-kidney-function-underestimate-chronic.html",
-   "source": "Medical Xpress",
-   "date": "2026-10-23T22:30:01+00:00",
-   "summary": "New research indicates that commonly used measures of kidney function underestimate the prevalence of chronic kidney disease (CKD) in patients with cancer. The findings will be presented at ASN Kidney Week 2026, Oct. 22–25.",
-   "types": []
-  },
-  {
-   "title": "Melanoma vaccine reduces death or cancer recurrence by 42%",
-   "url": "https://medicalxpress.com/news/2026-10-melanoma-vaccine-death-cancer-recurrence.html",
-   "source": "Medical Xpress",
-   "date": "2026-10-23T22:00:02+00:00",
-   "summary": "In a world-first international trial, adding intismeran, a type of personalized therapeutic cancer vaccine made from each patient's own tumor, to pembrolizumab immunotherapy after surgery for high-risk melanoma reduced the risk of recurrence or death by 42%.",
-   "types": [
-    "melanoma"
-   ]
-  },
-  {
-   "title": "Microbiome-based treatment may offer a different approach - The Cancer Letter",
-   "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFA1VXhQRzhLOGVMWTlfMXhXZXFGVlRJWjRSMFRKTXZIekJlVDRHSUF3NWdJR2ZudG9uRy0xTGZSbElxVlc5TF94dUVocmdDYXRIMW1ROHRmSDQwTzlfRGdWWHg0MWQ?oc=5",
-   "source": "The Cancer Letter",
-   "date": "2026-10-23T21:55:26+00:00",
-   "summary": "Microbiome-based treatment may offer a different approach &nbsp;&nbsp; The Cancer Letter",
-   "types": []
-  },
-  {
-   "title": "The $8.4B bond makes a long-term investment in a field with life-saving power - The Cancer Letter",
-   "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1lQkJZc19QN2dQcW9XMzZCSUFsU2FJTXNFaVZTMUxWQjBlMHUybXVLRHlVcXQ3UXBRc196WjZoZm1fR3BSU0hCUzdCSkpRYmxJbWctU0d6VUlRRkdp?oc=5",
-   "source": "The Cancer Letter",
-   "date": "2026-10-23T21:40:20+00:00",
-   "summary": "The $8.4B bond makes a long-term investment in a field with life-saving power &nbsp;&nbsp; The Cancer Letter",
-   "types": []
-  },
-  {
-   "title": "Online resources and coaching helped people seek genetic testing for cancer",
-   "url": "https://medicalxpress.com/news/2026-10-online-resources-people-genetic-cancer.html",
-   "source": "Medical Xpress",
-   "date": "2026-10-23T20:20:02+00:00",
-   "summary": "About 10% of cancers are linked to an inherited genetic variant, but as few as one in 15 cancer patients eligible for genetic testing complete it.",
-   "types": []
-  },
-  {
-   "title": "Dr Naughton on De-escalating Breast Cancer Treatment - Targeted Oncology",
-   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPUHFucWc0NEhiN1Q3Q3l3NURfaGF0NWJMM0RfY3RCNnNUNjc5R1ZadXlwOURZZXBiX2gzc2xMTk9vcUtJcXNDbzJqSzFhcll2dktKZGt6aS1FczBfZ1BrR0RVbGZsZ3QyMXNXSVFMTDRGcE9IOGVyOS1FS1QzYjlVcHpZb0lkT3J1cG9WQXo5WTJwcHFROUJvaE5kTThNQQ?oc=5",
-   "source": "Targeted Oncology",
-   "date": "2026-10-23T20:16:45+00:00",
-   "summary": "Dr Naughton on De-escalating Breast Cancer Treatment &nbsp;&nbsp; Targeted Oncology",
+   "title": "Intuition pushed mom to keep checking for breast cancer - Michigan Medicine",
+   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNczVjNlRmS0NiZ0gxcUVRZXJwOFBmbkRoSENUbnVyLXA4MGg3R2NDWjlzeVE0cHlFNkhwdV9ZRTB3bkc4NVRweW8yYnRhQ2JYRmtmazNfVEJkWEdzQ3YwYS1OQTdic3NCeENyRml2RWNFUjU5UmF4M3U3WUtzQ0JFd2hfYjlEaFJmaU83UFN5RlYxOXA2OU1n?oc=5",
+   "source": "Michigan Medicine",
+   "date": "2026-10-26T12:00:00+00:00",
+   "summary": "Intuition pushed mom to keep checking for breast cancer &nbsp;&nbsp; Michigan Medicine",
    "types": [
     "breast"
    ]
   },
   {
-   "title": "Case CCC Receives Support from Children’s Tumor Foundation and Gateway for Cancer Research for Rare Cancer Treatment Trial - Case Western Reserve University",
-   "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5mUlNxSE1NR0loVDJubDNCcGhjSVFkdUk4eHkxSVNsNGg1UHI0VW1fNW9YVW9IWm50N2IyM2RQQTJCZU9FdTlPRGplanRJaW5wU29vMU5R?oc=5",
-   "source": "Case Western Reserve University",
-   "date": "2026-10-23T19:51:44+00:00",
-   "summary": "Case CCC Receives Support from Children’s Tumor Foundation and Gateway for Cancer Research for Rare Cancer Treatment Trial &nbsp;&nbsp; Case Western Reserve University",
-   "types": [
-    "childhood"
-   ]
-  },
-  {
-   "title": "Study identifies potential new treatment targets for the most common type of bowel cancer - Medical Xpress",
-   "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOMmZ2RjBJRF8yVTB5SFVzRU9PdTVMWjVuVkZDcGNqTUhQVF9oRjJoR0l2MnNGQWdUd0pzVnltUi1KNHpjb2FvdkxmcS1XSlJfUG5QbTl3aDFuQk16dWFqck5aQU1aM3FmalBTb01ROFFTVFpKNkxlcDdRVXM0N2RRcWYtaGU5R2ZTLXJz?oc=5",
-   "source": "Medical Xpress",
-   "date": "2026-10-23T19:20:08+00:00",
-   "summary": "Study identifies potential new treatment targets for the most common type of bowel cancer &nbsp;&nbsp; Medical Xpress",
-   "types": [
-    "colorectal"
-   ]
-  },
-  {
-   "title": "Study identifies potential new treatment targets for the most common type of bowel cancer",
-   "url": "https://medicalxpress.com/news/2026-10-potential-treatment-common-bowel-cancer.html",
-   "source": "Medical Xpress",
-   "date": "2026-10-23T19:20:08+00:00",
-   "summary": "Research published today identifies potential new ways to treat the most common type of colorectal cancer in Ireland. The study, conducted by an international research team led by RCSI University of Medicine and Health Sciences and The Institute of Cancer Research, London, provides a roadmap for rep",
-   "types": [
-    "colorectal"
-   ]
-  },
-  {
-   "title": "A precision T-cell therapy stalls treatment-resistant cancers in clinical trial",
-   "url": "https://medicalxpress.com/news/2026-10-precision-cell-therapy-stalls-treatment.html",
-   "source": "Medical Xpress",
-   "date": "2026-10-23T19:00:11+00:00",
-   "summary": "Early results of the first clinical trial to evaluate the drug invikafusp alfa (invika) in humans indicate that the treatment may be capable of managing cancers that have rebuffed most other interventions, including standard immunotherapy.",
-   "types": []
-  },
-  {
-   "title": "Personalized mRNA vaccine for melanoma cut risk of cancer’s return in late-stage trial - NBC News",
-   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOZGd4TmxtWGtzQTdiUlllRjVaWUFlNmpESnN4bW80RXJudFhlb1dMbFlmTTNSVVBXWlcwS0xqaDlIcGtwYThmOGx0azItWlRIQ3gzU2ZtOE02eUNKQTJKR25YUTVMUE94NW14RFI5WGQtbEpOaU5BYzl4ZENFRzZrX0JrTGZQQUpacl9XelFUWDIxNU9GbmFGWnhhRkRjTHZSNUFON3lEY2U3YXhoXzlQRExfdl9jYk81bWc?oc=5",
-   "source": "NBC News",
-   "date": "2026-10-23T18:42:32+00:00",
-   "summary": "Personalized mRNA vaccine for melanoma cut risk of cancer’s return in late-stage trial &nbsp;&nbsp; NBC News",
-   "types": [
-    "melanoma"
-   ]
-  },
-  {
-   "title": "ESMO: New analysis reinforces survival benefits of targeted therapy for advanced pancreatic cancer",
-   "url": "https://medicalxpress.com/news/2026-10-esmo-analysis-survival-benefits-therapy.html",
-   "source": "Medical Xpress",
-   "date": "2026-10-23T18:00:31+00:00",
-   "summary": "A new analysis of a phase 3 clinical trial found that the targeted drug daraxonrasib improved survival compared with standard chemotherapy across multiple groups of patients with advanced pancreatic cancer, including those with different RAS mutations and those without an identified RAS mutation.",
+   "title": "Can-Fite Presents Final Positive Data from Phase IIa Pancreatic Cancer Study of Namodenoson at ESMO 2026 - Yahoo Finance",
+   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQMFFCRjQwdk5aalB1ajRCdkVvZzJnOVdnZ19mMTRjekQ0cDNJTnN2NVFsejBya0RpQ3RnYkgwQ3A3UGZYYVVPR3pwVWxtNVl1T3B5UlhQNTRaTHVYcGdOZUlnX1ZjU0xaUVU1T1Bva2RKUWpFUXhwLUhBSjNTUlUxT0RCNm5wLUpyV0FkdmVUeXVyQi02V0pXeGJR?oc=5",
+   "source": "Yahoo Finance",
+   "date": "2026-10-26T11:00:00+00:00",
+   "summary": "Can-Fite Presents Final Positive Data from Phase IIa Pancreatic Cancer Study of Namodenoson at ESMO 2026 &nbsp;&nbsp; Yahoo Finance",
    "types": [
     "pancreatic"
    ]
-  },
-  {
-   "title": "Six-gene scoring system could help predict leukemia survival",
-   "url": "https://medicalxpress.com/news/2026-10-gene-scoring-leukemia-survival.html",
-   "source": "Medical Xpress",
-   "date": "2026-10-23T18:00:22+00:00",
-   "summary": "The activity of six different genes can help determine survival in patients with acute myeloid leukemia (AML), according to a study published in Science Advances. The findings by researchers at the Center for Genomic Regulation (CRG) in Barcelona lay the foundations for new ways of predicting how pa",
-   "types": [
-    "leukemia"
-   ]
-  },
-  {
-   "title": "How cancers evade chemotherapy by entering a 'zombie-like state'",
-   "url": "https://medicalxpress.com/news/2026-10-cancers-evade-chemotherapy-zombie-state.html",
-   "source": "Medical Xpress",
-   "date": "2026-10-23T18:00:05+00:00",
-   "summary": "Scientists at Trinity College Dublin have made a breakthrough in understanding how cancer cells can evade the cell-killing effects of chemotherapy and enter a \"zombie-like state,\" called premature senescence, that can attract the wound-healing properties of the immune system.",
-   "types": []
-  },
-  {
-   "title": "How Israeli Researchers Are Using AI To Transform Cancer Treatment and Diagnoses - Baltimore Jewish Times",
-   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOSkloQy1XeVhPS0xkMUpQdEw5a2FhSnBwZ1E5R3J5SnFXbUNqejFGckZmaEZrb1dhT0hHdHlVLWdVUjRvUnJwMC1wdFdYelBvcVNpYUxFLXhrWFRibk0waGJZMEh2TEdXZU8ySU4wMmRwdUxqcHlMSU5vSWFWS2s2aEI4WXpnQ2tza3pNVXdvXzF1RmlrdlNlMFFDa0JyY2Jhd3M2ckxQSmFjdTZlclE?oc=5",
-   "source": "Baltimore Jewish Times",
-   "date": "2026-10-23T17:56:30+00:00",
-   "summary": "How Israeli Researchers Are Using AI To Transform Cancer Treatment and Diagnoses &nbsp;&nbsp; Baltimore Jewish Times",
-   "types": []
-  },
-  {
-   "title": "Cancer cells' own carbon monoxide fuels anticancer drug production in lab tests",
-   "url": "https://medicalxpress.com/news/2026-10-cancer-cells-carbon-monoxide-fuels.html",
-   "source": "Medical Xpress",
-   "date": "2026-10-23T17:40:08+00:00",
-   "summary": "What if we could use a cancer's own byproduct to make drugs that destroy tumor cells from the inside? That is what Katsunori Tanaka and his team have done at the RIKEN Pioneering Research Institute (PRI) in Japan.",
-   "types": []
-  },
-  {
-   "title": "Real-world results confirm benefit of antigen therapy for prostate cancer",
-   "url": "https://medicalxpress.com/news/2026-10-real-world-results-benefit-antigen.html",
-   "source": "Medical Xpress",
-   "date": "2026-10-23T17:20:06+00:00",
-   "summary": "Prostate-specific membrane antigen (PSMA)-targeted radiopharmaceutical therapy is safe and effective for patients with metastatic castration-resistant prostate cancer (mCRPC) in routine clinical practice, consistent with outcomes from the VISION trial. An analysis of outcomes from a French early-acc",
-   "types": [
-    "prostate"
-   ]
-  },
-  {
-   "title": "Gulf Coast Bike Trek raises money for lung cancer research - Bay News 9",
-   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQSEhOMVE4N0hUTkJFQWl0cndRZFFaY0pGSi1DSHJ2TWZXbDhYVFluVHFmU2psdllIa3gtSE5QSVdQY1BYak1ONlJqYTFaUDlFa3pIVERaLWNhNmVPQmYwZkNMWlphdjY2TmpxS0dYSDNqZGI1MmVzZXlGUU1FYkdxaUgzc001aXU2NDktNFpjT2xjUjVaNmR6U3hTbmtWUEhOUDd0OHhvQQ?oc=5",
-   "source": "Bay News 9",
-   "date": "2026-10-23T16:39:00+00:00",
-   "summary": "Gulf Coast Bike Trek raises money for lung cancer research &nbsp;&nbsp; Bay News 9",
-   "types": [
-    "lung"
-   ]
-  },
-  {
-   "title": "UAMS Winthrop P. Rockefeller Cancer Institute Unveils State’s First Lung Screening Fleet - UAMS News",
-   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPTjMycTQtTUt6a2otZndfeWlTUWhWcE5WVU1LWUZ6YkxJaHJYaFc5djdLNEtCT1VaamtmNVNKa2R1Y0pNWFFvdkowS0sxdF8wVXdsd0hQNjlhV0lGZjlRNkk0eFBaVzNWMExCLVlJR19ncnFCUnBBd1BaODNXSUZiaGJUSXBNR1RYVXQxZDV3cDYtYjFYeHA4RW1wYU4yRXluTEJzNUM2d1dfQm0xUnozOWI5SlcxMWFRVGQzVQ?oc=5",
-   "source": "UAMS News",
-   "date": "2026-10-23T16:37:00+00:00",
-   "summary": "UAMS Winthrop P. Rockefeller Cancer Institute Unveils State’s First Lung Screening Fleet &nbsp;&nbsp; UAMS News",
-   "types": []
-  },
-  {
-   "title": "Investigational vaccine generates immune response to KRAS mutations in pancreatic cancer study - Mayo Clinic News Network",
-   "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPYmlaa1JBWFZhMG1xSTlHQ1VqbnRKSnVBYU1kUDI3c3otR0xrY2xYZ3l2RU9JWDZKeHg4SUI4SVFIdkdNYnRGOWVFWHNyUDJ0SDNjNE8zZkNvNno2X3NyZVR1UUgzUlVxOUJ6SHFIUzliQi1WUEhCdkw4TFFHLWRZZGpMV2ZzdjN0QVUzc1JuQ0V0Q2lKM1A0X1htSkZTbWJsS21ERHFtVkUyWTI1RE03dkI2UVQ5ZlJLZVYxbExXQThURTVwT2U0c1JkZUdsWjhqQ2hQaDZtdEU?oc=5",
-   "source": "Mayo Clinic News Network",
-   "date": "2026-10-23T16:36:16+00:00",
-   "summary": "Investigational vaccine generates immune response to KRAS mutations in pancreatic cancer study &nbsp;&nbsp; Mayo Clinic News Network",
-   "types": [
-    "lung",
-    "pancreatic"
-   ]
-  },
-  {
-   "title": "A precision T-cell therapy stalls treatment-resistant cancers in clinical trial - National Institutes of Health (NIH) | (.gov)",
-   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPZV82ZmlFUXNCUHc3eUJGR24wc25GOTJESmQ3TUd6NzZsMzBETkM0Vk5DOHpqZTc5UHVLQ1BPSnkxakVBUllYV2RqUHRFTFRVbVJpZXFrV2FPRE0tdmY0c1A2YXFGNG1SenFtcjRTTVVkUkpBSjEtSm9fcFR0MW5nTTlGaEE4dS1GR0haVnVKZUJldnk5VjlOdnZCZzh3Q0dLWjBCWHRJNG1aMGZJRHVUa1pUMWlrbWR1d3dPdg?oc=5",
-   "source": "National Institutes of Health (NIH) | (.gov)",
-   "date": "2026-10-23T16:30:50+00:00",
-   "summary": "A precision T-cell therapy stalls treatment-resistant cancers in clinical trial &nbsp;&nbsp; National Institutes of Health (NIH) | (.gov)",
-   "types": []
-  },
-  {
-   "title": "Atlantic Health gets record $5M gift for cancer research - NJBIZ",
-   "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBNWnNrT19RNXM3MjFHTmEzd1o2MTB0cTdpLWx5czNPekRxNk5JQlVScVBSQjFZNWVSZXRfdkdxMEU1UmtsTlBrXzc2djJMX1QzRkcwY0lYTS1KQ1M0RzlDWXhCekU0dw?oc=5",
-   "source": "NJBIZ",
-   "date": "2026-10-23T16:23:51+00:00",
-   "summary": "Atlantic Health gets record $5M gift for cancer research &nbsp;&nbsp; NJBIZ",
-   "types": []
-  },
-  {
-   "title": "Overlooked 'off switch' in lung tumors may explain why immunotherapy doesn't work for everyone",
-   "url": "https://medicalxpress.com/news/2026-10-overlooked-lung-tumors-immunotherapy-doesnt.html",
-   "source": "Medical Xpress",
-   "date": "2026-10-23T16:00:04+00:00",
-   "summary": "An overlooked mechanism in lung cancer tumors may help explain why most patients don't respond to immunotherapy, according to new research led by Olga Anczuków, professor at The Jackson Laboratory for Genomic Medicine in Farmington, Connecticut, and deputy director of the NCI-designated Jackson Labo",
-   "types": [
-    "lung"
-   ]
-  },
-  {
-   "title": "AI breast cancer survival model could improve accuracy and personalize care",
-   "url": "https://medicalxpress.com/news/2026-10-ai-breast-cancer-survival-accuracy.html",
-   "source": "Medical Xpress",
-   "date": "2026-10-23T14:40:01+00:00",
-   "summary": "New University of Cincinnati Cancer Center research published in the Journal of Statistical Theory and Practice describes the potential for a more robust and accurate breast cancer survival model that combines statistical methods with a deep learning framework. The goal is to give physicians a bette",
-   "types": [
-    "breast"
-   ]
-  },
-  {
-   "title": "Study identifies potential new ways to treat the most common type of bowel cancer - News-Medical",
-   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPTV9wYURIcW1HbVZzSWdJWmp5cU8tY0ZGYkM2cy05RzlfOWFaNEJZRWNUa1B2ZmRhRk9vcUQzSlFvbm0zbmlUNU5PeXBlVkdtWUpWQTVRbDRXcklfM1BYUHJCQU1WcUpWaENERWVJRC13QU9zZXRoMkI1cFNKNWVhSzJzc0JrcU12VVF6ZTVxRGF6VVFleVhqQmNaa2RjbHJFMk82bzV0SnhZSndGT1BWaVd0U0dza1BEWXREd3p3ZG9OZDRWcmtraQ?oc=5",
-   "source": "News-Medical",
-   "date": "2026-10-23T14:26:00+00:00",
-   "summary": "Study identifies potential new ways to treat the most common type of bowel cancer &nbsp;&nbsp; News-Medical",
-   "types": [
-    "colorectal"
-   ]
-  },
-  {
-   "title": "AI tool may support dermatologists in assessing skin lesions for cancer risk",
-   "url": "https://medicalxpress.com/news/2026-10-ai-tool-dermatologists-skin-lesions.html",
-   "source": "Medical Xpress",
-   "date": "2026-10-23T14:20:05+00:00",
-   "summary": "Mayo Clinic researchers have found that an artificial intelligence (AI) tool may provide dermatologists with additional information to help assess whether skin lesions are cancerous and inform their clinical decisions about whether to biopsy or monitor them, according to a study published in Mayo Cl",
-   "types": []
-  },
-  {
-   "title": "Springdale teen raising money for cancer research - KNWA FOX24",
-   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPRUo4OF9CZE54V0tlRGt0a21CaWd2aXZVMV80YjZsQkVBaUZyNURqckZuTkRoVzUxNWY2ZkZtY0pvcmU0eS1PRzZoZlVWWHNMeFViS29QbzVpOWY3VHN4OFhGaDZPSGFfeGlfRklHRElUUkEtWlI3UU9XZW1IeXVMc0wtSnI1VXlwTFVnVVdHcVZwdTBtZ3ppVDRn0gGfAUFVX3lxTE0zTlNSZ2dScnJQcC14aXJCNWZDMUk5STFMQk9nczZoVmswczd4UmRLTno4bTVteVE4UTNTRkhsZ3JvMm1CUXk3VTZkRHNWMjBpUHlZWjZ1YzdHTDJDQzNWY3ljOVh6alRSOThCQk1SRGxYZkhnU2dwdlM0VWR0eTkwZFFfS0g4Tk92OWh3Z0p2UnR4SGV3amZERkhGUndwcw?oc=5",
-   "source": "KNWA FOX24",
-   "date": "2026-10-23T13:41:00+00:00",
-   "summary": "Springdale teen raising money for cancer research &nbsp;&nbsp; KNWA FOX24",
-   "types": []
-  },
-  {
-   "title": "Updated cancer treatment framework offers new guidance on actionability and resistance biomarkers",
-   "url": "https://medicalxpress.com/news/2026-10-cancer-treatment-framework-guidance-actionability.html",
-   "source": "Medical Xpress",
-   "date": "2026-10-23T11:50:01+00:00",
-   "summary": "ESMO has published version 2 of the ESMO Scale for Clinical Actionability of molecular Targets (ESCAT), a major update to the internationally recognized precision oncology framework that helps oncologists assess the clinical relevance of molecular alterations and match patients with the most appropr",
-   "types": []
-  },
-  {
-   "title": "ESMO 2026: Radiotherapy controls lung cancer for longer, vaccine stops melanoma returning and success for targeted drugs - Cancer Research UK - Cancer News",
-   "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE0tbVZpMVMtdlluOWFjMVNkWWhncVdCVE9UXzVPU0FyQWdmWFRNME5TZjVzNHBpVzRDQW5NMnhFM2pLb2JwbVZGQnpsbkl5THlWRkJHZVBfcnhDM05YS1B3VGs4clV2bm95Rktsc3pPdGY?oc=5",
-   "source": "Cancer Research UK - Cancer News",
-   "date": "2026-10-23T11:40:56+00:00",
-   "summary": "ESMO 2026: Radiotherapy controls lung cancer for longer, vaccine stops melanoma returning and success for targeted drugs &nbsp;&nbsp; Cancer Research UK - Cancer News",
-   "types": [
-    "lung",
-    "melanoma"
-   ]
-  },
-  {
-   "title": "How Do We Tackle the Biggest Challenges Facing Oncology? - Technology Networks",
-   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQc000aHo0ZUcxQmVHRDBlYUlsSHVwZUdPd25KeWRmaDdwWldyVGVaQzcxd3pwOFgtOGhtZTZfSk5xVVhTMXNCYVRwcktCTllueHdNUXBhMGJucTZRdy10Yk42d2VTdlRXLS1lY1d1WFczY3dZNFdoUkEtcHVSUmFmQ3cxNVVhcjMtRHk2Qy1sSWptbWtHNEVDR0NFS0NsQ2FZY3ZKdHhUWVFud1NHZlRCWlBHQWpHUQ?oc=5",
-   "source": "Technology Networks",
-   "date": "2026-10-23T11:15:51+00:00",
-   "summary": "How Do We Tackle the Biggest Challenges Facing Oncology? &nbsp;&nbsp; Technology Networks",
-   "types": []
-  },
-  {
-   "title": "First-of-Its-Kind Vaccine Ushers in New Hope for Cancer Patients - The New York Times",
-   "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1jczI3bThhd0tzY1p0ZzlZQ2ViR2Q3V0dFaVNSa0hYQWRtNG8xLXItWW1tZFBZN3Q1WlRoSXhuVjVsMVlmUXVpLWM2c2hJVUlhQVRQREE1UlR1VnU0WWJZa3ExVDk2dTl4WnUwVEVaSVVHYzNhMTVqUFJlby1EMjA?oc=5",
-   "source": "The New York Times",
-   "date": "2026-10-23T09:00:39+00:00",
-   "summary": "First-of-Its-Kind Vaccine Ushers in New Hope for Cancer Patients &nbsp;&nbsp; The New York Times",
-   "types": []
-  },
-  {
-   "title": "Moffitt opens Pasco research facility designed to accelerate development of cancer treatments - WUSF",
-   "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOTEpIdHNrd1lCSFlPMFF3bWthMHBMQ0FLYTBBNWdDV0puSGxFRENONnppMk1ZbWdfSXZ6XzRKWm9xN3U3OGhPalJyYUpZNDFjdHAzaEtKa2p2OTl4UldIYnV5eUZJanAyNkRfamhaVnphYkh4a21Wdlh5LWxUQ2tleWxGZEFMbVUwdTFSeHBvMjczR2dCdjNyOXZBTGxHWF9sU1YxbGp2NW16YjktQnBSUGtjdTJ0UnFpQUxObFVuYlBqMEgyc2NsWjln?oc=5",
-   "source": "WUSF",
-   "date": "2026-10-23T09:00:00+00:00",
-   "summary": "Moffitt opens Pasco research facility designed to accelerate development of cancer treatments &nbsp;&nbsp; WUSF",
-   "types": []
-  },
-  {
-   "title": "Flexx Fitness Hawaii supporting local cancer research - Hawaii News Now",
-   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQams4WU9TVWRxNWZmdkhEcy1hSGFXVkd2YlJrenlWeDBtRG91YlE4bXlrWUlBQjk3cXBKRHFBRXE2dlY4cU5Ma2xweHBZcTFXR2xfNnR0MHhNVUlHUHlQaDRNWnp3LV93QjJJR0U5N1VvOTlYZ2kxYzZMZjIyNW9zeUg4QkdYbjhMeXM3c24tU3pkcjIwX2hmTWY2eUItQV9oVTMw?oc=5",
-   "source": "Hawaii News Now",
-   "date": "2026-10-23T06:34:00+00:00",
-   "summary": "Flexx Fitness Hawaii supporting local cancer research &nbsp;&nbsp; Hawaii News Now",
-   "types": []
-  },
-  {
-   "title": "Researchers harness cancer cells' carbon monoxide to produce anticancer drug - News-Medical",
-   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNZldVaEoyNFNQRVVyRGwxVnRPd19mdVVjLVRpSjk5YzQxMzVtdGhYMGx3NWlBYzlvZVR5U2l1MmdiSE5xTFluZ0J1MTJBaXVSN2dRbFlZLVk2WDdDX01xLTNmREl2SEhNUW5tWFk5cWdzbDh3eFlhWWlPbGY0Z0ppdF9zVy01cUplV25wRnFzX255a0ZTTThHS0ZqZ1FmQXVoUkZSRjhIVHpqbWVzRnpPckZqLVhBMGxGNTh5LWpReE8?oc=5",
-   "source": "News-Medical",
-   "date": "2026-10-23T05:58:00+00:00",
-   "summary": "Researchers harness cancer cells' carbon monoxide to produce anticancer drug &nbsp;&nbsp; News-Medical",
-   "types": []
   }
  ]
 }
