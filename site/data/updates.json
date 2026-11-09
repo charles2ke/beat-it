@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-02T15:10:59Z",
+ "generatedAt": "2026-11-09T15:40:27Z",
  "sources": {
   "research": "PubMed (NCBI)",
   "trials": "ClinicalTrials.gov",
@@ -14,113 +14,120 @@
   "breast": {
    "research": [
     {
-     "title": "Calcium peroxide-embedded alginate hydrogels potentiate microwave ablation by synergizing with subtherapeutic heating to induce immunogenic necroptosis.",
-     "url": "https://pubmed.ncbi.nlm.nih.gov/42858720/",
+     "title": "Cascade DNA walker-driven photo-controlled CRISPR/Cas12a nanorobot enabling ultrasensitive one-pot detection of dual miRNAs in triple-negative breast cancer.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/42933160/",
+     "journal": "Talanta",
+     "date": "2027 Mar 1",
+     "pmid": "42933160"
+    },
+    {
+     "title": "Thermosensitive and tumor-targeted asparaginase fusion protein enables metabolic-immunotherapy for solid tumors.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/42901134/",
      "journal": "Biomaterials",
      "date": "2027 Mar",
-     "pmid": "42858720"
+     "pmid": "42901134"
     },
     {
-     "title": "A logic-gated DNA nanocascade for dual-RNA imaging in a triple-negative breast cancer cell model.",
-     "url": "https://pubmed.ncbi.nlm.nih.gov/42892232/",
-     "journal": "Biosensors & bioelectronics",
-     "date": "2027 Jan 15",
-     "pmid": "42892232"
+     "title": "Molecularly nanoengineered dendritic cells for tumor-specific antigen capture and sono-activatable cytokine-mediated immunotherapy.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/42896417/",
+     "journal": "Biomaterials",
+     "date": "2027 Mar",
+     "pmid": "42896417"
     },
     {
-     "title": "Rationally optimized split crRNA-based CRISPR/Cas12a platform for amplification-free miRNA detection.",
-     "url": "https://pubmed.ncbi.nlm.nih.gov/42858625/",
-     "journal": "Biosensors & bioelectronics",
-     "date": "2027 Jan 15",
-     "pmid": "42858625"
+     "title": "Photoresponsive Silicon Phthalocyanine with Intracellular Self-Regulated Aggregation Drives ER-Lysosome-Lipid Droplets Redistribution for Enhanced Photodynamic Therapy.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/42945694/",
+     "journal": "Biomaterials advances",
+     "date": "2027 Feb",
+     "pmid": "42945694"
     },
     {
-     "title": "Temperature-responsive PDDNFs@QDs integrating simplified isolation for efficient tumor-derived small extracellular vesicles analysis enables breast cancer diagnosis and subtyping.",
-     "url": "https://pubmed.ncbi.nlm.nih.gov/42854434/",
-     "journal": "Biosensors & bioelectronics",
-     "date": "2027 Jan 15",
-     "pmid": "42854434"
+     "title": "Stiffness and viscoelasticity of adipose tissue decellularized extracellular matrix hydrogels influence proliferation, growth pattern, migration and invasion of breast cancer cells.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/42913156/",
+     "journal": "Biomaterials advances",
+     "date": "2027 Feb",
+     "pmid": "42913156"
     },
     {
-     "title": "A smart multi-activatable DNAzyme nanoamplifier for spatiotemporal imaging of multiple piRNAs and on-demand gene therapy.",
-     "url": "https://pubmed.ncbi.nlm.nih.gov/42854433/",
-     "journal": "Biosensors & bioelectronics",
-     "date": "2027 Jan 15",
-     "pmid": "42854433"
-    },
-    {
-     "title": "Ligation-assisted DNA strand displacements and CRISPR/Cas14 cleavage for ultrasensitive detection of PIWI-interacting RNA.",
-     "url": "https://pubmed.ncbi.nlm.nih.gov/42843104/",
-     "journal": "Biosensors & bioelectronics",
-     "date": "2027 Jan 15",
-     "pmid": "42843104"
+     "title": "Corrigendum to \"Transdermal delivery of brucine-encapsulated liposomes significantly enhances anti-tumor outcomes in treating triple-negative breast cancer\" [Biomater. Adv. 153 (2023) 213566].",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/42881042/",
+     "journal": "Biomaterials advances",
+     "date": "2027 Feb",
+     "pmid": "42881042"
     }
    ],
    "trials": [
-    {
-     "title": "A Clinical Study on Prophylactic RespOnse To hEtrombopag for Secondary Prevention in Anti-Cancer Therapy-induced Thrombocytopeniae",
-     "url": "https://clinicaltrials.gov/study/NCT07647029",
-     "nctId": "NCT07647029",
-     "status": "Recruiting",
-     "phase": "Phase 2",
-     "updated": "2026-11-02"
-    },
-    {
-     "title": "Audit of Targeted Sentinel Node Biopsy (TSNB) in Patients With Limited Nodal Disease Undergoing Primary Surgery",
-     "url": "https://clinicaltrials.gov/study/NCT07085442",
-     "nctId": "NCT07085442",
-     "status": "Recruiting",
-     "phase": "",
-     "updated": "2026-11-02"
-    },
-    {
-     "title": "A Vaccine (STEMVAC) With Standard Endocrine-Based Therapy or Chemotherapy for the Treatment of Metastatic Hormone Receptor Positive, HER2 Negative Breast Cancer",
-     "url": "https://clinicaltrials.gov/study/NCT07112053",
-     "nctId": "NCT07112053",
-     "status": "Recruiting",
-     "phase": "Phase 2",
-     "updated": "2026-11-02"
-    },
     {
      "title": "Collection of CSF Samples From Participants With Metastatic Triple Negative Breast Cancer (TNBC) and HER2+ Breast Cancer With no Prior History Nor Active Radiographically Detectable Brain Metastases",
      "url": "https://clinicaltrials.gov/study/NCT07619534",
      "nctId": "NCT07619534",
      "status": "Recruiting",
      "phase": "",
-     "updated": "2026-11-02"
+     "updated": "2026-11-09"
     },
     {
-     "title": "Assessing Benefits and Harms of Cannabis/Cannabinoid Use Among Cancer Patients Treated in Community Oncology Clinics",
-     "url": "https://clinicaltrials.gov/study/NCT06418204",
-     "nctId": "NCT06418204",
+     "title": "Stereotactic Body Radiation Therapy and FES PET/CT Imaging for the Treatment of Oligoprogressive Estrogen Receptor Positive Metastatic Breast Cancer",
+     "url": "https://clinicaltrials.gov/study/NCT06260033",
+     "nctId": "NCT06260033",
      "status": "Recruiting",
-     "phase": "",
-     "updated": "2026-11-02"
+     "phase": "Phase 2",
+     "updated": "2026-11-09"
+    },
+    {
+     "title": "START: Safety and Anti-Tumor Activity of PeptiCRAd-1 in Treatment of Cancer",
+     "url": "https://clinicaltrials.gov/study/NCT05492682",
+     "nctId": "NCT05492682",
+     "status": "Recruiting",
+     "phase": "Phase 1",
+     "updated": "2026-11-09"
+    },
+    {
+     "title": "Immunotherapy Using Tumor Infiltrating Lymphocytes for Patients With Metastatic Cancer",
+     "url": "https://clinicaltrials.gov/study/NCT01174121",
+     "nctId": "NCT01174121",
+     "status": "Recruiting",
+     "phase": "Phase 2",
+     "updated": "2026-11-09"
+    },
+    {
+     "title": "A Phase 1/1b Study of PRT13722 in Participants With Advanced HR+/HER2- Breast Cancer",
+     "url": "https://clinicaltrials.gov/study/NCT07905001",
+     "nctId": "NCT07905001",
+     "status": "Recruiting",
+     "phase": "Phase 1",
+     "updated": "2026-11-09"
     }
    ]
   },
   "lung": {
    "research": [
     {
-     "title": "PD-1 expression reprograms tumor-associated macrophages polarization and influences progression and clinical outcomes in lung adenocarcinoma.",
-     "url": "https://pubmed.ncbi.nlm.nih.gov/42838248/",
-     "journal": "Gene",
-     "date": "2027 Jan 5",
-     "pmid": "42838248"
+     "title": "Thermosensitive and tumor-targeted asparaginase fusion protein enables metabolic-immunotherapy for solid tumors.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/42901134/",
+     "journal": "Biomaterials",
+     "date": "2027 Mar",
+     "pmid": "42901134"
     },
     {
-     "title": "Early and late CTCAE and patient-reported outcomes following breast radiotherapy in the REQUITE cohort.",
-     "url": "https://pubmed.ncbi.nlm.nih.gov/42935767/",
-     "journal": "Clinical and translational radiation oncology",
-     "date": "2027 Jan",
-     "pmid": "42935767"
+     "title": "Molecularly nanoengineered dendritic cells for tumor-specific antigen capture and sono-activatable cytokine-mediated immunotherapy.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/42896417/",
+     "journal": "Biomaterials",
+     "date": "2027 Mar",
+     "pmid": "42896417"
     },
     {
-     "title": "Study protocol for the TROG 21.08 VITaL trial: a randomized controlled trial investigating ventilation imaging to improve the quality of life for patients with lung cancer treated with radiation therapy.",
-     "url": "https://pubmed.ncbi.nlm.nih.gov/42910049/",
-     "journal": "Clinical and translational radiation oncology",
+     "title": "Outcomes of Patients with Rare Cancers Treated with Immune Checkpoint Inhibitors with and Without Lung and/or Liver Metastases (NCI/SWOG S1609).",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/42999803/",
+     "journal": "Journal of immunotherapy and precision oncology",
+     "date": "2027 Feb",
+     "pmid": "42999803"
+    },
+    {
+     "title": "Resveratrol induces ferroptosis to repress malignant progression of lung cancer cells.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/42992567/",
+     "journal": "Oncology reports",
      "date": "2027 Jan",
-     "pmid": "42910049"
+     "pmid": "42992567"
     },
     {
      "title": "Local ablative treatment for oligoprogression during immunotherapy in metastatic non-small-cell lung cancer: a systematic review and meta-analysis.",
@@ -130,65 +137,65 @@
      "pmid": "42965526"
     },
     {
-     "title": "Predicting drug-drug interaction and optimal dosing regimens of rivaroxaban combined with ceritinib using physiologically based pharmacokinetic and pharmacodynamic modeling.",
-     "url": "https://pubmed.ncbi.nlm.nih.gov/42849684/",
-     "journal": "European journal of pharmacology",
-     "date": "2026 Dec 10",
-     "pmid": "42849684"
-    },
-    {
-     "title": "Integrated multi-omics, network pharmacology, and machine learning reveal the active constituents and pharmacological mechanism of Fufang E'jiao Jiang against lung cancer-related fatigue.",
-     "url": "https://pubmed.ncbi.nlm.nih.gov/42967798/",
-     "journal": "Analytica chimica acta",
-     "date": "2026 Dec 8",
-     "pmid": "42967798"
+     "title": "Validation of research site mentorship as an approach for increasing study site performance (enrollment).",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/42999659/",
+     "journal": "Contemporary clinical trials communications",
+     "date": "2026 Dec",
+     "pmid": "42999659"
     }
    ],
    "trials": [
     {
-     "title": "A Study Comparing TAK-928 With Docetaxel in Adults With Non-Small Cell Lung Cancer",
-     "url": "https://clinicaltrials.gov/study/NCT07217301",
-     "nctId": "NCT07217301",
+     "title": "A Clinical Study of Gocatamig (MK-6070) and Infinatamab Deruxtecan (MK-2400) in People With Small Cell Lung Cancer (MK-6070-003)",
+     "url": "https://clinicaltrials.gov/study/NCT07227597",
+     "nctId": "NCT07227597",
+     "status": "Recruiting",
+     "phase": "Phase 1, Phase 2",
+     "updated": "2026-11-09"
+    },
+    {
+     "title": "A Study to Compare the Efficacy of Nivolumab and Relatlimab Plus Chemotherapy vs Pembrolizumab Plus Chemotherapy for Stage IV/Recurrent Non-squamous Non-small Cell Lung Cancer With PD-L1 Expression ≥ 1%",
+     "url": "https://clinicaltrials.gov/study/NCT06561386",
+     "nctId": "NCT06561386",
      "status": "Recruiting",
      "phase": "Phase 3",
-     "updated": "2026-11-02"
+     "updated": "2026-11-09"
     },
     {
-     "title": "MK-3475A±Calderasib (MK-1084) in Completely Resected Stage IIA-IIIB (N2) KRAS G12Cm NSCLC (MK-1084-013)",
-     "url": "https://clinicaltrials.gov/study/NCT07431827",
-     "nctId": "NCT07431827",
+     "title": "START: Safety and Anti-Tumor Activity of PeptiCRAd-1 in Treatment of Cancer",
+     "url": "https://clinicaltrials.gov/study/NCT05492682",
+     "nctId": "NCT05492682",
      "status": "Recruiting",
-     "phase": "Phase 3",
-     "updated": "2026-11-02"
+     "phase": "Phase 1",
+     "updated": "2026-11-09"
     },
     {
-     "title": "A Study of Navlimetostat (BMS-986504) Monotherapy and in Combination With Other Agents in Participants With Advanced and/or Metastatic Solid Tumors With Homozygous MTAP Deletion (MountainTAP-5)",
-     "url": "https://clinicaltrials.gov/study/NCT07492680",
-     "nctId": "NCT07492680",
-     "status": "Recruiting",
-     "phase": "Phase 2",
-     "updated": "2026-11-02"
-    },
-    {
-     "title": "Assessing Benefits and Harms of Cannabis/Cannabinoid Use Among Cancer Patients Treated in Community Oncology Clinics",
-     "url": "https://clinicaltrials.gov/study/NCT06418204",
-     "nctId": "NCT06418204",
+     "title": "Biospecimen Procurement for Center for Immuno-Oncology Immunotherapy Protocols",
+     "url": "https://clinicaltrials.gov/study/NCT02682667",
+     "nctId": "NCT02682667",
      "status": "Recruiting",
      "phase": "",
-     "updated": "2026-11-02"
+     "updated": "2026-11-09"
     },
     {
-     "title": "Testing Osimertinib as a Treatment for Lung Cancers With an EGFR Exon 20 Change",
-     "url": "https://clinicaltrials.gov/study/NCT03191149",
-     "nctId": "NCT03191149",
+     "title": "Genetic Analysis of Birt Hogg-Dube Syndrome and Characterization of Predisposition to Kidney Cancer",
+     "url": "https://clinicaltrials.gov/study/NCT00033137",
+     "nctId": "NCT00033137",
      "status": "Recruiting",
-     "phase": "Phase 2",
-     "updated": "2026-11-02"
+     "phase": "",
+     "updated": "2026-11-09"
     }
    ]
   },
   "prostate": {
    "research": [
+    {
+     "title": "An aggregation-induced emission fluorescent microsphere-based intelligent lateral flow immunosensor for rapid and quantitative detection of prostate-specific antigen.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/42874359/",
+     "journal": "Talanta",
+     "date": "2027 Mar 1",
+     "pmid": "42874359"
+    },
     {
      "title": "A novel Co-SnO(2)/Rhodamine B composite as photoactive material with excellent photoelectrochemical performance for ultrasensitive detection of prostate cancer biomarker.",
      "url": "https://pubmed.ncbi.nlm.nih.gov/42906309/",
@@ -204,6 +211,13 @@
      "pmid": "42901111"
     },
     {
+     "title": "Exploratory machine-learning evaluation of clinical and dosimetric features in late prostate radiotherapy toxicity.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/42999685/",
+     "journal": "Clinical and translational radiation oncology",
+     "date": "2027 Jan",
+     "pmid": "42999685"
+    },
+    {
      "title": "Adaptive MR-guided whole-pelvic SBRT with or without focal intraprostatic lesion boost for high-risk localized prostate Cancer: Adverse events and longitudinal quality-of-life outcomes.",
      "url": "https://pubmed.ncbi.nlm.nih.gov/42960192/",
      "journal": "Clinical and translational radiation oncology",
@@ -216,73 +230,59 @@
      "journal": "Clinical and translational radiation oncology",
      "date": "2027 Jan",
      "pmid": "42959402"
-    },
-    {
-     "title": "Early and late CTCAE and patient-reported outcomes following breast radiotherapy in the REQUITE cohort.",
-     "url": "https://pubmed.ncbi.nlm.nih.gov/42935767/",
-     "journal": "Clinical and translational radiation oncology",
-     "date": "2027 Jan",
-     "pmid": "42935767"
-    },
-    {
-     "title": "Retraction Notice to: miR-93 Promotes the Growth and Invasion of Prostate Cancer by Upregulating Its Target Genes TGFBR2, ITGB8, and LATS2.",
-     "url": "https://pubmed.ncbi.nlm.nih.gov/42935672/",
-     "journal": "Molecular therapy. Oncology",
-     "date": "2026 Dec 17",
-     "pmid": "42935672"
     }
    ],
    "trials": [
     {
-     "title": "The Application of Somatosensory Interactive Pelvic Floor Muscle Training for Stress Urinary Incontinence in Men Underwent Radical Prostatectomy",
-     "url": "https://clinicaltrials.gov/study/NCT06740071",
-     "nctId": "NCT06740071",
-     "status": "Recruiting",
-     "phase": "N/A",
-     "updated": "2026-11-02"
-    },
-    {
-     "title": "A Study of [225Ac]Ac-AKY-2519 in Patients With Metastatic Castration-Resistant Prostate Cancer",
-     "url": "https://clinicaltrials.gov/study/NCT07581184",
-     "nctId": "NCT07581184",
-     "status": "Recruiting",
-     "phase": "Phase 1",
-     "updated": "2026-11-02"
-    },
-    {
-     "title": "Estrogen to Improve Quality of Life for Men With Newly Diagnosed or Recurrent Metastatic Hormone Sensitive Prostate Cancer, EQUIP Trial",
-     "url": "https://clinicaltrials.gov/study/NCT07466498",
-     "nctId": "NCT07466498",
+     "title": "Lu-PSMA for Oligometastatic Prostate Cancer Treated With STereotactic Ablative Radiotherapy",
+     "url": "https://clinicaltrials.gov/study/NCT05560659",
+     "nctId": "NCT05560659",
      "status": "Recruiting",
      "phase": "Phase 2",
-     "updated": "2026-11-02"
+     "updated": "2026-11-09"
     },
     {
-     "title": "A Trial to Find Out if REGN5678 (Nezastomig) is Safe and How Well it Works Alone or in Combination With Cemiplimab for Adult Participants With Metastatic Castration-Resistant Prostate Cancer and Other Tumors",
-     "url": "https://clinicaltrials.gov/study/NCT03972657",
-     "nctId": "NCT03972657",
+     "title": "Optimal PSA Triggered Individual Management of Androgen Sensitive Prostate Cancer",
+     "url": "https://clinicaltrials.gov/study/NCT07216248",
+     "nctId": "NCT07216248",
+     "status": "Recruiting",
+     "phase": "Phase 2",
+     "updated": "2026-11-09"
+    },
+    {
+     "title": "First-Time-in-Human Study of GSK5471713 in Adults With mCRPC",
+     "url": "https://clinicaltrials.gov/study/NCT07332455",
+     "nctId": "NCT07332455",
      "status": "Recruiting",
      "phase": "Phase 1, Phase 2",
-     "updated": "2026-11-02"
+     "updated": "2026-11-09"
     },
     {
-     "title": "A Study of [225Ac]Ac-AKY-2519 in Patients With B7-H3 Expressing Solid Tumors",
-     "url": "https://clinicaltrials.gov/study/NCT07887971",
-     "nctId": "NCT07887971",
+     "title": "Docetaxel and SX-682 in Recurrent/Metastatic Head and Neck Squamous Cell Carcinoma, Salivary Gland Carcinoma, and Advanced Prostate Cancer",
+     "url": "https://clinicaltrials.gov/study/NCT07667400",
+     "nctId": "NCT07667400",
      "status": "Recruiting",
-     "phase": "Phase 1",
-     "updated": "2026-11-02"
+     "phase": "Phase 1, Phase 2",
+     "updated": "2026-11-09"
+    },
+    {
+     "title": "Interstitial Assessment of Architectural Heterogeneity in Prostate Cancer Using a Fine Needle Photoacoustic Probe",
+     "url": "https://clinicaltrials.gov/study/NCT05965180",
+     "nctId": "NCT05965180",
+     "status": "Recruiting",
+     "phase": "",
+     "updated": "2026-11-09"
     }
    ]
   },
   "colorectal": {
    "research": [
     {
-     "title": "Enhancing neoadjuvant immunotherapy for locally advanced rectal cancer via an injectable thermosensitive hydrogel system with multipathway macrophage immunomodulation.",
-     "url": "https://pubmed.ncbi.nlm.nih.gov/42860120/",
+     "title": "Cytochalasin D-induced cytoskeletal remodeling with MYH9 enhances release of extracellular vesicles for therapeutic application.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/42927683/",
      "journal": "Biomaterials",
      "date": "2027 Mar",
-     "pmid": "42860120"
+     "pmid": "42927683"
     },
     {
      "title": "A novel DNA weighted summation system for cancer diagnosis.",
@@ -290,13 +290,6 @@
      "journal": "Biosensors & bioelectronics",
      "date": "2027 Jan 15",
      "pmid": "42901111"
-    },
-    {
-     "title": "An Ago-mediated duplex biosensing platform with orthogonal electrochemical coding for microRNA detection based on TDN interfaces and UiO-66-NH(2) nanocarriers.",
-     "url": "https://pubmed.ncbi.nlm.nih.gov/42858627/",
-     "journal": "Biosensors & bioelectronics",
-     "date": "2027 Jan 15",
-     "pmid": "42858627"
     },
     {
      "title": "Single-gRNA CRISPR/eCas9-mediated simultaneous targeting of cIAP1 and cIAP2 in colorectal cancer cells: RNA-seq reveals distinct transcriptomic and apoptotic responses.",
@@ -318,53 +311,74 @@
      "journal": "The Journal of experimental medicine",
      "date": "2027 Jan 4",
      "pmid": "42929781"
+    },
+    {
+     "title": "Metabolic reprogramming of myeloid‑derived suppressor cells in colorectal cancer: Mechanistic insights and immunometabolic targeted rehabilitation (Review).",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/42992548/",
+     "journal": "Molecular medicine reports",
+     "date": "2027 Jan",
+     "pmid": "42992548"
     }
    ],
    "trials": [
     {
-     "title": "A Study of Bispecific Antibody MCLA-158 in Patients With Advanced Solid Tumors",
-     "url": "https://clinicaltrials.gov/study/NCT03526835",
-     "nctId": "NCT03526835",
-     "status": "Recruiting",
-     "phase": "Phase 1, Phase 2",
-     "updated": "2026-11-02"
-    },
-    {
-     "title": "Phase 1 Study Of SAR445877 In Combination With FOLFOX6 And Bevacizumab As First-Line Treatment For Microsatellite Stable Metastatic Colorectal Cancer",
-     "url": "https://clinicaltrials.gov/study/NCT07500298",
-     "nctId": "NCT07500298",
+     "title": "START: Safety and Anti-Tumor Activity of PeptiCRAd-1 in Treatment of Cancer",
+     "url": "https://clinicaltrials.gov/study/NCT05492682",
+     "nctId": "NCT05492682",
      "status": "Recruiting",
      "phase": "Phase 1",
-     "updated": "2026-11-02"
+     "updated": "2026-11-09"
     },
     {
-     "title": "Addressing Disparities in Colorectal Cancer Screening in Black and Underserved Phoenix Communities",
-     "url": "https://clinicaltrials.gov/study/NCT05447923",
-     "nctId": "NCT05447923",
+     "title": "Immunotherapy Using Tumor Infiltrating Lymphocytes for Patients With Metastatic Cancer",
+     "url": "https://clinicaltrials.gov/study/NCT01174121",
+     "nctId": "NCT01174121",
      "status": "Recruiting",
-     "phase": "N/A",
-     "updated": "2026-11-02"
+     "phase": "Phase 2",
+     "updated": "2026-11-09"
     },
     {
-     "title": "Assessing Benefits and Harms of Cannabis/Cannabinoid Use Among Cancer Patients Treated in Community Oncology Clinics",
-     "url": "https://clinicaltrials.gov/study/NCT06418204",
-     "nctId": "NCT06418204",
+     "title": "Follow-Up Study of Subjects Previously Enrolled in Poxviral Vector Gene Transfer Studies",
+     "url": "https://clinicaltrials.gov/study/NCT00451022",
+     "nctId": "NCT00451022",
      "status": "Recruiting",
      "phase": "",
-     "updated": "2026-11-02"
+     "updated": "2026-11-09"
     },
     {
-     "title": "Pre-emptive Endoscopic Vacuum Therapy Reduces the Incidence of Anastomotic Leakage After Colorectal Cancer Surgery",
-     "url": "https://clinicaltrials.gov/study/NCT07208786",
-     "nctId": "NCT07208786",
+     "title": "Testing the Addition of Anti-cancer Drug, ZEN003694, to the Usual Chemotherapy Treatment, Cetuximab Plus Encorafenib, for Colorectal Cancer",
+     "url": "https://clinicaltrials.gov/study/NCT06102902",
+     "nctId": "NCT06102902",
      "status": "Recruiting",
-     "phase": "N/A",
-     "updated": "2026-11-02"
+     "phase": "Phase 1",
+     "updated": "2026-11-09"
+    },
+    {
+     "title": "Phase I/II Study of the Combination Immunotherapy Regimen: SX-682, TriAdeno Vaccine, Retifanlimab and IL-15 Agonist N-803 (STAR15) for Metastatic Colorectal Cancer (mCRC)",
+     "url": "https://clinicaltrials.gov/study/NCT06149481",
+     "nctId": "NCT06149481",
+     "status": "Recruiting",
+     "phase": "Phase 1, Phase 2",
+     "updated": "2026-11-09"
     }
    ]
   },
   "melanoma": {
    "research": [
+    {
+     "title": "Genetically engineering mast cells as effectors for targeted cancer cell cytotoxicity.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/42896419/",
+     "journal": "Biomaterials",
+     "date": "2027 Mar",
+     "pmid": "42896419"
+    },
+    {
+     "title": "Outcomes of Patients with Rare Cancers Treated with Immune Checkpoint Inhibitors with and Without Lung and/or Liver Metastases (NCI/SWOG S1609).",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/42999803/",
+     "journal": "Journal of immunotherapy and precision oncology",
+     "date": "2027 Feb",
+     "pmid": "42999803"
+    },
     {
      "title": "Randomized controlled trials of radiation therapy for cutaneous malignancies: a systematic review.",
      "url": "https://pubmed.ncbi.nlm.nih.gov/42921462/",
@@ -387,79 +401,58 @@
      "pmid": "42936028"
     },
     {
-     "title": "Coordination-strengthened Rhein/Pectin@Zn dual-network hydrogel for local antitumor therapy.",
-     "url": "https://pubmed.ncbi.nlm.nih.gov/42910188/",
-     "journal": "Materials today. Bio",
-     "date": "2026 Dec",
-     "pmid": "42910188"
-    },
-    {
-     "title": "Global Landscape of Clinical Studies Open to Enrollment in Carbon Ion Radiotherapy: A PTCOG Review.",
-     "url": "https://pubmed.ncbi.nlm.nih.gov/42893060/",
-     "journal": "International journal of particle therapy",
-     "date": "2026 Dec",
-     "pmid": "42893060"
-    },
-    {
-     "title": "Comprehensive role of fluorine-18-labeled fluorodeoxyglucose PET/computed tomography across the disease course of primary malignant melanoma of the esophagus.",
-     "url": "https://pubmed.ncbi.nlm.nih.gov/42825525/",
+     "title": "Dissociation between systemic inflammatory markers and the tumor microenvironment in predicting sentinel lymph node metastasis in cutaneous melanoma.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/42811637/",
      "journal": "Melanoma research",
      "date": "2026 Dec 1",
-     "pmid": "42825525"
+     "pmid": "42811637"
     }
    ],
    "trials": [
     {
-     "title": "A Study of Navlimetostat (BMS-986504) Monotherapy and in Combination With Other Agents in Participants With Advanced and/or Metastatic Solid Tumors With Homozygous MTAP Deletion (MountainTAP-5)",
-     "url": "https://clinicaltrials.gov/study/NCT07492680",
-     "nctId": "NCT07492680",
-     "status": "Recruiting",
-     "phase": "Phase 2",
-     "updated": "2026-11-02"
-    },
-    {
-     "title": "Assessing Benefits and Harms of Cannabis/Cannabinoid Use Among Cancer Patients Treated in Community Oncology Clinics",
-     "url": "https://clinicaltrials.gov/study/NCT06418204",
-     "nctId": "NCT06418204",
-     "status": "Recruiting",
-     "phase": "",
-     "updated": "2026-11-02"
-    },
-    {
-     "title": "Dose Ranging, Toxicity Seeking, Phase 1 Trial of Oncolytic Adenoviral Therapy for Melanoma Intracranial and Extracranial Metastases",
-     "url": "https://clinicaltrials.gov/study/NCT07444606",
-     "nctId": "NCT07444606",
+     "title": "START: Safety and Anti-Tumor Activity of PeptiCRAd-1 in Treatment of Cancer",
+     "url": "https://clinicaltrials.gov/study/NCT05492682",
+     "nctId": "NCT05492682",
      "status": "Recruiting",
      "phase": "Phase 1",
-     "updated": "2026-11-02"
+     "updated": "2026-11-09"
     },
     {
-     "title": "Aggressive Lipid Lowering Therapy in ICI-Treated Melanoma",
-     "url": "https://clinicaltrials.gov/study/NCT07704918",
-     "nctId": "NCT07704918",
+     "title": "Blocking TNF to Potentiate the ICI-dependent Immune Awakening in Melanoma",
+     "url": "https://clinicaltrials.gov/study/NCT05867004",
+     "nctId": "NCT05867004",
      "status": "Recruiting",
-     "phase": "N/A",
-     "updated": "2026-11-02"
+     "phase": "",
+     "updated": "2026-11-09"
     },
     {
-     "title": "BiCaZO: A Study Combining Two Immunotherapies (Cabozantinib and Nivolumab) to Treat Patients With Advanced Melanoma or Squamous Cell Head and Neck Cancer, an immunoMATCH Pilot Study",
-     "url": "https://clinicaltrials.gov/study/NCT05136196",
-     "nctId": "NCT05136196",
+     "title": "Phase II Trial of Combination Anti-PD-1 and Aldesleukin for Metastatic Melanoma and Renal Cell Carcinoma",
+     "url": "https://clinicaltrials.gov/study/NCT05155033",
+     "nctId": "NCT05155033",
      "status": "Recruiting",
      "phase": "Phase 2",
-     "updated": "2026-11-02"
+     "updated": "2026-11-09"
+    },
+    {
+     "title": "Evaluation for NCI Surgery Branch Clinical Research Protocols",
+     "url": "https://clinicaltrials.gov/study/NCT00001823",
+     "nctId": "NCT00001823",
+     "status": "Recruiting",
+     "phase": "",
+     "updated": "2026-11-09"
+    },
+    {
+     "title": "Pharmacokinetics, Safety, and Immunogenicity Comparison of Bmab1700 and Opdivo® as Adjuvant Monotherapy in Participants With Melanoma",
+     "url": "https://clinicaltrials.gov/study/NCT07476326",
+     "nctId": "NCT07476326",
+     "status": "Recruiting",
+     "phase": "Phase 1",
+     "updated": "2026-11-06"
     }
    ]
   },
   "leukemia": {
    "research": [
-    {
-     "title": "HPMES: an ultra-sensitive mutation enrichment strategy for FLT3-ITD MRD monitoring in acute myeloid leukemia.",
-     "url": "https://pubmed.ncbi.nlm.nih.gov/42868739/",
-     "journal": "Biosensors & bioelectronics",
-     "date": "2027 Jan 15",
-     "pmid": "42868739"
-    },
     {
      "title": "Aberrant splicing caused by a homozygous AK2 c.498 + 1G > A variant in a patient with reticular dysgenesis and concurrent B-cell acute lymphoblastic leukemia.",
      "url": "https://pubmed.ncbi.nlm.nih.gov/42874964/",
@@ -468,11 +461,11 @@
      "pmid": "42874964"
     },
     {
-     "title": "Influence of gut microbiota on chronic lymphocytic leukemia development and aggressiveness.",
-     "url": "https://pubmed.ncbi.nlm.nih.gov/42857718/",
-     "journal": "Gut microbes reports",
-     "date": "2027",
-     "pmid": "42857718"
+     "title": "Icaritin enhances the anti-leukemic activity of imatinib in Philadelphia chromosome-positive B-cell acute lymphoblastic leukemia cells: functional involvement of PI3K/AKT signaling.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/42981166/",
+     "journal": "Hematology (Amsterdam, Netherlands)",
+     "date": "2026 Dec 31",
+     "pmid": "42981166"
     },
     {
      "title": "Population pharmacokinetic modeling of idarubicin and idarubicinol in acute myeloid leukemia induction therapy: An ancillary study of the BIG-1 trial.",
@@ -482,6 +475,13 @@
      "pmid": "42863554"
     },
     {
+     "title": "[Corrigendum] S100A8‑targeting siRNA enhances arsenic trioxide‑induced myeloid leukemia cell death by down‑regulating autophagy.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/42992570/",
+     "journal": "International journal of molecular medicine",
+     "date": "2026 Dec",
+     "pmid": "42992570"
+    },
+    {
      "title": "Li-Fraumeni syndrome presenting with early-onset eyelid sebaceous carcinoma.",
      "url": "https://pubmed.ncbi.nlm.nih.gov/42960272/",
      "journal": "American journal of ophthalmology case reports",
@@ -489,53 +489,53 @@
      "pmid": "42960272"
     },
     {
-     "title": "Late-onset hypothalamic-pituitary dysfunction in a childhood cancer survivor treated with cranial irradiation.",
-     "url": "https://pubmed.ncbi.nlm.nih.gov/42898152/",
-     "journal": "JCEM case reports",
-     "date": "2026 Dec",
-     "pmid": "42898152"
+     "title": "Steroid-associated hypofibrinogenemia: an overlooked risk in graft-versus-host disease management after allogeneic hematopoietic stem cell transplantation.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/42937018/",
+     "journal": "Blood coagulation & fibrinolysis : an international journal in haemostasis and thrombosis",
+     "date": "2026 Dec 1",
+     "pmid": "42937018"
     }
    ],
    "trials": [
     {
-     "title": "HPC Offered for PRESERVE Expansion",
-     "url": "https://clinicaltrials.gov/study/NCT07145411",
-     "nctId": "NCT07145411",
-     "status": "Recruiting",
-     "phase": "",
-     "updated": "2026-11-02"
-    },
-    {
-     "title": "Anti-CRLF2-R/TSLPR Chimeric Antigen Receptor T Cells (TSLPR-CART) in Participants With Recurrent or Refractory CRLF2-R/TSLPR-Overexpressing B-Cell Acute Lymphoblastic Leukemia (B-ALL)",
-     "url": "https://clinicaltrials.gov/study/NCT07572136",
-     "nctId": "NCT07572136",
-     "status": "Recruiting",
-     "phase": "Phase 1",
-     "updated": "2026-11-02"
-    },
-    {
-     "title": "Phase Ib/II Trial of Cladribine/Ruxolitinib/Venetoclax in Patients With Relapsed/Refractory T-cell Prolymphocytic Leukemia",
-     "url": "https://clinicaltrials.gov/study/NCT07311746",
-     "nctId": "NCT07311746",
-     "status": "Recruiting",
-     "phase": "Phase 1, Phase 2",
-     "updated": "2026-11-02"
-    },
-    {
-     "title": "Family Study of Lymphoproliferative Disorders",
-     "url": "https://clinicaltrials.gov/study/NCT00626496",
-     "nctId": "NCT00626496",
-     "status": "Recruiting",
-     "phase": "",
-     "updated": "2026-11-02"
-    },
-    {
-     "title": "Phase II Study of Asciminib for Second-line Treatment of Chronic Phase Chronic Myeloid Leukemia",
-     "url": "https://clinicaltrials.gov/study/NCT06629584",
-     "nctId": "NCT06629584",
+     "title": "Ziftomenib for the Treatment of Patients With NPM1 Mutated or KMT2A Rearranged Acute Myeloid Leukemia Not Eligible for Standard Therapy",
+     "url": "https://clinicaltrials.gov/study/NCT06930352",
+     "nctId": "NCT06930352",
      "status": "Recruiting",
      "phase": "Phase 2",
-     "updated": "2026-11-02"
+     "updated": "2026-11-09"
+    },
+    {
+     "title": "Multi-peptide Vaccination Adjuvanted With XS15 in Acute Myeloid Leukemia Patients",
+     "url": "https://clinicaltrials.gov/study/NCT06252584",
+     "nctId": "NCT06252584",
+     "status": "Recruiting",
+     "phase": "Phase 1",
+     "updated": "2026-11-09"
+    },
+    {
+     "title": "A Multicenter Study to Evaluate Next-Generation Sequencing (NGS) Testing and Monitoring of B-Cell Recovery to Guide Management Following Chimeric Antigen Receptor T-cell (CART) Induced Remission in Children and Young Adults With B Lineage Acute Lymph...",
+     "url": "https://clinicaltrials.gov/study/NCT05621291",
+     "nctId": "NCT05621291",
+     "status": "Recruiting",
+     "phase": "N/A",
+     "updated": "2026-11-09"
+    },
+    {
+     "title": "Axatilimab With or Without Azacitidine for the Treatment of Patients With Advanced Phase Myeloproliferative Neoplasms, Myeloproliferative Neoplasm/Myelodysplastic Syndrome Overlap or High Risk Chronic Myelomonocytic Leukemia",
+     "url": "https://clinicaltrials.gov/study/NCT06523556",
+     "nctId": "NCT06523556",
+     "status": "Recruiting",
+     "phase": "Phase 1, Phase 2",
+     "updated": "2026-11-09"
+    },
+    {
+     "title": "Biospecimen Procurement for Center for Immuno-Oncology Immunotherapy Protocols",
+     "url": "https://clinicaltrials.gov/study/NCT02682667",
+     "nctId": "NCT02682667",
+     "status": "Recruiting",
+     "phase": "",
+     "updated": "2026-11-09"
     }
    ]
   },
@@ -549,11 +549,25 @@
      "pmid": "42874964"
     },
     {
-     "title": "Phase 1 evaluation of APN401, an autologous CBL-B-silenced PBMC therapy, in advanced solid tumors.",
-     "url": "https://pubmed.ncbi.nlm.nih.gov/42959597/",
-     "journal": "Molecular therapy. Oncology",
-     "date": "2026 Dec 17",
-     "pmid": "42959597"
+     "title": "Hypoxia in lymphoma: Mechanistic remodeling of the tumor microenvironment, disease progression and therapeutic resistance (Review).",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/42992585/",
+     "journal": "Molecular medicine reports",
+     "date": "2027 Jan",
+     "pmid": "42992585"
+    },
+    {
+     "title": "Icaritin enhances the anti-leukemic activity of imatinib in Philadelphia chromosome-positive B-cell acute lymphoblastic leukemia cells: functional involvement of PI3K/AKT signaling.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/42981166/",
+     "journal": "Hematology (Amsterdam, Netherlands)",
+     "date": "2026 Dec 31",
+     "pmid": "42981166"
+    },
+    {
+     "title": "Delayed recognition of primary thyroid lymphoma with progressive thyroid enlargement and cardiopulmonary symptoms.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/42996579/",
+     "journal": "JCEM case reports",
+     "date": "2026 Dec",
+     "pmid": "42996579"
     },
     {
      "title": "A temporal coupling hypothesis for chemoresistance in canine DLBCL and osteosarcoma: stress signalling and microRNA regulation.",
@@ -568,155 +582,155 @@
      "journal": "JCEM case reports",
      "date": "2026 Dec",
      "pmid": "42923625"
-    },
-    {
-     "title": "Nasopharyngeal diffuse large b-cell lymphoma in a teenage presenting with cavernous sinus syndrome: A case report.",
-     "url": "https://pubmed.ncbi.nlm.nih.gov/42892982/",
-     "journal": "Radiology case reports",
-     "date": "2026 Dec",
-     "pmid": "42892982"
-    },
-    {
-     "title": "The p.V27A variant of l-asparaginase II minimizes glutaminase activity without compromising anti-leukemic function.",
-     "url": "https://pubmed.ncbi.nlm.nih.gov/42863553/",
-     "journal": "Archives of biochemistry and biophysics",
-     "date": "2026 Dec",
-     "pmid": "42863553"
     }
    ],
    "trials": [
     {
-     "title": "Efficacy and Safety of Polatuzumab Vedotin, Rituximab Combined With Reduced-dose Cyclophosphamide, Doxorubicin and Prednisone Regimen in the Treatment of Elderly Patients With Diffuse Large B-cell Lymphoma: A Multicenter, Single-arm, Prospective Study",
-     "url": "https://clinicaltrials.gov/study/NCT07908888",
-     "nctId": "NCT07908888",
+     "title": "Venetoclax, Ibrutinib, Prednisone, Obinutuzumab, and Revlimid (ViPOR) in Relapsed/Refractory B-cell Lymphoma",
+     "url": "https://clinicaltrials.gov/study/NCT03223610",
+     "nctId": "NCT03223610",
      "status": "Recruiting",
-     "phase": "Phase 4",
-     "updated": "2026-11-02"
+     "phase": "Phase 1, Phase 2",
+     "updated": "2026-11-09"
     },
     {
-     "title": "HPC Offered for PRESERVE Expansion",
-     "url": "https://clinicaltrials.gov/study/NCT07145411",
-     "nctId": "NCT07145411",
+     "title": "A Multicenter Study to Evaluate Next-Generation Sequencing (NGS) Testing and Monitoring of B-Cell Recovery to Guide Management Following Chimeric Antigen Receptor T-cell (CART) Induced Remission in Children and Young Adults With B Lineage Acute Lymph...",
+     "url": "https://clinicaltrials.gov/study/NCT05621291",
+     "nctId": "NCT05621291",
+     "status": "Recruiting",
+     "phase": "N/A",
+     "updated": "2026-11-09"
+    },
+    {
+     "title": "Living Well With Lymphoma",
+     "url": "https://clinicaltrials.gov/study/NCT06047626",
+     "nctId": "NCT06047626",
+     "status": "Recruiting",
+     "phase": "N/A",
+     "updated": "2026-11-09"
+    },
+    {
+     "title": "Clonal Evolution in Follicular Lymphoma",
+     "url": "https://clinicaltrials.gov/study/NCT03190928",
+     "nctId": "NCT03190928",
      "status": "Recruiting",
      "phase": "",
-     "updated": "2026-11-02"
+     "updated": "2026-11-09"
     },
     {
-     "title": "Anti-CRLF2-R/TSLPR Chimeric Antigen Receptor T Cells (TSLPR-CART) in Participants With Recurrent or Refractory CRLF2-R/TSLPR-Overexpressing B-Cell Acute Lymphoblastic Leukemia (B-ALL)",
-     "url": "https://clinicaltrials.gov/study/NCT07572136",
-     "nctId": "NCT07572136",
-     "status": "Recruiting",
-     "phase": "Phase 1",
-     "updated": "2026-11-02"
-    },
-    {
-     "title": "Family Study of Lymphoproliferative Disorders",
-     "url": "https://clinicaltrials.gov/study/NCT00626496",
-     "nctId": "NCT00626496",
+     "title": "Biospecimen Procurement for Center for Immuno-Oncology Immunotherapy Protocols",
+     "url": "https://clinicaltrials.gov/study/NCT02682667",
+     "nctId": "NCT02682667",
      "status": "Recruiting",
      "phase": "",
-     "updated": "2026-11-02"
-    },
-    {
-     "title": "Assessing Benefits and Harms of Cannabis/Cannabinoid Use Among Cancer Patients Treated in Community Oncology Clinics",
-     "url": "https://clinicaltrials.gov/study/NCT06418204",
-     "nctId": "NCT06418204",
-     "status": "Recruiting",
-     "phase": "",
-     "updated": "2026-11-02"
+     "updated": "2026-11-09"
     }
    ]
   },
   "myeloma": {
    "research": [
     {
-     "title": "A natural product-derived degrader (COT-01): cortisone-based CRBN recruitment for cyclin D2 degradation in multiple myeloma.",
-     "url": "https://pubmed.ncbi.nlm.nih.gov/42849138/",
-     "journal": "Bioorganic chemistry",
+     "title": "Aortic Dissection Incidentally Detected on PET/CT During Evaluation for Suspected Multiple Myeloma.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/42912552/",
+     "journal": "Clinical nuclear medicine",
+     "date": "2026 Dec 1",
+     "pmid": "42912552"
+    },
+    {
+     "title": "Exceptional Thyroid Recurrence of Solitary Bone Plasmacytoma Detected by 18 F-FDG PET/CT.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/42912544/",
+     "journal": "Clinical nuclear medicine",
+     "date": "2026 Dec 1",
+     "pmid": "42912544"
+    },
+    {
+     "title": "Society for Immunotherapy of Cancer (SITC) clinical practice guideline on immunotherapy for the treatment of multiple myeloma, version 2.0.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/42994960/",
+     "journal": "Journal for immunotherapy of cancer",
+     "date": "2026 Nov 6",
+     "pmid": "42994960"
+    },
+    {
+     "title": "Succinate promotes multiple myeloma cell proliferation through TCA cycle oxidation.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/42993627/",
+     "journal": "Cell reports",
+     "date": "2026 Nov 6",
+     "pmid": "42993627"
+    },
+    {
+     "title": "Nanobodies as next-generation antigen recognition domains for CAR-based cellular immunotherapies in cancer.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/42992557/",
+     "journal": "Immunotherapy",
+     "date": "2026 Nov 6",
+     "pmid": "42992557"
+    },
+    {
+     "title": "Practical Recommendations for Implementing Remote Patient Monitoring for Patients Receiving Bispecific Antibodies for Multiple Myeloma.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/42987260/",
+     "journal": "JMIR cancer",
      "date": "2026 Nov 5",
-     "pmid": "42849138"
-    },
-    {
-     "title": "The Steroid Symptom Questionnaire Multiple Myeloma (SSQ-MM): translation and cross-cultural adaptation into Danish and Norwegian and initial psychometric evaluation of the Norwegian version.",
-     "url": "https://pubmed.ncbi.nlm.nih.gov/42967255/",
-     "journal": "Quality of life research : an international journal of quality of life aspects of treatment, care and rehabilitation",
-     "date": "2026 Nov 1",
-     "pmid": "42967255"
-    },
-    {
-     "title": "Non-Relapse Mortality With Bispecific Antibodies in Hematologic Malignancies: A Dual Systematic Review and Pharmacovigilance Analysis.",
-     "url": "https://pubmed.ncbi.nlm.nih.gov/42886051/",
-     "journal": "Hematological oncology",
-     "date": "2026 Nov",
-     "pmid": "42886051"
-    },
-    {
-     "title": "Rare Feline Gingival Extramedullary Plasmacytoma: Clinical Application of Electrochemotherapy for Local Control.",
-     "url": "https://pubmed.ncbi.nlm.nih.gov/42873078/",
-     "journal": "Veterinary medicine and science",
-     "date": "2026 Nov",
-     "pmid": "42873078"
-    },
-    {
-     "title": "Beyond the binding site: PROTAC-mediated protein degradation assists the therapeutic paradigm of hematological malignancies.",
-     "url": "https://pubmed.ncbi.nlm.nih.gov/42858529/",
-     "journal": "Leukemia research",
-     "date": "2026 Nov",
-     "pmid": "42858529"
-    },
-    {
-     "title": "MK-4002, a B-cell maturation antigen-targeting T-cell engager, in relapsed or refractory multiple myeloma: a first-in-human, open-label, phase 1 study.",
-     "url": "https://pubmed.ncbi.nlm.nih.gov/42838070/",
-     "journal": "The Lancet. Haematology",
-     "date": "2026 Nov",
-     "pmid": "42838070"
+     "pmid": "42987260"
     }
    ],
    "trials": [
     {
-     "title": "Family Study of Lymphoproliferative Disorders",
-     "url": "https://clinicaltrials.gov/study/NCT00626496",
-     "nctId": "NCT00626496",
+     "title": "Biospecimen Procurement for Center for Immuno-Oncology Immunotherapy Protocols",
+     "url": "https://clinicaltrials.gov/study/NCT02682667",
+     "nctId": "NCT02682667",
      "status": "Recruiting",
      "phase": "",
-     "updated": "2026-11-02"
+     "updated": "2026-11-09"
     },
     {
-     "title": "ELEVATE-MM: Elotuzumab, Iberdomide and Dexamethasone Post Idecabtagene Vicleucel in Relapsed and Refractory Multiple Myeloma",
-     "url": "https://clinicaltrials.gov/study/NCT06518551",
-     "nctId": "NCT06518551",
+     "title": "Non-chemotherapeutic Interventions for the Improvement of Quality of Life and Immune Function in Patients With Multiple Myeloma",
+     "url": "https://clinicaltrials.gov/study/NCT05312255",
+     "nctId": "NCT05312255",
+     "status": "Recruiting",
+     "phase": "N/A",
+     "updated": "2026-11-09"
+    },
+    {
+     "title": "A Study to Evaluate RO7851624 in Participants With Relapsed/Refractory Multiple Myeloma (RRMM)",
+     "url": "https://clinicaltrials.gov/study/NCT07558915",
+     "nctId": "NCT07558915",
      "status": "Recruiting",
      "phase": "Phase 1",
-     "updated": "2026-11-02"
+     "updated": "2026-11-09"
     },
     {
-     "title": "Long-term Evaluation and Follow-up Care of Patients Treated With Stem Cell Transplants",
-     "url": "https://clinicaltrials.gov/study/NCT00106925",
-     "nctId": "NCT00106925",
+     "title": "IASO206 in Patients With Relapsed/Refractory Multiple Myeloma",
+     "url": "https://clinicaltrials.gov/study/NCT07322159",
+     "nctId": "NCT07322159",
      "status": "Recruiting",
-     "phase": "",
-     "updated": "2026-11-02"
+     "phase": "Early Phase 1",
+     "updated": "2026-11-09"
     },
     {
-     "title": "A Study of Dara-RVd and Teclistamab-RVd in People With Multiple Myeloma",
-     "url": "https://clinicaltrials.gov/study/NCT07099391",
-     "nctId": "NCT07099391",
+     "title": "Belantamab Mafodotin or Daratumumab With Bortezomib, Lenalidomide and Dexamethasone for Newly Diagnosed Multiple Myeloma",
+     "url": "https://clinicaltrials.gov/study/NCT07285239",
+     "nctId": "NCT07285239",
      "status": "Recruiting",
-     "phase": "Phase 1, Phase 2",
-     "updated": "2026-11-02"
-    },
-    {
-     "title": "Autologous T Cells Transduced With Retroviral Vectors Expressing TCRs for Participant-specific Neoantigens in Patients With Hematologic Malignancies",
-     "url": "https://clinicaltrials.gov/study/NCT06904066",
-     "nctId": "NCT06904066",
-     "status": "Recruiting",
-     "phase": "Phase 1",
-     "updated": "2026-11-02"
+     "phase": "Phase 3",
+     "updated": "2026-11-06"
     }
    ]
   },
   "pancreatic": {
    "research": [
+    {
+     "title": "Acute Pancreatitis Caused by Impaction of Migrated Surgical Staples in the Duodenal Papilla After Distal Pancreatectomy.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/42979178/",
+     "journal": "DEN open",
+     "date": "2027 Apr",
+     "pmid": "42979178"
+    },
+    {
+     "title": "PEGylated fucoxanthin liposomes remodel G(0)/G(1) cell cycle homeostasis and suppress gallbladder cancer progression via modulation of NR2F1-mediated signaling networks.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/42896432/",
+     "journal": "Biomaterials advances",
+     "date": "2027 Feb",
+     "pmid": "42896432"
+    },
     {
      "title": "Fibroblast activation protein-α-triggered photoacoustic signal \"on\" for pancreatic tumor imaging.",
      "url": "https://pubmed.ncbi.nlm.nih.gov/42879935/",
@@ -732,85 +746,78 @@
      "pmid": "42921225"
     },
     {
-     "title": "Integration of computed tomography and endoscopic findings in identifying pseudoaneurysm rupture associated with duodenal penetration by pancreatic head cancer: A case report.",
-     "url": "https://pubmed.ncbi.nlm.nih.gov/42966923/",
-     "journal": "Radiology case reports",
+     "title": "Single-cell profiling reveals GABBR1 as a cuproptosis-regulated prognostic biomarker in pancreatic cancer.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/42999371/",
+     "journal": "iLIVER",
      "date": "2026 Dec",
-     "pmid": "42966923"
+     "pmid": "42999371"
     },
     {
-     "title": "Pancreatic involvement in lung cancer: Imaging findings and diagnostic challenges in two cases.",
-     "url": "https://pubmed.ncbi.nlm.nih.gov/42959795/",
-     "journal": "Radiology case reports",
+     "title": "[Corrigendum] ETS‑1: A potential target of glycolysis for metabolic therapy by regulating glucose metabolism in pancreatic cancer.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/42992572/",
+     "journal": "International journal of oncology",
      "date": "2026 Dec",
-     "pmid": "42959795"
-    },
-    {
-     "title": "A combination of biopsy using eyeMAX and ERCP for the definitive diagnosis of intraductal papillary mucinous neoplasm: A case report.",
-     "url": "https://pubmed.ncbi.nlm.nih.gov/42948302/",
-     "journal": "Experimental and therapeutic medicine",
-     "date": "2026 Dec",
-     "pmid": "42948302"
-    },
-    {
-     "title": "Redox shielding unlocks damage-free photopolymerization for GelMA 3D co-cultures mimicking pancreatic tumor complexity.",
-     "url": "https://pubmed.ncbi.nlm.nih.gov/42926891/",
-     "journal": "Biomaterials and biosystems",
-     "date": "2026 Dec",
-     "pmid": "42926891"
+     "pmid": "42992572"
     }
    ],
    "trials": [
     {
-     "title": "A Study of Navlimetostat (BMS-986504) Monotherapy and in Combination With Other Agents in Participants With Advanced and/or Metastatic Solid Tumors With Homozygous MTAP Deletion (MountainTAP-5)",
-     "url": "https://clinicaltrials.gov/study/NCT07492680",
-     "nctId": "NCT07492680",
+     "title": "Immunotherapy Using Tumor Infiltrating Lymphocytes for Patients With Metastatic Cancer",
+     "url": "https://clinicaltrials.gov/study/NCT01174121",
+     "nctId": "NCT01174121",
      "status": "Recruiting",
      "phase": "Phase 2",
-     "updated": "2026-11-02"
+     "updated": "2026-11-09"
     },
     {
-     "title": "M0324 as Monotherapy and in Combination With Pembrolizumab or Chemotherapy in Participants With Selected Advanced Solid Tumors",
-     "url": "https://clinicaltrials.gov/study/NCT07166601",
-     "nctId": "NCT07166601",
-     "status": "Recruiting",
-     "phase": "Phase 1",
-     "updated": "2026-11-02"
-    },
-    {
-     "title": "Development and Utilization of an Integrated Clinical Genomic Database",
-     "url": "https://clinicaltrials.gov/study/NCT07911267",
-     "nctId": "NCT07911267",
+     "title": "Cancer in Inherited Bone Marrow Failure Syndromes",
+     "url": "https://clinicaltrials.gov/study/NCT00027274",
+     "nctId": "NCT00027274",
      "status": "Recruiting",
      "phase": "",
-     "updated": "2026-11-02"
+     "updated": "2026-11-09"
     },
     {
-     "title": "Atebimetinib + GnP as a First Line Treatment in Patients With Metastatic Pancreatic Adenocarcinoma",
-     "url": "https://clinicaltrials.gov/study/NCT07562152",
-     "nctId": "NCT07562152",
+     "title": "Artificial Intelligence-Assisted 4D Dynamic Long-Axial PET Imaging for the Detection of Early Pancreatic Cancer Lesions",
+     "url": "https://clinicaltrials.gov/study/NCT07925125",
+     "nctId": "NCT07925125",
      "status": "Recruiting",
-     "phase": "Phase 3",
-     "updated": "2026-11-02"
+     "phase": "",
+     "updated": "2026-11-09"
     },
     {
-     "title": "The Use of Contrast Enhanced Ultrasound (CEUS) In Post-Surgical Pancreatic Cancer Patients to Evaluate Local Disease Recurrence",
-     "url": "https://clinicaltrials.gov/study/NCT07910383",
-     "nctId": "NCT07910383",
+     "title": "Role of Genetic Factors in the Development of Lung Disease",
+     "url": "https://clinicaltrials.gov/study/NCT00001532",
+     "nctId": "NCT00001532",
+     "status": "Recruiting",
+     "phase": "",
+     "updated": "2026-11-09"
+    },
+    {
+     "title": "Chemotherapy With or Without IMD10 (Focused Ultrasound) in the Treatment of Borderline Resectable or Locally Advanced Pancreatic Cancer",
+     "url": "https://clinicaltrials.gov/study/NCT07325214",
+     "nctId": "NCT07325214",
      "status": "Recruiting",
      "phase": "N/A",
-     "updated": "2026-11-02"
+     "updated": "2026-11-09"
     }
    ]
   },
   "ovarian": {
    "research": [
     {
-     "title": "World's first case report of live birth following autologous ovarian tissue cryopreservation and transplantation in a patient with colon carcinoma.",
-     "url": "https://pubmed.ncbi.nlm.nih.gov/42832379/",
-     "journal": "Gynecological endocrinology : the official journal of the International Society of Gynecological Endocrinology",
+     "title": "[Corrigendum] CDKN3 is an independent prognostic factor and promotes ovarian carcinoma cell proliferation in ovarian cancer.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/42992573/",
+     "journal": "Oncology reports",
+     "date": "2027 Jan",
+     "pmid": "42992573"
+    },
+    {
+     "title": "The role of carbonic anhydrases IX and XII in hypoxia-driven tumor adaptation and chemoresistance: an underexplored frontier for novel therapeutic strategies in ovarian cancer.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/42999036/",
+     "journal": "Cancer biology & therapy",
      "date": "2026 Dec 31",
-     "pmid": "42832379"
+     "pmid": "42999036"
     },
     {
      "title": "Repurposing Entrectinib and Ibrutinib as MNK/eIF4E pathway modulators in ovarian cancer.",
@@ -820,50 +827,59 @@
      "pmid": "42892507"
     },
     {
-     "title": "Patient frustration with time spent on advanced ovarian and metastatic breast cancer care.",
-     "url": "https://pubmed.ncbi.nlm.nih.gov/42960187/",
+     "title": "Financial navigation in gynecologic oncology: a qualitative study.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/42999726/",
      "journal": "Gynecologic oncology reports",
      "date": "2026 Dec",
-     "pmid": "42960187"
+     "pmid": "42999726"
     },
     {
-     "title": "A urothelial cell carcinoma in the abdominal cavity after salpingectomy for tubo-ovarian carcinoma risk reduction in a BRCA1 pathogenic variant carrier.",
-     "url": "https://pubmed.ncbi.nlm.nih.gov/42959853/",
-     "journal": "Gynecologic oncology reports",
+     "title": "Targeting histone methylation with ROS nanoparticles delivering PARPi prodrugs to amplify the stimulation of cGAS-STING for immunotherapy in ovarian cancer.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/42992080/",
+     "journal": "Materials today. Bio",
      "date": "2026 Dec",
-     "pmid": "42959853"
+     "pmid": "42992080"
     },
     {
-     "title": "Targeting G2/M checkpoint vulnerability in homologous recombination-proficient tumors: lessons from ovarian cancer models.",
-     "url": "https://pubmed.ncbi.nlm.nih.gov/42947311/",
-     "journal": "Cell cycle (Georgetown, Tex.)",
+     "title": "Statement of Retraction: Loss of Ras GTPase-activating protein SH3 domain-binding protein 1 (G3BP1) inhibits the progression of ovarian cancer in coordination with ubiquitin-specific protease 10 (USP10).",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/42987291/",
+     "journal": "Bioengineered",
      "date": "2026 Dec",
-     "pmid": "42947311"
-    },
-    {
-     "title": "KAZALD1 upregulation predicts poor prognosis in epithelial ovarian cancer: Clinical validation and immune correlates.",
-     "url": "https://pubmed.ncbi.nlm.nih.gov/42935823/",
-     "journal": "Oncology letters",
-     "date": "2026 Dec",
-     "pmid": "42935823"
+     "pmid": "42987291"
     }
    ],
    "trials": [
     {
-     "title": "IGFBP-2 Vaccine to Prevent Ovarian Cancer Progression in Patients With Serologic Detection of Recurrence",
-     "url": "https://clinicaltrials.gov/study/NCT07495124",
-     "nctId": "NCT07495124",
+     "title": "A Study of Azenosertib (ZN-c3) Versus Investigator's Choice Chemotherapy in Subjects With Platinum-Resistant High-Grade Serous Ovarian, Primary Peritoneal, or Fallopian Tube Cancers Positive for Cyclin E1 Protein Expression",
+     "url": "https://clinicaltrials.gov/study/NCT07546500",
+     "nctId": "NCT07546500",
      "status": "Recruiting",
-     "phase": "Phase 2",
-     "updated": "2026-11-02"
+     "phase": "Phase 3",
+     "updated": "2026-11-09"
     },
     {
-     "title": "CR-002 in Adult Participants With Locally Advanced or Metastatic Solid Tumors",
-     "url": "https://clinicaltrials.gov/study/NCT07909031",
-     "nctId": "NCT07909031",
+     "title": "Sacituzumab Govitecan With Bevacizumab Compared to Usual Chemotherapy (Carboplatin, Pegylated Liposomal Doxorubicin and Bevacizumab) for Treating Recurrent Platinum-Sensitive Ovarian Cancer After PARP Inhibitor Maintenance Therapy",
+     "url": "https://clinicaltrials.gov/study/NCT07504588",
+     "nctId": "NCT07504588",
      "status": "Recruiting",
-     "phase": "Phase 1, Phase 2",
-     "updated": "2026-11-02"
+     "phase": "Phase 2",
+     "updated": "2026-11-09"
+    },
+    {
+     "title": "Immunotherapy Using Tumor Infiltrating Lymphocytes for Patients With Metastatic Cancer",
+     "url": "https://clinicaltrials.gov/study/NCT01174121",
+     "nctId": "NCT01174121",
+     "status": "Recruiting",
+     "phase": "Phase 2",
+     "updated": "2026-11-09"
+    },
+    {
+     "title": "Phase 1 Study of VT-101 in Advanced Ovarian Cancer",
+     "url": "https://clinicaltrials.gov/study/NCT07905677",
+     "nctId": "NCT07905677",
+     "status": "Recruiting",
+     "phase": "Phase 1",
+     "updated": "2026-11-09"
     },
     {
      "title": "Testing Nivolumab With or Without Ipilimumab in Deficient Mismatch Repair System (dMMR) Recurrent Endometrial Carcinoma",
@@ -871,34 +887,32 @@
      "nctId": "NCT05112601",
      "status": "Recruiting",
      "phase": "Phase 2",
-     "updated": "2026-11-02"
-    },
-    {
-     "title": "Targeted Therapy Directed by Genetic Testing in Treating Patients With Locally Advanced or Advanced Solid Tumors, The ComboMATCH Screening Trial",
-     "url": "https://clinicaltrials.gov/study/NCT05564377",
-     "nctId": "NCT05564377",
-     "status": "Recruiting",
-     "phase": "Phase 2",
-     "updated": "2026-11-02"
-    },
-    {
-     "title": "A Study of Avutometinib (VS-6766) + Defactinib (VS-6063) in Recurrent Low-Grade Serous Ovarian Cancer",
-     "url": "https://clinicaltrials.gov/study/NCT06072781",
-     "nctId": "NCT06072781",
-     "status": "Recruiting",
-     "phase": "Phase 3",
-     "updated": "2026-11-02"
+     "updated": "2026-11-09"
     }
    ]
   },
   "cervical": {
    "research": [
     {
-     "title": "Influence of COVID-19 and COVID-19 rumours on trust and uptake of single-dose male HPV vaccination in the Add-Vacc cluster-randomised trial, northwest Tanzania.",
-     "url": "https://pubmed.ncbi.nlm.nih.gov/42854550/",
-     "journal": "Vaccine",
-     "date": "2026 Dec 20",
-     "pmid": "42854550"
+     "title": "Cervicovaginal microbiome modulates HPV genotype-specific clearance/persistence: role of bacterial dysbiosis in cervical carcinogenesis.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/42992718/",
+     "journal": "Annals of medicine",
+     "date": "2026 Dec",
+     "pmid": "42992718"
+    },
+    {
+     "title": "Recurrent papillary thyroid carcinoma with brachiocephalic vein tumor thrombus: A rare case report.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/42990587/",
+     "journal": "Radiology case reports",
+     "date": "2026 Dec",
+     "pmid": "42990587"
+    },
+    {
+     "title": "Statement of Retraction: MACC1 regulates the AKT/STAT3 signaling pathway to induce migration, invasion, cancer stemness, and suppress apoptosis in cervical cancer cells.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/42987361/",
+     "journal": "Bioengineered",
+     "date": "2026 Dec",
+     "pmid": "42987361"
     },
     {
      "title": "Calycosin synergistically promotes ferroptosis in cervical cancer cells by inducing epithelial-mesenchymal transition.",
@@ -915,67 +929,53 @@
      "pmid": "42959201"
     },
     {
-     "title": "Combined plasma and liquid-based cytology microRNA signatures as biomarkers of high-grade cervical lesions: association with HPV infection and p16 expression.",
-     "url": "https://pubmed.ncbi.nlm.nih.gov/42903652/",
-     "journal": "The journal of liquid biopsy",
-     "date": "2026 Dec",
-     "pmid": "42903652"
-    },
-    {
-     "title": "Tumor microenvironment-responsive manganese nanocarriers for on-demand release of methotrexate and DNAzyme in MiR-155-driven cervical cancer.",
-     "url": "https://pubmed.ncbi.nlm.nih.gov/42903640/",
-     "journal": "Materials today. Bio",
-     "date": "2026 Dec",
-     "pmid": "42903640"
-    },
-    {
-     "title": "Not always cancer-Probable Lyme disease mimicking squamous cell carcinoma: A case report.",
-     "url": "https://pubmed.ncbi.nlm.nih.gov/42891013/",
-     "journal": "Radiology case reports",
-     "date": "2026 Dec",
-     "pmid": "42891013"
+     "title": "FDG Uptake Extending From the Dorsal Root Ganglion to the Sciatic Nerve After Herpes Zoster.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/42912576/",
+     "journal": "Clinical nuclear medicine",
+     "date": "2026 Dec 1",
+     "pmid": "42912576"
     }
    ],
    "trials": [
     {
-     "title": "Feasibility of Cough Skill Training in Individuals With Head and Neck Cancer",
-     "url": "https://clinicaltrials.gov/study/NCT07756684",
-     "nctId": "NCT07756684",
-     "status": "Recruiting",
-     "phase": "N/A",
-     "updated": "2026-11-02"
-    },
-    {
-     "title": "A Study of Bispecific Antibody MCLA-158 in Patients With Advanced Solid Tumors",
-     "url": "https://clinicaltrials.gov/study/NCT03526835",
-     "nctId": "NCT03526835",
-     "status": "Recruiting",
-     "phase": "Phase 1, Phase 2",
-     "updated": "2026-11-02"
-    },
-    {
-     "title": "The Effectiveness of Structured Swallowing Exercise Therapy in Patients With Nasopharyngeal Carcinoma: An Assessment of Swallowing Function and Quality of Life",
-     "url": "https://clinicaltrials.gov/study/NCT07909538",
-     "nctId": "NCT07909538",
-     "status": "Recruiting",
-     "phase": "N/A",
-     "updated": "2026-11-02"
-    },
-    {
-     "title": "Triage of Advanced Cervical Cancer Through Immunotherapy Induction (TRACTION)",
-     "url": "https://clinicaltrials.gov/study/NCT05475171",
-     "nctId": "NCT05475171",
+     "title": "Nivolumab Combined With Chemotherapy in the Treatment of Primary Tracheal Squamous Cell Carcinoma",
+     "url": "https://clinicaltrials.gov/study/NCT05964101",
+     "nctId": "NCT05964101",
      "status": "Recruiting",
      "phase": "Phase 2",
-     "updated": "2026-11-02"
+     "updated": "2026-11-09"
     },
     {
-     "title": "PDO Based Drug Sensitive Test in R/M SGC",
-     "url": "https://clinicaltrials.gov/study/NCT06686979",
-     "nctId": "NCT06686979",
+     "title": "Biospecimen Procurement for Head and Neck Disorders",
+     "url": "https://clinicaltrials.gov/study/NCT03429036",
+     "nctId": "NCT03429036",
      "status": "Recruiting",
      "phase": "",
-     "updated": "2026-11-02"
+     "updated": "2026-11-09"
+    },
+    {
+     "title": "Docetaxel and SX-682 in Recurrent/Metastatic Head and Neck Squamous Cell Carcinoma, Salivary Gland Carcinoma, and Advanced Prostate Cancer",
+     "url": "https://clinicaltrials.gov/study/NCT07667400",
+     "nctId": "NCT07667400",
+     "status": "Recruiting",
+     "phase": "Phase 1, Phase 2",
+     "updated": "2026-11-09"
+    },
+    {
+     "title": "Becotatug Vedotin Plus Sintilimab in Locoregionally Advanced NPC",
+     "url": "https://clinicaltrials.gov/study/NCT07459296",
+     "nctId": "NCT07459296",
+     "status": "Recruiting",
+     "phase": "Phase 3",
+     "updated": "2026-11-09"
+    },
+    {
+     "title": "Induction Pembrolizumab and Chemotherapy Followed by Pembrolizumab Before Chemoradiation and Pembrolizumab Maintenance Compared to Standard Chemoradiation With Pembrolizumab Followed by Pembrolizumab Maintenance in High-Risk Cervical Cancer",
+     "url": "https://clinicaltrials.gov/study/NCT07061977",
+     "nctId": "NCT07061977",
+     "status": "Recruiting",
+     "phase": "Phase 3",
+     "updated": "2026-11-09"
     }
    ]
   },
@@ -987,6 +987,13 @@
      "journal": "Gynecological endocrinology : the official journal of the International Society of Gynecological Endocrinology",
      "date": "2026 Dec 31",
      "pmid": "42963866"
+    },
+    {
+     "title": "RPL22 mutation is a favourable prognostic subset within mismatch repair-deficient endometrial cancer: a retrospective cohort study.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/42993741/",
+     "journal": "Journal of obstetrics and gynaecology : the journal of the Institute of Obstetrics and Gynaecology",
+     "date": "2026 Dec",
+     "pmid": "42993741"
     },
     {
      "title": "Complete loss of all mismatch repair protein expression in endometrioid carcinoma: A first case report of null phenotype induced by MLH1 hypermethylation and MSH2 somatic mutation.",
@@ -1003,43 +1010,28 @@
      "pmid": "42948049"
     },
     {
-     "title": "Dual-targeted nanotechnology for gynaecological cancers: a comprehensive review of mechanisms and clinical potential.",
-     "url": "https://pubmed.ncbi.nlm.nih.gov/42829857/",
-     "journal": "Annals of medicine",
-     "date": "2026 Dec",
-     "pmid": "42829857"
+     "title": "Lifetime Oestrogen Exposure Indices in Relation to Biological Aging and Future Life Expectancy: A Prospective Study of Two Cohorts.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/43000027/",
+     "journal": "BJOG : an international journal of obstetrics and gynaecology",
+     "date": "2026 Nov 8",
+     "pmid": "43000027"
     },
     {
-     "title": "Measurement of Treatment Adequacy Influences Estimates of Racial Disparities in Endometrial Cancer Care.",
-     "url": "https://pubmed.ncbi.nlm.nih.gov/42714943/",
-     "journal": "Cancer epidemiology, biomarkers & prevention : a publication of the American Association for Cancer Research, cosponsored by the American Society of Preventive Oncology",
-     "date": "2026 Nov 2",
-     "pmid": "42714943"
-    },
-    {
-     "title": "Retrospective Chart Review Indicates Earlier Age of Endometrial Cancer Diagnosis and Elevated Housing and Transportation Vulnerability in Hispanic and Native American Populations.",
-     "url": "https://pubmed.ncbi.nlm.nih.gov/42968191/",
-     "journal": "Cancer medicine",
-     "date": "2026 Nov",
-     "pmid": "42968191"
+     "title": "[Uterine tumor resembling ovarian sex cord tumor: a clinicopathological and molecular analysis of ten cases].",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/42967629/",
+     "journal": "Zhonghua bing li xue za zhi = Chinese journal of pathology",
+     "date": "2026 Nov 8",
+     "pmid": "42967629"
     }
    ],
    "trials": [
     {
-     "title": "Testing the Addition of an Antiangiogenic Drug (Bevacizumab) to Chemotherapy (Carboplatin and Paclitaxel) Combined With Immunotherapy (Pembrolizumab) for pMMR, TP53 Mutated Endometrial Cancer",
-     "url": "https://clinicaltrials.gov/study/NCT07198074",
-     "nctId": "NCT07198074",
+     "title": "Immunotherapy Using Tumor Infiltrating Lymphocytes for Patients With Metastatic Cancer",
+     "url": "https://clinicaltrials.gov/study/NCT01174121",
+     "nctId": "NCT01174121",
      "status": "Recruiting",
-     "phase": "Phase 3",
-     "updated": "2026-11-02"
-    },
-    {
-     "title": "CR-002 in Adult Participants With Locally Advanced or Metastatic Solid Tumors",
-     "url": "https://clinicaltrials.gov/study/NCT07909031",
-     "nctId": "NCT07909031",
-     "status": "Recruiting",
-     "phase": "Phase 1, Phase 2",
-     "updated": "2026-11-02"
+     "phase": "Phase 2",
+     "updated": "2026-11-09"
     },
     {
      "title": "Testing Nivolumab With or Without Ipilimumab in Deficient Mismatch Repair System (dMMR) Recurrent Endometrial Carcinoma",
@@ -1047,34 +1039,63 @@
      "nctId": "NCT05112601",
      "status": "Recruiting",
      "phase": "Phase 2",
-     "updated": "2026-11-02"
+     "updated": "2026-11-09"
     },
     {
-     "title": "Targeted Therapy Directed by Genetic Testing in Treating Patients With Locally Advanced or Advanced Solid Tumors, The ComboMATCH Screening Trial",
-     "url": "https://clinicaltrials.gov/study/NCT05564377",
-     "nctId": "NCT05564377",
+     "title": "Methylation Profiling in Self-Samples for Identification of (Epi)Genetic Biomarkers for Gynecological Cancers",
+     "url": "https://clinicaltrials.gov/study/NCT07902375",
+     "nctId": "NCT07902375",
      "status": "Recruiting",
-     "phase": "Phase 2",
-     "updated": "2026-11-02"
+     "phase": "N/A",
+     "updated": "2026-11-06"
     },
     {
-     "title": "177Lu-anti-PD-L1 sdAb in Metastatic Solid Tumors",
-     "url": "https://clinicaltrials.gov/study/NCT06305962",
-     "nctId": "NCT06305962",
+     "title": "Impact of Sentinel Lymph Node Mapping on Patient Reported Lower Extremity Limb Dysfunction in Stage I Endometrial Cancer",
+     "url": "https://clinicaltrials.gov/study/NCT05646316",
+     "nctId": "NCT05646316",
      "status": "Recruiting",
-     "phase": "Early Phase 1",
-     "updated": "2026-11-02"
+     "phase": "Phase 3",
+     "updated": "2026-11-06"
+    },
+    {
+     "title": "Testing the Addition of an Antiangiogenic Drug (Bevacizumab) to Chemotherapy (Carboplatin and Paclitaxel) Combined With Immunotherapy (Pembrolizumab) for pMMR, TP53 Mutated Endometrial Cancer",
+     "url": "https://clinicaltrials.gov/study/NCT07198074",
+     "nctId": "NCT07198074",
+     "status": "Recruiting",
+     "phase": "Phase 3",
+     "updated": "2026-11-06"
     }
    ]
   },
   "bladder": {
    "research": [
     {
+     "title": "Machine learning models to predict pathological complete response after chemoradiotherapy in muscle-invasive bladder cancer: toward optimized indications for bladder preservation.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/42997524/",
+     "journal": "Clinical and translational radiation oncology",
+     "date": "2027 Jan",
+     "pmid": "42997524"
+    },
+    {
      "title": "Feasibility of reduced PTV margins in magnetic resonance image-guided online adaptive radiotherapy for bladder cancer: a personalised approach.",
      "url": "https://pubmed.ncbi.nlm.nih.gov/42926875/",
      "journal": "Clinical and translational radiation oncology",
      "date": "2027 Jan",
      "pmid": "42926875"
+    },
+    {
+     "title": "Epigenetic reprogramming in Urothelial bladder cancer: mechanisms, biomarkers, and therapeutic opportunities.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/42998129/",
+     "journal": "Epigenetics",
+     "date": "2026 Dec",
+     "pmid": "42998129"
+    },
+    {
+     "title": "Preliminary Dose Constraints for Testing Intensity Modulated Proton Therapy in Anal Cancer Trials.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/42997743/",
+     "journal": "International journal of particle therapy",
+     "date": "2026 Dec",
+     "pmid": "42997743"
     },
     {
      "title": "Urological manifestations in obesity.",
@@ -1084,58 +1105,21 @@
      "pmid": "42960425"
     },
     {
-     "title": "Chiral cerium doped nanoreactor-mediated bladder carcinoma reinforced ablation via fluorescence imaging navigated surgery along with photothermal strengthened ROS storm.",
-     "url": "https://pubmed.ncbi.nlm.nih.gov/42899155/",
-     "journal": "Materials today. Bio",
-     "date": "2026 Dec",
-     "pmid": "42899155"
-    },
-    {
-     "title": "GClnc1 as an emerging oncogenic regulator with mechanistic insights and clinical implications in human cancers.",
-     "url": "https://pubmed.ncbi.nlm.nih.gov/42920755/",
-     "journal": "iScience",
-     "date": "2026 Nov 20",
-     "pmid": "42920755"
-    },
-    {
-     "title": "Opium Consumption and Lung Cancer: From Self-reported Use to Exposure Biomarkers.",
-     "url": "https://pubmed.ncbi.nlm.nih.gov/42968657/",
-     "journal": "Cancer epidemiology, biomarkers & prevention : a publication of the American Association for Cancer Research, cosponsored by the American Society of Preventive Oncology",
-     "date": "2026 Nov 2",
-     "pmid": "42968657"
-    },
-    {
-     "title": "International Society of Urological Pathology (ISUP) Multidisciplinary Expert Consultation on Treatment Effects in Prostate and Bladder Cancer: Toward Standardized Pathologic Evaluation in the Era of Precision Medicine.",
-     "url": "https://pubmed.ncbi.nlm.nih.gov/42968447/",
-     "journal": "The American journal of surgical pathology",
-     "date": "2026 Nov 2",
-     "pmid": "42968447"
+     "title": "Intradiverticular Bladder Cancer Mimicking a Normal Urinary Bladder Diverticulum on FDG PET/CT.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/42912648/",
+     "journal": "Clinical nuclear medicine",
+     "date": "2026 Dec 1",
+     "pmid": "42912648"
     }
    ],
    "trials": [
     {
-     "title": "Testing the Role of DNA Released From Tumor Cells Into the Blood in Guiding the Use of Immunotherapy After Surgical Removal of the Bladder, Kidney, Ureter, and Urethra for Urothelial Cancer Treatment, MODERN Study",
-     "url": "https://clinicaltrials.gov/study/NCT05987241",
-     "nctId": "NCT05987241",
-     "status": "Recruiting",
-     "phase": "Phase 2, Phase 3",
-     "updated": "2026-11-02"
-    },
-    {
-     "title": "Increasing Pre-Surgical Identification of Muscle Invasive Tumor Evaluations Prior to Planned Cystectomy (INSITE)",
-     "url": "https://clinicaltrials.gov/study/NCT06396533",
-     "nctId": "NCT06396533",
-     "status": "Recruiting",
-     "phase": "",
-     "updated": "2026-11-02"
-    },
-    {
-     "title": "A Study to Find Out if Enfortumab Vedotin Given With Pembrolizumab Helps People With Muscle-invasive Bladder Cancer Keep Their Bladder",
-     "url": "https://clinicaltrials.gov/study/NCT07475806",
-     "nctId": "NCT07475806",
+     "title": "Testing the Addition of the Immunotherapy Drug, Pembrolizumab, to Radiation Therapy Compared to the Usual Chemotherapy Treatment During Radiation Therapy for Bladder Cancer, PARRC Trial",
+     "url": "https://clinicaltrials.gov/study/NCT06770582",
+     "nctId": "NCT06770582",
      "status": "Recruiting",
      "phase": "Phase 2",
-     "updated": "2026-11-02"
+     "updated": "2026-11-09"
     },
     {
      "title": "Evaluation for NCI Surgery Branch Clinical Research Protocols",
@@ -1143,15 +1127,31 @@
      "nctId": "NCT00001823",
      "status": "Recruiting",
      "phase": "",
-     "updated": "2026-11-02"
+     "updated": "2026-11-09"
     },
     {
-     "title": "Risk-Enabled Therapy After Initiating EV/Pembro for Bladder Cancer",
-     "url": "https://clinicaltrials.gov/study/NCT07908979",
-     "nctId": "NCT07908979",
+     "title": "Collection of Serum and Tissue Samples From Patients With Biopsy-Proved or Suspected Malignant Disease",
+     "url": "https://clinicaltrials.gov/study/NCT00026884",
+     "nctId": "NCT00026884",
      "status": "Recruiting",
-     "phase": "Phase 2",
-     "updated": "2026-11-02"
+     "phase": "",
+     "updated": "2026-11-09"
+    },
+    {
+     "title": "Evaluation of the Clinical Utility of Online Adaptive Radiotherapy in Bladder Cancer (BLADAPT-GETUG V11)",
+     "url": "https://clinicaltrials.gov/study/NCT07043543",
+     "nctId": "NCT07043543",
+     "status": "Recruiting",
+     "phase": "N/A",
+     "updated": "2026-11-09"
+    },
+    {
+     "title": "Whole-slide Image and CT Radiomics Based Deep Learning System for Prognostication Prediction in Bladder Cancer",
+     "url": "https://clinicaltrials.gov/study/NCT06389019",
+     "nctId": "NCT06389019",
+     "status": "Recruiting",
+     "phase": "",
+     "updated": "2026-11-09"
     }
    ]
   },
@@ -1165,25 +1165,11 @@
      "pmid": "42912018"
     },
     {
-     "title": "ARHGAP40 suppresses clear cell renal cell carcinoma progression and is associated with altered glutamine-related metabolism and redox balance.",
-     "url": "https://pubmed.ncbi.nlm.nih.gov/42848714/",
-     "journal": "Cancer biology & therapy",
-     "date": "2026 Dec 31",
-     "pmid": "42848714"
-    },
-    {
-     "title": "Predicting drug-drug interaction and optimal dosing regimens of rivaroxaban combined with ceritinib using physiologically based pharmacokinetic and pharmacodynamic modeling.",
-     "url": "https://pubmed.ncbi.nlm.nih.gov/42849684/",
-     "journal": "European journal of pharmacology",
-     "date": "2026 Dec 10",
-     "pmid": "42849684"
-    },
-    {
-     "title": "circ_0029343 promotes malignant phenotypes in clear cell renal cell carcinoma and is associated with miR-490-5p/NAT10 signaling and pyroptosis-related pathways.",
-     "url": "https://pubmed.ncbi.nlm.nih.gov/42843702/",
-     "journal": "European journal of pharmacology",
-     "date": "2026 Dec 10",
-     "pmid": "42843702"
+     "title": "Immune checkpoint inhibitor induced Triple-M syndrome: A case series detailing what every ophthalmologist should know.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/42997656/",
+     "journal": "American journal of ophthalmology case reports",
+     "date": "2026 Dec",
+     "pmid": "42997656"
     },
     {
      "title": "Urological manifestations in obesity.",
@@ -1193,58 +1179,79 @@
      "pmid": "42960425"
     },
     {
-     "title": "Machine learning-based classification of renal cell carcinoma and upper tract urothelial carcinoma using preoperative hematological markers.",
-     "url": "https://pubmed.ncbi.nlm.nih.gov/42948584/",
-     "journal": "Biomedical reports",
+     "title": "A false sense of hypoxia: Pro‑tumorigenic VHL‑HIF2α dysregulation in clear cell renal cell carcinoma (Review).",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/42924582/",
+     "journal": "Molecular medicine reports",
      "date": "2026 Dec",
-     "pmid": "42948584"
+     "pmid": "42924582"
+    },
+    {
+     "title": "Navigating the landscape of targeted therapies for renal cell carcinoma in the era of precision medicine (Review).",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/42885310/",
+     "journal": "Molecular medicine reports",
+     "date": "2026 Dec",
+     "pmid": "42885310"
+    },
+    {
+     "title": "Initial complete local therapy without systemic therapy versus systemic-therapy-based management in selected patients with oligometastatic renal cell carcinoma: a matched comparative study.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/42869248/",
+     "journal": "Radiotherapy and oncology : journal of the European Society for Therapeutic Radiology and Oncology",
+     "date": "2026 Dec",
+     "pmid": "42869248"
     }
    ],
    "trials": [
     {
-     "title": "Testing the Role of DNA Released From Tumor Cells Into the Blood in Guiding the Use of Immunotherapy After Surgical Removal of the Bladder, Kidney, Ureter, and Urethra for Urothelial Cancer Treatment, MODERN Study",
-     "url": "https://clinicaltrials.gov/study/NCT05987241",
-     "nctId": "NCT05987241",
+     "title": "Hereditary Leiomyomatosis Renal Cell Cancer - Study of the Genetic Cause and the Predisposition to Renal Cancer",
+     "url": "https://clinicaltrials.gov/study/NCT00050752",
+     "nctId": "NCT00050752",
      "status": "Recruiting",
-     "phase": "Phase 2, Phase 3",
-     "updated": "2026-11-02"
+     "phase": "",
+     "updated": "2026-11-09"
     },
     {
-     "title": "Prospective Study of Cadonilimab With Lenvatinib in Renal Cell Carcinoma",
-     "url": "https://clinicaltrials.gov/study/NCT07909265",
-     "nctId": "NCT07909265",
+     "title": "Genetic Analysis of Birt Hogg-Dube Syndrome and Characterization of Predisposition to Kidney Cancer",
+     "url": "https://clinicaltrials.gov/study/NCT00033137",
+     "nctId": "NCT00033137",
+     "status": "Recruiting",
+     "phase": "",
+     "updated": "2026-11-09"
+    },
+    {
+     "title": "Phase II Trial of Combination Anti-PD-1 and Aldesleukin for Metastatic Melanoma and Renal Cell Carcinoma",
+     "url": "https://clinicaltrials.gov/study/NCT05155033",
+     "nctId": "NCT05155033",
      "status": "Recruiting",
      "phase": "Phase 2",
-     "updated": "2026-11-02"
+     "updated": "2026-11-09"
     },
     {
-     "title": "A Trial to Find Out if REGN5678 (Nezastomig) is Safe and How Well it Works Alone or in Combination With Cemiplimab for Adult Participants With Metastatic Castration-Resistant Prostate Cancer and Other Tumors",
-     "url": "https://clinicaltrials.gov/study/NCT03972657",
-     "nctId": "NCT03972657",
+     "title": "Collection of Serum and Tissue Samples From Patients With Biopsy-Proved or Suspected Malignant Disease",
+     "url": "https://clinicaltrials.gov/study/NCT00026884",
+     "nctId": "NCT00026884",
      "status": "Recruiting",
-     "phase": "Phase 1, Phase 2",
-     "updated": "2026-11-02"
+     "phase": "",
+     "updated": "2026-11-09"
     },
     {
-     "title": "M0324 as Monotherapy and in Combination With Pembrolizumab or Chemotherapy in Participants With Selected Advanced Solid Tumors",
-     "url": "https://clinicaltrials.gov/study/NCT07166601",
-     "nctId": "NCT07166601",
+     "title": "Phase II Trial of Single Agent Belzutifan or Pembrolizumab Versus Combination as Neoadjuvant Therapy in Clear Cell Renal Cell Carcinoma (BLAZE)",
+     "url": "https://clinicaltrials.gov/study/NCT07187778",
+     "nctId": "NCT07187778",
      "status": "Recruiting",
-     "phase": "Phase 1",
-     "updated": "2026-11-02"
-    },
-    {
-     "title": "A Phase 1 Study of AB521 Monotherapy and Combination Therapies in Renal Cell Carcinoma and Other Solid Tumors",
-     "url": "https://clinicaltrials.gov/study/NCT05536141",
-     "nctId": "NCT05536141",
-     "status": "Recruiting",
-     "phase": "Phase 1",
-     "updated": "2026-11-02"
+     "phase": "Phase 2",
+     "updated": "2026-11-09"
     }
    ]
   },
   "liver": {
    "research": [
+    {
+     "title": "Disrupting the cholesterol-mechanics axis enables ferroptosis and deep drug delivery in hepatocellular carcinoma.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/42991010/",
+     "journal": "Bioactive materials",
+     "date": "2027 Mar",
+     "pmid": "42991010"
+    },
     {
      "title": "The epigenetic landscape of hepatocellular carcinoma: from molecular mechanisms to early detection biomarkers and precision therapy.",
      "url": "https://pubmed.ncbi.nlm.nih.gov/42863532/",
@@ -1253,11 +1260,11 @@
      "pmid": "42863532"
     },
     {
-     "title": "Determination of 5-Fluorouracil, 5,6-dihydro-5-Fluorouracil, Uracil and Dihydrouracil by UPLC-MS/MS in plasma and its application in hepatocellular carcinoma.",
-     "url": "https://pubmed.ncbi.nlm.nih.gov/42838441/",
-     "journal": "Analytical biochemistry",
-     "date": "2027 Jan",
-     "pmid": "42838441"
+     "title": "NOP2/Sun domain 4-mediated m5C methylation of Janus kinase 1 promotes hepatocellular carcinoma progression.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/42979826/",
+     "journal": "Cell adhesion & migration",
+     "date": "2026 Dec",
+     "pmid": "42979826"
     },
     {
      "title": "Cytotoxic effects and modulation of BAX/BCL-2 gene expression induced by plant-derived cerium oxide nanoparticles in HepG2 cells.",
@@ -1279,66 +1286,73 @@
      "journal": "Experimental and therapeutic medicine",
      "date": "2026 Dec",
      "pmid": "42948365"
-    },
-    {
-     "title": "Liquid‑liquid phase separation and post‑transcriptional regulation intersection: A new paradigm of RNA‑binding protein condensates in hepatocellular carcinoma malignant phenotypes (Review).",
-     "url": "https://pubmed.ncbi.nlm.nih.gov/42924586/",
-     "journal": "Molecular medicine reports",
-     "date": "2026 Dec",
-     "pmid": "42924586"
     }
    ],
    "trials": [
     {
-     "title": "Improving Hepatocellular Carcinoma Screening",
-     "url": "https://clinicaltrials.gov/study/NCT05828446",
-     "nctId": "NCT05828446",
+     "title": "Effect of Acute Endurance Exercise on the Production of FGF21 and Follistatin in Patients With Hepatocellular Carcinoma",
+     "url": "https://clinicaltrials.gov/study/NCT07189624",
+     "nctId": "NCT07189624",
      "status": "Recruiting",
      "phase": "N/A",
-     "updated": "2026-11-02"
+     "updated": "2026-11-09"
     },
     {
-     "title": "DNP-MRSI of HCC Metabolism to Predict Therapeutic Response",
-     "url": "https://clinicaltrials.gov/study/NCT07807475",
-     "nctId": "NCT07807475",
+     "title": "Transarterial Chemoembolization (TACE) and Stereotactic Body Radiation (SBRT) in Patients With Hepatocellular Carcinoma (HCC) Prior to Liver Transplantation",
+     "url": "https://clinicaltrials.gov/study/NCT07924943",
+     "nctId": "NCT07924943",
+     "status": "Recruiting",
+     "phase": "N/A",
+     "updated": "2026-11-09"
+    },
+    {
+     "title": "The Vanguard Study: Testing a New Way to Screen for Cancer",
+     "url": "https://clinicaltrials.gov/study/NCT06995898",
+     "nctId": "NCT06995898",
+     "status": "Recruiting",
+     "phase": "N/A",
+     "updated": "2026-11-06"
+    },
+    {
+     "title": "Real-world Evaluation of the HistoSonics Edison System for Treatment of Liver Tumors Across Multidisciplinary Users (BOOMBOX: Master Study)",
+     "url": "https://clinicaltrials.gov/study/NCT06486454",
+     "nctId": "NCT06486454",
      "status": "Recruiting",
      "phase": "",
-     "updated": "2026-11-02"
+     "updated": "2026-11-06"
     },
     {
-     "title": "Targeted Navigation in Hepatocellular Carcinoma (HCC)",
-     "url": "https://clinicaltrials.gov/study/NCT06260943",
-     "nctId": "NCT06260943",
+     "title": "At-Home Cancer Directed Therapy Versus in Clinic for the Treatment of Patients With Advanced Cancer",
+     "url": "https://clinicaltrials.gov/study/NCT05969860",
+     "nctId": "NCT05969860",
      "status": "Recruiting",
-     "phase": "N/A",
-     "updated": "2026-11-02"
-    },
-    {
-     "title": "A Study of VRT106, Combined With Camrelizumab, and Apatinib for Advanced HCC",
-     "url": "https://clinicaltrials.gov/study/NCT07589244",
-     "nctId": "NCT07589244",
-     "status": "Recruiting",
-     "phase": "Phase 2, Phase 3",
-     "updated": "2026-10-30"
-    },
-    {
-     "title": "A DNAJB1-PRKACA Fusion Kinase Peptide Vaccine Combined With Glutamine Antagonist DRP-104, Nivolumab, and Ipilimumab in Patients With Advanced Stage Fibrolamellar Carcinoma (FLC)",
-     "url": "https://clinicaltrials.gov/study/NCT07430202",
-     "nctId": "NCT07430202",
-     "status": "Recruiting",
-     "phase": "Phase 1",
-     "updated": "2026-10-30"
+     "phase": "Phase 2",
+     "updated": "2026-11-06"
     }
    ]
   },
   "stomach": {
    "research": [
     {
-     "title": "UBE2S promotes gastric cancer progression through RACGAP1 stabilization associated with K292-dependent K63-linked ubiquitination.",
-     "url": "https://pubmed.ncbi.nlm.nih.gov/42848643/",
-     "journal": "Cancer biology & therapy",
-     "date": "2026 Dec 31",
-     "pmid": "42848643"
+     "title": "Statement of Retraction: Circular RNA 0000654 facilitates the growth of gastric cancer cells through absorbing microRNA-149-5p to up-regulate inhibin-beta A.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/42987419/",
+     "journal": "Bioengineered",
+     "date": "2026 Dec",
+     "pmid": "42987419"
+    },
+    {
+     "title": "Statement of Retraction: Long non-coding RNA p53 upregulated regulator of p53 levels (PURPL) promotes the development of gastric cancer.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/42987341/",
+     "journal": "Bioengineered",
+     "date": "2026 Dec",
+     "pmid": "42987341"
+    },
+    {
+     "title": "Statement of Retraction: microRNA-128-3p inhibits CD4+ regulatory T cells enrichment by targeting interleukin 16 in gastric cancer.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/42987319/",
+     "journal": "Bioengineered",
+     "date": "2026 Dec",
+     "pmid": "42987319"
     },
     {
      "title": "Complete loss of all mismatch repair protein expression in endometrioid carcinoma: A first case report of null phenotype induced by MLH1 hypermethylation and MSH2 somatic mutation.",
@@ -1360,67 +1374,67 @@
      "journal": "ESMO gastrointestinal oncology",
      "date": "2026 Dec",
      "pmid": "42959918"
-    },
-    {
-     "title": "Expression analysis of potential novel biomarkers TRIM29 alongside lncRNA NORAD and MIR497-HG in breast, gastric, and colorectal cancers.",
-     "url": "https://pubmed.ncbi.nlm.nih.gov/42959893/",
-     "journal": "Molecular genetics and metabolism reports",
-     "date": "2026 Dec",
-     "pmid": "42959893"
-    },
-    {
-     "title": "GIST in Turner Syndrome.",
-     "url": "https://pubmed.ncbi.nlm.nih.gov/42959697/",
-     "journal": "ESMO gastrointestinal oncology",
-     "date": "2026 Dec",
-     "pmid": "42959697"
     }
    ],
    "trials": [
     {
-     "title": "A Study of Bispecific Antibody MCLA-158 in Patients With Advanced Solid Tumors",
-     "url": "https://clinicaltrials.gov/study/NCT03526835",
-     "nctId": "NCT03526835",
+     "title": "GI-05: The Impact of Olanzapine Among Patients Receiving Neoadjuvant Chemotherapy for Gastric Cancer",
+     "url": "https://clinicaltrials.gov/study/NCT07581405",
+     "nctId": "NCT07581405",
      "status": "Recruiting",
-     "phase": "Phase 1, Phase 2",
-     "updated": "2026-11-02"
+     "phase": "Phase 2",
+     "updated": "2026-11-09"
     },
     {
-     "title": "CR-002 in Adult Participants With Locally Advanced or Metastatic Solid Tumors",
-     "url": "https://clinicaltrials.gov/study/NCT07909031",
-     "nctId": "NCT07909031",
-     "status": "Recruiting",
-     "phase": "Phase 1, Phase 2",
-     "updated": "2026-11-02"
-    },
-    {
-     "title": "Intraoperative Imaging of Gastrointestinal Malignancies Using Pafolacianine (CYTALUX™)",
-     "url": "https://clinicaltrials.gov/study/NCT07124351",
-     "nctId": "NCT07124351",
-     "status": "Recruiting",
-     "phase": "Phase 4",
-     "updated": "2026-11-02"
-    },
-    {
-     "title": "Development and Utilization of an Integrated Clinical Genomic Database",
-     "url": "https://clinicaltrials.gov/study/NCT07911267",
-     "nctId": "NCT07911267",
+     "title": "Surgery in Gastrointestinal Stromal Tumors (GISTs) for Treatment, Tumor Modeling, and Genomic Analysis",
+     "url": "https://clinicaltrials.gov/study/NCT04557969",
+     "nctId": "NCT04557969",
      "status": "Recruiting",
      "phase": "",
-     "updated": "2026-11-02"
+     "updated": "2026-11-09"
     },
     {
-     "title": "TEAS for Gastrectomy Recovery",
-     "url": "https://clinicaltrials.gov/study/NCT07898293",
-     "nctId": "NCT07898293",
+     "title": "A Study in Greece Observing How Patients With Stomach and Esophageal Cancer Are Diagnosed and Treated in Everyday Medical Practice",
+     "url": "https://clinicaltrials.gov/study/NCT07800754",
+     "nctId": "NCT07800754",
+     "status": "Recruiting",
+     "phase": "",
+     "updated": "2026-11-09"
+    },
+    {
+     "title": "A Study of ASP2138 Together With Chemotherapy and Pembrolizumab in Adults With Gastric Cancer",
+     "url": "https://clinicaltrials.gov/study/NCT07673887",
+     "nctId": "NCT07673887",
+     "status": "Recruiting",
+     "phase": "Phase 3",
+     "updated": "2026-11-09"
+    },
+    {
+     "title": "The Vanguard Study: Testing a New Way to Screen for Cancer",
+     "url": "https://clinicaltrials.gov/study/NCT06995898",
+     "nctId": "NCT06995898",
      "status": "Recruiting",
      "phase": "N/A",
-     "updated": "2026-11-02"
+     "updated": "2026-11-06"
     }
    ]
   },
   "esophageal": {
    "research": [
+    {
+     "title": "Enhanced Esophageal Cancer Detection Using Spectrum-Aided Vision Enhancer: A Comparative Study of White Light Imaging, Narrow-Band Imaging, and Algorithmic Narrow-Band Imaging-Like Imaging.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/42985276/",
+     "journal": "DEN open",
+     "date": "2027 Apr",
+     "pmid": "42985276"
+    },
+    {
+     "title": "NRF2 and mutant p53 separately regulate redox balance in esophageal squamous cell carcinoma through metabolic reprogramming.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/42992651/",
+     "journal": "Cancer biology & therapy",
+     "date": "2026 Dec 31",
+     "pmid": "42992651"
+    },
     {
      "title": "Acidic bile salt‑induced DNA methylation promotes APE1 upregulation through miR‑128‑3p silencing in esophageal adenocarcinoma.",
      "url": "https://pubmed.ncbi.nlm.nih.gov/42960452/",
@@ -1448,87 +1462,80 @@
      "journal": "Oncology letters",
      "date": "2026 Dec",
      "pmid": "42948379"
-    },
-    {
-     "title": "Advances in microfluidic chip technologies for the study and management of gastrointestinal cancers.",
-     "url": "https://pubmed.ncbi.nlm.nih.gov/42913054/",
-     "journal": "Pathology, research and practice",
-     "date": "2026 Dec",
-     "pmid": "42913054"
-    },
-    {
-     "title": "Global Landscape of Clinical Studies Open to Enrollment in Carbon Ion Radiotherapy: A PTCOG Review.",
-     "url": "https://pubmed.ncbi.nlm.nih.gov/42893060/",
-     "journal": "International journal of particle therapy",
-     "date": "2026 Dec",
-     "pmid": "42893060"
     }
    ],
    "trials": [
     {
-     "title": "A Study of Bispecific Antibody MCLA-158 in Patients With Advanced Solid Tumors",
-     "url": "https://clinicaltrials.gov/study/NCT03526835",
-     "nctId": "NCT03526835",
+     "title": "A Study in Greece Observing How Patients With Stomach and Esophageal Cancer Are Diagnosed and Treated in Everyday Medical Practice",
+     "url": "https://clinicaltrials.gov/study/NCT07800754",
+     "nctId": "NCT07800754",
      "status": "Recruiting",
-     "phase": "Phase 1, Phase 2",
-     "updated": "2026-11-02"
+     "phase": "",
+     "updated": "2026-11-09"
     },
     {
-     "title": "The Effectiveness of Structured Swallowing Exercise Therapy in Patients With Nasopharyngeal Carcinoma: An Assessment of Swallowing Function and Quality of Life",
-     "url": "https://clinicaltrials.gov/study/NCT07909538",
-     "nctId": "NCT07909538",
+     "title": "The Vanguard Study: Testing a New Way to Screen for Cancer",
+     "url": "https://clinicaltrials.gov/study/NCT06995898",
+     "nctId": "NCT06995898",
      "status": "Recruiting",
      "phase": "N/A",
-     "updated": "2026-11-02"
+     "updated": "2026-11-06"
     },
     {
-     "title": "CR-002 in Adult Participants With Locally Advanced or Metastatic Solid Tumors",
-     "url": "https://clinicaltrials.gov/study/NCT07909031",
-     "nctId": "NCT07909031",
+     "title": "Multicenter Prospective Cohort on Esophageal Endoscopic Submucosal Dissection",
+     "url": "https://clinicaltrials.gov/study/NCT07343869",
+     "nctId": "NCT07343869",
      "status": "Recruiting",
-     "phase": "Phase 1, Phase 2",
-     "updated": "2026-11-02"
+     "phase": "",
+     "updated": "2026-11-06"
     },
     {
-     "title": "Intraoperative Imaging of Gastrointestinal Malignancies Using Pafolacianine (CYTALUX™)",
-     "url": "https://clinicaltrials.gov/study/NCT07124351",
-     "nctId": "NCT07124351",
+     "title": "Multicenter Validation Trial of [18F]AlF-FAPI-74 for PET Imaging of Cancer-associated Fibroblasts Through Fibroblast Activation Protein Inhibitors (FAPI) in Different Tumor Types",
+     "url": "https://clinicaltrials.gov/study/NCT06782412",
+     "nctId": "NCT06782412",
      "status": "Recruiting",
-     "phase": "Phase 4",
-     "updated": "2026-11-02"
+     "phase": "Phase 2, Phase 3",
+     "updated": "2026-11-06"
     },
     {
-     "title": "A Study of [225Ac]Ac-AKY-2519 in Patients With B7-H3 Expressing Solid Tumors",
-     "url": "https://clinicaltrials.gov/study/NCT07887971",
-     "nctId": "NCT07887971",
+     "title": "At-Home Cancer Directed Therapy Versus in Clinic for the Treatment of Patients With Advanced Cancer",
+     "url": "https://clinicaltrials.gov/study/NCT05969860",
+     "nctId": "NCT05969860",
      "status": "Recruiting",
-     "phase": "Phase 1",
-     "updated": "2026-11-02"
+     "phase": "Phase 2",
+     "updated": "2026-11-06"
     }
    ]
   },
   "head-neck": {
    "research": [
     {
-     "title": "Sentinel lymph node-guided modification of postoperative radiotherapy in oral tongue squamous cell carcinoma: a retrospective dosimetric and NTCP modelling study.",
-     "url": "https://pubmed.ncbi.nlm.nih.gov/42927216/",
+     "title": "Definition of joint biomarker signatures for patients with locally advanced HNSCC treated by postoperative radiochemotherapy - A multicentre study of the DKTK-ROG.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/42991990/",
      "journal": "Clinical and translational radiation oncology",
      "date": "2027 Jan",
-     "pmid": "42927216"
+     "pmid": "42991990"
     },
     {
-     "title": "Current role of boron neutron capture therapy in head and neck cancer: insights from 4 years of clinical experience.",
-     "url": "https://pubmed.ncbi.nlm.nih.gov/42898130/",
-     "journal": "Clinical and translational radiation oncology",
+     "title": "Longitudinal CT imaging to predict radiotherapy treatment outcome in head and neck cancer: a deep learning approach.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/42966293/",
+     "journal": "Computer methods and programs in biomedicine",
      "date": "2027 Jan",
-     "pmid": "42898130"
+     "pmid": "42966293"
     },
     {
-     "title": "Delayed elective nodal irradiation in head-and-neck cancer radiotherapy reduces acute lymphocyte damage, lymphopenia, and modulates immune signatures.",
-     "url": "https://pubmed.ncbi.nlm.nih.gov/42893008/",
-     "journal": "Clinical and translational radiation oncology",
-     "date": "2027 Jan",
-     "pmid": "42893008"
+     "title": "RIG-I is essential for radiation-induced IFN-β production and PD-L1/PD-L2 upregulation in HPV-negative head and neck squamous cell carcinoma cells.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/42992938/",
+     "journal": "Oncoimmunology",
+     "date": "2026 Dec 31",
+     "pmid": "42992938"
+    },
+    {
+     "title": "Triaptosis-based biomimetic nanoparticle for the treatment of oral squamous cell carcinoma lymph node metastasis.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/42985244/",
+     "journal": "Materials today. Bio",
+     "date": "2026 Dec",
+     "pmid": "42985244"
     },
     {
      "title": "R0 resection following neoadjuvant PD-1 inhibition with paclitaxel-cisplatin is associated with improved overall survival in locally advanced and recurrent oral squamous cell carcinoma: multicenter retrospective cohort study.",
@@ -1543,55 +1550,48 @@
      "journal": "Pathology, research and practice",
      "date": "2026 Dec",
      "pmid": "42914624"
-    },
-    {
-     "title": "Not always cancer-Probable Lyme disease mimicking squamous cell carcinoma: A case report.",
-     "url": "https://pubmed.ncbi.nlm.nih.gov/42891013/",
-     "journal": "Radiology case reports",
-     "date": "2026 Dec",
-     "pmid": "42891013"
     }
    ],
    "trials": [
     {
-     "title": "A Study of Bispecific Antibody MCLA-158 in Patients With Advanced Solid Tumors",
-     "url": "https://clinicaltrials.gov/study/NCT03526835",
-     "nctId": "NCT03526835",
-     "status": "Recruiting",
-     "phase": "Phase 1, Phase 2",
-     "updated": "2026-11-02"
-    },
-    {
-     "title": "CR-002 in Adult Participants With Locally Advanced or Metastatic Solid Tumors",
-     "url": "https://clinicaltrials.gov/study/NCT07909031",
-     "nctId": "NCT07909031",
-     "status": "Recruiting",
-     "phase": "Phase 1, Phase 2",
-     "updated": "2026-11-02"
-    },
-    {
-     "title": "PDO Based Drug Sensitive Test in R/M HNSCC",
-     "url": "https://clinicaltrials.gov/study/NCT06686342",
-     "nctId": "NCT06686342",
-     "status": "Recruiting",
-     "phase": "",
-     "updated": "2026-11-02"
-    },
-    {
-     "title": "A Study of [225Ac]Ac-AKY-2519 in Patients With B7-H3 Expressing Solid Tumors",
-     "url": "https://clinicaltrials.gov/study/NCT07887971",
-     "nctId": "NCT07887971",
-     "status": "Recruiting",
-     "phase": "Phase 1",
-     "updated": "2026-11-02"
-    },
-    {
-     "title": "QL1706 Plus Celecoxib in Advanced Esophageal Squamous Cell Carcinoma",
-     "url": "https://clinicaltrials.gov/study/NCT07049185",
-     "nctId": "NCT07049185",
+     "title": "Nivolumab Combined With Chemotherapy in the Treatment of Primary Tracheal Squamous Cell Carcinoma",
+     "url": "https://clinicaltrials.gov/study/NCT05964101",
+     "nctId": "NCT05964101",
      "status": "Recruiting",
      "phase": "Phase 2",
-     "updated": "2026-11-02"
+     "updated": "2026-11-09"
+    },
+    {
+     "title": "Docetaxel and SX-682 in Recurrent/Metastatic Head and Neck Squamous Cell Carcinoma, Salivary Gland Carcinoma, and Advanced Prostate Cancer",
+     "url": "https://clinicaltrials.gov/study/NCT07667400",
+     "nctId": "NCT07667400",
+     "status": "Recruiting",
+     "phase": "Phase 1, Phase 2",
+     "updated": "2026-11-09"
+    },
+    {
+     "title": "Indocyanine Green With Near Infrared Imaging for Intraoperative Visualization of Head and Neck Squamous Cell Carcinoma",
+     "url": "https://clinicaltrials.gov/study/NCT07825597",
+     "nctId": "NCT07825597",
+     "status": "Recruiting",
+     "phase": "Phase 2",
+     "updated": "2026-11-09"
+    },
+    {
+     "title": "Multicenter Prospective Cohort on Esophageal Endoscopic Submucosal Dissection",
+     "url": "https://clinicaltrials.gov/study/NCT07343869",
+     "nctId": "NCT07343869",
+     "status": "Recruiting",
+     "phase": "",
+     "updated": "2026-11-06"
+    },
+    {
+     "title": "Testing the Addition of Anti-Cancer Drug, Cetuximab, to Standard of Care Treatment (Pembrolizumab) for Returning or Spreading Head and Neck Cancer After Previous Treatment",
+     "url": "https://clinicaltrials.gov/study/NCT06589804",
+     "nctId": "NCT06589804",
+     "status": "Recruiting",
+     "phase": "Phase 3",
+     "updated": "2026-11-06"
     }
    ]
   },
@@ -1605,81 +1605,81 @@
      "pmid": "42959946"
     },
     {
-     "title": "Exploring sex differences in global cancer incidence and mortality and the role of national development level.",
-     "url": "https://pubmed.ncbi.nlm.nih.gov/42959695/",
-     "journal": "ESMO real world data and digital oncology",
-     "date": "2026 Dec",
-     "pmid": "42959695"
+     "title": "UWMT-net: An uncertainty-weighted multi-task network for ultrasound-based three-class classification of thyroid nodules.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/42945782/",
+     "journal": "Computer methods and programs in biomedicine",
+     "date": "2027 Jan",
+     "pmid": "42945782"
     },
     {
-     "title": "Integrated single-cell transcriptomics reveals miR-941 targets CLDN4 to inhibit malignant progression of thyroid cancer through the PI3K/AKT signaling pathway.",
-     "url": "https://pubmed.ncbi.nlm.nih.gov/42953376/",
-     "journal": "Journal of cell communication and signaling",
+     "title": "Delayed recognition of primary thyroid lymphoma with progressive thyroid enlargement and cardiopulmonary symptoms.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/42996579/",
+     "journal": "JCEM case reports",
      "date": "2026 Dec",
-     "pmid": "42953376"
+     "pmid": "42996579"
     },
     {
-     "title": "A biomimetic gas-protein co-delivery nanoplatform targets mitochondrial stress and GSDME activation for glioblastoma immunotherapy.",
-     "url": "https://pubmed.ncbi.nlm.nih.gov/42926787/",
-     "journal": "Materials today. Bio",
+     "title": "Recurrent papillary thyroid carcinoma with brachiocephalic vein tumor thrombus: A rare case report.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/42990587/",
+     "journal": "Radiology case reports",
      "date": "2026 Dec",
-     "pmid": "42926787"
+     "pmid": "42990587"
     },
     {
-     "title": "Advances in resistance mechanisms and counterstrategies for antibody‑drug conjugates in HER2‑low and HER2‑ultralow breast cancer (Review).",
-     "url": "https://pubmed.ncbi.nlm.nih.gov/42924615/",
-     "journal": "Oncology reports",
+     "title": "Comparison and calibration of the 2025 and 2015 American Thyroid Association recurrence-risk classifications in differentiated thyroid cancer.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/42978842/",
+     "journal": "Journal of the Endocrine Society",
      "date": "2026 Dec",
-     "pmid": "42924615"
+     "pmid": "42978842"
     },
     {
-     "title": "Factors associated with ablation zone resorption after microwave ablation in solitary T1aN0M0 papillary thyroid carcinoma: baseline lesion volume and microcalcification.",
-     "url": "https://pubmed.ncbi.nlm.nih.gov/42908095/",
-     "journal": "International journal of hyperthermia : the official journal of European Society for Hyperthermic Oncology, North American Hyperthermia Group",
+     "title": "Clinical features and outcomes of MEN2A with RET codon 634 pathogenic variants.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/42978830/",
+     "journal": "Journal of the Endocrine Society",
      "date": "2026 Dec",
-     "pmid": "42908095"
+     "pmid": "42978830"
     }
    ],
    "trials": [
     {
-     "title": "Radiofrequency Ablation Study in LatinX Patients",
-     "url": "https://clinicaltrials.gov/study/NCT05903196",
-     "nctId": "NCT05903196",
-     "status": "Recruiting",
-     "phase": "N/A",
-     "updated": "2026-11-02"
-    },
-    {
-     "title": "Zanzalintinib for the Treatment of Advanced Thyroid Cancer Before Surgery",
-     "url": "https://clinicaltrials.gov/study/NCT06959511",
-     "nctId": "NCT06959511",
-     "status": "Recruiting",
-     "phase": "Phase 2",
-     "updated": "2026-11-02"
-    },
-    {
-     "title": "Ultrasound-guided Microwave Ablation of Benign Thyroid Nodules",
-     "url": "https://clinicaltrials.gov/study/NCT07906821",
-     "nctId": "NCT07906821",
-     "status": "Recruiting",
-     "phase": "N/A",
-     "updated": "2026-11-02"
-    },
-    {
-     "title": "The Use of 124-I-PET/CT Whole Body and Lesional Dosimetry in Differentiated Thyroid Cancer",
-     "url": "https://clinicaltrials.gov/study/NCT03841617",
-     "nctId": "NCT03841617",
-     "status": "Recruiting",
-     "phase": "Phase 2",
-     "updated": "2026-10-29"
-    },
-    {
-     "title": "Studies on Tumors of the Thyroid",
-     "url": "https://clinicaltrials.gov/study/NCT00001160",
-     "nctId": "NCT00001160",
+     "title": "Clinical and Genetic Studies in Familial Non-medullary Thyroid Cancer",
+     "url": "https://clinicaltrials.gov/study/NCT01109420",
+     "nctId": "NCT01109420",
      "status": "Recruiting",
      "phase": "",
-     "updated": "2026-10-29"
+     "updated": "2026-11-09"
+    },
+    {
+     "title": "Nanosecond Pulsed Field Ablation in the Management of T1N0M0 Papillary Thyroid Carcinoma",
+     "url": "https://clinicaltrials.gov/study/NCT07218315",
+     "nctId": "NCT07218315",
+     "status": "Recruiting",
+     "phase": "N/A",
+     "updated": "2026-11-09"
+    },
+    {
+     "title": "The Role of 68-Gallium-DOTATATE-PET/CT in the Imaging of Metastatic Thyroid Cancer",
+     "url": "https://clinicaltrials.gov/study/NCT04927416",
+     "nctId": "NCT04927416",
+     "status": "Recruiting",
+     "phase": "Phase 2",
+     "updated": "2026-11-09"
+    },
+    {
+     "title": "DICER1-related Pleuropulmonary Blastoma Cancer Predisposition Syndrome: A Natural History Study",
+     "url": "https://clinicaltrials.gov/study/NCT01247597",
+     "nctId": "NCT01247597",
+     "status": "Recruiting",
+     "phase": "",
+     "updated": "2026-11-09"
+    },
+    {
+     "title": "The Application of Electrical Stimulation in Postoperative Pain Management of Thyroid Surgery",
+     "url": "https://clinicaltrials.gov/study/NCT06931743",
+     "nctId": "NCT06931743",
+     "status": "Recruiting",
+     "phase": "N/A",
+     "updated": "2026-11-09"
     }
    ]
   },
@@ -1700,74 +1700,74 @@
      "pmid": "42936426"
     },
     {
-     "title": "A unified and domain-robust framework enables controllable multimodal brain MRI synthesis.",
-     "url": "https://pubmed.ncbi.nlm.nih.gov/42874159/",
-     "journal": "Medical image analysis",
-     "date": "2027 Jan",
-     "pmid": "42874159"
+     "title": "Parthenolide reduces transgelin-2 expression in inhibiting glioblastoma malignancy through activating GSK3β-suppressing CREB signaling.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/42933532/",
+     "journal": "Neuropharmacology",
+     "date": "2027 Jan 1",
+     "pmid": "42933532"
     },
     {
-     "title": "An optimized Matrigel-assisted orthotopic GL261 glioma model improves tumor engraftment and reproducibility.",
-     "url": "https://pubmed.ncbi.nlm.nih.gov/42849540/",
-     "journal": "Journal of neuroscience methods",
-     "date": "2027 Jan",
-     "pmid": "42849540"
+     "title": "Therapeutic potential and toxicological trade-offs of nanoparticle-enhanced valproic acid in glioblastoma: Behavioral and oxidative insights.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/42892490/",
+     "journal": "Neuropharmacology",
+     "date": "2027 Jan 1",
+     "pmid": "42892490"
     },
     {
-     "title": "Glioblastoma immune landscape remodeling following treatment with CD70-targeted CAR-T cells.",
-     "url": "https://pubmed.ncbi.nlm.nih.gov/42894313/",
-     "journal": "Oncoimmunology",
+     "title": "Psychoneuroimmunology of glioblastoma: How emotional states shape tumor biology.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/42869280/",
+     "journal": "Neuropharmacology",
+     "date": "2027 Jan 1",
+     "pmid": "42869280"
+    },
+    {
+     "title": "Adaptive kinase signaling enables escape from small molecule inhibition in glioblastoma.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/42975206/",
+     "journal": "Cancer biology & therapy",
      "date": "2026 Dec 31",
-     "pmid": "42894313"
-    },
-    {
-     "title": "Li-Fraumeni syndrome presenting with early-onset eyelid sebaceous carcinoma.",
-     "url": "https://pubmed.ncbi.nlm.nih.gov/42960272/",
-     "journal": "American journal of ophthalmology case reports",
-     "date": "2026 Dec",
-     "pmid": "42960272"
+     "pmid": "42975206"
     }
    ],
    "trials": [
     {
-     "title": "A Trial to Evaluate Multiple Regimens in Newly Diagnosed and Recurrent Glioblastoma",
-     "url": "https://clinicaltrials.gov/study/NCT03970447",
-     "nctId": "NCT03970447",
+     "title": "Beginning Radiation Immediately With GammaTile at GBM Excision Versus Standard of Care",
+     "url": "https://clinicaltrials.gov/study/NCT07195591",
+     "nctId": "NCT07195591",
      "status": "Recruiting",
-     "phase": "Phase 2, Phase 3",
-     "updated": "2026-11-02"
+     "phase": "Phase 3",
+     "updated": "2026-11-09"
     },
     {
-     "title": "Adoptive T Cell Therapy, DC Vaccines, and Hematopoietic Stem Cells Combined With Immune checkPOINT Blockade in Patients With Medulloblastoma",
-     "url": "https://clinicaltrials.gov/study/NCT06514898",
-     "nctId": "NCT06514898",
+     "title": "000860: A Phase I/II Study of Zotiraciclib for Recurrent Malignant Gliomas With Isocitrate Dehydrogenase 1 or 2 (IDH1 or IDH2) Mutations",
+     "url": "https://clinicaltrials.gov/study/NCT05588141",
+     "nctId": "NCT05588141",
+     "status": "Recruiting",
+     "phase": "Phase 1, Phase 2",
+     "updated": "2026-11-09"
+    },
+    {
+     "title": "A First-in-Human Study of ZE94-0605 in Patients With Advanced Solid Tumors",
+     "url": "https://clinicaltrials.gov/study/NCT07524140",
+     "nctId": "NCT07524140",
      "status": "Recruiting",
      "phase": "Phase 1",
-     "updated": "2026-11-02"
+     "updated": "2026-11-09"
     },
     {
-     "title": "Pilot Study of IT Topotecan and Maintenance Chemotherapy for HR-EBTs in Children < 6 Years, Post Consolidation",
-     "url": "https://clinicaltrials.gov/study/NCT06942039",
-     "nctId": "NCT06942039",
+     "title": "Irinotecan-ChemoSeed in Surgically Resectable Glioblastoma",
+     "url": "https://clinicaltrials.gov/study/NCT07356973",
+     "nctId": "NCT07356973",
      "status": "Recruiting",
-     "phase": "Early Phase 1",
-     "updated": "2026-11-02"
+     "phase": "Phase 2",
+     "updated": "2026-11-09"
     },
     {
-     "title": "Window-of-Opportunity Trial of Ulixertinib for MAPK-Activated Gliomas",
-     "url": "https://clinicaltrials.gov/study/NCT05804227",
-     "nctId": "NCT05804227",
+     "title": "Testing the Addition of an Anti-cancer Drug, Selinexor, to the Usual Chemotherapy Treatment (Temozolomide) for Brain Tumors That Have Returned After Previous Treatment",
+     "url": "https://clinicaltrials.gov/study/NCT05432804",
+     "nctId": "NCT05432804",
      "status": "Recruiting",
-     "phase": "Early Phase 1",
-     "updated": "2026-11-02"
-    },
-    {
-     "title": "Chemo-immunotherapy Using Ibrutinib Plus Indoximod for Patients With Pediatric Brain Cancer",
-     "url": "https://clinicaltrials.gov/study/NCT05106296",
-     "nctId": "NCT05106296",
-     "status": "Recruiting",
-     "phase": "Phase 1",
-     "updated": "2026-11-02"
+     "phase": "Phase 1, Phase 2",
+     "updated": "2026-11-09"
     }
    ]
   },
@@ -1781,11 +1781,11 @@
      "pmid": "42892233"
     },
     {
-     "title": "Fabrication of AuNS and o-ABA mediated electrochemical immunosensor for voltammetric detection of osteocalcin.",
-     "url": "https://pubmed.ncbi.nlm.nih.gov/42849647/",
-     "journal": "Analytical biochemistry",
-     "date": "2027 Jan",
-     "pmid": "42849647"
+     "title": "Alteration of macrophage infiltrates in the tumor immune microenvironment following Janus kinase 1 (JAK) inhibition: analysis from a prospective clinical trial in Leiomyosarcoma.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/42992600/",
+     "journal": "Oncoimmunology",
+     "date": "2026 Dec 31",
+     "pmid": "42992600"
     },
     {
      "title": "[Corrigendum] Combination of the FGFR4 inhibitor PD173074 and 5‑fluorouracil reduces proliferation and promotes apoptosis in gastric cancer.",
@@ -1809,29 +1809,45 @@
      "pmid": "42948049"
     },
     {
-     "title": "Global Landscape of Clinical Studies Open to Enrollment in Carbon Ion Radiotherapy: A PTCOG Review.",
-     "url": "https://pubmed.ncbi.nlm.nih.gov/42893060/",
-     "journal": "International journal of particle therapy",
-     "date": "2026 Dec",
-     "pmid": "42893060"
+     "title": "99m Tc-FAPI-46 SPECT/CT in Ewing Sarcoma : Findings in Diverse Metastatic Presentations.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/42912546/",
+     "journal": "Clinical nuclear medicine",
+     "date": "2026 Dec 1",
+     "pmid": "42912546"
     }
    ],
    "trials": [
     {
-     "title": "Phase 2 Trial of Zanzalintinib and Pembrolizumab in Select Subtypes of Advanced/Metastatic Soft-tissue Sarcoma",
-     "url": "https://clinicaltrials.gov/study/NCT07283731",
-     "nctId": "NCT07283731",
+     "title": "START: Safety and Anti-Tumor Activity of PeptiCRAd-1 in Treatment of Cancer",
+     "url": "https://clinicaltrials.gov/study/NCT05492682",
+     "nctId": "NCT05492682",
      "status": "Recruiting",
-     "phase": "Phase 2",
-     "updated": "2026-11-02"
+     "phase": "Phase 1",
+     "updated": "2026-11-09"
     },
     {
-     "title": "Activation Sarcoma: PROMIS and Mobility Evaluation in Sarcoma Patients",
-     "url": "https://clinicaltrials.gov/study/NCT07227961",
-     "nctId": "NCT07227961",
+     "title": "Surgery in Gastrointestinal Stromal Tumors (GISTs) for Treatment, Tumor Modeling, and Genomic Analysis",
+     "url": "https://clinicaltrials.gov/study/NCT04557969",
+     "nctId": "NCT04557969",
      "status": "Recruiting",
      "phase": "",
-     "updated": "2026-11-02"
+     "updated": "2026-11-09"
+    },
+    {
+     "title": "Safety and Preliminary Efficacy of SA53-OS in Patients With Locally Advanced or Metastatic Solid Tumors",
+     "url": "https://clinicaltrials.gov/study/NCT06578624",
+     "nctId": "NCT06578624",
+     "status": "Recruiting",
+     "phase": "Phase 1, Phase 2",
+     "updated": "2026-11-09"
+    },
+    {
+     "title": "Analysis of Circulating Tumor Markers in Blood",
+     "url": "https://clinicaltrials.gov/study/NCT04025541",
+     "nctId": "NCT04025541",
+     "status": "Recruiting",
+     "phase": "N/A",
+     "updated": "2026-11-09"
     },
     {
      "title": "Metarrestin (ML-246) in Subjects With Metastatic Solid Tumors",
@@ -1839,34 +1855,25 @@
      "nctId": "NCT04222413",
      "status": "Recruiting",
      "phase": "Phase 1",
-     "updated": "2026-11-02"
-    },
-    {
-     "title": "International Phase I Trial of Dinutuximab Beta With VDC/IE in GD2-Positive Ewing Sarkoma",
-     "url": "https://clinicaltrials.gov/study/NCT06839703",
-     "nctId": "NCT06839703",
-     "status": "Recruiting",
-     "phase": "Phase 1",
-     "updated": "2026-11-02"
-    },
-    {
-     "title": "Pilot Study of TumorGlow for Intraoperative Molecular Imaging of Sarcoma Metastases to the Lungs in Pediatric Patients",
-     "url": "https://clinicaltrials.gov/study/NCT07658768",
-     "nctId": "NCT07658768",
-     "status": "Recruiting",
-     "phase": "Early Phase 1",
-     "updated": "2026-11-02"
+     "updated": "2026-11-09"
     }
    ]
   },
   "childhood": {
    "research": [
     {
-     "title": "An Ago-mediated duplex biosensing platform with orthogonal electrochemical coding for microRNA detection based on TDN interfaces and UiO-66-NH(2) nanocarriers.",
-     "url": "https://pubmed.ncbi.nlm.nih.gov/42858627/",
-     "journal": "Biosensors & bioelectronics",
-     "date": "2027 Jan 15",
-     "pmid": "42858627"
+     "title": "Cascade DNA walker-driven photo-controlled CRISPR/Cas12a nanorobot enabling ultrasensitive one-pot detection of dual miRNAs in triple-negative breast cancer.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/42933160/",
+     "journal": "Talanta",
+     "date": "2027 Mar 1",
+     "pmid": "42933160"
+    },
+    {
+     "title": "Photoresponsive Silicon Phthalocyanine with Intracellular Self-Regulated Aggregation Drives ER-Lysosome-Lipid Droplets Redistribution for Enhanced Photodynamic Therapy.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/42945694/",
+     "journal": "Biomaterials advances",
+     "date": "2027 Feb",
+     "pmid": "42945694"
     },
     {
      "title": "Local ablative treatment for oligoprogression during immunotherapy in metastatic non-small-cell lung cancer: a systematic review and meta-analysis.",
@@ -1883,25 +1890,18 @@
      "pmid": "42896046"
     },
     {
-     "title": "Extreme Thrombocytosis in Patients With Malignancy; Complications, Management and Outcomes.",
-     "url": "https://pubmed.ncbi.nlm.nih.gov/42967198/",
-     "journal": "EJHaem",
+     "title": "[Corrigendum] S100A8‑targeting siRNA enhances arsenic trioxide‑induced myeloid leukemia cell death by down‑regulating autophagy.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/42992570/",
+     "journal": "International journal of molecular medicine",
      "date": "2026 Dec",
-     "pmid": "42967198"
+     "pmid": "42992570"
     },
     {
-     "title": "Urological manifestations in obesity.",
-     "url": "https://pubmed.ncbi.nlm.nih.gov/42960425/",
-     "journal": "Current opinion in endocrinology, diabetes, and obesity",
+     "title": "Human Flourishing as a Care Goal in Adolescent and Young Adult Cancer Care: A Photovoice Study of Health Care Providers to Inform APRN Practice.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/42980046/",
+     "journal": "Journal of hospice and palliative nursing : JHPN : the official journal of the Hospice and Palliative Nurses Association",
      "date": "2026 Dec 1",
-     "pmid": "42960425"
-    },
-    {
-     "title": "Porous Ag-Cu-CeO(2) nanoparticles: Biosynthesis, cephalexin photodegradation, antifungal activity and primary evaluation of in vitro cancer treatment on MDA-MB-231 cells.",
-     "url": "https://pubmed.ncbi.nlm.nih.gov/42893243/",
-     "journal": "Biochemistry and biophysics reports",
-     "date": "2026 Dec",
-     "pmid": "42893243"
+     "pmid": "42980046"
     }
    ],
    "trials": [
@@ -1911,31 +1911,7 @@
      "nctId": "NCT06303193",
      "status": "Recruiting",
      "phase": "Phase 1, Phase 2",
-     "updated": "2026-11-02"
-    },
-    {
-     "title": "Metarrestin (ML-246) in Subjects With Metastatic Solid Tumors",
-     "url": "https://clinicaltrials.gov/study/NCT04222413",
-     "nctId": "NCT04222413",
-     "status": "Recruiting",
-     "phase": "Phase 1",
-     "updated": "2026-11-02"
-    },
-    {
-     "title": "Chemo-immunotherapy Using Ibrutinib Plus Indoximod for Patients With Pediatric Brain Cancer",
-     "url": "https://clinicaltrials.gov/study/NCT05106296",
-     "nctId": "NCT05106296",
-     "status": "Recruiting",
-     "phase": "Phase 1",
-     "updated": "2026-11-02"
-    },
-    {
-     "title": "Pilot Study of TumorGlow for Intraoperative Molecular Imaging of Sarcoma Metastases to the Lungs in Pediatric Patients",
-     "url": "https://clinicaltrials.gov/study/NCT07658768",
-     "nctId": "NCT07658768",
-     "status": "Recruiting",
-     "phase": "Early Phase 1",
-     "updated": "2026-11-02"
+     "updated": "2026-11-09"
     },
     {
      "title": "NCI Childhood Cancer Data Initiative (CCDI) Led Pediatric, Adolescent, and Young Adult Rare Cancer Registry for Very Rare Solid Tumors",
@@ -1943,555 +1919,551 @@
      "nctId": "NCT07489378",
      "status": "Recruiting",
      "phase": "",
-     "updated": "2026-11-02"
+     "updated": "2026-11-09"
+    },
+    {
+     "title": "Pediatric Orthopaedic Implant Safety & Efficacy",
+     "url": "https://clinicaltrials.gov/study/NCT05361980",
+     "nctId": "NCT05361980",
+     "status": "Recruiting",
+     "phase": "",
+     "updated": "2026-11-09"
+    },
+    {
+     "title": "Psychological Benefits of a Normalized Camping Experience for Children With Cancer",
+     "url": "https://clinicaltrials.gov/study/NCT00001186",
+     "nctId": "NCT00001186",
+     "status": "Recruiting",
+     "phase": "",
+     "updated": "2026-11-09"
+    },
+    {
+     "title": "Natural History and Biospecimen Acquisition for Children and Adults With Rare Solid Tumors",
+     "url": "https://clinicaltrials.gov/study/NCT03739827",
+     "nctId": "NCT03739827",
+     "status": "Recruiting",
+     "phase": "",
+     "updated": "2026-11-09"
     }
    ]
   }
  },
  "news": [
   {
-   "title": "MCC’s Breast Cancer Summit at Walter Reed focuses on risks, prevention, care - Walter Reed National Military (.mil)",
-   "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNVVFYbm8xbGMyR2h6TkhPUzBEX2l0WThXMUp0SXNqNEZVNUhvUnc3MlhaNWRzRUhzejlYQjZnMHdtUy1hSUxCOUJfb1h6aFRiaGVQSWlfSUJ0UkFKNWZrZXhKV3BRMzJPLXM1bm5UNE44aExBOWdSN3k5Tk9LQ1NrNmRHc2FQakRTYnNJbEVQcFJKanZDN1pOSEJLQVVPVEx4Y3VXd1FrQnZNbF9NRHMtVWhtdzcyRmZHWE1iX3kyWkF1UU0xWDNlRThBTmp5bXkydUJxcHBhZTRyUQ?oc=5",
-   "source": "Walter Reed National Military (.mil)",
-   "date": "2026-11-02T15:00:44+00:00",
-   "summary": "MCC’s Breast Cancer Summit at Walter Reed focuses on risks, prevention, care &nbsp;&nbsp; Walter Reed National Military (.mil)",
-   "types": [
-    "breast"
-   ]
-  },
-  {
-   "title": "How Pancreatic Cancer Research Is Revealing New Treatment Strategies - University of Miami",
-   "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQZGE5Nkl1THY0aDNqeURXNEdNSXR1a3o1SnhWTXpMZ1BVeER3X3h4ZUVKbzEzYXVXSTBEY25DT2U4aDYwSFg1Ulc1bHI0YVJkTkNSNmlKZHZFa29PU1ViZzN1TlBYVWJmOGZUcUNjUmRTUzlrNUNUdURSRG1jdnAwUA?oc=5",
-   "source": "University of Miami",
-   "date": "2026-11-02T13:44:50+00:00",
-   "summary": "How Pancreatic Cancer Research Is Revealing New Treatment Strategies &nbsp;&nbsp; University of Miami",
-   "types": [
-    "pancreatic"
-   ]
-  },
-  {
-   "title": "Scientists discover that some “unhealthy” diets can boost cancer immunotherapy in mice - Science Daily",
-   "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9lWXMwTk5BY05ORWFObUtVMDB0RHlCRER4bDRuNlRjeVRJSGkzSWZyWXhzeUc4Z094NW55cDNFV01PLTA3b1JhMmtYcmZneXBrajNtTGo4dDBqYjJDRkZYb2k3X20yeUJxSEZsQVIxTQ?oc=5",
-   "source": "Science Daily",
-   "date": "2026-11-02T13:44:40+00:00",
-   "summary": "Scientists discover that some “unhealthy” diets can boost cancer immunotherapy in mice &nbsp;&nbsp; Science Daily",
+   "title": "Dr. Beebe-Dimmer, Ph.D., honored for research into genetic risk of multiple primary cancers - Today@Wayne",
+   "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQcE1RNE9YdS1xUTR1eUpTa2J2Sk5WelpwNTRNWldGekJsZWcxdHE0TURqbGFjbzFFc3VJWnlrbDR0aG1LQWYwdVE2V3JMWFo0TnJKYXBjZWlVSjFkUEJXc0k4VDFYdDA5ZGZxM3ZweVRMUFRoX2FmTWpFWURKV2NrcFBNY1pMRGp4ZHdOaTZkbUx0T28tNFdidUZfOTBpbXFqbVFaZHZmeTBTM2Y5OFkwR2RWQ25NaE5PbzFSVVVpYUNvNTVKLWZEQ1pOTDJzM2RaTm1PbFdxTUI?oc=5",
+   "source": "Today@Wayne",
+   "date": "2026-11-09T15:00:42+00:00",
+   "summary": "Dr. Beebe-Dimmer, Ph.D., honored for research into genetic risk of multiple primary cancers &nbsp;&nbsp; Today@Wayne",
    "types": []
   },
   {
-   "title": "Non-Smokers and Lung Cancer: Uncovering the Truth - OSF HealthCare",
-   "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPQk9jQWs2WE1hZW15R1BpZzR1RVRuRjJobHVXbDctZEFKcTBBaDJWRDF0MGlyVXZLRFg2UHFXVnhmeG1HTDNlUkwzNGVfQld1dGNBdUxkRkJJR2FXOGswaGNEZ2dXOHo4U3dEVktEMldqaVJPQS1GOGtCTXpWVFZ2Qw?oc=5",
-   "source": "OSF HealthCare",
-   "date": "2026-11-02T13:05:09+00:00",
-   "summary": "Non-Smokers and Lung Cancer: Uncovering the Truth &nbsp;&nbsp; OSF HealthCare",
-   "types": [
-    "lung"
-   ]
+   "title": "Woman raised more than $50,000 for cancer research while running NYC Marathon topless - AL.com",
+   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPYWx3Sl96ZU42SVUzTTdRQ1dwdUVtVHVHZVNBdkNjUU5zYkY0aGZ6XzJ4SFpWeTRoUVJNNFJyUndLNmQ1TmR1RFlkb1RHU05mLVhvNzdrczgwR1JoYnZHU0pLZmY3SGc5OUE4SGt3UUVXZHhKSWN5akRRU0hxNkhzN0NKMnN0YUxXQzdUYjYyakRSUzdDNlhnN3VsbmVtSFhLMlpZeGJXZEoybUVycldMVVdkRFlXMTQ3MU5RWtIB0AFBVV95cUxOQUIyekl5Vm91ZWNLYVBRVFJPRVNRMTlGamJ0Q1M2R2MyV2xGSXpTTHBBNGRuSjVfS3RYX3BGVWxWYmkwb1gxZC1QU1ppSmYxcGxzZHE5RGFwVV9BcFNCcGNRalRZTDNjeDE3M1NicVYxZ0x2N3R2YVNnMVY2ekJVQ3EzNF9XS0pBcWR5YkFnUFdrcDJFcWZONzJIVkFSVG9XVUtiRmpGaTduM2FQMEZOMDRQU3o2Umo1OXlsSmVXWk9VUm5wdDdsR0FGWm84OWVf?oc=5",
+   "source": "AL.com",
+   "date": "2026-11-09T14:16:00+00:00",
+   "summary": "Woman raised more than $50,000 for cancer research while running NYC Marathon topless &nbsp;&nbsp; AL.com",
+   "types": []
   },
   {
-   "title": "ASCO/AACR Methods in Clinical Cancer Research Workshop 2027 - Oncodaily",
-   "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5xMVYtaVo2MXlSSWNpSzh4dUZBb19KZm1wRUpJZG9yTFRWZGZWeUJKUWVPR2hfMXZCUE5WUFcwc0R5ODhBQnJQWHJXbF85bE9qMlI4eUp2QXpaU0Y0LWgwcjJ6djdTOWpvSWhr?oc=5",
+   "title": "Yan Leyfman: From Cancer Data to Discovery – Advancing the Future of AI in Oncology - Oncodaily",
+   "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1TQ1p0bDFOdXVMYlQwQWdxd2ZaWmNVMHNUUzFvZ3NQc090OWVGalVvNjNRb2NBOFVfVzhVbk1RTFE0b3FmZmVFXzdXYjVocmVOaHMtTHhDQVlkZTA?oc=5",
    "source": "Oncodaily",
-   "date": "2026-11-02T12:37:57+00:00",
-   "summary": "ASCO/AACR Methods in Clinical Cancer Research Workshop 2027 &nbsp;&nbsp; Oncodaily",
+   "date": "2026-11-09T14:12:50+00:00",
+   "summary": "Yan Leyfman: From Cancer Data to Discovery – Advancing the Future of AI in Oncology &nbsp;&nbsp; Oncodaily",
    "types": []
   },
   {
-   "title": "AACR – Harnessing the Power of Next Generation Pathology for Cancer Research 2027 - Oncodaily",
-   "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9jZnV1Z3VYREhWdjRhTHE3dFpyVjRlZDdrODREcC1OZXhhaThuRmVHWDhfV3d0ajd5RkN5aGZLUW9YY1o4SmhscEp1M1k1OERKQkZySmtBVnBGX0RhWFJLRVlLOUxQNC1rdy13?oc=5",
-   "source": "Oncodaily",
-   "date": "2026-11-02T12:30:13+00:00",
-   "summary": "AACR – Harnessing the Power of Next Generation Pathology for Cancer Research 2027 &nbsp;&nbsp; Oncodaily",
-   "types": []
-  },
-  {
-   "title": "South Florida cancer survivor inspires Miami padel tournament benefiting cancer research - WPLG Local 10",
-   "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNWXNIYVFQMUtYQ1VUUzRFTklqbEhHYldGMkxZZzFLeW5XVWVWbkRtYm1ZSE9VRS1WOVJOZjdQX3BWTkF2dXBLOHctSWJpU1k2SzVpU3hIWXF4bVdNcUlLQ2RQRlRIQUlpU1NIU1poVGt1dUFaMnprbFR4bUV6QkVUUF84RWhqU1BOSXNfU3pVODJ5M21GNWg3ZjdQMjY2SHkwODQyYTR1M3VZVW0ya0JHVTJ2Qi1nREtCSElzblR0YVdLb29Wd1QxREVQeWZVZw?oc=5",
-   "source": "WPLG Local 10",
-   "date": "2026-11-02T12:01:18+00:00",
-   "summary": "South Florida cancer survivor inspires Miami padel tournament benefiting cancer research &nbsp;&nbsp; WPLG Local 10",
-   "types": []
-  },
-  {
-   "title": "AACR Special Conference in Cancer Research: Liquid Biopsy 2027 - Oncodaily",
-   "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFA4bUNNN0NaZWhfUHNfMGdQVGtrdks0SzFjNWw1S0Vod2tEMFR4OGlwTmQxdVRyeTlLME5YTUF0M19LM1lrbXhHYXZ5RWlKdlZu?oc=5",
-   "source": "Oncodaily",
-   "date": "2026-11-02T07:51:28+00:00",
-   "summary": "AACR Special Conference in Cancer Research: Liquid Biopsy 2027 &nbsp;&nbsp; Oncodaily",
-   "types": []
-  },
-  {
-   "title": "Video Marathon moms take on NYC marathon for childhood cancer research - ABC News - Breaking News, Latest News and Videos",
-   "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE5TTVBhMy1kOHJQVmNHcWU1YUE4LUVBTlpXMER0ZEo1NzB0cEcwdEZRQ2F6eEo2cDltbnE4VXF3elBwSzJZTWNkdHZIY0s?oc=5",
-   "source": "ABC News - Breaking News, Latest News and Videos",
-   "date": "2026-11-02T00:51:24+00:00",
-   "summary": "Video Marathon moms take on NYC marathon for childhood cancer research &nbsp;&nbsp; ABC News - Breaking News, Latest News and Videos",
-   "types": []
-  },
-  {
-   "title": "Tumor index can identify breast cancer patients' drug response",
-   "url": "https://medicalxpress.com/news/2026-10-tumor-index-breast-cancer-patients.html",
+   "title": "Childhood cancers may spread by 'shape-shifting' rather than mutating",
+   "url": "https://medicalxpress.com/news/2026-11-childhood-cancers-shifting-mutating.html",
    "source": "Medical Xpress",
-   "date": "2026-11-01T22:00:10+00:00",
-   "summary": "Researchers at The Hong Kong Polytechnic University (PolyU) have developed an imaging biomarker, the Tumour Heterogeneity Index (THI), which enables noninvasive assessment of breast cancer patients' response to AKT inhibitors before treatment, helping clinicians identify patients most likely to bene",
-   "types": [
-    "breast"
-   ]
-  },
-  {
-   "title": "Closing the Gaps in Precision Oncology for Breast Cancer - CancerNetwork",
-   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOeE5zN2JlYUV4aFdRZWdEdndmNTlEUnBvNGNLWmJJY2pDNHJGdEhsMEI5bUV6ZEI5cUp3UWlpMHQ3cU9vRzJzeVJsZ3VNdzB0SktXdk9NSEFzVU1OWVNwNHMydjc3SUppSUd5UUZaME5NX2p6a0R3eUpFcGQ3X1RLcWtwUExJbTN2azRCUlV5cFF4ZHVrelE?oc=5",
-   "source": "CancerNetwork",
-   "date": "2026-11-01T21:10:20+00:00",
-   "summary": "Closing the Gaps in Precision Oncology for Breast Cancer &nbsp;&nbsp; CancerNetwork",
-   "types": [
-    "breast"
-   ]
-  },
-  {
-   "title": "BMI Limitations Complicate Obesity and Cancer Research - Targeted Oncology",
-   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPYzZSekQ1eXdTcmNVVmpDdU1NdnpHX0JUdFllaFhZUmpxOEVhbm5LaERrUElXbmxjSUtodDBnZVlvZkxBeUVfMWtCajR2Wk8wNGtOaHhsZ1pkaDUzaTVac1l4VE5aSDhqblp0ZnlQbGR4Y3hpTkV6SFlselRqM2ZralJlNDdiUUhENTlySTRUNjg?oc=5",
-   "source": "Targeted Oncology",
-   "date": "2026-11-01T17:10:33+00:00",
-   "summary": "BMI Limitations Complicate Obesity and Cancer Research &nbsp;&nbsp; Targeted Oncology",
-   "types": []
-  },
-  {
-   "title": "Clues emerge on why colon cancer may be harder to treat in young people - The Washington Post",
-   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQeUVzclJHUHdVdE8yYk9WYXJtR0J0ZXYzRDNIWjZWUmN2MnhWRmNPOUxsNy1JT1hra2NfZTR5VjVOSG9hcG1CUVc3X183WEpSZjBsVUdpNmQta0RZOGFGbGZKOWJ0bHo0OGt6cEhNbWo2eVhNNS1BVUdUZVRKY0o1UUJkckdDS2RlNFQySmdHWVBUMVB3VWVHbzY2RWE3RnJoZUp6SW1Sdko5MmlqM194V0l3?oc=5",
-   "source": "The Washington Post",
-   "date": "2026-11-01T17:00:00+00:00",
-   "summary": "Clues emerge on why colon cancer may be harder to treat in young people &nbsp;&nbsp; The Washington Post",
-   "types": [
-    "colorectal"
-   ]
-  },
-  {
-   "title": "Skechers Hot Chocolate Run draws thousands of participants to Grant Park, Chicago, raises funds for cancer research - ABC7 Chicago",
-   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxORzdablJVczJBbTg2S0txX0EtejZfZks5M2Nqc3JNV2hTY3pXTWtpc2p1RWhTLXNGZTJWR1k0YVVTRHRKWlB6X3Y1WlFFZTRBMkcxMnBXUXRuSWhwQTZjSkUxS2pMamV4RkdqMTg0Wk9ya2JMYWhYWGlsWElnV19VLVh4WjRnSjJ2VF9HVmtPVDNmZnZkRkxQMXJ2dzJhTzZ0d3o5cTlmMkJjNS1EclBpQkpJN1BwNW5Zbk5BeE1scEh1d9IBxwFBVV95cUxQQkdHTm1BVWZFenpXRUt6am1oOXRyLThKaTdhZDFVaURCWWdkS0JfNUJfTkQ1VUlhdUZRX2dBUm9EU3pOR0o1aVdBekxGbTZQNk41Um5jaHVOT0VqQlVBaWJlejA4b0tZMTlrUHhOdGI4Nm5VVFJfQy1yaHhVeUlBaWtPZlRncFFQYndUOFV6SFcyU1pxQURqWllHUFBqTG11X0NyZFhsNGNHWmR2cEwtRGVjSlB0OEpzUkI4N29Id01uUjBpVkk4?oc=5",
-   "source": "ABC7 Chicago",
-   "date": "2026-11-01T15:05:05+00:00",
-   "summary": "Skechers Hot Chocolate Run draws thousands of participants to Grant Park, Chicago, raises funds for cancer research &nbsp;&nbsp; ABC7 Chicago",
-   "types": []
-  },
-  {
-   "title": "Newly discovered pathway fuels production of cancer-driving proteins",
-   "url": "https://medicalxpress.com/news/2026-10-newly-pathway-fuels-production-cancer.html",
-   "source": "Medical Xpress",
-   "date": "2026-11-01T13:00:01+00:00",
-   "summary": "A previously unknown mechanism helps cancer cells selectively produce proteins that drive tumor growth—such as KRAS—in common cancers, according to new research from The University of Texas MD Anderson Cancer Center. The findings reveal that targeting a specific enzyme may improve responses to targe",
-   "types": [
-    "lung"
-   ]
-  },
-  {
-   "title": "Scientists use sound waves to deliver a new attack on deadly brain cancer - Science Daily",
-   "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1zUTVvTDhYNUpnOHdwSDUwaHNVeUVaZHI1Z0c3Vkc3VmJvcG5qTWl2SEJQa1NPQkJwM3Njbmd3Q3BGdzA5Ry0tTzRxUGhTYVlYbTNHQkxZLTRTLTNEUXNzTWlJd3ZUaHdRV0tCdEZUdw?oc=5",
-   "source": "Science Daily",
-   "date": "2026-11-01T11:47:02+00:00",
-   "summary": "Scientists use sound waves to deliver a new attack on deadly brain cancer &nbsp;&nbsp; Science Daily",
-   "types": []
-  },
-  {
-   "title": "Scientists use sound waves to deliver a new attack on deadly brain cancer",
-   "url": "https://www.sciencedaily.com/releases/2026/10/261030003017.htm",
-   "source": "ScienceDaily",
-   "date": "2026-11-01T10:49:13+00:00",
-   "summary": "Scientists at the University of Virginia have developed a promising new strategy to fight glioblastoma, one of the deadliest and most difficult-to-treat forms of brain cancer. Their experimental approach combines focused ultrasound, tiny nanoparticles, and genetic molecules called microRNAs to attac",
-   "types": [
-    "brain"
-   ]
-  },
-  {
-   "title": "Reversing radiation-activated immune suppression in cancer",
-   "url": "https://medicalxpress.com/news/2026-10-reversing-immune-suppression-cancer.html",
-   "source": "Medical Xpress",
-   "date": "2026-10-31T18:00:01+00:00",
-   "summary": "Researchers at the University of Chicago have identified a mechanism to make immune cells reprogrammed by radiation therapy attack tumors rather than protect them. The study, published in Cancer Cell, shows that radiation activates a protein called TET2 on immune cells in bone marrow, where it remov",
-   "types": []
-  },
-  {
-   "title": "Scientists finally discover how a common gut bacterium can trigger colon cancer",
-   "url": "https://www.sciencedaily.com/releases/2026/10/261031012912.htm",
-   "source": "ScienceDaily",
-   "date": "2026-10-31T13:49:23+00:00",
-   "summary": "Scientists at Johns Hopkins have uncovered a crucial missing link between a common gut bacterium and colorectal cancer, solving a mystery that has puzzled researchers for nearly two decades. The bacterium, Bacteroides fragilis, produces a toxin that damages the colon’s protective lining, triggers ch",
-   "types": [
-    "colorectal"
-   ]
-  },
-  {
-   "title": "Kate Middleton and King Charles reunite for cancer charity event - ABC News - Breaking News, Latest News and Videos",
-   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOeVlXUC1OZnlwdGxPN2dEU1NKZ3NXeTF5UGdGVnptM0NjcW8yWFlwUWdrRFNKUHRXUUl1UWFKX3U1d3JOY1I1LUNaSFR5RmNDSi1GQ2dLb2hLTzVaTTR6QjVSUmtNRUI3YXFza2J1YnBwUE9hOHNhRVdCa2R5Z3p3eDVPUG84d3oxVG9oWnNWNFJXSDFKbmFxQ1lRWUhUcXlxcG1Wd2VhZnQzcmPSAbABQVVfeXFMT3F6R2QtRVRZdzBjQXNkVUUzaXVRWlVVV2dVZlY0ekFuTzNBSEJKelc1NzVtMzF2TUZyR2o2ZG90X2JGeGREX1dWWm5HVGQyZDV0NmZsRDJLeF9mWXB1d3Z4UEhERG4tU3NlZXIzYUVtRk9wVDcyVDRYdDY3Z1ViNXpiNU5ua25DUko0TGhpdXlnTkg2MGxXSkVzdmpVc18tWU4yYlF4anM0VzNDak1Cc2g?oc=5",
-   "source": "ABC News - Breaking News, Latest News and Videos",
-   "date": "2026-10-31T10:55:39+00:00",
-   "summary": "Kate Middleton and King Charles reunite for cancer charity event &nbsp;&nbsp; ABC News - Breaking News, Latest News and Videos",
-   "types": []
-  },
-  {
-   "title": "New strategy identified for overcoming resistance to KRAS-targeted cancer therapies - News-Medical",
-   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPVHdQVU9mVGxCQ0VzVGc5b0VvSmxTRUFhbUF1Y0M5RDRpUENSR09KZm81c3dCNlpOTWZoYWxWUGN0U2pzYl94T3RnWUItR0hZR2tNU1R6Z09sc3BObGJKZGNvTTQ1amNhQXNCRTJERUFjWjJKb0VKeHh6MzdUWnVsT0lwalFSNk1MMHFRajh0WHgwbmZXaUZJOTFHWWxXeEJHVEt1aHFGLV9rR0l6Sk0zbjRDeFotb2hXb2pEX3ExQ2JqNzhYMVZzUUlkMA?oc=5",
-   "source": "News-Medical",
-   "date": "2026-10-31T03:30:00+00:00",
-   "summary": "New strategy identified for overcoming resistance to KRAS-targeted cancer therapies &nbsp;&nbsp; News-Medical",
-   "types": [
-    "lung"
-   ]
-  },
-  {
-   "title": "New swab test could spare some women a painful biopsy for endometrial cancer",
-   "url": "https://medicalxpress.com/news/2026-10-swab-women-painful-biopsy-endometrial.html",
-   "source": "Medical Xpress",
-   "date": "2026-10-31T01:00:01+00:00",
-   "summary": "A simple vaginal swab may one day help women with abnormal bleeding learn whether they have endometrial cancer without first going through a painful biopsy.",
-   "types": [
-    "uterine"
-   ]
-  },
-  {
-   "title": "Late cancer scientist’s legacy lives on with new experimental resources for canine lymphoma research - Cornell University College of Veterinary Medicine",
-   "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPaC1VaHMya0V2SlF1eUV6V3lzRTJMUlU1eTg1WmlLV1ZKZ0ZobThUN3lMaWhYQ2RLbFV3ZzF4WkR1VFFBZnNVb0g5ZGtLZjJ5bUZsNkMzVnNsNk1UOS05QTN2QS1NdUNyYW82TXl2UGk1cjVBVmZHcEt3cll6RllXWldTME9UVlF1VWttZTNmbWFEcXhBdzdMT1RmVnlxRUtxUUN3cGRkQ0FtV21oQkw2NWFXa05KZ3NqM1NCUXdKX1NKNFZsMUptSlhrcGxxLVhCMmJTQQ?oc=5",
-   "source": "Cornell University College of Veterinary Medicine",
-   "date": "2026-10-31T00:37:46+00:00",
-   "summary": "Late cancer scientist’s legacy lives on with new experimental resources for canine lymphoma research &nbsp;&nbsp; Cornell University College of Veterinary Medicine",
-   "types": [
-    "lymphoma"
-   ]
-  },
-  {
-   "title": "New treatment combination shows promising results in recurrent head and neck cancer - The Institute of Cancer Research (ICR)",
-   "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPYmZVVFlXeGhMZTBZQW9hZVRUTFdzMU1ZR3ZIRC1Db0YzbnY0TXVKcXh6TTRoWFBEQTQ5RXE5SXJ4RGNCNHJKLWJWNTJHN3EwbjRweG5OZzIxdUtWdjJtamlpV2Q5RjB2QTZvVzB3aDNuVVctVWMzODczR1g1RFVIZ1BlMGhRNG1QSWFudzlVZEQyclZIMXhneU5mUVNsYVdIcVp6UW9zZG9QcGp4d2tnNUpIOEl6b0lsNkY0Rlhqb05EOVZaVkFnbGtR?oc=5",
-   "source": "The Institute of Cancer Research (ICR)",
-   "date": "2026-10-30T22:42:48+00:00",
-   "summary": "New treatment combination shows promising results in recurrent head and neck cancer &nbsp;&nbsp; The Institute of Cancer Research (ICR)",
-   "types": [
-    "head-neck"
-   ]
-  },
-  {
-   "title": "ICR experts hail personalised melanoma vaccine results as major step forward - The Institute of Cancer Research (ICR)",
-   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxObzR1bVg2Z193QlZfaVhRaFhoMDc1M1VMX0xiakM1SGM0YjFvWWg5blJSekVBcWF2Y0xmNHZPZFpUTGs4bjVTcmE2NngySHloOFZNaGNYSFJqdmpfZmhEenNlSXkxMlZ4ZFZ5Qnd2WnltdUhFa2lGUU1KOWpQMXd4aVIxdDdPeFlXWjB4S2tQVlZfTHJfS095U3ZUOGUzS1dTMkZkZ285WWVNVUdtWndFZXZYdHphVDRjbVNLMjhSZU4?oc=5",
-   "source": "The Institute of Cancer Research (ICR)",
-   "date": "2026-10-30T22:42:47+00:00",
-   "summary": "ICR experts hail personalised melanoma vaccine results as major step forward &nbsp;&nbsp; The Institute of Cancer Research (ICR)",
-   "types": [
-    "melanoma"
-   ]
-  },
-  {
-   "title": "With new therapy, Loyola researchers are working to cure a deadly brain cancer - Loyola Today",
-   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNNHNVbEloMnhjT0p2NDAxcUJFdFBoTHJ5YW42bktYOG9DRHpBMU5taGswc3VNQklyU1JNdVN2ZjdEbWdIaFlNTFJvMlpBdVhjZlA4eTJRS0VVc2VnaThqczg4cnJ0bWRKSFpwQ2pOenBuc013S1pRdlJ4UU0zYUx2OWFXaUxya19vZ1J5Z2wxZXVfcjA3OWluWld3U2V3WDQ?oc=5",
-   "source": "Loyola Today",
-   "date": "2026-10-30T22:24:20+00:00",
-   "summary": "With new therapy, Loyola researchers are working to cure a deadly brain cancer &nbsp;&nbsp; Loyola Today",
-   "types": []
-  },
-  {
-   "title": "Eau Claire woman runs New York City Marathon in memory of lifelong friend, raises thousands for cancer research - WEAU",
-   "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOWlpDSHprSlkyWkJBdWRNVzZ0bV90S3Qxc1ZhYnFDRThOaGpDTU10TExHXzdqWGdocG9VdVk1RHRUeEVIeUk4T3FGV1diUEhjTVF1c3pZUV96MEpyeDAyekF3TGdWWGpOd0ZIazRobDROaTdCTWxWNV9XbGhaVEdfbDhKdHF1cHk5TXJKb09weFFfS3ZUNWtIVks5dUNuZkRPTWFvemtEVFptWjlBYmpDTk9RVk13bUtOZ1F6S09MLXRleHRtWFVJQzhyTHhLQdIB4gFBVV95cUxNSjFKSkRqcUJ5c3VJNmlzbE1lVVAyVkF5cWtodFJJODZfZVlmQTIyT1FjVDlORmF6d2RkQXdvVGwtc3o5cEZaU05zLUd6TWVVYUZmMTRzTDdtRW45QmFCclJjblJjUHE3Rnd6TXljSlp3d0h4Y3IxZkM2clJUR1AxaHNmNFIwZEdpZklrRnBLWVNXN1hXRDN5b3d1LVY5QmRaenNGejZEZFVSd01fQVFhY09ZMnBEclJlbUZPTFU5UEFjb3VuRVNYMHl6VHkxRTlWQVRmeXpXM0VmM3M5OWtBcnBB?oc=5",
-   "source": "WEAU",
-   "date": "2026-10-30T21:01:00+00:00",
-   "summary": "Eau Claire woman runs New York City Marathon in memory of lifelong friend, raises thousands for cancer research &nbsp;&nbsp; WEAU",
-   "types": []
-  },
-  {
-   "title": "Recent Big Wins for Breast Cancer Research at NCCS - Oncodaily",
-   "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBkZ1FyWE80UnpldExiTEpha0I3MDNvRmZwU0ItcHpkQzVsNVVqRWdDTEZudHhZc2tBV2JZZUF4aE9wQ1VxRk5KMVp2dlprZ1BMZDdqVFl3?oc=5",
-   "source": "Oncodaily",
-   "date": "2026-10-30T20:51:54+00:00",
-   "summary": "Recent Big Wins for Breast Cancer Research at NCCS &nbsp;&nbsp; Oncodaily",
-   "types": [
-    "breast"
-   ]
-  },
-  {
-   "title": "Space-grown glioblastoma organoids could help advance brain cancer treatments",
-   "url": "https://medicalxpress.com/news/2026-10-space-grown-glioblastoma-organoids-advance.html",
-   "source": "Medical Xpress",
-   "date": "2026-10-30T18:20:13+00:00",
-   "summary": "Glioblastoma (GBM) is the most common malignant primary brain tumor in adults and is one of the most aggressive and deadly forms of cancer. It is difficult for surgeons to fully remove GBM because it often has microscopic \"tentacles\" that extend from the tumor into healthy brain tissue. GBM is also ",
-   "types": [
-    "brain"
-   ]
-  },
-  {
-   "title": "Checkpoint immunotherapy reshapes immune environment in lymph nodes after melanoma reaches them",
-   "url": "https://medicalxpress.com/news/2026-10-checkpoint-immunotherapy-reshapes-immune-environment.html",
-   "source": "Medical Xpress",
-   "date": "2026-10-30T17:20:09+00:00",
-   "summary": "A new study from Mayo Clinic suggests checkpoint immunotherapy may reshape the immune environment within lymph nodes after melanoma has spread to them. Researchers found that treatment reorganized several types of immune cells and changed the behavior of certain cells, called macrophages, that can e",
-   "types": [
-    "melanoma"
-   ]
-  },
-  {
-   "title": "Breast cancer drug raises creatinine without necessarily signaling kidney damage, study finds",
-   "url": "https://medicalxpress.com/news/2026-10-breast-cancer-drug-creatinine-necessarily.html",
-   "source": "Medical Xpress",
-   "date": "2026-10-30T17:00:14+00:00",
-   "summary": "A routine blood test can make a kidney look like it is failing when it is not. A team from Kanazawa University and Shinshu University has shown that this happens often in patients with breast cancer who take abemaciclib, and that a simple baseline measurement can help doctors tell the difference.",
-   "types": [
-    "breast"
-   ]
-  },
-  {
-   "title": "How mental health and cancer survivorship intersect",
-   "url": "https://medicalxpress.com/news/2026-10-mental-health-cancer-survivorship-intersect.html",
-   "source": "Medical Xpress",
-   "date": "2026-10-30T17:00:05+00:00",
-   "summary": "A Stanford Medicine study identified an often-overlooked period of vulnerability for cancer survivors: Mental health disorders identified two to five years after a cancer diagnosis were associated with a 119% higher rate of death from cancer compared with patients without documented mental disorders",
-   "types": []
-  },
-  {
-   "title": "‘Ride the Point’ to Support Pancreatic Cancer Research — Saturday, Nov.7 - OB Rag",
-   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxONnhGSkd5SjJsNGhfekNOdTFOYUFuNzZsTkRXaml2SHRlUEFsMVhCYXRxS2tsNktSNjR3aHBZX3ZNNW51Tm04amdnX09NajJWSm9BcFdFcFN4QVRsSU54dW9TUXgtVEFZT20ta1pOc1Q4MjJqTkJTQ2dDQ0tscWZXSUlhQmRra3h1a3VGUGx6NG9pWjNCSFBTVE1n?oc=5",
-   "source": "OB Rag",
-   "date": "2026-10-30T16:54:32+00:00",
-   "summary": "‘Ride the Point’ to Support Pancreatic Cancer Research — Saturday, Nov.7 &nbsp;&nbsp; OB Rag",
-   "types": [
-    "pancreatic"
-   ]
-  },
-  {
-   "title": "Building Global Partnerships for Colorectal Cancer Research – GCCA - Oncodaily",
-   "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE82Qm1rd2h1V3BINE1ISnRKVTRKaHlJcVBVMFJ4MC1JbmVWQU9WaGVTTndyN2lfME15elRzU2lNYnBGX3ZXTW5YTWpZbmxKazFmWmpnTUpn?oc=5",
-   "source": "Oncodaily",
-   "date": "2026-10-30T16:48:53+00:00",
-   "summary": "Building Global Partnerships for Colorectal Cancer Research – GCCA &nbsp;&nbsp; Oncodaily",
-   "types": [
-    "colorectal"
-   ]
-  },
-  {
-   "title": "Platelets may play an unexpected role in glioblastoma progression",
-   "url": "https://medicalxpress.com/news/2026-10-platelets-play-unexpected-role-glioblastoma.html",
-   "source": "Medical Xpress",
-   "date": "2026-10-30T16:20:01+00:00",
-   "summary": "New Cleveland Clinic research published in Cancer Cell shows that people with glioblastoma have more active platelets, which are cells involved in blood clotting. Platelets also communicate with other cells and can influence immune activity. The overactive platelets in people with glioblastoma slow ",
-   "types": [
-    "brain"
-   ]
-  },
-  {
-   "title": "Alcohol use held steady among cancer survivors",
-   "url": "https://medicalxpress.com/news/2026-10-alcohol-held-steady-cancer-survivors.html",
-   "source": "Medical Xpress",
-   "date": "2026-10-30T16:00:08+00:00",
-   "summary": "The drinking rate of adults who have had cancer has remained unchanged for nearly a decade, according to a new study by researchers at the WashU Brown School.",
-   "types": []
-  },
-  {
-   "title": "How a Sick Chicken Revolutionized Cancer Research - Nautilus | Science Connected",
-   "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQekhjeTlvZEp4UjdIeENOb2xHWXNJWjd5WUV5YnZuNDgwQ2dMTDVST19EU2FENWRMNk9hOHhWck5MN3V2S19QakNzRWZnMndPTXIzM1d2Vk9xX1Zoa1dUU2hIbGNUZUkxQlh3ZGk3dGx4NzRjVFF4SmJ1TDVJWmowWQ?oc=5",
-   "source": "Nautilus | Science Connected",
-   "date": "2026-10-30T16:00:00+00:00",
-   "summary": "How a Sick Chicken Revolutionized Cancer Research &nbsp;&nbsp; Nautilus | Science Connected",
-   "types": []
-  },
-  {
-   "title": "CDK1 protein offers clues to which breast cancers will resist targeted therapy",
-   "url": "https://medicalxpress.com/news/2026-10-cdk1-protein-clues-breast-cancers.html",
-   "source": "Medical Xpress",
-   "date": "2026-10-30T15:20:05+00:00",
-   "summary": "Researchers at the Garvan Institute of Medical Research have discovered that the activity of a protein called CDK1 in breast cancers is linked to how they respond to a common therapy—an insight that could inform more personalized treatment approaches for patients.",
-   "types": []
-  },
-  {
-   "title": "Baldwin Fund looks to expand cancer research in Syracuse - Spectrum News",
-   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNYWpuQ3lLSUhSU2xjenFlbWt6ZkUwSUt2OU82QVBSUG9WdXRMQThqN2xuaEJwRzZnWlJ2X2ZtdlF2X2RnVWo1Z1N4bzlZVHhOY1hUeGhlcW5kb1V1eHBuX3ZPcjhZNHJNWjdpSWxKNVN4REZVV0VzRUcxTkZLYTgyRjRJUG1HNXBQYWVGSzYwOTZ2NG15WFR5T1lWNENUckdOZTJiRGExMnZXNHcxaEczX1dn?oc=5",
-   "source": "Spectrum News",
-   "date": "2026-10-30T15:15:00+00:00",
-   "summary": "Baldwin Fund looks to expand cancer research in Syracuse &nbsp;&nbsp; Spectrum News",
-   "types": []
-  },
-  {
-   "title": "Huntsman Cancer Institute Awards and Appointments Fall 2026 - University of Utah Health",
-   "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNNTAxVWs5Q2Z5M2t4YXJGbkJnaGl2M05Yb3d1NVRnaHVzZDBCS05DUlcyMGFZZDlHWHlGeDJfeGp3UlF0MXdDbEROcExjT01ucGRMVDhkRXpYeFNaWHZxY2xuXzNsbm12MXQweEZRcC1TcHAxTXBma1dreEE0MlJlbEU4TVljbEFhSnNtT1VVZEQxMWEtRmU4Y0Fiam1xeGNlMmxrN21SYkNZZ3FiYW13UFNtbVRPZ0xaTi1UYVZoeXdfRE85NkZVV3h6NzFYZ2c?oc=5",
-   "source": "University of Utah Health",
-   "date": "2026-10-30T14:27:08+00:00",
-   "summary": "Huntsman Cancer Institute Awards and Appointments Fall 2026 &nbsp;&nbsp; University of Utah Health",
-   "types": []
-  },
-  {
-   "title": "VA Research Wrap Up: New findings on colorectal cancer, blast exposure and Alzheimer’s - VA News (.gov)",
-   "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNUlo2cmVsdnAwa1FHcFctM3p5VWRoUERuM21GZVlUTjJQTXNtRXhxcjJtVngyS1dRMkVncllDRUVrVElfWFVUTjNxLV9hRXZPazZ1RkJJbGhhY1E3MU82RW5SazZER05DY1lIbFlJWFRzMHE1di1hNmxsTjdWaG1GRjd3?oc=5",
-   "source": "VA News (.gov)",
-   "date": "2026-10-30T13:30:00+00:00",
-   "summary": "VA Research Wrap Up: New findings on colorectal cancer, blast exposure and Alzheimer’s &nbsp;&nbsp; VA News (.gov)",
-   "types": [
-    "colorectal"
-   ]
-  },
-  {
-   "title": "A New Era in Pancreatic Cancer Treatment: Daraxonrasib Shakes Up the Landscape - OncLive",
-   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxORy1kV0d1VWdfQ0RmODNlQ1FXeTBFOEpNSTNGU000Wi1lR0MydlRVMlFSS014Yl9TUHRyZTJaVUtoUlQyQ196VUVzanY0VzhwWXVKbEg0UEtyYnZ5VGN6Z2tYd0NZU245RTBwWnk0VWFLeG5XaTI5U1FoMk5rV0Q3ZllGd3pRby1QX0FDb1FJdldHSzEyVG10bDVXamk2aE1ZWHMyalVZMl91dw?oc=5",
-   "source": "OncLive",
-   "date": "2026-10-30T13:09:28+00:00",
-   "summary": "A New Era in Pancreatic Cancer Treatment: Daraxonrasib Shakes Up the Landscape &nbsp;&nbsp; OncLive",
-   "types": [
-    "pancreatic"
-   ]
-  },
-  {
-   "title": "Cancer-promoting proteins may make tumors easier to spot... but also help them evade immune attack",
-   "url": "https://medicalxpress.com/news/2026-10-cancer-proteins-tumors-easier-evade.html",
-   "source": "Medical Xpress",
-   "date": "2026-10-30T13:00:01+00:00",
-   "summary": "The immune system may recognize a cancer cell and still fail to destroy it. In a recent study, researchers at Hiroshima University and their international collaborators found that hyperactive YAP and TAZ (YAP/TAZ), two cancer-promoting proteins, were associated with genomic instability that may make",
-   "types": []
-  },
-  {
-   "title": "Slamon recognized for cancer research strides - New Castle News",
-   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQWTN5VTBZMnR6YmUyNS12c2lZcXdNbFhjbnV2R0dDUlRZc0tSZU5iVWhHNkQxNFU4Y1BkX1h4UFVYUHE3VnhEdFMyVmVZMlpCdHBHN2oyZWZLQjBSOFBsWGRQS21PcU1WdFdJVHFkaDYtZW9xX19MQ1kzMVZIdU9SU3hNRnpsLTBiUjRsT1RoTnFFcHZ5NE1TUndWd0ZtOE5PQlJvdXA0VE4wWVBabnd0NDVYaHJvbEJBOXA3VWpNSVhQb2E0X1hYMw?oc=5",
-   "source": "New Castle News",
-   "date": "2026-10-30T11:15:00+00:00",
-   "summary": "Slamon recognized for cancer research strides &nbsp;&nbsp; New Castle News",
-   "types": []
-  },
-  {
-   "title": "Why some “lower-risk” childhood cancers turn deadly",
-   "url": "https://www.sciencedaily.com/releases/2026/10/261028232717.htm",
-   "source": "ScienceDaily",
-   "date": "2026-10-30T10:15:28+00:00",
-   "summary": "Scientists have uncovered hidden aggressive cancer cells in children whose tumors were previously considered lower risk, revealing why some cases of rhabdomyosarcoma become unexpectedly deadly. The discovery could help doctors identify dangerous tumors earlier and develop personalized treatments tha",
+   "date": "2026-11-09T14:00:01+00:00",
+   "summary": "Researchers at the University of East Anglia (UK) have proposed an explanation for why some childhood tumors spread aggressively around the body despite having relatively few genetic faults. For years, experts believed cancers become more dangerous by accumulating genetic mutations that allow them t",
    "types": [
     "childhood"
    ]
   },
   {
-   "title": "Cholesterol-sharing mechanism points to potential new target for pancreatic cancer treatment",
-   "url": "https://medicalxpress.com/news/2026-10-cholesterol-mechanism-potential-pancreatic-cancer.html",
-   "source": "Medical Xpress",
-   "date": "2026-10-30T10:00:13+00:00",
-   "summary": "Fox Chase Cancer Center researchers identified a potential therapeutic target for pancreatic cancer after showing that tumor growth can be slowed and immune suppression can be reduced in preclinical trials by blocking a particular protein, called anoctamin 6 (ANO6).",
+   "title": "Timing it right: Donor support aids WVU Cancer Institute research focused on treatment timing - WVU Medicine",
+   "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxNU3ZlTVd6Uzh4NkNNWEJUSWc0X2VmSXphR1J2RWNndDUzSmYwdlEzd0V0SEthalg5V2ZxLVNfWm9uc3NnYkNTV21pekZwSC0yUGsyaFhmZU4xcXctaGQtOWFhRkVEemp6U2lUcTU0d0FlOWJlWXdtRmV6cDB3UzZ1QTJSZGtFOW51WjZsRmN0em54cFVvN3h1bDZGZWdNSEIzR2VKSUFjVnJlSFhUSWpBWEI5N1V6cnI4bkxicWRfT1BobmpsMVBxaVRKdWN5bzNzbm1acGYzZ0U2S01FaklBdXZlMU50b0xqaGRKUVBGNDY3UmVBWHhkSzRB?oc=5",
+   "source": "WVU Medicine",
+   "date": "2026-11-09T13:53:53+00:00",
+   "summary": "Timing it right: Donor support aids WVU Cancer Institute research focused on treatment timing &nbsp;&nbsp; WVU Medicine",
+   "types": []
+  },
+  {
+   "title": "Jane Ivanidze: Excited to Share That Our Team Awarded $3.5M NIH/NCI Grant for Glioblastoma Research - Oncodaily",
+   "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE80SmZWN0p1cTBoYTFPWEZrSWR4UVZpcE4tZDlia0EtRldLWFExR1JoNldqRXR5N0RiY295ZExZdWJBaDVvMHNLQ3JUWDVlLXBkMlpBb1p3R2ZzSzhhVDRoaWNJSzZPV1IwVnlyM2t0WQ?oc=5",
+   "source": "Oncodaily",
+   "date": "2026-11-09T13:50:33+00:00",
+   "summary": "Jane Ivanidze: Excited to Share That Our Team Awarded $3.5M NIH/NCI Grant for Glioblastoma Research &nbsp;&nbsp; Oncodaily",
    "types": [
-    "pancreatic"
+    "brain"
    ]
   },
   {
-   "title": "Blue Buffalo pledges $200,000 pet cancer research match - PetfoodIndustry",
-   "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNemt2cUlvSzgwLU5fWU01MjVRYlMwMkhrSWpkZDBjYmFqYldFdFprZDhxMzBXcVhFNkJSbWZMTnE0c21ESjU3V2FhRTEwdHlCQWhpSVV0ZnJEMmxFTGFmMk1yRnJfeWFTVnk1bU5wSnh4SDhmY1VoaWhBb3B6ZjZBUXhyRWdqbkZQOHhZMk55NkdMLUNiZDVkellIaTMxZnBuMzkwTFlOTkdHeTFPWDdDXzVxTlpFdVJQX1NUSGVvT21oNzFOQ3lvQjJR?oc=5",
-   "source": "PetfoodIndustry",
-   "date": "2026-10-29T22:55:36+00:00",
-   "summary": "Blue Buffalo pledges $200,000 pet cancer research match &nbsp;&nbsp; PetfoodIndustry",
+   "title": "A decade of the Crick – where discovery meets hope - Cancer Research UK - Cancer News",
+   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNeUYwQ2pra1cxcGVDcEhTREc3Q0ZWcmRORjVidWlGR0xpYktzZEZ1OHR6MWlFbzJsNzVJcVAzMG55ejhMeFV0M1l6MWlUX2V6aWo1a2pWY1huQzdVaV9ibjlfVlNjMnJHWkcxNThmWUlOa2loWi1RdVJma2ZNSWt1eUdTTnlvRmVuNDNhREJYTy1MT0pPbzluQnV3?oc=5",
+   "source": "Cancer Research UK - Cancer News",
+   "date": "2026-11-09T13:41:19+00:00",
+   "summary": "A decade of the Crick – where discovery meets hope &nbsp;&nbsp; Cancer Research UK - Cancer News",
    "types": []
   },
   {
-   "title": "HOG works to bring better cancer treatment to Northwest Arkansas - Talk Business & Politics",
-   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNcTFJbFNldHFCZzFnSDA0RVowaDVlVTFqRG52UHpwMlI0UnNPd1JhNFZmallIWjZqYXpxcUFWUEgtdU1pR3lwQmdGbWRrc3NDVDBQc3Y3Wmp5c1NoRDR2dmFiWGNHQnRNUThidmZBbjdaWjNLM2E5amZyNnNuRF9NQ21wVzFpZUw5RWl0ZkNQTFBnNG1fS0dlMkpJbC1NaUU?oc=5",
-   "source": "Talk Business & Politics",
-   "date": "2026-10-29T22:31:33+00:00",
-   "summary": "HOG works to bring better cancer treatment to Northwest Arkansas &nbsp;&nbsp; Talk Business & Politics",
+   "title": "DNA \"Switch\" Acts as a Brake on Breast Cancer Growth - Technology Networks",
+   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNdko3d1FvNzVHOFAzajlxN0tQaTR3dU5zeXBQdlVqbGpSY3ZhQWhwVEVlZXNXWWFISlA1Wl95ZUhfdnNSYlBCX2JQZ0JOTGJNZHNkLWVwWG5ya1BUQkxHaGFTbEtjM0hzNGNVdzU3amZUR3RZczd4T1RWRW12WDNOckZXMmhIb2dMN1NHbWNBdloyZktxd29mV1VsaFdRM3ZiV2c?oc=5",
+   "source": "Technology Networks",
+   "date": "2026-11-09T12:56:49+00:00",
+   "summary": "DNA \"Switch\" Acts as a Brake on Breast Cancer Growth &nbsp;&nbsp; Technology Networks",
+   "types": [
+    "breast"
+   ]
+  },
+  {
+   "title": "New Research Identifies the Hidden Rules That Help Brain Cancer Evade Treatment - SciTechDaily",
+   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPTEtja0k5RWcweWVCSjlPT1RfZWJRLVF4YmlETzhNWFRaOEM1azE0TDFUdHFpRUZDdFJWYWw4azFxbjdKVHpnVS10OXBYYmxvd1N4Y1B1bWJ5ZEFBbmVqQWx3MXpjYzdHcXNmc2pRcFZzVXdiWjJfQWhnWUJheU8tMnB5X3F5SWs2MENiNFJ5QTdmdXNhWnpoQTgxUUhPSWk3b2hLUHcxWGk?oc=5",
+   "source": "SciTechDaily",
+   "date": "2026-11-09T12:43:30+00:00",
+   "summary": "New Research Identifies the Hidden Rules That Help Brain Cancer Evade Treatment &nbsp;&nbsp; SciTechDaily",
    "types": []
   },
   {
-   "title": "Johns Hopkins Researchers’ Cancer Cell Mapping Technology Chosen for Anthropic AI for Science Project | Newswise - Newswise",
-   "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQakdhaWgtcnJuYlJDX2o1TklQNjhQWURuMHlkczhoMjRiRV9XVTV3SkYzbmhnYXVYZjlzZE8waTc4MFdIc3FubVI5N1FIN3FaUkVWYmN2SmI3Q3kyNkFKeFhlc3FlcWUwakV5ZDcwYnpUTnBtN3ZUbmN2SVRDdEh2NWROYmpZbXVvNmt0NzFtdlJ0SXo3MERMNFZZNl9mTEU1Q0VvaU5WZnQ1dWxCWVNEZnVXLXV3VkFYMm1zUnp0MURTQVZMUEtkM2FITlEwN1HSAc8BQVVfeXFMUGpHYWloLXJybmJSQ19qNU5JUDY4UFlEbjB5ZHM4aDI0YkVfV1U1d0pGM25oZ2F1WGY5c2RPMGk3ODBXSHNxbm1SOTdRSDdxWlJFVmJjdkpiN0N5MjZBSnhYZXNxZXFlMGpFeWQ3MGJ6VE5wbTd2VG5jdklUQ3RIdjVkTmJqWW11bzZrdDcxbXZSdEl6NzBETDRWWTZfZkxFNUNFb2lOVmZ0NXVsQllTRGZ1Vy11d1ZBWDJtc1J6dDFEU0FWTFBLZDNhSE5RMDdR?oc=5",
-   "source": "Newswise",
-   "date": "2026-10-29T22:15:00+00:00",
-   "summary": "Johns Hopkins Researchers’ Cancer Cell Mapping Technology Chosen for Anthropic AI for Science Project | Newswise &nbsp;&nbsp; Newswise",
+   "title": "New Drug Could Reduce Death Risk for Women With Common Cancer - Newsweek",
+   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPVi1DdHNBaUhJX2lTSHFpS1V1dzE2em51Z21ESWd3SHBYbV9jbTA2WG9YaElFUFN1dDMtTWF1OWhzWFdpTU0wdnNKakRqb1BwWTVfeVI2Y2M3b29mSzVDeDB1NXJKWkM1MmlyYnRGTkVFb1lEOUJJY0xKTzM2M25MYldoNGptUE5vZnNuYVJ5ZGc5VTl3eWc?oc=5",
+   "source": "Newsweek",
+   "date": "2026-11-09T12:23:00+00:00",
+   "summary": "New Drug Could Reduce Death Risk for Women With Common Cancer &nbsp;&nbsp; Newsweek",
    "types": []
   },
   {
-   "title": "How to Appeal an Insurance Denial for Cancer Treatment - Cure Today",
-   "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPTzdmTmZCbVAyRGNEdWNxazlGLVVXNlFTbVkzUTJtMUxHdDk3enB4VFloZnZ1U2R3TVFmZEJaQVJTa3V0cWU3dDBnQUs5M2l6M0VzUTRmUWdtMmxCbURDUjRNb2hTQ2wydWFvTk9teUhFbGxneUdiaW1xVG96LUNOcktmZi1CVkl4aFRrWkFB?oc=5",
-   "source": "Cure Today",
-   "date": "2026-10-29T22:08:40+00:00",
-   "summary": "How to Appeal an Insurance Denial for Cancer Treatment &nbsp;&nbsp; Cure Today",
+   "title": "Medicus Pharma Unveils Capital Strategy Centered On Novel Cancer Pipeline - TradingView",
+   "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPRTdoYTZPNW8tTGRwLXpVNVNGb3lDMFRpME1VOTBkSHlXTnlDckt3NHFDcUpneklwcV9Rc2N3dldaQXVVa21DN2k4Qk1ZNFdKc1NWN0ZyNzBwNlhpWUxrSk5LQ2hiN0F3WkpheVg0LWpid1g1X1F4WWZWLUVBWjkwb1pRU3NTRnVCQkwtMV9Za0NiOEpxS3JMUW1lV00tNl9XcUlyR3gtOTdGcVVTYm1WVXc4amh4R0lvdC1KRl9jY3JSS3hfSUJWdHM2ZHg?oc=5",
+   "source": "TradingView",
+   "date": "2026-11-09T12:19:50+00:00",
+   "summary": "Medicus Pharma Unveils Capital Strategy Centered On Novel Cancer Pipeline &nbsp;&nbsp; TradingView",
    "types": []
   },
   {
-   "title": "Patient Story: Mike Morris - Prostate Cancer Foundation (PCF)",
-   "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9MTU9GcTI2LVoyZlFGU2FfekxUX2ZWNjh1WmdzWWQ2VEtadWdyUmRDb0I3Nm9WUTRHMm4wVHlhWU41TmM2MDBQQkUxQlVNX21GLXNQOXVtU0pxdw?oc=5",
-   "source": "Prostate Cancer Foundation (PCF)",
-   "date": "2026-10-29T21:44:15+00:00",
-   "summary": "Patient Story: Mike Morris &nbsp;&nbsp; Prostate Cancer Foundation (PCF)",
+   "title": "No easy answers in Iowa City school activity fund shortfall, UI puts standalone cancer research building on hold - www.thegazette.com",
+   "url": "https://news.google.com/rss/articles/CBMimAJBVV95cUxPS2RITUlqSHBYT1Bxa0tsRjRSRjFCN3lWSDhUMFlkRHdOZ3RwUkM2bVVQdWFsMmMzZ01VaE42MFk4Q3dHTUNsa2VhdmFvbkpRZ0l3QmhYa0ZqaUdYbS1SZ0gwQzMxQUN4cEo0MzFDdkdRUEtiUG9IVXpMejdncFp6VG1fSWhTZVpDZHFTWHNCUk9lSnl0SEpIeFhQU3duNXRiOU5pUm5sem4yTTVqRF9ZOXFuMnlBOUxXNTF2TVd2NVd4bHdyeklxTW96WkJFM3o5dktjYU0yN3BkajJ3YWdFZ3hUenN6cUFya2x3dlR2Qi15enRMY0FOWnZHZ1FPOU80VkZLVkJPUXJHN2tKQlo3QkhHVFlfWC04?oc=5",
+   "source": "www.thegazette.com",
+   "date": "2026-11-09T11:58:00+00:00",
+   "summary": "No easy answers in Iowa City school activity fund shortfall, UI puts standalone cancer research building on hold &nbsp;&nbsp; www.thegazette.com",
+   "types": []
+  },
+  {
+   "title": "New Framework Prioritizes Cancer Prevention Reviews Using Global Evidence Surveillance - Bioengineer.org",
+   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQT0hEd194TmxpLW5fa0NJSURtWXhoUWFqUmM5Z0RNRXJvaVVHY0VYTWtsdDdhenNDZEVqM2dQYWdwdWVJNUc3ejZOcEpzWWRJTi1DaXNRalJRb0UxN25KQXlITnNLRm9GeHVwc1ZIVFpEMHVHMHpkZzBfU1pwSUxUTi1Jbi1sQ0xXdmVfclhaYW9CUGd4bVcxdzJmd3VJLWx4NERHZ1NCcEJmMjlKREVWOQ?oc=5",
+   "source": "Bioengineer.org",
+   "date": "2026-11-09T11:24:35+00:00",
+   "summary": "New Framework Prioritizes Cancer Prevention Reviews Using Global Evidence Surveillance &nbsp;&nbsp; Bioengineer.org",
+   "types": []
+  },
+  {
+   "title": "10 Cancer Research Funding Opportunities to Know This November - Oncodaily",
+   "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1HNVg4TVhxN0hzQlA2SkVybHlsX0VXektNd2loRFBwejh5YVg4RzhpSkRjYlRyVkx6SFpkMEVQdjB4RTdGdl9mNWJPOEZ4SllYSXg3QnpuQk9NUGUxWFVNdjQzSElfX1VMWlE?oc=5",
+   "source": "Oncodaily",
+   "date": "2026-11-09T11:17:10+00:00",
+   "summary": "10 Cancer Research Funding Opportunities to Know This November &nbsp;&nbsp; Oncodaily",
+   "types": []
+  },
+  {
+   "title": "Alliance highlights clinical trials advancing lung cancer detection and care - News-Medical",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQYzFEZFlCbVoxZzJPWlpPc0pNTktpY092NE1jalkyYWJnZlJ6OXdLX3RuUEpsOWtfcmJkRV95d3laaFpEX2FqaHc0VElSSUdBNTI0cml1dGx6QmFsVV81endLdDROQjJUbW1KZTFQTk5PdmI4SnZqcjNpTTQtNzZhSVhpVWFIbG5oaGdwd1BmeXpfNEVSSVhwWTFfLU5kTmlTU2J2am56cmgyQ0gyS0pLYkl6V0J2QVROc2tWbUhhV3J2QQ?oc=5",
+   "source": "News-Medical",
+   "date": "2026-11-09T11:13:00+00:00",
+   "summary": "Alliance highlights clinical trials advancing lung cancer detection and care &nbsp;&nbsp; News-Medical",
+   "types": [
+    "lung"
+   ]
+  },
+  {
+   "title": "Rural Breast Cancer Survivors Face Multilevel Barriers to Physical Activity - Bioengineer.org",
+   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNaDJxOUNDc2kyeTBQc3VzZTdqRlc1VEVjcVRJMDNCdkdGZHZfd0RQZUVRM0swUVgtd2t1WEV4aXlueUZLbE5RZXpnbDdwX1BXbDFfcnhzQm9YeG8zN25XVXZpLVJUZVM2VHNGVHhiSi1TRG8weThSdzJOdVZtcHM5R1R4WktSY01JLVBwQXpyZUxnakJFZUMwYllzQV9kbF9Zemc?oc=5",
+   "source": "Bioengineer.org",
+   "date": "2026-11-09T11:07:42+00:00",
+   "summary": "Rural Breast Cancer Survivors Face Multilevel Barriers to Physical Activity &nbsp;&nbsp; Bioengineer.org",
+   "types": [
+    "breast"
+   ]
+  },
+  {
+   "title": "10 Must-Read Posts in GU Oncology This Week - Oncodaily",
+   "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFB5eUNWREtsZUN2S3c3ZTEydFhlMGwzdjFKemRKV1U2SDJkbmtVVGxMZFFMQkY4RC1kS20tbHhIQXpuYkljenBJME9ITkZZeUhqZ0MtUVFZdldCckNDU1hDWUYtV0xSMWh1SDdqUngySQ?oc=5",
+   "source": "Oncodaily",
+   "date": "2026-11-09T11:00:32+00:00",
+   "summary": "10 Must-Read Posts in GU Oncology This Week &nbsp;&nbsp; Oncodaily",
+   "types": []
+  },
+  {
+   "title": "Combat Medical reports 68% high-grade recurrence-free survival at 12 months in BCG-unresponsive non-muscle invasive bladder cancer study - News-Medical",
+   "url": "https://news.google.com/rss/articles/CBMikwJBVV95cUxPdXJnbTNpS21DTkxOUzkyLV84MEhDWk9VZDBya1RHWk1MOElQV09JdkpSWjhPOG03cG9jMXlBUV9GSzBQVDc4RmlrSlFwd3ZNSHNiMzJFZTI2VHM3ZEJKcjRqcFAyaWdRSk03U2hWekFUdDRaNXZKeVZJRUxneEY2Q2ZZZTI5SHEzRnN1ZmxfOXRSb0ExcVRSUnlNOWxzbzhPM3B0bGtXRTV2VExmdUVZZnQ1U29QN0J2eWJsRzR3T2ZIS3NyOWs2Z3dWSWphY25RczhNMWdGZUgyUHhKVmpkWE4tOVMtcXhKcFBTMWtVQnB6T0xUaU1Qbl9ybEFJR1hyZmdwWWFEcXhBMXdlVG1FT3NTWQ?oc=5",
+   "source": "News-Medical",
+   "date": "2026-11-09T10:44:00+00:00",
+   "summary": "Combat Medical reports 68% high-grade recurrence-free survival at 12 months in BCG-unresponsive non-muscle invasive bladder cancer study &nbsp;&nbsp; News-Medical",
+   "types": [
+    "bladder"
+   ]
+  },
+  {
+   "title": "A simple supplement may help clear brain fog after cancer - Science Daily",
+   "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE11ZjNuRkJYRUxjYmtHR3FjUk1LTDdlN1BOeFJQNHBGNm9qRTZfM1lPLU1TNW9yazhqN3BXVzRJZWw4aEpiMVR2ZEJXeGpZd2xPeU1PTmh6Z19UTkhrRWlPSlJ6cGt2NmZHU1dsajFyNA?oc=5",
+   "source": "Science Daily",
+   "date": "2026-11-09T10:35:01+00:00",
+   "summary": "A simple supplement may help clear brain fog after cancer &nbsp;&nbsp; Science Daily",
+   "types": []
+  },
+  {
+   "title": "A simple supplement may help clear brain fog after cancer",
+   "url": "https://www.sciencedaily.com/releases/2026/11/261104084013.htm",
+   "source": "ScienceDaily",
+   "date": "2026-11-09T10:33:23+00:00",
+   "summary": "A surprising new study from UCLA suggests that a naturally occurring molecule could help breast cancer survivors overcome the frustrating brain fog and exhaustion that can linger long after treatment ends. Researchers found that women taking an oxaloacetate supplement for eight weeks experienced sub",
+   "types": [
+    "breast"
+   ]
+  },
+  {
+   "title": "10 Must-Read Posts in GI Oncology This Week - Oncodaily",
+   "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE41dG5GUEpHLUp5bnBoTDljaXA2NDhQWVdEV0ZlTEN6dkYtUXR0b2RtRFRHVi1HaldtTHgzSmp5MFVwUF9ZX3BZNm1yRE9oUmlFZzlxZGdBaWlCTUFybkcxaUFYcHNXZWgzVEJjU0xrcFpQa1U?oc=5",
+   "source": "Oncodaily",
+   "date": "2026-11-09T10:16:13+00:00",
+   "summary": "10 Must-Read Posts in GI Oncology This Week &nbsp;&nbsp; Oncodaily",
+   "types": []
+  },
+  {
+   "title": "Research is Beautiful – autumn’s best of the rest - Cancer Research UK - Cancer News",
+   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPNzZfbk9MMmVoQ21EMTI4enlET1FHT0M2UDVRTU1DQnpsbnVqTFNRZk14cS1RMVVBWUhzMHNvS3hfMVBDRGxES0VOZWk2WHhremdpTDlXWGkycUdrNFR1SE1lT2x0Snp0ampwTEhWdkdaSkNoX3lOdG9va20xY3kzT0ljeVdRUGkzV09LNG90Qm5vSklRZ2JJ?oc=5",
+   "source": "Cancer Research UK - Cancer News",
+   "date": "2026-11-09T09:14:42+00:00",
+   "summary": "Research is Beautiful – autumn’s best of the rest &nbsp;&nbsp; Cancer Research UK - Cancer News",
+   "types": []
+  },
+  {
+   "title": "Ava Marie Musci of Liverpool, New York, set up a lemonade stand at age 8 to fight childhood cancer; ten y - The Times of India",
+   "url": "https://news.google.com/rss/articles/CBMijwNBVV95cUxQcTNZdVFZaldBME5IOFphTGNKTHJDSjNNZ0R6ZFlNaHFadDFqR3gxVWFVWlVSNGkzekxHUWNqazRHcmtHQXZCSHpjLUpLUXBVc2NwV2ttMEVtcDdXYVhrcGhKd1JTdTcwVkxIcUJNUmMwSnRDbDFPd0NZS1F0ZTJMQUtuQlpCazVXaHlMVFhyVVBlMHh1aDNkRGlNTllkS200WExudlN2Zjh5TzEwemRYZ09Sd3dCcXBreGFjbnRXNERsS2o1N2x3Q3lsc1liTjYtanZQdDFpTDlZblpxQk9wRFVUNW9fN2JUNWFaNmx4ZFVBelJIYXhBdzNRbHZJdlFLM2UzelAtTEFjTFFOZDNBSnc2aVJMaDlNZXVuaU9XTWRWQkhnLUp1OW5icjVVc0c0dXFPd3FhXy0xbklsNkRMQ3Z4NXZBT01lcGtRQUN5dUpMUW9DQ1Q3dk1DeGpnaWdwLUt0bkZUS2VFNkxEN1ZNZDZoeWpRa3dvQWRyQ2wtSVF2NWlrcUx5d1NSN1VXWVHSAZQDQVVfeXFMTkNKSDlEVVVubmszMG5aN21WbTljbDc3UmR5dlAtcmZuU2Y5VDRfek96Q0VzN2ViQVNRQnY5Wmt6MDdYSVcxakhlTjc2UTFMX3ZYMktGWGMtak40TlQ0S3N6dHM2dUwydVBTNkVSNXVfUlBUYW5SUl9RT2c2bm5HS1JFajAyb1lNRC1YR1oybW5Bd0djRWNpTGNGVTNLZmhzZHIxa1JkWVF0ajZfZklQZ2NPR3lEZHptcXZYd2JWY1p5RC1kVTdReEVHTm83VFU3SU4tZVpoUGlzQzZZR1dzT09XTThqd19wSTZOMzgySlNXRmNwWHljQnFiYU9ONmhNZFpRWXprZnhlcGdCZ0x6QTZTRnh5MjNKQ0xCVzM5N0ZwZ0JUU2RxbzRFNXl6U18zN3hNOFI2czUxeTEwTEFiUGpaOWNwN0ZQMjZ6Z0ZsQkFSakY1WWoyMlhfR2s3amx5cU9Ib1ZKWUszYUxuSVhBWHltRnd5dXJhZWQ4VTlqVE1HU3ZidVBCc2VMSGJsMjg5ZEs2djQ?oc=5",
+   "source": "The Times of India",
+   "date": "2026-11-09T08:29:00+00:00",
+   "summary": "Ava Marie Musci of Liverpool, New York, set up a lemonade stand at age 8 to fight childhood cancer; ten y &nbsp;&nbsp; The Times of India",
+   "types": []
+  },
+  {
+   "title": "Cancer clinical trial participants reimbursed a median $2,128 for nonmedical expenses",
+   "url": "https://medicalxpress.com/news/2026-11-cancer-clinical-trial-reimbursed-median.html",
+   "source": "Medical Xpress",
+   "date": "2026-11-09T08:10:01+00:00",
+   "summary": "New research reveals that participating in cancer clinical trials can cause financial burdens that are shaped by both socioeconomic and logistical factors. The analysis published by Wiley online in CANCER, indicates the need for better reimbursement programs to improve equitable access to, and reten",
+   "types": []
+  },
+  {
+   "title": "Gallery: UCLA gets a purple makeover at the LA Cancer Challenge 5K Run/Walk - Daily Bruin",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOVnkweHFSWFlhQ1NmSXV5NnhyUnZxd2RUM1hmMGEtaDhyblBZak5fN21vazExRk1GN1VCX1pnczI4VFJQYk0ycTNDdkNFd1hfSmVaRTJWYkRPMFluNVRWTW1wN2UyX2plQXc0enVtdTlDQVluU1l0OVVLMmpXSGJRQ0VzSC1vY0pYaGpiYXY1Z0J4OXplMFRhUGthTGo1U2g0a0V1Mmh1VUpWQjVX?oc=5",
+   "source": "Daily Bruin",
+   "date": "2026-11-09T07:20:00+00:00",
+   "summary": "Gallery: UCLA gets a purple makeover at the LA Cancer Challenge 5K Run/Walk &nbsp;&nbsp; Daily Bruin",
+   "types": []
+  },
+  {
+   "title": "Reprogramming cancer cells to improve immunotherapy - healthcare-in-europe.com",
+   "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQV082LWFxRjk3aEM2QjdHcFZmblhsSXllbHlZYkZZTjY3dGg0dTFXSlI3MUNmVW9oaWpuNW5pWWdZdmdlQVVuQzBLRnFSUmhyNXNlYTZtVi1JZVJlNjFMbHp2YzNidmJpSzZ5Y1JzWHJkNndzOEgxd0NXZUE1c2RNNUptRmtMT1RoOWc?oc=5",
+   "source": "healthcare-in-europe.com",
+   "date": "2026-11-09T07:06:54+00:00",
+   "summary": "Reprogramming cancer cells to improve immunotherapy &nbsp;&nbsp; healthcare-in-europe.com",
+   "types": []
+  },
+  {
+   "title": "34th Semmelweis Symposium to focus on cancer research and interdisciplinary collaboration - Semmelweis University",
+   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOODdUalA0Nnc0ZENZak1iSGM0UFp1UjRSa1YxYS1wRk13T01abEtPUFJrTHFZbDQzSFV2MWIwaWVzZFFkckRHLXNubzJoYm02WmFxbERWWlcwYTY3bXB0M3BTekJTdkRUTl9CbVY2Z0g0SjBmU1ZQc3Qxb0pTWEtXRnJra3E1cVIzVUxWN190U2p3R2tLSGJqVThSNTZkWkN5bTZoQTNTWVJ1TXR3Q0p1WDFqQ2FOcC01ZEd1RGJCU2IzeUw5cU1N?oc=5",
+   "source": "Semmelweis University",
+   "date": "2026-11-09T05:00:24+00:00",
+   "summary": "34th Semmelweis Symposium to focus on cancer research and interdisciplinary collaboration &nbsp;&nbsp; Semmelweis University",
+   "types": []
+  },
+  {
+   "title": "Elephants and Cancer: Rare Link Sparks Human Research - Yahoo",
+   "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxObHZEb2NnLXZrNG9QcnRPWXRIeDdkbG5LZTFYejRyTG13WDFaaFdlQ1Zjd3dTY2pDZlpYbk84NjdoMkZ1UjFBcHVEczFWV0Y4VEFGQnI3N3dJTjZRN1NKMm9oaThQYkZCTjU3bGplNjctM191MlBTMWg5UUhBTGFMQi04UGRqOXotMkRiX1dadVF0Zw?oc=5",
+   "source": "Yahoo",
+   "date": "2026-11-09T05:00:00+00:00",
+   "summary": "Elephants and Cancer: Rare Link Sparks Human Research &nbsp;&nbsp; Yahoo",
+   "types": []
+  },
+  {
+   "title": "New species of bacteria discovered in prostate cancer patients - Lab + Life Scientist",
+   "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNa0VrbGpud2Yya1Z1MlVvdnR2ZTFrcFNYNDVIRHVRc1FPQWtfZ1JGeUFVWFNQWFFxTnpmOHN4SGpJQmRsQjRmdDU4cVlRekkzSUwyT1I5RUJKQ1VXRmRNUU92dGF6V3NhbXFZU3BCVW9Sek1Fb3F0RU5FS2NoVlVZSDNDQ0t1MXlmNmRpLTB0VHhEdm1xQ2J1Mk1GR29nN1JTdVdZdVFQNm9fNklqM3ZDXzBDeHRJM01aRDh3V0hrdGpTaXFieU9NWFBfQ2Y?oc=5",
+   "source": "Lab + Life Scientist",
+   "date": "2026-11-09T04:48:17+00:00",
+   "summary": "New species of bacteria discovered in prostate cancer patients &nbsp;&nbsp; Lab + Life Scientist",
    "types": [
     "prostate"
    ]
   },
   {
-   "title": "Known for preventing cancer, p53 could also help immune cells fight it",
-   "url": "https://medicalxpress.com/news/2026-10-cancer-p53-immune-cells.html",
-   "source": "Medical Xpress",
-   "date": "2026-10-29T21:40:12+00:00",
-   "summary": "Researchers at the UCLA Health Jonsson Comprehensive Cancer Center have identified a new strategy to make cancer-fighting immune cells stronger and potentially longer-lasting, a discovery that could help improve the effectiveness of immunotherapies that use a patient's own immune cells to attack can",
+   "title": "CBS LA joins Blood Cancer United for fundraiser walk, helping raise money for cancer research - CBS News",
+   "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNWjlYMlhpdWZXTWV4ZjRTRDhETV85Mkxra3FjdEVDMWJQRFRJb3hLaFNHNUtNb0dfRl9fV011RDZReEtzUUFxenhPejB3aTZCRFVmakY2U0VHV2Z1S3c5ai1SMERlYnRQRWdhRWpQdzZGbnJMLU5EanptejNYVWNDc3VmX0RFem9Gd2JNaHBWdi1EbEg3RnhrRHhlcFZqZFVxSm1oUWNUVFBGLWpQbjBKbXlSbE9ldkF2ckVWQUVTNWlWa24tSlFQTkZZQkZrenM?oc=5",
+   "source": "CBS News",
+   "date": "2026-11-09T02:59:00+00:00",
+   "summary": "CBS LA joins Blood Cancer United for fundraiser walk, helping raise money for cancer research &nbsp;&nbsp; CBS News",
+   "types": [
+    "leukemia"
+   ]
+  },
+  {
+   "title": "Harvard Team Wins $7M Grant for AI Cancer Research - Bioengineer.org",
+   "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1hSlJMbXdMQ0tSa18zTWg0aVNQbWRRbERQTHNkbWkxVFF0U1oyaTMxazRmQThBRmpSMHhvU2t0eGRnZEtUZllqbTZ6ZGlpRm5sRHVhMHhHRlh0VTBhZmZYWm1wOG9Za1dIbGJCSzFXWGg4NHktQVhXVXA0WER3b1k?oc=5",
+   "source": "Bioengineer.org",
+   "date": "2026-11-08T23:50:39+00:00",
+   "summary": "Harvard Team Wins $7M Grant for AI Cancer Research &nbsp;&nbsp; Bioengineer.org",
    "types": []
   },
   {
-   "title": "What Does ‘In Clinical Trial’ Actually Mean? – Ovarian Cancer Research Foundation - Oncodaily",
-   "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1TbVNWSm44X25NU3cwMkU4dnJDYVg4UzIydkpHd0RuOUtaWDlBQ0xpZ3FVU0dsYkUxMGVIbnJLUWFuWjZlZW1maldZUGJPdDJ3Y1NXVk5CXzZzVEtYRTAyTTJBS2lXd1IyanZJRVJFN0Q4WG44NkhwaERTZw?oc=5",
+   "title": "Joe Tomsu Memorial bowling tournament raises money for cancer research - KETV",
+   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQOVJHdTJVcU1HQTNBQUI1UnA0dDA0MDBKdzRhSmVRd1Ayd2dBRkR6NjVmaW5yWjJrTUJET3FCeWVOQjVaZGtkcXpGdkZIbWdtUmpWOFdXOUJLWW1MNmpORl90Wko0b1kxRVlNRm03UlJoYnVVbmhiS0VxNlh2Ykg5OUx1akhETXJxek16d3d0TUpLVFVj?oc=5",
+   "source": "KETV",
+   "date": "2026-11-08T23:42:00+00:00",
+   "summary": "Joe Tomsu Memorial bowling tournament raises money for cancer research &nbsp;&nbsp; KETV",
+   "types": []
+  },
+  {
+   "title": "Duke Health Launches Small Cell Lung Cancer Center of Excellence - Oncodaily",
+   "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5Lb0RlbDNDbWNBc3pOSk5LQ2RseEt0S2hCRXhlRXlWNEgyNzh1UG12b0FoSWI5bUI1M0tRZW1VeXpuY3BWMDh5TTdYU3ZjMl9NemY5ZERFaVluSUhNbzdz?oc=5",
    "source": "Oncodaily",
-   "date": "2026-10-29T20:59:24+00:00",
-   "summary": "What Does ‘In Clinical Trial’ Actually Mean? – Ovarian Cancer Research Foundation &nbsp;&nbsp; Oncodaily",
+   "date": "2026-11-08T23:28:44+00:00",
+   "summary": "Duke Health Launches Small Cell Lung Cancer Center of Excellence &nbsp;&nbsp; Oncodaily",
+   "types": [
+    "lung"
+   ]
+  },
+  {
+   "title": "Scientists wipe out deadly brain tumors in every mouse tested with new cancer therapy",
+   "url": "https://www.sciencedaily.com/releases/2026/11/261104084009.htm",
+   "source": "ScienceDaily",
+   "date": "2026-11-08T23:24:50+00:00",
+   "summary": "Scientists at UC San Francisco have developed a powerful new cancer therapy that remains inactive until it reaches the brain, where it switches on to attack deadly tumors. The engineered immune cells, called B-SYNC CAR-T cells, completely eliminated diffuse midline glioma (DMG), an aggressive childh",
+   "types": [
+    "brain"
+   ]
+  },
+  {
+   "title": "Kids take control of real construction equipment at fundraising event for cancer research - KSNV",
+   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQSEJMSC1hdjFWVFk4dUtadkNDZ01fV1hzNXFPUGNWZmtCNzEySWRTZjBrbFNNN19YeXAzcEh4X2d6QmJWalZGamsxSWJMOFh1WFhSR1otakJyTlBTZ3EtNFE0NGtZeFNBSHV4UHM3ckRFbnYwNFdTcE04TFFRQTV3N1lXa25OS2JieVdDdlhMakRzS1lWYVB1OXJVd2RlS3Q1X251VGVGRGowS2ZURjRKX2NBbkpmOW9fVXpOMldR?oc=5",
+   "source": "KSNV",
+   "date": "2026-11-08T22:37:27+00:00",
+   "summary": "Kids take control of real construction equipment at fundraising event for cancer research &nbsp;&nbsp; KSNV",
+   "types": []
+  },
+  {
+   "title": "How Much Arion Carter Has Donated to Cancer Research After Monster Game vs. Kentucky - Rocky Top Insider",
+   "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQTU93el91Qkgyc290ZV84eUl5ODFKZ1AxY19jLXl2MDdhbEJ1Mzh0blZnc2RVUzNzZ1piUDRuVzg1NUZyOThxZXJ5VHhSY2VMcEdIVm9aRWhoVDFNX1phdXN3emZ4b1VUR0FKbjhZUHdvTGk4dWxENWN0UnVwLWxzMC1Ja2hvWks1VHBiN1Jwcl9BOU5wanJhT2xiZUp3OWpWT2RyTGF2b1UzMnptWk9VNFRUaEtCVk5WUGd3bk92NDNSRmhrQnc?oc=5",
+   "source": "Rocky Top Insider",
+   "date": "2026-11-08T22:09:25+00:00",
+   "summary": "How Much Arion Carter Has Donated to Cancer Research After Monster Game vs. Kentucky &nbsp;&nbsp; Rocky Top Insider",
+   "types": []
+  },
+  {
+   "title": "Aspirin does not prevent recurrence after treatment for colorectal cancer liver metastases - Medical Xpress",
+   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxONV9TT2hlamhSTGJ6aWxlNHNiMm5wVWNlX2pUdno3VjdoM0VhcF9iNmh4QzJicGYtdUNidDd2X2RhY2JWcW4ydEZJTENWekJIUUhYSUUzYVA3SmxJQ0F6a3dJZlNxNm42N2ZXa3ExemoxZEJ5ZTZOYTVwN3puNW1DaHNZZXZkZXByV1JoVldJQ0Uta0Mz?oc=5",
+   "source": "Medical Xpress",
+   "date": "2026-11-08T22:00:06+00:00",
+   "summary": "Aspirin does not prevent recurrence after treatment for colorectal cancer liver metastases &nbsp;&nbsp; Medical Xpress",
+   "types": [
+    "colorectal"
+   ]
+  },
+  {
+   "title": "Aspirin does not prevent recurrence after treatment for colorectal cancer liver metastases",
+   "url": "https://medicalxpress.com/news/2026-11-aspirin-recurrence-treatment-colorectal-cancer.html",
+   "source": "Medical Xpress",
+   "date": "2026-11-08T22:00:06+00:00",
+   "summary": "Colorectal cancer is one of the most common cancers in Norway, which also has one of the highest incidence rates in the world.",
+   "types": [
+    "colorectal"
+   ]
+  },
+  {
+   "title": "Pancreatic Cancer Study Uncovers Biological Differences Across Diverse Patient Populations - Bioengineer.org",
+   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNN09ydlBOOHFqUUt4OTlvR2NxV1AxQmNzdzc4SU9hcFd3UThxdE11aGFnR0wxUTlna3NUSlpHSzZSVVlPTWtKUzNaZFJydnZJZ0lud21PN2dtNC1xcHA2Q0g2LXRjdS1INDVjNHlmck4xem9HWUJSblZKSlIwb2FPUVl0Z2hRQjhiR2tld2hEamV0UWZ6dld1TDh1ZFd5b3V2eU9JV3prV3JPMDVGbEt0dDFpbGwtUQ?oc=5",
+   "source": "Bioengineer.org",
+   "date": "2026-11-08T20:54:41+00:00",
+   "summary": "Pancreatic Cancer Study Uncovers Biological Differences Across Diverse Patient Populations &nbsp;&nbsp; Bioengineer.org",
+   "types": [
+    "pancreatic"
+   ]
+  },
+  {
+   "title": "What to Know About Skin Side Effects During Colorectal Cancer Treatment - Fight Colorectal Cancer - Oncodaily",
+   "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1ZbG1VM0IzOVhSVkRlYlRtdjF2TTJwVVBmb1B2S2tLaGFPdUdpSFFaVnZTZ2Zod1FyMmszUDd0V0hrWkRYeXYtLWJLNjBrUTl4OF9ZdjZ4TlpLNjN1d1hFTGhnczdEa3ltSF9R?oc=5",
+   "source": "Oncodaily",
+   "date": "2026-11-08T20:18:58+00:00",
+   "summary": "What to Know About Skin Side Effects During Colorectal Cancer Treatment - Fight Colorectal Cancer &nbsp;&nbsp; Oncodaily",
+   "types": [
+    "colorectal"
+   ]
+  },
+  {
+   "title": "Anmbreen Jamroze: What If We’ve Been Giving Immunotherapy at the Wrong Time in Prostate Cancer? - Oncodaily",
+   "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9CTnl3ZkY1QnRwejFGbl80RDItWFhBaHFIMDFKUWFmS2wtWXB0QktZMEFvN1lZNGdwWkdxYnFGVU9kdDR5Z1JQX1hIM24zTnFhQXBVYkdsSmVlLUktRXZOdjlrSQ?oc=5",
+   "source": "Oncodaily",
+   "date": "2026-11-08T19:43:40+00:00",
+   "summary": "Anmbreen Jamroze: What If We’ve Been Giving Immunotherapy at the Wrong Time in Prostate Cancer? &nbsp;&nbsp; Oncodaily",
+   "types": [
+    "prostate"
+   ]
+  },
+  {
+   "title": "Rutgers Launches Cancer Fundraising Campaign Inspired By Coach Steve Pikiell - News12 | New Jersey",
+   "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQUVNFbDJoNDFqX3FTc200bU5jaU5VX2g4NDlCeDkzdWVXcWp0Rm1jT2lRRUVZejlMN1NmRzVyYnVGd09lSDlCRzA0NFYtd191cUpDbFRRZ09CeUtSWU1ZNFBNMVRFNGkxTUsxc0FmVHlUS29Ob1NoaXJKQll4Qzl4dkF0S3ZFX1hLU2pUNUNPaF9QMW03NC1KQjFNZVE0WDExekFfZmlJN2JKZzZKNkhfajk5WGFMbUJ0ekJxWjU1RklsbkhmLU1BeXQ2U1B6YnJXejRMTlF3?oc=5",
+   "source": "News12 | New Jersey",
+   "date": "2026-11-08T19:16:06+00:00",
+   "summary": "Rutgers Launches Cancer Fundraising Campaign Inspired By Coach Steve Pikiell &nbsp;&nbsp; News12 | New Jersey",
+   "types": []
+  },
+  {
+   "title": "Gilberto Lopes: New Research Reveals Elevated Long-Term Heart Risks in Young Cancer Survivors - Oncodaily",
+   "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE05eUNpZ1prRHhMTzk0Z1cwZEtReE9oSXhaVGY2MTBJVUtRa25EZjNBd3BuOEcyUHB2eTRwTFNhQklOQTNUdWlQSFVYeGF2YzlhaXIxQ3FjTWlyR2RuSVJ5RmdFcEd4a0lBb0pR?oc=5",
+   "source": "Oncodaily",
+   "date": "2026-11-08T19:12:43+00:00",
+   "summary": "Gilberto Lopes: New Research Reveals Elevated Long-Term Heart Risks in Young Cancer Survivors &nbsp;&nbsp; Oncodaily",
+   "types": []
+  },
+  {
+   "title": "Why the simple flu shot could be a surprise weapon against cancer - The Washington Post",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOQ2lzdUxXUFhqZ29ZaGxTYWMwWUZYMjBSTUdaN1FFNmhVaElOaUtTSl9haTVjQlg2Z2l4TjVxOW9kS2pSVldNUXRXU0wyVnEyWi1EZ0UtcnVFd3Y3U3lkdFlxaDU2dUQ1a1hReXdIbU1LUFd0ZjhFamE5MDQ1dTZaYTRvMjZIczhsUTVJUHZSSUJGVkxOWjZORnRwdko5UDVEdHZZSFlOMVhIcThlVFE?oc=5",
+   "source": "The Washington Post",
+   "date": "2026-11-08T18:00:00+00:00",
+   "summary": "Why the simple flu shot could be a surprise weapon against cancer &nbsp;&nbsp; The Washington Post",
+   "types": []
+  },
+  {
+   "title": "Alicia Castelo: Geriatric Oncology Research and Global Collaboration Take Center Stage at SIOG2026 - Oncodaily",
+   "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE8wRk16LXcwdGdTZmdKS0VISW8xZ2M2T19jcXk1b0NsckVNUTRQRURZWXc5VG85ZWh5RUhjYWFNakdnNmg0THo0ZHQ4MGRERGk1SmpzMTQ4QS1ZUV9xQmQtYkRCeWhiaGVT?oc=5",
+   "source": "Oncodaily",
+   "date": "2026-11-08T17:29:50+00:00",
+   "summary": "Alicia Castelo: Geriatric Oncology Research and Global Collaboration Take Center Stage at SIOG2026 &nbsp;&nbsp; Oncodaily",
+   "types": []
+  },
+  {
+   "title": "Microbiome therapy shows promise for preventing deadly bloodstream infections in early trial",
+   "url": "https://medicalxpress.com/news/2026-11-microbiome-therapy-deadly-bloodstream-infections.html",
+   "source": "Medical Xpress",
+   "date": "2026-11-08T17:00:04+00:00",
+   "summary": "Researchers at City of Hope and collaborators have pioneered a new approach to preventing dangerous bloodstream infections in patients receiving donor stem cell transplants for blood cancers. The first-of-its-kind therapy delivers 16 carefully selected beneficial bacteria designed to restore the mic",
+   "types": []
+  },
+  {
+   "title": "University of Iowa drops plans for new cancer center - The Gazette",
+   "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPZ0pCb1J4R3hGQUtOOU54NWUwclVnWV9UaVZFY2g0M2JGSkRSODg2VWFuLTIyYURzWEVJTU81Q1B5NjJmUHlmWF9UUXlsamIzNmVYSGFiRTJ5SHRKV1QzWDVYWGViTElYMUt4Z0puNHF1UTVUVHpPaXZCR2V1MXhZTUVEeTg2bVFYU00zY3lFSUR0Y29MbkYxcTNVMVlYZjhLUjZBd1R6NFVBZWRQY2V3b2xWaHZrNVp2QjFvTVZ3SmQ2YUQ4dW5fNUl2NjdxSHc?oc=5",
+   "source": "The Gazette",
+   "date": "2026-11-08T16:30:00+00:00",
+   "summary": "University of Iowa drops plans for new cancer center &nbsp;&nbsp; The Gazette",
+   "types": []
+  },
+  {
+   "title": "‘Sandy Sprint' held to raise funds for ovarian cancer research - NBC Los Angeles",
+   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNckR3ejR2b0p6UW5HZGFaVnBlcUNLdjdJQTNteF9fdkVqMDhlbkdON2dkWVlPUXI3M0dSRW4wdjZ5V20xWGNKR296Z3Axdnc0NnVIT3J1ZHUxMzdLaUEzbXdVVmhoQmlYRXhJc05iUXZfTmVyWmN1LVc3dk1RY2dVaE8tQU8tVjRTc0k5MnMtQkZJWGpYZGIyeEpVX2J5bHBLZm1mTUtvNmxNSURjRkw4MVBsak9oelHSAb8BQVVfeXFMT2JfZWVXS1JwSlB4UHd6dE5mdEU1RlMyVlVHMTVha1BlN3pPN3VWOTR4NHRtSk9NVzBMRi03UHhRd29LRDIya0xXdnFtaDJhQzJDQmdtZUFnWWJUSnpKZXVfMzdJX1ZFWGc2d2pvRnBrZTdpaklKVlF3OGV4eXJWdkhFdmlhb1B3UzNKVHV1ZEFGT2FIZUtXbm1tQ3d3eFlxZjQzWGg4NGp3NDJUTGJYUDQ4QUJOZXJvZ0tTcWdEalE?oc=5",
+   "source": "NBC Los Angeles",
+   "date": "2026-11-08T16:25:38+00:00",
+   "summary": "‘Sandy Sprint' held to raise funds for ovarian cancer research &nbsp;&nbsp; NBC Los Angeles",
    "types": [
     "ovarian"
    ]
   },
   {
-   "title": "FOX News Media teams up with Breast Cancer Research Foundation - Fox News",
-   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPSW1LQW4zN2FlODQ3d2tGRE5OdjJyakRYMEZNM2FSTl9jZWhpQmMyWkxOMVotRmlXZXhHbDRHV1FqbFFCTkQxaUN4RDBETG81LUg1b1pMZnNMSzVxRlZPU0lwQW9vUnBDTnpyS0VyQXA4dURkLUNhME9JVmtBcS1mdW9VYXB0WUs5R2p3YTE3RHRBdTFVTEtJ?oc=5",
-   "source": "Fox News",
-   "date": "2026-10-29T20:49:10+00:00",
-   "summary": "FOX News Media teams up with Breast Cancer Research Foundation &nbsp;&nbsp; Fox News",
+   "title": "Science & Medicine: Study finds higher endometrial cancer rates in San Antonio region, especially among young Latinas - Texas Public Radio | TPR",
+   "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxNSmpQWWlXOGxZTGF1YjVCb2lHZG5JdTBvNTZlZlBHV2J6ZVZQZ0l5TV9uMDhYNmhKYnlnSkFfNFMxeF85RHlsYUdqMFpJYm1WTll2WC1CZ3hLUENsVFhINXZOdUVydzZaTWFmQnZkZTVkSU1ycTlYN2pjY1JBZnBwSzlENVhmYmQ2eUJCMUpCSGxVSUlzYm5Fb1FQOExMczFmUmMxNklEajFrLUJLVDUtUHQ1aDdSdm9SbUQ3WjNvWUE4eV95RVRVblJGU1hLX05YakNGRl9XRVN4Y1luS2J3RFR6Q25kcWdFOHR3X29fczdiQ2Y1MU5Z?oc=5",
+   "source": "Texas Public Radio | TPR",
+   "date": "2026-11-08T16:04:36+00:00",
+   "summary": "Science & Medicine: Study finds higher endometrial cancer rates in San Antonio region, especially among young Latinas &nbsp;&nbsp; Texas Public Radio | TPR",
    "types": [
-    "breast"
+    "uterine"
    ]
   },
   {
-   "title": "Tumor mutations and immune activity may reveal who benefits from investigational lymphoma drug",
-   "url": "https://medicalxpress.com/news/2026-10-tumor-mutations-immune-reveal-benefits.html",
-   "source": "Medical Xpress",
-   "date": "2026-10-29T20:40:12+00:00",
-   "summary": "Researchers at the University of Tsukuba conducted a physician-initiated phase 2 clinical trial of dasatinib in patients with relapsed or refractory T-follicular helper cell lymphoma (TFHL), an aggressive and difficult-to-treat blood cancer. The study identified genetic alterations and features of t",
-   "types": [
-    "leukemia",
-    "lymphoma"
-   ]
-  },
-  {
-   "title": "Immune system protein is a cancer killer on its own, new study shows",
-   "url": "https://medicalxpress.com/news/2026-10-immune-protein-cancer-killer.html",
-   "source": "Medical Xpress",
-   "date": "2026-10-29T20:20:07+00:00",
-   "summary": "For decades, scientists have known that a protein made by T cells and natural killer (NK) cells in the immune system, called perforin, can kill tumor cells by punching a hole in the cell wall and injecting proteases called granzymes, which kill the cell. Now, new work led by researchers at the Unive",
-   "types": []
-  },
-  {
-   "title": "Residential fine particulate matter linked to minimal residual disease in pediatric leukemia",
-   "url": "https://medicalxpress.com/news/2026-10-residential-fine-particulate-linked-minimal.html",
-   "source": "Medical Xpress",
-   "date": "2026-10-29T20:00:01+00:00",
-   "summary": "For pediatric patients with high-risk B-cell acute lymphoblastic leukemia (B-ALL), residential fine particulate matter (PM₂.₅) concentrations during induction therapy are associated with positive end-of-induction (EOI) minimal residual disease (MRD), according to a study published in JNCI Cancer Spe",
-   "types": [
-    "leukemia",
-    "childhood"
-   ]
-  },
-  {
-   "title": "How Lewis Hamilton and F1 Helped Raise £275K for Childhood Cancer Research - Oncodaily",
-   "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBsWWNSNWktZHhDM1lpRkJnczhrZHdaUDZTX2dDSWxyRDdyV0hKWkU0NXotLUpoZTRzN2FGTTNrOVN4TlRnUGdHandsbGp3UldhcUhJY1p4aGZ6SU5qTWEtenVWUVJfeERwRDgtMTVXZ3gtMVpkSkZfTkhIRQ?oc=5",
+   "title": "200 Most Influential Cancer Papers Suggested by Sendurai Mani: How a Human Oncogene Is Activated - Oncodaily",
+   "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5sZUI1LUlKWk91TUlnZG1JRlRxNTFQMVhMVG1kWkI1bEV3ZXpFYzF4OFZya0I3UzZWQk5XZEI4WWFXeFZvMlFJVksteWRpZXNRWmxZRzdfcTk5Q1h1aDhz?oc=5",
    "source": "Oncodaily",
-   "date": "2026-10-29T19:51:50+00:00",
-   "summary": "How Lewis Hamilton and F1 Helped Raise £275K for Childhood Cancer Research &nbsp;&nbsp; Oncodaily",
+   "date": "2026-11-08T15:48:01+00:00",
+   "summary": "200 Most Influential Cancer Papers Suggested by Sendurai Mani: How a Human Oncogene Is Activated &nbsp;&nbsp; Oncodaily",
    "types": []
   },
   {
-   "title": "Commentary: I want a cure for brain tumors, so I’m going to vote for it - Colorado Newsline",
-   "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBSeDNtYXBQWFhhb1FpaWxrc2hnbGV2SmNfR0NadHJ3MWJBZjhaT1VLNnRzSlhBckNHM1JCdEJidkt5RUxacmlNM2h6V04yRU55cS1WTmZkemdzWVlhNm52aEEzTWlRLUt4T2xpOXFsVUZucFJ2a2c?oc=5",
-   "source": "Colorado Newsline",
-   "date": "2026-10-29T19:20:10+00:00",
-   "summary": "Commentary: I want a cure for brain tumors, so I’m going to vote for it &nbsp;&nbsp; Colorado Newsline",
+   "title": "Mina Sedrak: UCLA Opens Clinical Research Supervisor Position in Cancer and Aging - Oncodaily",
+   "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBGazJlUmRyOXRvNU9Kc19JYkZMSEJWN1dldXVvRmx6V00xbXpvd1BVTGxJU1ZETVlmRTlycXVibGY0YldfMU5WZi1jWk9PVVd1dHowRGxoUlVma0k?oc=5",
+   "source": "Oncodaily",
+   "date": "2026-11-08T13:59:49+00:00",
+   "summary": "Mina Sedrak: UCLA Opens Clinical Research Supervisor Position in Cancer and Aging &nbsp;&nbsp; Oncodaily",
    "types": []
   },
   {
-   "title": "Blood test offers new way to track lung cancer",
-   "url": "https://medicalxpress.com/news/2026-10-blood-track-lung-cancer.html",
-   "source": "Medical Xpress",
-   "date": "2026-10-29T18:40:02+00:00",
-   "summary": "Northwestern Medicine scientists and collaborators have demonstrated a novel liquid biopsy technique that can measure cancer burden and reveal molecular characteristics of small cell lung cancer (SCLC), according to a new study published in the Journal of Clinical Investigation.",
-   "types": [
-    "lung"
-   ]
+   "title": "Runcie Chidebe: AI-Generated Cancer Education Research Featured at the 2026 GSA Annual Meeting - Oncodaily",
+   "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5RN2FLYWFRNmZiU3hMcTY2YURYY2NaR0ZaNS1adk00c0w5SmVNMTBJNFFtWl9CdVZMRTUwUDhGVkctOGhsZmxQUjV3SlJJd0NTazRKQ3RLVHBselBPblh3?oc=5",
+   "source": "Oncodaily",
+   "date": "2026-11-08T13:44:34+00:00",
+   "summary": "Runcie Chidebe: AI-Generated Cancer Education Research Featured at the 2026 GSA Annual Meeting &nbsp;&nbsp; Oncodaily",
+   "types": []
+  },
+  {
+   "title": "Does Red 40 Cause Cancer? Food Dye Safety and Cancer Risk Explained - Oncodaily",
+   "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFA4RnFyaEtmR1k5V2hrd0pkZkVsbFFjaVpnLWZEbGh3Vi1STHZqdnJtamdpc1ZzbWphTDBjcjBFcXFxTXFVdmhiRjdXZVhZQjJxcGxxYTMyX3IxS0haeGxwVg?oc=5",
+   "source": "Oncodaily",
+   "date": "2026-11-08T13:16:47+00:00",
+   "summary": "Does Red 40 Cause Cancer? Food Dye Safety and Cancer Risk Explained &nbsp;&nbsp; Oncodaily",
+   "types": []
+  },
+  {
+   "title": "Cancer breakthrough at BYU: Researchers point to a promising treatment - The Salt Lake Tribune",
+   "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFB0TDhrZER6YVRQeTZpaEZwSThjZy1KcXhlekl3VGFldUhIQm9YTmdnRjZPanlOWUt0SVlWZ0VRLW5Bck5tQ1pzdi1QdVFpLXlBQkhFOFNEQ2JfZVJDdU5nemlycWlnTGV1YnRnMTR4dk5KeGRZTE43dEctREhBZw?oc=5",
+   "source": "The Salt Lake Tribune",
+   "date": "2026-11-08T13:03:33+00:00",
+   "summary": "Cancer breakthrough at BYU: Researchers point to a promising treatment &nbsp;&nbsp; The Salt Lake Tribune",
+   "types": []
+  },
+  {
+   "title": "Vincent Rajkumar Reflects on Progress in Cancer Treatment and the Challenges Ahead in Medicine - Oncodaily",
+   "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE0wRkFobmh3Zlp3NXNKUkw1WHRDR0FYbXFBNVpoTUVMVThaaFF3WlRnc011TE8yTmQ3M3M5SjBicG5FTmcyZm1XbTNVcDk5RGkyLTlWTGJsX2NhZDEwRmtZdThTQQ?oc=5",
+   "source": "Oncodaily",
+   "date": "2026-11-08T11:57:25+00:00",
+   "summary": "Vincent Rajkumar Reflects on Progress in Cancer Treatment and the Challenges Ahead in Medicine &nbsp;&nbsp; Oncodaily",
+   "types": []
+  },
+  {
+   "title": "Tom Powles Highlights Brazil’s Contributions to Penile Cancer Research in Uromigos World Cup - Oncodaily",
+   "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE8wazBmMmk1RjlpVGxQT2Ywcnh6UmhJekNoWDFfWHlCcmZSQzNuZVZUV3lpUlVJUktJTXdiMlI2ZFV0cVY0Yk1YT3JXYjlteXYzMWZoWmhyVFZsQ2s?oc=5",
+   "source": "Oncodaily",
+   "date": "2026-11-08T11:39:49+00:00",
+   "summary": "Tom Powles Highlights Brazil’s Contributions to Penile Cancer Research in Uromigos World Cup &nbsp;&nbsp; Oncodaily",
+   "types": []
+  },
+  {
+   "title": "Could cancer drugs help treat TB? Local researchers launch study. - San Antonio Report",
+   "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNNkczenlzTGJhY3NvSzB4QzhFcHJJeE1TaUZqbXRyR2ZDZ0Y2LVNWWHhsXzVUUjJTSTdrbXhIRWdFOXVEYVRPZW8ySWJJcHlINFg0WHRTM1NVSUdwXzlmV2VFVmUwOWN1Z0xUM25xbHlxNG9JdDFLbnlEc09jT2c3NEVjUEJlQ2dq?oc=5",
+   "source": "San Antonio Report",
+   "date": "2026-11-08T11:00:00+00:00",
+   "summary": "Could cancer drugs help treat TB? Local researchers launch study. &nbsp;&nbsp; San Antonio Report",
+   "types": []
+  },
+  {
+   "title": "MIT scientists turn immune cells into cancer killers inside the body - Science Daily",
+   "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFA4ZnJWSWV4RFdoWHF5SXhsaGlsbllMUzJoVm1zd0FDOVY4Rko0SC1nQzljZ0RXNkNNRXIxX2diczFjUDlPVnhFczBZSnY3dDRiMjE0VG9ReFhyR04tblpPTFRvWk9ZS2VzV1haalVRUQ?oc=5",
+   "source": "Science Daily",
+   "date": "2026-11-08T10:55:58+00:00",
+   "summary": "MIT scientists turn immune cells into cancer killers inside the body &nbsp;&nbsp; Science Daily",
+   "types": []
+  },
+  {
+   "title": "MIT scientists turn immune cells into cancer killers inside the body",
+   "url": "https://www.sciencedaily.com/releases/2026/11/261104084015.htm",
+   "source": "ScienceDaily",
+   "date": "2026-11-08T10:52:31+00:00",
+   "summary": "MIT scientists have developed nanoparticles that reprogram immune cells directly inside the body to attack cancer and harmful immune cells, eliminating tumors and reversing liver damage in mouse experiments. The breakthrough could make powerful immune therapies dramatically simpler and less expensiv",
+   "types": []
+  },
+  {
+   "title": "Arion Carter donations to cancer research for Tennessee football after Kentucky - Knoxville News Sentinel",
+   "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxQNkNZWTNreTFNNlpvbkVBTERxbERuQVZ1Wnp6S28zMG1wSENrR3doV1BlNk9obzF6alRaZkdhUDY3Uzc2R2FaRXhrbDNVRjhOYkp5QlZBalVNMXBkbGNMbWJ0N3pacVpMQUxKRDlBNEhUd1pxd0UtdndwNWMwR3h1bW1fV2pEWV9aWDFMV1NRaFJIb0M0UDhQTDh3RlZmRV96Yk9FYURWbkV5eHJRekR5eG9fYnZVSnlQV1FFRkp3NE1lRkdLR2lCdUZoOThaLVVUakxfN29pNTRqV0YzZFZlbXFOeUw4MkZPYjM5a1FYNU1vRWhyNC1Id0JR?oc=5",
+   "source": "Knoxville News Sentinel",
+   "date": "2026-11-08T04:32:17+00:00",
+   "summary": "Arion Carter donations to cancer research for Tennessee football after Kentucky &nbsp;&nbsp; Knoxville News Sentinel",
+   "types": []
   }
  ]
 }
