@@ -67,6 +67,16 @@ test("search requires every query token", async ({ page }) => {
   await expect(page.locator("#results .result")).toHaveCount(0);
 });
 
+test("object property names in queries and URLs don't break the app", async ({ page }) => {
+  const errors = [];
+  page.on("pageerror", (e) => errors.push(e.message));
+  await page.goto("/?q=immunotherapy%20constructor");
+  await expect(page.getByRole("heading", { level: 1 })).toContainText("“immunotherapy constructor”");
+  await page.goto("/type/constructor/");
+  await expect(page.getByRole("heading", { level: 1, name: "Page not found" })).toBeVisible();
+  expect(errors).toEqual([]);
+});
+
 test("search corrects small misspellings", async ({ page }) => {
   await page.goto("/?q=imunotherapy");
   await expect(page.locator(".did-you-mean")).toContainText("immunotherapy");

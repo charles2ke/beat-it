@@ -14,7 +14,7 @@
   })();
   const SITE_NAME = "Beat It";
   const HOME_TITLE = "Beat It – Cancer information, treatments & latest research";
-  const HOME_DESC = ($('meta[name="description"]') || {}).content || "";
+  const HOME_DESC = "Free, searchable guide to 22 cancer types: symptoms, screening, treatments, approved medicines, new FDA approvals, recruiting clinical trials and the latest research and news, refreshed weekly from trusted sources.";
   const NCI_DRUGS = "https://www.cancer.gov/about-cancer/treatment/drugs/cancer-type";
   const REPO = "https://github.com/charles2ke/beat-it";
 
@@ -141,18 +141,19 @@
   // Fallback for data written before the updater recorded categories (mirrors classify_source).
   const OFFICIAL_ACRONYMS = /\b(WHO|NCI|NIH|FDA|CDC|IARC|NHS|ESMO|ASCO|AACR)\b/;
   const OFFICIAL_RE = /world health|national cancer institute|national institutes of health|food and drug|centers for disease control|cancer research uk|american cancer society|macmillan/i;
-  const RESEARCH_RE = /science ?daily|medical ?xpress|eurekalert|ecancer|nature|lancet|nejm|jama|bmj|cell press|technology networks|news-medical|bioengineer|scitechdaily/i;
+  const RESEARCH_RE = /science ?daily|medical ?xpress|eurekalert|newswise|asco post|ecancer|nature|lancet|nejm|jama|bmj|cell press|technology networks|news-medical|bioengineer|scitechdaily/i;
   function newsCat(n) {
     if (n.category && CAT_LABEL[n.category]) return n.category;
     const src = n.source || "";
-    if (OFFICIAL_ACRONYMS.test(src) || OFFICIAL_RE.test(src)) return "official";
     if (RESEARCH_RE.test(src)) return "research";
+    if (OFFICIAL_ACRONYMS.test(src) || OFFICIAL_RE.test(src)) return "official";
     return "media";
   }
   function cleanTitle(n) {
     const t = String(n.title || "");
-    const suffix = " - " + (n.source || "");
-    return n.source && t.endsWith(suffix) ? t.slice(0, -suffix.length) : t;
+    if (!n.source) return t;
+    const src = String(n.source).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    return t.replace(new RegExp("(?:\\s+[-|–—]\\s+" + src + ")+$"), "") || t;
   }
   function initials(source) {
     const s = String(source || "?").replace(/\s*[-–|].*$/, "").trim();
@@ -168,7 +169,8 @@
     "why", "with", "about", "any", "there", "new", "latest", "best", "your", "you", "should", "get", "will"]);
   const BRITISH = [[/tumour/g, "tumor"], [/leukaem/g, "leukem"], [/oesophag/g, "esophag"], [/paediatr/g, "pediatr"],
     [/haem/g, "hem"], [/anaem/g, "anem"], [/oestr/g, "estr"], [/colour/g, "color"], [/centre/g, "center"], [/foetal/g, "fetal"]];
-  const SYN = {
+  // Null prototype so query words such as "constructor" don't match inherited Object properties.
+  const SYN = Object.assign(Object.create(null), {
     chemo: ["chemotherapy"], immuno: ["immunotherapy"], radiotherapy: ["radiation"], radiation: ["radiotherapy"],
     bowel: ["colorectal", "colon"], colon: ["colorectal"], rectal: ["colorectal"], rectum: ["colorectal"],
     skin: ["melanoma"], blood: ["leukemia", "lymphoma", "myeloma"], kidney: ["renal"], renal: ["kidney"],
@@ -187,7 +189,7 @@
     hereditary: ["inherited", "genetic"], screen: ["screening"], test: ["screening", "testing"], tests: ["screening", "test"],
     adc: ["antibodydrug", "conjugate"], adcs: ["antibodydrug", "conjugate"], lymph: ["lymphoma"], marrow: ["myeloma", "leukemia"],
     bispecific: ["bispecifics"], bispecifics: ["bispecific"],
-  };
+  });
   const KINDS = ["Cancer type", "Medicine", "Approval", "Treatment", "Question", "Research", "Clinical trial", "News"];
   const KIND_ORDER = Object.fromEntries(KINDS.map((k, i) => [k, i]));
   const KIND_WEIGHT = { "Cancer type": 2, Medicine: 1.5, Approval: 1.5, Treatment: 1, Question: 1 };
@@ -827,7 +829,7 @@
       el("p", { class: "tagline" }, "Search symptoms, treatments, approved medicines, recruiting clinical trials and new research for " + state.cancers.length + " cancer types — sourced from NCI, FDA, WHO, PubMed and ClinicalTrials.gov."));
   }
 
-  function updateChrome(r) {
+  function updateChrome(r, initial) {
     const home = r.name === "home";
     const hero = $("#hero");
     const existing = $("#hero-text");
@@ -855,7 +857,9 @@
       }
     }
     $(".skip").setAttribute("href", routePath() + "#main");
-    $("#q").value = r.name === "search" ? r.q : "";
+    // Keep anything typed into the prerendered search box while the data was loading.
+    const input = $("#q");
+    if (!initial || !input.value) input.value = r.name === "search" ? r.q : "";
   }
 
   // ---------------------------------------------------------------- routing
@@ -898,7 +902,7 @@
     else if (r.name === "type") renderType(v, state.byId[r.id]);
     else if (r.name === "search") renderSearch(v, r.q);
     else renderNotFound(v);
-    updateChrome(r);
+    updateChrome(r, opts.initial);
     applyMeta(r);
     setupSpy();
     root.removeAttribute("data-pending");
@@ -924,7 +928,8 @@
   }
 
   function onLinkClick(e) {
-    if (e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+    // Until the data has loaded, links do a normal navigation to the prerendered page.
+    if (!state.ready || e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
     const a = e.target.closest("a[href]");
     if (!a || (a.target && a.target !== "_self") || a.hasAttribute("download")) return;
     const url = new URL(a.href, location.href);
@@ -945,6 +950,7 @@
   }
 
   // ---------------------------------------------------------------- typeahead
+  let pendingSearch = null; // a search submitted before the data loaded
   let sugItems = [];
   let sugIndex = -1;
   let sugTimer = 0;
@@ -1060,6 +1066,11 @@
   }
 
   // ---------------------------------------------------------------- init
+  function submitSearch(q) {
+    navigate(q ? searchHref(q) : "./");
+    if (coarsePointer()) $("#q").blur();
+  }
+
   function bindUI() {
     const input = $("#q");
     const list = $("#suggestions");
@@ -1072,9 +1083,8 @@
       e.preventDefault();
       const q = input.value.trim();
       closeSuggestions();
-      if (!state.ready) return;
-      navigate(q ? searchHref(q) : "./");
-      if (coarsePointer()) input.blur();
+      if (!state.ready) { pendingSearch = q; return; }
+      submitSearch(q);
     });
     input.addEventListener("input", () => { clearTimeout(sugTimer); sugTimer = setTimeout(updateSuggestions, 60); });
     input.addEventListener("focus", () => { if (input.value.trim().length >= 2) updateSuggestions(); });
@@ -1122,6 +1132,7 @@
     window.addEventListener("scroll", onScroll, { passive: true });
     window.addEventListener("popstate", (e) => {
       if (!state.ready) return;
+      migrateLegacyHash(); // an old #/type/... link opened on a page that is already showing
       const y = e.state && typeof e.state.y === "number" ? e.state.y : 0;
       if (pageKey() === state.key) {
         const t = location.hash.length > 1 && doc.getElementById(decodeURIComponent(location.hash.slice(1)));
@@ -1157,11 +1168,12 @@
       state.facts = facts;
       state.updates = Object.assign({ byType: {}, news: [] }, updates || {});
       state.updates.byType = state.updates.byType || {};
-      state.byId = Object.fromEntries(cancers.map((c) => [c.id, c]));
+      state.byId = Object.assign(Object.create(null), Object.fromEntries(cancers.map((c) => [c.id, c])));
       state.approvals = cancers.flatMap((c) => (c.approvals || []).map((a) => Object.assign({ type: c.id }, a))).sort(byDateDesc);
       buildIndex();
     } catch (err) {
-      $("#view").replaceChildren();
+      // Keep prerendered content readable; its links still work as normal page loads.
+      if (!prerendered) $("#view").replaceChildren();
       setStatus("Could not load data: " + err.message, true);
       root.removeAttribute("data-pending");
       root.setAttribute("data-error", "");
@@ -1169,9 +1181,14 @@
     }
     state.ready = true;
     if (state.updates.generatedAt) $("#updated").textContent = "Last updated " + fmtDate(state.updates.generatedAt) + ".";
-    render({ y: history.state && typeof history.state.y === "number" ? history.state.y : undefined });
+    // The "What's new" section only exists while there are recent approvals.
+    const newLink = $('.toplinks a[href$="#whats-new"]');
+    if (newLink) newLink.hidden = !state.approvals.some((a) => isRecent(a.date, 24));
+    render({ y: history.state && typeof history.state.y === "number" ? history.state.y : undefined, initial: true });
+    if (pendingSearch !== null) submitSearch(pendingSearch);
+    else if ($("#q") === doc.activeElement) updateSuggestions();
+    pendingSearch = null;
     root.setAttribute("data-ready", "");
-    if ($("#q") === doc.activeElement) updateSuggestions();
   }
 
   init();

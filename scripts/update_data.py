@@ -61,8 +61,9 @@ OFFICIAL_NAMES = re.compile(
     r"centers for disease control|cancer research uk|american cancer society|macmillan",
     re.IGNORECASE,
 )
+# Checked before the official names so a society's news magazine (The ASCO Post) counts as science news.
 RESEARCH_NAMES = re.compile(
-    r"science ?daily|medical ?xpress|eurekalert|ecancer|nature|lancet|nejm|jama|bmj|"
+    r"science ?daily|medical ?xpress|eurekalert|newswise|asco post|ecancer|nature|lancet|nejm|jama|bmj|"
     r"cell press|technology networks|news-medical|bioengineer|scitechdaily",
     re.IGNORECASE,
 )
@@ -238,8 +239,8 @@ def parse_feed(xml_bytes: bytes, source: str) -> list[dict]:
         url = safe_url(link)
         title = clean_text(title)
         item_source = clean_text(item_source)
-        if item_source and title.endswith(" - " + item_source):  # aggregator "Headline - Publisher"
-            title = title[: -len(item_source) - 3].rstrip()
+        if item_source:  # aggregator "Headline - Publisher", sometimes "Headline | Publisher - Publisher"
+            title = re.sub(r"(?:\s+[-|–—]\s+" + re.escape(item_source) + r")+$", "", title)
         if not url or not title:
             continue
         parsed = parse_date(date)
@@ -254,10 +255,10 @@ def parse_feed(xml_bytes: bytes, source: str) -> list[dict]:
 
 
 def classify_source(source: str) -> str:
-    if OFFICIAL_ACRONYMS.search(source) or OFFICIAL_NAMES.search(source):
-        return "official"
     if RESEARCH_NAMES.search(source):
         return "research"
+    if OFFICIAL_ACRONYMS.search(source) or OFFICIAL_NAMES.search(source):
+        return "official"
     return "media"
 
 

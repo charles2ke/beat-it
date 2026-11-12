@@ -40,6 +40,12 @@ AGGREGATOR = b"""<?xml version="1.0"?>
 <item><title>Runner raises money for cancer charity - Local Paper</title>
 <link>https://example.org/local</link><pubDate>Mon, 12 Oct 2026 11:00:00 GMT</pubDate>
 <source url="https://example.org">Local Paper</source></item>
+<item><title>Lab finding in lung cancer | Newswise - Newswise</title>
+<link>https://example.org/newswise</link><pubDate>Mon, 12 Oct 2026 09:00:00 GMT</pubDate>
+<source url="https://www.newswise.com">Newswise</source></item>
+<item><title>Trial results in breast cancer - The ASCO Post</title>
+<link>https://example.org/ascopost</link><pubDate>Mon, 12 Oct 2026 08:00:00 GMT</pubDate>
+<source url="https://ascopost.com">The ASCO Post</source></item>
 </channel></rss>"""
 
 
@@ -92,6 +98,8 @@ class FeedTests(unittest.TestCase):
         by_title = {n["title"]: n for n in news}
         self.assertEqual(by_title["FDA approves new drug for lung cancer"]["category"], "official")
         self.assertEqual(by_title["Runner raises money for cancer charity"]["category"], "media")
+        self.assertEqual(by_title["Lab finding in lung cancer"]["category"], "research")
+        self.assertEqual(by_title["Trial results in breast cancer"]["category"], "research")
 
     def test_cap_news_keeps_official_stories_and_limits_press(self):
         def hours_ago(n):

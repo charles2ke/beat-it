@@ -21,7 +21,7 @@ Beat It is a free, fast, searchable website about cancer. It covers symptoms, ri
 - **A page for every cancer type.** Each page has an overview, symptoms, risk factors, screening, treatment options and example medicines. Recently approved medicines get a **New** badge.
   - Pages also include an approvals timeline, the latest PubMed papers, recruiting trials and tagged news, with section navigation.
 - **What's new.** Recent FDA oncology approvals, each linked to the official announcement.
-- **News labelled by source.** Stories are marked **Official** (health agencies), **Science** (research news services) or **Press**. They can be filtered, and press coverage is capped so it never crowds out official sources.
+- **News labelled by source.** Stories are marked **Official** (health agencies and cancer organisations such as WHO, NCI, FDA and Cancer Research UK), **Science** (research news services and journals) or **Press**. They can be filtered, and press coverage is capped so it never crowds out official sources.
 - **Key facts.** Global cancer statistics from WHO / IARC (GLOBOCAN 2022), each linked to its source.
 - **Design.**
   - Light and dark themes, responsive from 320 px phones to wide desktops.
