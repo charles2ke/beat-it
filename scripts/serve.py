@@ -39,7 +39,8 @@ def make_handler(root, base, pages, verbose):
 
         def redirect(self, location):
             self.send_response(301)
-            self.send_header("Location", location)
+            # The location echoes the request, so drop line breaks that could start a new header.
+            self.send_header("Location", location.replace("\n", "").replace("\r", ""))
             self.send_header("Content-Length", "0")
             self.end_headers()
 
@@ -72,14 +73,14 @@ def make_handler(root, base, pages, verbose):
                     return None
                 return self.not_found(path)
             rel = path[len(base):]
-            target = os.path.realpath(os.path.join(root, rel))
-            if target != root and not target.startswith(root + os.sep):
+            # A folder URL serves its index.html. realpath resolves ".." and symlinks; the trailing
+            # separator keeps a sibling folder such as "site-old" from passing as "site".
+            target = os.path.realpath(os.path.join(root, rel, "index.html") if path.endswith("/") else os.path.join(root, rel))
+            if not target.startswith(root + os.sep):
                 return self.not_found(rel)
             if os.path.isdir(target):
-                if not path.endswith("/"):
-                    self.redirect(path + "/" + query)
-                    return None
-                target = os.path.join(target, "index.html")
+                self.redirect(parts.path + "/" + query)
+                return None
             if os.path.isfile(target):
                 return self.send_file(target, 200)
             return self.not_found(rel)
