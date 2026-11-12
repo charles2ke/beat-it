@@ -55,7 +55,7 @@ If a source is temporarily unavailable, the updater keeps the last good data for
 
 ### Latest content review (12 November 2026)
 
-- **Approvals.** 134 FDA oncology approvals from 2024 onward, across 22 cancer types. Each was checked against the text of FDA's approval notice: date, wording, and accelerated or full approval. The notices were read from an archived copy covering announcements up to **26 October 2026**, so later approvals will be added at the next review. Approvals for a new formulation only (such as an under-the-skin version of an existing medicine) are not listed.
+- **Approvals.** 134 FDA oncology approvals from 2024 onward, across 22 cancer types. Each was checked against the opening paragraph of FDA's approval notice: link, date, wording, and accelerated or full approval. The notices were read from a third-party archive of FDA's oncology announcements covering up to **26 October 2026**, so later approvals will be added at the next review. Approvals for a new formulation only (such as an under-the-skin version of an existing medicine) are not listed.
 - **Screening.** USPSTF recommendations as currently published (breast 2024, skin 2023, lung 2021, colorectal 2021, prostate 2018) and HRSA's 2026 women's preventive services guidelines for cervical screening. Pages also cover newer options: self-collected HPV tests and blood tests for colorectal screening.
 - **Key facts.** GLOBOCAN 2024 (IARC with the American Cancer Society, July 2026) and the WHO cancer fact sheet.
 - **Links.** `scripts/check_links.py` requests every source link in the curated data. CI runs it on each pull request and lists broken or unverified links in the job summary.
