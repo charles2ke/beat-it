@@ -25,6 +25,14 @@ jobs:
         # Output goes to a temp file; committed data is not modified.
         run: python3 scripts/update_data.py --strict --output "$RUNNER_TEMP/updates.json"
 
+      - name: Upload live data sample
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: live-updates-json
+          path: ${{ runner.temp }}/updates.json
+          if-no-files-found: ignore
+
       - uses: actions/setup-node@v4
         with:
           node-version: 22
@@ -32,6 +40,10 @@ jobs:
 
       - run: npm ci
       - run: npx playwright install --with-deps chromium
+
+      - name: Build and prerender the site
+        run: npm run build
+
       - name: Playwright tests
         run: npx playwright test
 

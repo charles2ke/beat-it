@@ -45,11 +45,26 @@ jobs:
             git push
           fi
 
-      - uses: actions/configure-pages@v5
+      - id: pages
+        uses: actions/configure-pages@v5
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium
+
+      - name: Build and prerender the site
+        # Static HTML for every page plus sitemap.xml, so search engines index real content.
+        env:
+          SITE_URL: ${{ steps.pages.outputs.base_url }}/
+        run: npm run build
 
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: site
+          path: _site
 
   deploy:
     needs: build
