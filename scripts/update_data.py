@@ -8,9 +8,11 @@ weekly GitHub Actions job) without installing dependencies.
 Sources:
   * PubMed (NCBI E-utilities)   - recent peer-reviewed publications per cancer type
   * ClinicalTrials.gov API v2    - recently updated, recruiting trials per cancer type
-  * RSS/Atom news feeds          - worldwide cancer news, tagged by cancer type
+  * RSS/Atom news feeds          - cancer news from health agencies ("official"),
+                                   science news services ("research") and the press
+                                   ("media"), tagged by cancer type
 
-If a source fails, previously saved data for that section is kept so the
+If a source fails, previously saved data for that source is kept so the
 site never goes blank because of a temporary outage.
 """
 
@@ -41,13 +43,32 @@ PUBMED_PER_TYPE = 6
 TRIALS_PER_TYPE = 5
 NEWS_DAYS = 14
 NEWS_MAX = 60
+MEDIA_MAX = 20  # press stories must not crowd out health agencies and science news
 
+# (name, url, category). Trusted feeds come first so their copy of a story wins
+# de-duplication. Category None marks an aggregator: each item is classified by
+# its original publisher instead.
 NEWS_FEEDS = [
-    ("Google News", "https://news.google.com/rss/search?q=cancer+research+when:7d&hl=en-US&gl=US&ceid=US:en"),
-    ("ScienceDaily", "https://www.sciencedaily.com/rss/health_medicine/cancer.xml"),
-    ("Medical Xpress", "https://medicalxpress.com/rss-feed/cancer-news/"),
-    ("WHO", "https://www.who.int/rss-feeds/news-english.xml"),
+    ("NCI", "https://www.cancer.gov/publishedcontent/rss/syndication/rss/ncinewsreleases.rss", "official"),
+    ("IARC", "https://www.iarc.who.int/feed/?post_type=news-events", "official"),
+    ("WHO", "https://www.who.int/rss-feeds/news-english.xml", "official"),
+    ("ScienceDaily", "https://www.sciencedaily.com/rss/health_medicine/cancer.xml", "research"),
+    ("Medical Xpress", "https://medicalxpress.com/rss-feed/cancer-news/", "research"),
+    ("Google News", "https://news.google.com/rss/search?q=cancer+research+when:7d&hl=en-US&gl=US&ceid=US:en", None),
 ]
+
+OFFICIAL_ACRONYMS = re.compile(r"\b(WHO|NCI|NIH|FDA|CDC|IARC|NHS|ESMO|ASCO|AACR)\b")
+OFFICIAL_NAMES = re.compile(
+    r"world health|national cancer institute|national institutes of health|food and drug|"
+    r"centers for disease control|cancer research uk|american cancer society|macmillan",
+    re.IGNORECASE,
+)
+# Checked before the official names so a society's news magazine (The ASCO Post) counts as science news.
+RESEARCH_NAMES = re.compile(
+    r"science ?daily|medical ?xpress|eurekalert|newswise|asco post|ecancer|nature|lancet|nejm|jama|bmj|"
+    r"cell press|technology networks|news-medical|bioengineer|scitechdaily",
+    re.IGNORECASE,
+)
 
 CANCER_WORDS = re.compile(
     r"\b(cancer|cancers|oncolog\w*|tumou?rs?|carcinoma\w*|leuka?emia\w*|lymphoma\w*|"
@@ -108,7 +129,8 @@ def parse_pubmed_summary(data: dict) -> list[dict]:
             "title": title,
             "url": f"https://pubmed.ncbi.nlm.nih.gov/{uid}/",
             "journal": clean_text(rec.get("fulljournalname") or rec.get("source")),
-            "date": clean_text(rec.get("pubdate") or rec.get("sortpubdate", "")[:10]),
+            # Online-first date; the print issue date ("pubdate") is often months ahead.
+            "date": clean_text(rec.get("epubdate") or rec.get("pubdate") or rec.get("sortpubdate", "")[:10]),
             "pmid": uid,
         })
     return items
@@ -218,17 +240,28 @@ def parse_feed(xml_bytes: bytes, source: str) -> list[dict]:
             continue
         url = safe_url(link)
         title = clean_text(title)
+        item_source = clean_text(item_source)
+        if item_source:  # aggregator "Headline - Publisher", sometimes "Headline | Publisher - Publisher"
+            title = re.sub(r"(?:\s+[-|–—]\s+" + re.escape(item_source) + r")+$", "", title)
         if not url or not title:
             continue
         parsed = parse_date(date)
         items.append({
             "title": title,
             "url": url,
-            "source": clean_text(item_source),
+            "source": item_source,
             "date": parsed.isoformat() if parsed else "",
             "summary": clean_text(desc)[:300],
         })
     return items
+
+
+def classify_source(source: str) -> str:
+    if RESEARCH_NAMES.search(source):
+        return "research"
+    if OFFICIAL_ACRONYMS.search(source) or OFFICIAL_NAMES.search(source):
+        return "official"
+    return "media"
 
 
 def tag_types(text: str, cancers: list[dict]) -> list[str]:
@@ -260,24 +293,46 @@ def filter_news(items: list[dict], cancers: list[dict], now: dt.datetime) -> lis
             continue
         seen.add(key)
         item["types"] = tag_types(blob, cancers)
+        item["category"] = item.get("category") or classify_source(item.get("source", ""))
         out.append(item)
-    out.sort(key=lambda i: i["date"] or "", reverse=True)
-    return out[:NEWS_MAX]
+    return cap_news(out)
 
 
-def fetch_news(cancers: list[dict], now: dt.datetime) -> tuple[list[dict], list[str], list[str]]:
+def cap_news(items: list[dict]) -> list[dict]:
+    """Newest first; every official story is kept and press is capped at MEDIA_MAX."""
+    newest = sorted(items, key=lambda i: i["date"] or "", reverse=True)
+    official = [i for i in newest if i["category"] == "official"][:NEWS_MAX]
+    others, media = [], 0
+    for item in newest:
+        if item["category"] == "official" or (item["category"] == "media" and media >= MEDIA_MAX):
+            continue
+        media += item["category"] == "media"
+        others.append(item)
+    picked = official + others[: NEWS_MAX - len(official)]
+    return sorted(picked, key=lambda i: i["date"] or "", reverse=True)
+
+
+def fetch_news(cancers: list[dict], now: dt.datetime,
+               previous_news: list[dict] | None = None) -> tuple[list[dict], list[str], list[str]]:
     collected: list[dict] = []
     ok_sources = []
     failed_sources = []
-    for name, url in NEWS_FEEDS:
+    for name, url, category in NEWS_FEEDS:
         try:
             items = parse_feed(http_get(url), name)
-            collected.extend(items)
-            ok_sources.append(name)
-            log(f"  news: {name}: {len(items)} items")
         except Exception as err:
             log(f"  news: {name} FAILED: {err}")
             failed_sources.append(name)
+            continue
+        for item in items:
+            item["feed"] = name
+            item["category"] = category or classify_source(item["source"])
+        collected.extend(items)
+        ok_sources.append(name)
+        log(f"  news: {name}: {len(items)} items")
+    # A failed feed keeps its stories from the last run while they are still recent.
+    collected.extend(item for item in previous_news or []
+                     if (item.get("feed") or item.get("source")) in failed_sources)
     return filter_news(collected, cancers, now), ok_sources, failed_sources
 
 
@@ -308,10 +363,12 @@ def build(cancers: list[dict], previous: dict, now: dt.datetime) -> tuple[dict, 
         log(f"{cid}: {len(entry['research'])} papers, {len(entry['trials'])} trials")
         by_type[cid] = entry
 
-    news, ok_sources, failed_sources = fetch_news(cancers, now)
-    news_sources = ok_sources
-    if failed_sources:
-        errors.extend(f"news/{source}: feed failed" for source in failed_sources)
+    news, ok_sources, failed_sources = fetch_news(cancers, now, previous.get("news", []))
+    errors.extend(f"news/{source}: feed failed" for source in failed_sources)
+    if ok_sources:
+        present = {item.get("feed") for item in news}
+        news_sources = [name for name, _, _ in NEWS_FEEDS if name in ok_sources or name in present]
+    else:  # total outage: keep the whole previous news section
         news = previous.get("news", [])
         news_sources = previous.get("sources", {}).get("news", [])
 

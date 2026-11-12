@@ -1,12 +1,15 @@
 {
   "name": "beat-it",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "private": true,
   "license": "AGPL-3.0-only",
-  "description": "Beat Cancer – searchable cancer information, treatments and weekly-updated research",
+  "description": "Beat It – searchable cancer information, treatments, medicines and weekly-updated research",
   "scripts": {
-    "serve": "python3 -m http.server 8080 --directory site",
-    "test": "playwright test",
+    "serve": "python3 scripts/serve.py --dir site --port 8080",
+    "build": "node scripts/build.js",
+    "preview": "python3 scripts/serve.py --dir _site --port 8080 --base /beat-it/ --pages",
+    "images": "node scripts/generate-images.js",
+    "test": "npm run build && playwright test",
     "test:py": "python3 -m unittest discover -s scripts -v",
     "update-data": "python3 scripts/update_data.py"
   },

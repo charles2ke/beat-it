@@ -2,37 +2,124 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <base href="/">
   <title>Beat It – Cancer information, treatments &amp; latest research</title>
-  <meta name="description" content="Search cancer questions, treatments, medicines, clinical trials and the latest research, grouped by cancer type. Updated weekly.">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; base-uri 'none'; form-action 'none'">
+  <meta name="description" content="Free, searchable guide to 22 cancer types: symptoms, screening, treatments, approved medicines, new FDA approvals, recruiting clinical trials and the latest research and news, refreshed weekly from trusted sources.">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; base-uri 'self'; form-action 'none'; object-src 'none'">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+  <meta name="site-url" content="https://charles2ke.github.io/beat-it/">
+  <link rel="canonical" href="https://charles2ke.github.io/beat-it/">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#5b0f3a">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/icon-192.png" sizes="192x192" type="image/png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="search" type="application/opensearchdescription+xml" title="Beat It" href="opensearch.xml">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Beat It">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="Beat It – Cancer information, treatments &amp; latest research">
+  <meta property="og:description" content="Free, searchable guide to 22 cancer types: symptoms, screening, treatments, approved medicines, new FDA approvals, recruiting clinical trials and the latest research and news, refreshed weekly from trusted sources.">
+  <meta property="og:url" content="https://charles2ke.github.io/beat-it/">
+  <meta property="og:image" content="https://charles2ke.github.io/beat-it/assets/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Beat It – searchable cancer information and the latest research">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Beat It – Cancer information, treatments &amp; latest research">
+  <meta name="twitter:description" content="Free, searchable guide to 22 cancer types: symptoms, screening, treatments, approved medicines, new FDA approvals, recruiting clinical trials and the latest research and news, refreshed weekly from trusted sources.">
+  <meta name="twitter:image" content="https://charles2ke.github.io/beat-it/assets/og-image.jpg">
+  <link rel="preload" href="assets/fonts/inter-latin-opsz-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/theme.js"></script>
+  <script type="application/ld+json" id="ld-json">{"@context":"https://schema.org","@type":"WebSite","name":"Beat It","url":"https://charles2ke.github.io/beat-it/","description":"Searchable cancer information, treatments, medicines, clinical trials and the latest research, grouped by cancer type and refreshed weekly.","inLanguage":"en"}</script>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
-  <header class="hero">
-    <div class="wrap">
-      <h1><a href="#" id="home-link">🎗️ Beat It</a></h1>
-      <p class="tagline">Search cancer questions, treatments, medicines and the latest research worldwide — grouped by cancer type.</p>
-      <form id="search-form" role="search" class="search">
-        <label for="q" class="sr-only">Search</label>
-        <input id="q" type="search" autocomplete="off" placeholder="e.g. immunotherapy for lung cancer, tamoxifen, HPV, glioblastoma trials…">
-        <button type="submit">Search</button>
-      </form>
-      <nav id="type-nav" aria-label="Cancer types"></nav>
+  <header class="topbar" id="topbar">
+    <div class="wrap topbar-inner">
+      <a class="brand" href="./" id="home-link" aria-label="Beat It home">
+        <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="9" class="brand-bg"/><path d="M10 26 18.2 13.6c1.1-1.6 1.6-3 1.6-4.3a3.8 3.8 0 0 0-7.6 0c0 1.3.5 2.7 1.6 4.3L22 26" class="brand-ribbon"/></svg>
+        <span class="brand-name">Beat It</span>
+      </a>
+      <nav class="toplinks" aria-label="Site">
+        <a href="./#types">Cancer types</a>
+        <a href="./#whats-new">What's new</a>
+        <a href="./#news">News</a>
+        <a href="./#questions">Questions</a>
+      </nav>
+      <div class="topbar-actions">
+        <button class="icon-btn" id="search-jump" type="button" aria-label="Search (press /)" title="Search (/)"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></button>
+        <button class="icon-btn" id="theme-toggle" type="button" aria-label="Switch to dark theme" title="Switch theme"><svg viewBox="0 0 24 24" aria-hidden="true" class="i-moon"><path d="M20.5 14.2A8.5 8.5 0 0 1 9.8 3.5a8.5 8.5 0 1 0 10.7 10.7z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true" class="i-sun"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></button>
+      </div>
     </div>
   </header>
 
+  <section class="hero" id="hero" aria-label="Search cancer information">
+    <div class="hero-glow" aria-hidden="true"><span></span><span></span><span></span></div>
+    <div class="wrap hero-inner">
+      <div id="hero-text" class="hero-text">
+        <p class="eyebrow">Free · Open source · Updated every week</p>
+        <h1 class="hero-title">Cancer information from trusted sources, <span class="grad">updated every week.</span></h1>
+        <p class="tagline">Search symptoms, treatments, approved medicines, recruiting clinical trials and new research for 22 cancer types — sourced from NCI, FDA, WHO, PubMed and ClinicalTrials.gov.</p>
+      </div>
+      <form id="search-form" role="search" class="search" autocomplete="off">
+        <label for="q" class="sr-only">Search cancer information</label>
+        <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <input id="q" name="q" type="search" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="suggestions" placeholder="Search a cancer, medicine, biomarker, symptom or question…" enterkeyhint="search" spellcheck="false">
+        <kbd class="kbd" aria-hidden="true">/</kbd>
+        <button type="submit">Search</button>
+        <ul id="suggestions" class="suggestions" role="listbox" aria-label="Search suggestions" hidden></ul>
+      </form>
+      <div id="hero-extra" class="hero-extra"></div>
+      <nav id="type-nav" class="type-nav" aria-label="Cancer types"></nav>
+    </div>
+  </section>
+
   <main id="main" class="wrap" tabindex="-1">
     <p id="status" class="status" role="status" aria-live="polite"></p>
-    <div id="view"></div>
+    <div id="view">
+      <noscript><p class="notice">Search and interactive features need JavaScript. You can still browse each cancer type from the links on this site, or visit <a href="https://www.cancer.gov/types">cancer.gov</a>.</p></noscript>
+    </div>
   </main>
 
-  <footer class="wrap footer">
-    <p><strong>Medical disclaimer:</strong> This site is for general information only and is not medical advice. Treatment depends on the cancer's type, stage, biomarkers and the individual. Always talk to a qualified healthcare professional.</p>
-    <p>Latest research from <a href="https://pubmed.ncbi.nlm.nih.gov/" rel="noopener">PubMed</a>, trials from <a href="https://clinicaltrials.gov/" rel="noopener">ClinicalTrials.gov</a>, and news from public RSS feeds. <span id="updated"></span></p>
-    <p><a href="https://github.com/charles2ke/beat-it" rel="noopener">Source on GitHub</a></p>
+  <footer class="footer">
+    <div class="wrap footer-grid">
+      <div class="footer-about">
+        <a class="brand" href="./">
+          <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="9" class="brand-bg"/><path d="M10 26 18.2 13.6c1.1-1.6 1.6-3 1.6-4.3a3.8 3.8 0 0 0-7.6 0c0 1.3.5 2.7 1.6 4.3L22 26" class="brand-ribbon"/></svg>
+          <span class="brand-name">Beat It</span>
+        </a>
+        <p>A free, open-source guide to cancer types, treatments and the latest research. No ads, no tracking.</p>
+        <p class="updated-line"><span id="updated"></span></p>
+      </div>
+      <nav aria-label="Trusted sources">
+        <h2 class="footer-h">Trusted sources</h2>
+        <ul>
+          <li><a href="https://www.cancer.gov/" rel="noopener">National Cancer Institute (NCI)</a></li>
+          <li><a href="https://www.fda.gov/drugs/resources-information-approved-drugs/oncology-cancerhematologic-malignancies-approval-notifications" rel="noopener">FDA oncology approvals</a></li>
+          <li><a href="https://www.who.int/health-topics/cancer" rel="noopener">World Health Organization</a></li>
+          <li><a href="https://pubmed.ncbi.nlm.nih.gov/" rel="noopener">PubMed (NIH/NLM)</a></li>
+          <li><a href="https://clinicaltrials.gov/" rel="noopener">ClinicalTrials.gov</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Project">
+        <h2 class="footer-h">Project</h2>
+        <ul>
+          <li><a href="https://github.com/charles2ke/beat-it" rel="noopener">Source on GitHub</a></li>
+          <li><a href="https://github.com/charles2ke/beat-it/issues" rel="noopener">Report a problem</a></li>
+          <li><a href="https://github.com/charles2ke/beat-it/blob/main/LICENSE" rel="noopener">AGPL-3.0 license</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="wrap disclaimer">
+      <p><strong>Medical disclaimer:</strong> This site is for general information only and is not medical advice. Treatment depends on the cancer's type, stage, biomarkers and the individual. Always talk to a qualified healthcare professional.</p>
+      <p>Latest research from <a href="https://pubmed.ncbi.nlm.nih.gov/" rel="noopener">PubMed</a>, trials from <a href="https://clinicaltrials.gov/" rel="noopener">ClinicalTrials.gov</a>, and news from public RSS feeds. Medicine examples are not a complete list or a recommendation.</p>
+    </div>
   </footer>
+  <button class="to-top" id="to-top" type="button" aria-label="Back to top" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 15 6-6 6 6"/></svg></button>
   <script src="assets/app.js"></script>
 </body>
 </html>
