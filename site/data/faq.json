@@ -25,14 +25,24 @@
     "link": "https://www.cancer.gov/about-cancer/treatment/types/biomarker-testing-cancer-treatment"
   },
   {
+    "q": "What does accelerated approval mean?",
+    "a": "The FDA can approve a medicine for a serious condition early, based on a result that is likely to predict a real benefit, such as tumors shrinking. The company must then confirm the benefit in further studies. If it does, the medicine gets full (traditional) approval; if not, the approval for that use can be withdrawn.",
+    "link": "https://www.fda.gov/patients/fast-track-breakthrough-therapy-accelerated-approval-priority-review/accelerated-approval"
+  },
+  {
     "q": "How can I find a clinical trial?",
     "a": "Clinical trials test new treatments. You can search ClinicalTrials.gov or the WHO International Clinical Trials Registry Platform, and ask your care team whether a trial is right for you.",
     "link": "https://clinicaltrials.gov/"
   },
   {
     "q": "Can cancer be prevented?",
-    "a": "Not all cancer can be prevented, but risk can be reduced by not using tobacco, limiting alcohol, staying active, maintaining a healthy weight, protecting skin from the sun, getting vaccinated against HPV and hepatitis B, and following recommended screening.",
+    "a": "Not all cancer can be prevented, but the WHO estimates that about 38% of cancers could be. Risk can be reduced by not using tobacco, avoiding or limiting alcohol, staying active, maintaining a healthy weight, protecting skin from the sun, getting vaccinated against HPV and hepatitis B, and following recommended screening.",
     "link": "https://www.who.int/news-room/fact-sheets/detail/cancer"
+  },
+  {
+    "q": "Are there new ways to get screened for cancer?",
+    "a": "Yes. For cervical cancer, the FDA now allows HPV testing on a vaginal sample you collect yourself, in a clinic (since 2024) or at home with an authorized kit (since 2025). For colorectal cancer, FDA-approved blood tests (the first in 2024) are an option for average-risk adults 45 and older, mainly for people who decline colonoscopy and stool tests. They miss most precancerous polyps, and a positive result needs a follow-up colonoscopy. Ask a clinician which test is right for you.",
+    "link": "https://www.cancer.gov/about-cancer/screening"
   },
   {
     "q": "What is cancer staging?",
@@ -56,7 +66,7 @@
   },
   {
     "q": "Where can I get support?",
-    "a": "Cancer organizations offer helplines, support groups and resources for patients and caregivers. In the US, NCI's Cancer Information Service is available at 1-800-4-CANCER; many countries have national cancer societies.",
+    "a": "Cancer organizations offer helplines, support groups and resources for patients and caregivers. In the US, NCI's Contact Center (formerly the Cancer Information Service) answers questions at 1-800-4-CANCER (1-800-422-6237); many countries have national cancer societies.",
     "link": "https://www.cancer.gov/contact"
   }
 ]

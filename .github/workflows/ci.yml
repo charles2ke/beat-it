@@ -33,6 +33,12 @@ jobs:
           path: ${{ runner.temp }}/updates.json
           if-no-files-found: ignore
 
+      - name: Check source links
+        # Informational only: some sites block automated requests. Broken (404/410) and
+        # unverified links are listed in the job summary.
+        continue-on-error: true
+        run: python3 scripts/check_links.py
+
       - uses: actions/setup-node@v4
         with:
           node-version: 22

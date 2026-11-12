@@ -298,16 +298,19 @@
       if (!map.has(key)) map.set(key, { title: name, entries: [] });
       map.get(key).entries.push(entry);
     };
+    const typeNames = (c) => [c.name, c.aliases.join(" ")].join(" ");
     for (const c of state.cancers) {
-      const names = [c.name, c.aliases.join(" ")].join(" ");
+      const names = typeNames(c);
       addDoc({ kind: "Cancer type", title: c.name, href: typeHref(c.id), types: [c.id], desc: c.summary,
         text: [c.aliases, c.summary, c.symptoms, c.riskFactors, c.screening, c.treatments, c.group,
           c.medicines.map((m) => m.name), "symptoms signs risk factors causes screening early detection treatment options"].flat().join(" ") });
       for (const m of c.medicines) group(medicines, m.name, { type: c.id, use: m.use, names });
       for (const t of c.treatments) group(treatments, t, { type: c.id, names });
-      for (const a of c.approvals || []) {
-        addDoc({ kind: "Approval", title: a.drug, href: typeHref(c.id, "approvals"), types: [c.id],
-          desc: [fmtDate(a.date), a.text].filter(Boolean).join(" · "), text: [a.text, a.source, names, "approval approved fda new"].join(" ") });
+      for (const a of state.approvals) {
+        if (a.types[0] !== c.id) continue;
+        addDoc({ kind: "Approval", title: a.drug, href: typeHref(c.id, "approvals"), types: a.types,
+          desc: [fmtDate(a.date), a.text].filter(Boolean).join(" · "),
+          text: [a.text, a.source, a.types.map((id) => typeNames(state.byId[id])), "approval approved fda new"].flat().join(" ") });
       }
       const u = state.updates.byType[c.id] || {};
       for (const r of u.research || []) {
@@ -534,11 +537,19 @@
   }
 
   function approvalCard(a) {
-    return el("article", { class: "approval reveal", "data-accent": a.type },
+    return el("article", { class: "approval reveal", "data-accent": a.types[0] },
       el("time", { class: "approval-date", datetime: a.date }, fmtDate(a.date)),
       el("h3", null, a.drug),
       el("p", null, a.text),
-      el("div", { class: "row" }, typeTag(a.type), a.url ? extLink(a.url, a.source || host(a.url), "src-link", true) : null));
+      el("div", { class: "row" }, a.types.map(typeTag), a.url ? extLink(a.url, a.source || host(a.url), "src-link", true) : null));
+  }
+
+  // A type's approvals, newest first. Not paged, so search results that link here always land on a visible item.
+  function timeline(approvals) {
+    return el("div", { class: "card reveal" }, el("ol", { class: "timeline" }, approvals.map((a) => el("li", null,
+      el("time", { datetime: a.date }, fmtDate(a.date)),
+      el("p", null, a.drug),
+      el("div", { class: "meta" }, a.text, " ", a.url ? extLink(a.url, a.source || host(a.url), "src-link", true) : null)))));
   }
 
   function renderHome(v) {
@@ -640,21 +651,18 @@
       sec("overview", "Overview", "activity", el("div", { class: "two-col" },
         card("Common symptoms", "activity", bullets(c.symptoms)),
         card("Risk factors", "shield", bullets(c.riskFactors)),
-        card("Screening & early detection", "scan", el("p", null, c.screening)),
+        card("Screening & early detection", "scan", el("p", null, c.screening),
+          c.screeningSource ? el("p", { class: "meta" }, extLink(c.screeningSource.url, "Source: " + c.screeningSource.name, "src-link", true)) : null),
         card("Treatment options", "heart", bullets(c.treatments)))),
       sec("medicines", "Medicines", "pill", el("div", { class: "card reveal" },
         el("div", { class: "table-wrap" }, el("table", { class: "meds" },
           el("thead", null, el("tr", null, el("th", { scope: "col" }, "Medicine"), el("th", { scope: "col" }, "How it is used"))),
           el("tbody", null, c.medicines.map((m) => el("tr", null,
-            el("td", null, m.name, m.since && isRecent(m.since, 24) ? el("span", { class: "badge new", title: "FDA approval " + fmtDate(m.since) }, "New") : null),
+            el("td", null, m.name, m.since && isRecent(m.since, 24) ? el("span", { class: "badge new", title: "New FDA approval: " + fmtDate(m.since) }, "New") : null),
             el("td", null, m.use)))))),
         el("p", { class: "meta" }, "Examples of approved medicines, not a complete list or a recommendation. Eligibility depends on stage, biomarkers and prior treatment. ",
           extLink(NCI_DRUGS, "See NCI's drug lists")))),
-      approvals.length ? sec("approvals", "What's new", "sparkles", el("div", { class: "card reveal" },
-        el("ol", { class: "timeline" }, approvals.map((a) => el("li", null,
-          el("time", { datetime: a.date }, fmtDate(a.date)),
-          el("p", null, a.drug),
-          el("div", { class: "meta" }, a.text, " ", a.url ? extLink(a.url, a.source || host(a.url), "src-link", true) : null)))))) : null,
+      approvals.length ? sec("approvals", "What's new", "sparkles", timeline(approvals)) : null,
       sec("research", "Latest research", "book", pendingNotice(), el("div", { class: "card reveal" }, research.length
         ? [el("ul", { class: "items" }, research.map((r) => el("li", null, extLink(r.url, r.title, "title"),
           el("div", { class: "meta" }, r.journal ? el("span", null, r.journal) : null, r.date ? el("span", null, "· " + fmtDate(r.date)) : null)))),
@@ -672,7 +680,7 @@
       sec("news", "News", "news", news.length ? el("div", { class: "news-list" }, news.map(newsItem))
         : el("div", { class: "card" }, el("p", { class: "empty" }, "No recent news tagged for this cancer type. ", el("a", { href: "./#news" }, "See all cancer news")))),
       el("p", { class: "reviewed" },
-        c.reviewed ? "Medical content last reviewed against NCI and FDA sources on " + fmtDate(c.reviewed) + ". " : "",
+        c.reviewed ? "Medicines and approvals last updated from official sources (FDA, NCI) on " + fmtDate(c.reviewed) + ". " : "",
         state.updates.generatedAt ? "Research, trials and news refreshed " + fmtDate(state.updates.generatedAt) + "." : "")));
   }
 
@@ -1169,7 +1177,16 @@
       state.updates = Object.assign({ byType: {}, news: [] }, updates || {});
       state.updates.byType = state.updates.byType || {};
       state.byId = Object.assign(Object.create(null), Object.fromEntries(cancers.map((c) => [c.id, c])));
-      state.approvals = cancers.flatMap((c) => (c.approvals || []).map((a) => Object.assign({ type: c.id }, a))).sort(byDateDesc);
+      // An approval can matter to several types (e.g. a leukemia drug approved for children); list it once.
+      const approvals = new Map();
+      for (const c of cancers) {
+        for (const a of c.approvals || []) {
+          const key = a.url || a.date + " " + fold(a.drug);
+          if (approvals.has(key)) approvals.get(key).types.push(c.id);
+          else approvals.set(key, Object.assign({ types: [c.id] }, a));
+        }
+      }
+      state.approvals = [...approvals.values()].sort(byDateDesc);
       buildIndex();
     } catch (err) {
       // Keep prerendered content readable; its links still work as normal page loads.

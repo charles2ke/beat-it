@@ -1,12 +1,12 @@
 {
   "title": "Cancer worldwide",
-  "intro": "The latest global estimates from the International Agency for Research on Cancer (IARC/WHO), GLOBOCAN 2022.",
+  "intro": "The latest global estimates: GLOBOCAN 2024 from the International Agency for Research on Cancer (IARC/WHO), released in July 2026.",
   "facts": [
-    { "value": "20 million", "label": "new cancer cases worldwide in 2022, and 9.7 million deaths.", "source": "WHO / IARC", "url": "https://www.who.int/news/item/01-02-2024-global-cancer-burden-growing--amidst-mounting-need-for-services" },
-    { "value": "1 in 5", "label": "people develop cancer in their lifetime.", "source": "WHO / IARC", "url": "https://www.who.int/news/item/01-02-2024-global-cancer-burden-growing--amidst-mounting-need-for-services" },
-    { "value": "53.5 million", "label": "people were alive within five years of a cancer diagnosis.", "source": "WHO / IARC", "url": "https://www.who.int/news/item/01-02-2024-global-cancer-burden-growing--amidst-mounting-need-for-services" },
-    { "value": "2.5 million", "label": "new lung cancer cases: the most common cancer and the leading cause of cancer death (1.8 million deaths).", "source": "WHO / IARC", "url": "https://www.who.int/news/item/01-02-2024-global-cancer-burden-growing--amidst-mounting-need-for-services" },
-    { "value": "30–50%", "label": "of cancers could be prevented by avoiding risk factors and using proven prevention strategies.", "source": "WHO cancer fact sheet", "url": "https://www.who.int/news-room/fact-sheets/detail/cancer" },
-    { "value": "35 million", "label": "new cases are expected in 2050, a 77% increase from 2022.", "source": "WHO / IARC", "url": "https://www.who.int/news/item/01-02-2024-global-cancer-burden-growing--amidst-mounting-need-for-services" }
+    { "value": "20.6 million", "label": "new cancer cases worldwide in 2024, according to estimates for 186 countries.", "source": "IARC / WHO, GLOBOCAN 2024", "url": "https://gco.iarc.who.int/today" },
+    { "value": "9.8 million", "label": "cancer deaths in 2024: nearly 1 in 6 deaths worldwide.", "source": "WHO cancer fact sheet", "url": "https://www.who.int/news-room/fact-sheets/detail/cancer" },
+    { "value": "2.6 million", "label": "new lung cancer cases: the most common cancer and the leading cause of cancer death (1.9 million deaths).", "source": "IARC / WHO, GLOBOCAN 2024", "url": "https://gco.iarc.who.int/today" },
+    { "value": "2.4 million", "label": "new breast cancer cases, followed by colorectal (2.0 million) and prostate (1.5 million) cancer.", "source": "IARC / WHO, GLOBOCAN 2024", "url": "https://gco.iarc.who.int/today" },
+    { "value": "About 38%", "label": "of cancers could be prevented by avoiding risk factors and using proven prevention strategies.", "source": "WHO cancer fact sheet", "url": "https://www.who.int/news-room/fact-sheets/detail/cancer" },
+    { "value": "34.4 million", "label": "new cases expected in 2050, 67% more than in 2024.", "source": "IARC / WHO", "url": "https://www.iarc.who.int/news-events/global-cancer-statistics-2024-globocan-estimates-of-incidence-and-mortality-worldwide-for-34-cancers-in-186-countries/" }
   ]
 }

@@ -8,19 +8,46 @@
     "summary": "Cancer that forms in the cells of the breast, most often in the ducts or lobules. It is one of the most common cancers worldwide and is classified by hormone-receptor (ER/PR) and HER2 status, which guide treatment.",
     "symptoms": ["New lump in the breast or underarm", "Change in breast size or shape", "Skin dimpling or redness", "Nipple discharge or inversion"],
     "riskFactors": ["Older age", "BRCA1/BRCA2 and other inherited mutations", "Family history", "Hormone exposure", "Alcohol use", "Dense breast tissue"],
-    "screening": "Mammography is the standard screening test; recommended start age and interval vary by guideline and personal risk.",
-    "treatments": ["Surgery (lumpectomy or mastectomy)", "Radiation therapy", "Hormone (endocrine) therapy", "Chemotherapy", "HER2-targeted therapy", "Immunotherapy (some triple-negative cases)"],
+    "screening": "The US Preventive Services Task Force (2024) recommends a mammogram every 2 years for women ages 40 to 74. Some groups, such as the American Cancer Society, advise yearly mammograms at some ages, and women at higher risk may need to start earlier or have extra imaging. Talk with a clinician about what's right for you.",
+    "screeningSource": {"name": "US Preventive Services Task Force", "url": "https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/breast-cancer-screening"},
+    "treatments": ["Surgery (lumpectomy or mastectomy)", "Radiation therapy", "Hormone (endocrine) therapy", "Chemotherapy", "HER2-targeted therapy", "Antibody-drug conjugates", "Immunotherapy (some triple-negative cases)"],
     "medicines": [
       {"name": "Tamoxifen", "use": "Hormone therapy (SERM) for hormone-receptor-positive disease"},
       {"name": "Letrozole / Anastrozole / Exemestane", "use": "Aromatase inhibitors for hormone-receptor-positive disease"},
+      {"name": "Fulvestrant / Elacestrant", "use": "Estrogen receptor blockers (SERDs) for advanced hormone-receptor-positive disease; elacestrant is a pill for tumors with an ESR1 mutation"},
+      {"name": "Imlunestrant", "use": "Oral estrogen receptor blocker for ER-positive, HER2-negative advanced breast cancer with an ESR1 mutation after hormone therapy, alone or with abemaciclib", "since": "2025-09-25"},
+      {"name": "Vepdegestrant", "use": "Oral medicine that breaks down the estrogen receptor, for ER-positive, HER2-negative advanced breast cancer with an ESR1 mutation after hormone therapy", "since": "2026-05-01"},
+      {"name": "Camizestrant", "use": "Oral estrogen receptor blocker, given with a CDK4/6 inhibitor, for HR-positive, HER2-negative advanced breast cancer when an ESR1 mutation is found during aromatase inhibitor and CDK4/6 inhibitor treatment (accelerated approval)", "since": "2026-09-04"},
+      {"name": "Palbociclib / Ribociclib / Abemaciclib", "use": "CDK4/6 inhibitors with hormone therapy; ribociclib and abemaciclib are also used after surgery for early breast cancer with a high risk of coming back, and palbociclib with HER2 therapy for HR-positive, HER2-positive advanced disease"},
+      {"name": "Alpelisib / Capivasertib / Inavolisib", "use": "Targeted pills for HR-positive, HER2-negative advanced breast cancer with PIK3CA, AKT1 or PTEN changes, given with hormone therapy (inavolisib also with palbociclib)", "since": "2024-10-10"},
+      {"name": "Gedatolisib", "use": "PI3K/mTOR inhibitor given with fulvestrant, with or without palbociclib, for HR-positive, HER2-negative advanced breast cancer without a PIK3CA mutation, after hormone therapy", "since": "2026-07-14"},
       {"name": "Trastuzumab, Pertuzumab", "use": "HER2-targeted antibodies"},
-      {"name": "Trastuzumab deruxtecan", "use": "HER2-directed antibody-drug conjugate"},
-      {"name": "Palbociclib / Ribociclib / Abemaciclib", "use": "CDK4/6 inhibitors with hormone therapy"},
+      {"name": "Tucatinib", "use": "HER2 inhibitor pill for HER2-positive advanced breast cancer, with trastuzumab and capecitabine or, since 2026, with trastuzumab and pertuzumab as maintenance"},
+      {"name": "Trastuzumab deruxtecan", "use": "HER2-directed antibody-drug conjugate for HER2-positive advanced breast cancer (since 2025 also as a first treatment with pertuzumab), HER2-low or HER2-ultralow advanced breast cancer, and since 2026 some HER2-positive early breast cancer"},
+      {"name": "Datopotamab deruxtecan", "use": "TROP2-directed antibody-drug conjugate for HR-positive, HER2-negative metastatic breast cancer after hormone therapy and chemotherapy, and since 2026 for triple-negative breast cancer when immunotherapy isn't an option", "since": "2025-01-17"},
+      {"name": "Sacituzumab govitecan", "use": "TROP2-directed antibody-drug conjugate for metastatic triple-negative breast cancer (as a first treatment since 2026, alone or with pembrolizumab) and for HR-positive, HER2-negative metastatic disease"},
       {"name": "Olaparib", "use": "PARP inhibitor for BRCA-mutated disease"},
-      {"name": "Pembrolizumab", "use": "Immunotherapy for some triple-negative breast cancer"},
-      {"name": "Sacituzumab govitecan", "use": "Antibody-drug conjugate for metastatic triple-negative disease"}
+      {"name": "Pembrolizumab", "use": "Immunotherapy for some triple-negative breast cancer"}
     ],
-    "query": "breast cancer"
+    "approvals": [
+      {"date": "2026-10-07", "drug": "Tucatinib (Tukysa) + trastuzumab + pertuzumab", "text": "Approved as maintenance treatment for HER2-positive advanced or metastatic breast cancer after initial (induction) treatment.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-tucatinib-trastuzumab-and-pertuzumab-maintenance-treatment-her2-positive-breast-cancer", "source": "FDA"},
+      {"date": "2026-09-18", "drug": "Imlunestrant (Inluriyo) + abemaciclib", "text": "Approved with abemaciclib for ER-positive, HER2-negative advanced or metastatic breast cancer with an ESR1 mutation that has grown after hormone therapy.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-imlunestrant-combination-abemaciclib-er-positive-her2-negative-esr1-mutated-advanced-or", "source": "FDA"},
+      {"date": "2026-09-04", "drug": "Camizestrant (Etcamah) + a CDK4/6 inhibitor", "text": "Accelerated approval, with a CDK4/6 inhibitor, for HR-positive, HER2-negative advanced breast cancer when an ESR1 mutation is found during aromatase inhibitor and CDK4/6 inhibitor treatment.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-grants-accelerated-approval-camizestrant-cdk46-inhibitor-esr1-mutated-hr-positive-her2-negative", "source": "FDA"},
+      {"date": "2026-07-14", "drug": "Gedatolisib (Revtorpyk)", "text": "PI3K/mTOR inhibitor approved with fulvestrant, with or without palbociclib, for HR-positive, HER2-negative advanced or metastatic breast cancer without a PIK3CA mutation that has grown after hormone therapy.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-gedatolisib-fulvestrant-or-without-palbociclib-hr-positive-her2-negative-locally", "source": "FDA"},
+      {"date": "2026-06-24", "drug": "Sacituzumab govitecan (Trodelvy)", "text": "Approved as a first treatment for metastatic triple-negative breast cancer, alone or with pembrolizumab for PD-L1-positive tumors.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-sacituzumab-govitecan-hziy-monotherapy-and-combination-pembrolizumab-first-line", "source": "FDA"},
+      {"date": "2026-06-24", "drug": "Palbociclib (Ibrance) + HER2 therapy + hormone therapy", "text": "Maintenance treatment with trastuzumab, with or without pertuzumab, and hormone therapy for HR-positive, HER2-positive advanced breast cancer.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-palbociclib-trastuzumab-or-without-pertuzumab-and-endocrine-therapy-maintenance", "source": "FDA"},
+      {"date": "2026-05-22", "drug": "Datopotamab deruxtecan (Datroway)", "text": "Approved for unresectable or metastatic triple-negative breast cancer in adults who can't have PD-1/PD-L1 immunotherapy.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-datopotamab-deruxtecan-dlnk-unresectable-or-metastatic-triple-negative-breast-cancer", "source": "FDA"},
+      {"date": "2026-05-15", "drug": "Trastuzumab deruxtecan (Enhertu)", "text": "Two new uses for HER2-positive early-stage breast cancer.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-two-separate-indications-fam-trastuzumab-deruxtecan-nxki-her2-positive-early-stage", "source": "FDA"},
+      {"date": "2026-05-01", "drug": "Vepdegestrant (Veppanu)", "text": "Oral medicine that breaks down the estrogen receptor, for ER-positive, HER2-negative advanced or metastatic breast cancer with an ESR1 mutation that has grown after hormone therapy.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-vepdegestrant-er-positive-her2-negative-esr1-mutated-advanced-or-metastatic-breast", "source": "FDA"},
+      {"date": "2025-12-15", "drug": "Trastuzumab deruxtecan (Enhertu) + pertuzumab", "text": "Approved with pertuzumab as a first treatment for HER2-positive advanced or metastatic breast cancer.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-fam-trastuzumab-deruxtecan-nxki-pertuzumab-unresectable-or-metastatic-her2-positive", "source": "FDA"},
+      {"date": "2025-09-25", "drug": "Imlunestrant (Inluriyo)", "text": "Oral estrogen receptor blocker for ER-positive, HER2-negative advanced or metastatic breast cancer with an ESR1 mutation that has grown after hormone therapy.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-imlunestrant-er-positive-her2-negative-esr1-mutated-advanced-or-metastatic-breast", "source": "FDA"},
+      {"date": "2025-01-27", "drug": "Trastuzumab deruxtecan (Enhertu)", "text": "Approved for HR-positive, HER2-low or HER2-ultralow metastatic breast cancer that has grown after hormone therapy.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-fam-trastuzumab-deruxtecan-nxki-unresectable-or-metastatic-hr-positive-her2-low-or-her2", "source": "FDA"},
+      {"date": "2025-01-17", "drug": "Datopotamab deruxtecan (Datroway)", "text": "TROP2-directed antibody-drug conjugate for HR-positive, HER2-negative metastatic breast cancer after hormone therapy and chemotherapy.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-datopotamab-deruxtecan-dlnk-unresectable-or-metastatic-hr-positive-her2-negative-breast", "source": "FDA"},
+      {"date": "2024-10-10", "drug": "Inavolisib (Itovebi) + palbociclib + fulvestrant", "text": "For PIK3CA-mutated, HR-positive, HER2-negative advanced breast cancer that came back during or soon after hormone therapy.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-inavolisib-palbociclib-and-fulvestrant-endocrine-resistant-pik3ca-mutated-hr-positive", "source": "FDA"},
+      {"date": "2024-09-17", "drug": "Ribociclib (Kisqali) + an aromatase inhibitor", "text": "Approved after surgery for stage II or III HR-positive, HER2-negative early breast cancer with a high risk of coming back.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-ribociclib-aromatase-inhibitor-and-ribociclib-and-letrozole-co-pack-early-high-risk", "source": "FDA"}
+    ],
+    "query": "breast cancer",
+    "reviewed": "2026-11-12"
   },
   {
     "id": "lung",
@@ -31,17 +58,54 @@
     "summary": "Cancer that forms in the tissues of the lung. The two main types are non-small cell lung cancer (about 85%) and small cell lung cancer. It is a leading cause of cancer death worldwide; biomarker testing (EGFR, ALK, KRAS, PD-L1 and others) guides treatment.",
     "symptoms": ["Persistent cough", "Coughing up blood", "Shortness of breath", "Chest pain", "Unexplained weight loss"],
     "riskFactors": ["Tobacco smoking", "Secondhand smoke", "Radon exposure", "Asbestos and other workplace exposures", "Air pollution", "Family history"],
-    "screening": "Low-dose CT screening is recommended for some adults with a significant smoking history.",
+    "screening": "The US Preventive Services Task Force (2021) recommends a yearly low-dose CT scan for adults 50 to 80 who have a 20 pack-year smoking history and smoke now or quit within the past 15 years. The American Cancer Society (2023) no longer limits screening by years since quitting. Ask a clinician whether you qualify.",
+    "screeningSource": {"name": "US Preventive Services Task Force", "url": "https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/lung-cancer-screening"},
     "treatments": ["Surgery", "Radiation therapy (including stereotactic body radiation)", "Chemotherapy", "Targeted therapy for driver mutations", "Immunotherapy (checkpoint inhibitors)"],
     "medicines": [
-      {"name": "Osimertinib", "use": "EGFR inhibitor for EGFR-mutated NSCLC"},
-      {"name": "Alectinib / Lorlatinib", "use": "ALK inhibitors for ALK-positive NSCLC"},
-      {"name": "Sotorasib / Adagrasib", "use": "KRAS G12C inhibitors"},
-      {"name": "Pembrolizumab / Nivolumab / Atezolizumab", "use": "PD-1/PD-L1 immunotherapy"},
-      {"name": "Durvalumab", "use": "PD-L1 immunotherapy, e.g. after chemoradiation for stage III NSCLC"},
+      {"name": "Osimertinib", "use": "EGFR inhibitor for EGFR-mutated NSCLC: as a first treatment (alone or with chemotherapy), after surgery, and after chemoradiation for stage III disease"},
+      {"name": "Amivantamab / Lazertinib", "use": "Amivantamab (an EGFR-MET antibody) with lazertinib as a first treatment for common EGFR mutations; amivantamab is also given with chemotherapy, including for EGFR exon 20 insertions", "since": "2024-08-19"},
+      {"name": "Sunvozertinib", "use": "For NSCLC with EGFR exon 20 insertion mutations that has grown after platinum chemotherapy (accelerated approval)", "since": "2025-07-02"},
+      {"name": "Alectinib / Lorlatinib / Ensartinib", "use": "ALK inhibitors for ALK-positive NSCLC; alectinib is also used after surgery, and ensartinib was approved in December 2024", "since": "2024-12-18"},
+      {"name": "Repotrectinib / Taletrectinib / Zidesamtinib", "use": "ROS1 inhibitors for ROS1-positive advanced NSCLC; taletrectinib (2025) and zidesamtinib (2026, after an earlier ROS1 inhibitor) are the newest", "since": "2026-07-22"},
+      {"name": "Sotorasib / Adagrasib", "use": "KRAS G12C inhibitors for previously treated NSCLC (both still accelerated approvals)"},
+      {"name": "Zongertinib / Sevabertinib", "use": "HER2 inhibitor pills for non-squamous NSCLC with a HER2 mutation, including as a first treatment since 2026 (accelerated approvals)", "since": "2025-11-19"},
+      {"name": "Tepotinib / Capmatinib", "use": "MET inhibitors for NSCLC with MET exon 14 skipping"},
+      {"name": "Telisotuzumab vedotin", "use": "Antibody-drug conjugate for previously treated non-squamous NSCLC with high levels of the c-Met protein (accelerated approval)", "since": "2025-05-14"},
+      {"name": "Datopotamab deruxtecan", "use": "TROP2-directed antibody-drug conjugate for EGFR-mutated NSCLC after EGFR-targeted therapy and platinum chemotherapy (accelerated approval)", "since": "2025-01-17"},
+      {"name": "Zenocutuzumab", "use": "HER2/HER3 bispecific antibody for advanced non-small cell lung or pancreatic cancer with an NRG1 gene fusion after earlier treatment (accelerated approval)", "since": "2024-12-04"},
+      {"name": "Pembrolizumab / Nivolumab / Atezolizumab", "use": "PD-1/PD-L1 immunotherapy for advanced NSCLC, and before or after surgery for some earlier-stage NSCLC"},
+      {"name": "Durvalumab", "use": "PD-L1 immunotherapy after chemoradiation for stage III NSCLC or limited-stage small cell lung cancer, and before and after surgery for some NSCLC"},
+      {"name": "Tarlatamab", "use": "DLL3-targeted T-cell engager for extensive-stage small cell lung cancer that has grown after platinum chemotherapy (full approval in 2025)", "since": "2024-05-16"},
+      {"name": "Lurbinectedin", "use": "Chemotherapy for extensive-stage small cell lung cancer, including with atezolizumab as maintenance after first treatment"},
       {"name": "Carboplatin / Cisplatin, Pemetrexed", "use": "Chemotherapy"}
     ],
-    "query": "lung cancer"
+    "approvals": [
+      {"date": "2026-09-09", "drug": "Sevabertinib (Hyrnuo)", "text": "Accelerated approval expanded to include a first treatment for advanced non-squamous non-small cell lung cancer with a HER2 mutation.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-grants-accelerated-approval-sevabertinib-locally-advanced-or-metastatic-non-squamous-non-small", "source": "FDA"},
+      {"date": "2026-07-22", "drug": "Zidesamtinib (Jideytro)", "text": "ROS1 inhibitor for advanced ROS1-positive non-small cell lung cancer already treated with at least one ROS1 inhibitor.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-zidesamtinib-ros1-positive-non-small-cell-lung-cancer", "source": "FDA"},
+      {"date": "2026-02-26", "drug": "Zongertinib (Hernexeos)", "text": "Accelerated approval expanded to include a first treatment for advanced non-squamous non-small cell lung cancer with a HER2 mutation.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-grants-accelerated-approval-zongertinib-unresectable-or-metastatic-non-squamous-non-small-cell", "source": "FDA"},
+      {"date": "2025-11-19", "drug": "Sevabertinib (Hyrnuo)", "text": "Accelerated approval for previously treated non-squamous non-small cell lung cancer with a HER2 mutation.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-grants-accelerated-approval-sevabertinib-non-squamous-non-small-cell-lung-cancer", "source": "FDA"},
+      {"date": "2025-10-02", "drug": "Lurbinectedin (Zepzelca) + atezolizumab", "text": "Maintenance treatment for extensive-stage small cell lung cancer that has not grown after first treatment.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-lurbinectedin-combination-atezolizumab-or-atezolizumab-and-hyaluronidase-tqjs-extensive", "source": "FDA"},
+      {"date": "2025-08-08", "drug": "Zongertinib (Hernexeos)", "text": "Accelerated approval for previously treated non-squamous non-small cell lung cancer with a HER2 mutation.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-grants-accelerated-approval-zongertinib-non-squamous-nsclc-her2-tkd-activating-mutations", "source": "FDA"},
+      {"date": "2025-07-02", "drug": "Sunvozertinib (Zegfrovy)", "text": "Accelerated approval for non-small cell lung cancer with EGFR exon 20 insertion mutations that has grown after platinum chemotherapy.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-grants-accelerated-approval-sunvozertinib-metastatic-non-small-cell-lung-cancer-egfr-exon-20", "source": "FDA"},
+      {"date": "2025-06-23", "drug": "Datopotamab deruxtecan (Datroway)", "text": "Accelerated approval for EGFR-mutated non-small cell lung cancer after EGFR-targeted therapy and platinum chemotherapy.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-grants-accelerated-approval-datopotamab-deruxtecan-dlnk-egfr-mutated-non-small-cell-lung-cancer", "source": "FDA"},
+      {"date": "2025-06-11", "drug": "Taletrectinib (Ibtrozi)", "text": "ROS1 inhibitor approved for ROS1-positive advanced non-small cell lung cancer.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-taletrectinib-ros1-positive-non-small-cell-lung-cancer", "source": "FDA"},
+      {"date": "2025-05-14", "drug": "Telisotuzumab vedotin (Emrelis)", "text": "Accelerated approval for previously treated non-squamous non-small cell lung cancer with high levels of the c-Met protein.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-grants-accelerated-approval-telisotuzumab-vedotin-tllv-nsclc-high-c-met-protein-overexpression", "source": "FDA"},
+      {"date": "2024-12-18", "drug": "Ensartinib (Ensacove)", "text": "ALK inhibitor for ALK-positive advanced non-small cell lung cancer not treated before with an ALK inhibitor.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-ensartinib-alk-positive-locally-advanced-or-metastatic-non-small-cell-lung-cancer", "source": "FDA"},
+      {"date": "2024-12-04", "drug": "Durvalumab (Imfinzi)", "text": "For limited-stage small cell lung cancer that has not grown after chemoradiation.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-durvalumab-limited-stage-small-cell-lung-cancer", "source": "FDA"},
+      {"date": "2024-12-04", "drug": "Zenocutuzumab (Bizengri)", "text": "Accelerated approval for advanced non-small cell lung cancer or pancreatic cancer with an NRG1 gene fusion that has grown after earlier treatment.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-grants-accelerated-approval-zenocutuzumab-zbco-non-small-cell-lung-cancer-and-pancreatic", "source": "FDA"},
+      {"date": "2024-10-03", "drug": "Nivolumab (Opdivo)", "text": "Given with chemotherapy before surgery, then alone after surgery, for resectable non-small cell lung cancer without EGFR or ALK changes.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-neoadjuvantadjuvant-nivolumab-resectable-non-small-cell-lung-cancer", "source": "FDA"},
+      {"date": "2024-09-25", "drug": "Osimertinib (Tagrisso)", "text": "For unresectable stage III EGFR-mutated non-small cell lung cancer that has not grown after chemoradiation.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-osimertinib-locally-advanced-unresectable-stage-iii-non-small-cell-lung-cancer", "source": "FDA"},
+      {"date": "2024-09-19", "drug": "Amivantamab (Rybrevant) + carboplatin + pemetrexed", "text": "For advanced non-small cell lung cancer with an EGFR exon 19 deletion or L858R mutation that has grown on or after an EGFR inhibitor such as osimertinib.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-amivantamab-vmjw-carboplatin-and-pemetrexed-non-small-cell-lung-cancer-egfr-exon-19", "source": "FDA"},
+      {"date": "2024-08-19", "drug": "Lazertinib (Lazcluze) + amivantamab", "text": "First treatment for advanced non-small cell lung cancer with an EGFR exon 19 deletion or L858R mutation.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-lazertinib-amivantamab-vmjw-non-small-lung-cancer", "source": "FDA"},
+      {"date": "2024-08-15", "drug": "Durvalumab (Imfinzi)", "text": "Given with chemotherapy before surgery, then alone after surgery, for resectable non-small cell lung cancer without EGFR or ALK changes.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-neoadjuvantadjuvant-durvalumab-resectable-non-small-cell-lung-cancer", "source": "FDA"},
+      {"date": "2024-05-16", "drug": "Tarlatamab (Imdelltra)", "text": "Accelerated approval for extensive-stage small cell lung cancer that has grown after platinum chemotherapy; converted to full approval in November 2025.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-grants-accelerated-approval-tarlatamab-dlle-extensive-stage-small-cell-lung-cancer", "source": "FDA"},
+      {"date": "2024-04-18", "drug": "Alectinib (Alecensa)", "text": "Approved after surgery for ALK-positive non-small cell lung cancer.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-alectinib-adjuvant-treatment-alk-positive-non-small-cell-lung-cancer", "source": "FDA"},
+      {"date": "2024-03-01", "drug": "Amivantamab (Rybrevant)", "text": "With carboplatin and pemetrexed as a first treatment for advanced non-small cell lung cancer with EGFR exon 20 insertion mutations.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-amivantamab-vmjw-egfr-exon-20-insertion-mutated-non-small-cell-lung-cancer-indications", "source": "FDA"},
+      {"date": "2024-02-16", "drug": "Osimertinib (Tagrisso) + chemotherapy", "text": "With platinum chemotherapy as a first treatment for advanced EGFR-mutated non-small cell lung cancer.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-osimertinib-chemotherapy-egfr-mutated-non-small-cell-lung-cancer", "source": "FDA"},
+      {"date": "2024-02-15", "drug": "Tepotinib (Tepmetko)", "text": "Full (traditional) approval for metastatic non-small cell lung cancer with a MET exon 14 skipping alteration.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-tepotinib-metastatic-non-small-cell-lung-cancer", "source": "FDA"}
+    ],
+    "query": "lung cancer",
+    "reviewed": "2026-11-12"
   },
   {
     "id": "prostate",
@@ -52,18 +116,33 @@
     "summary": "Cancer that forms in the prostate gland. Many prostate cancers grow slowly; options range from active surveillance to surgery, radiation and hormone-based therapies.",
     "symptoms": ["Often none in early stages", "Frequent or difficult urination", "Weak urine flow", "Blood in urine or semen", "Bone pain (advanced disease)"],
     "riskFactors": ["Older age", "Family history", "Inherited mutations (e.g., BRCA2)", "Being of African ancestry"],
-    "screening": "PSA blood testing may be offered after shared decision-making with a clinician.",
-    "treatments": ["Active surveillance", "Surgery (prostatectomy)", "Radiation therapy", "Androgen deprivation (hormone) therapy", "Chemotherapy", "Radiopharmaceuticals"],
+    "screening": "The US Preventive Services Task Force (2018) says men 55 to 69 should decide with a clinician whether to have a PSA blood test, and recommends against PSA screening at 70 and older. The American Urological Association suggests a first (baseline) PSA test at 45 to 50, or earlier for men at higher risk.",
+    "screeningSource": {"name": "US Preventive Services Task Force", "url": "https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/prostate-cancer-screening"},
+    "treatments": ["Active surveillance", "Surgery (prostatectomy)", "Radiation therapy", "Androgen deprivation (hormone) therapy", "Chemotherapy", "Targeted therapy (PARP and AKT inhibitors)", "Radiopharmaceuticals"],
     "medicines": [
       {"name": "Leuprolide / Degarelix / Relugolix", "use": "Androgen deprivation therapy"},
       {"name": "Abiraterone", "use": "Androgen synthesis inhibitor"},
-      {"name": "Enzalutamide / Apalutamide / Darolutamide", "use": "Androgen receptor inhibitors"},
+      {"name": "Enzalutamide / Apalutamide / Darolutamide", "use": "Androgen receptor inhibitors; darolutamide is also approved with hormone therapy alone for metastatic castration-sensitive disease (2025)"},
       {"name": "Docetaxel", "use": "Chemotherapy"},
-      {"name": "Olaparib", "use": "PARP inhibitor for some DNA-repair-mutated mCRPC"},
-      {"name": "Lutetium Lu 177 vipivotide tetraxetan", "use": "PSMA-targeted radioligand therapy"},
+      {"name": "Olaparib", "use": "PARP inhibitor for metastatic castration-resistant prostate cancer with certain DNA-repair gene changes"},
+      {"name": "Talazoparib + Enzalutamide", "use": "PARP inhibitor combination for metastatic prostate cancer with DNA-repair (HRR) gene changes: castration-resistant, and since 2026 hormone-sensitive"},
+      {"name": "Niraparib + Abiraterone", "use": "Combination tablet (with prednisone) for BRCA-mutated metastatic castration-resistant prostate cancer and, since 2025, BRCA2-mutated metastatic castration-sensitive prostate cancer"},
+      {"name": "Rucaparib", "use": "PARP inhibitor for BRCA-mutated metastatic castration-resistant prostate cancer already treated with an androgen receptor-directed medicine (full approval 2025)"},
+      {"name": "Capivasertib + Abiraterone", "use": "AKT inhibitor with abiraterone and prednisone for PTEN-deficient metastatic hormone-sensitive prostate cancer"},
+      {"name": "Lutetium Lu 177 vipivotide tetraxetan", "use": "PSMA-targeted radioligand therapy: for castration-resistant disease after an androgen receptor pathway inhibitor (before chemotherapy since 2025) and, since 2026, with hormone therapy for hormone-sensitive disease"},
       {"name": "Radium-223", "use": "Radiopharmaceutical for bone metastases"}
     ],
-    "query": "prostate cancer"
+    "approvals": [
+      {"date": "2026-10-26", "drug": "Talazoparib (Talzenna) + enzalutamide", "text": "For metastatic hormone-sensitive prostate cancer with DNA-repair (HRR) gene mutations. FDA now calls this “androgen pathway modulation-naive or -sensitive” disease.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-talazoparib-enzalutamide-metastatic-androgen-pathway-modulation-naive-or-sensitive", "source": "FDA"},
+      {"date": "2026-07-31", "drug": "Lutetium Lu 177 vipivotide tetraxetan (Pluvicto) + hormone therapy", "text": "With an androgen receptor pathway inhibitor for PSMA-positive metastatic hormone-sensitive prostate cancer.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-lutetium-lu-177-vipivotide-tetraxetan-androgen-receptor-pathway-inhibitor-therapy", "source": "FDA"},
+      {"date": "2026-06-12", "drug": "Capivasertib (Truqap) + abiraterone", "text": "With abiraterone and prednisone for PTEN-deficient metastatic hormone-sensitive prostate cancer.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-capivasertib-abiraterone-and-prednisone-pten-deficient-androgen-pathway-modulation", "source": "FDA"},
+      {"date": "2025-12-17", "drug": "Rucaparib (Rubraca)", "text": "Full (regular) approval for BRCA-mutated metastatic castration-resistant prostate cancer already treated with an androgen receptor-directed medicine.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-grants-regular-approval-rucaparib-metastatic-castration-resistant-prostate-cancer", "source": "FDA"},
+      {"date": "2025-12-12", "drug": "Niraparib and abiraterone (Akeega)", "text": "With prednisone for metastatic castration-sensitive prostate cancer with a BRCA2 mutation.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-niraparib-and-abiraterone-acetate-plus-prednisone-brca2-mutated-metastatic-castration", "source": "FDA"},
+      {"date": "2025-06-03", "drug": "Darolutamide (Nubeqa)", "text": "With androgen deprivation therapy for metastatic castration-sensitive prostate cancer.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-darolutamide-metastatic-castration-sensitive-prostate-cancer", "source": "FDA"},
+      {"date": "2025-03-28", "drug": "Lutetium Lu 177 vipivotide tetraxetan (Pluvicto)", "text": "Expanded to PSMA-positive metastatic castration-resistant prostate cancer after an androgen receptor pathway inhibitor, when it is appropriate to delay chemotherapy.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-expands-pluvictos-metastatic-castration-resistant-prostate-cancer-indication", "source": "FDA"}
+    ],
+    "query": "prostate cancer",
+    "reviewed": "2026-11-12"
   },
   {
     "id": "colorectal",
@@ -74,7 +153,8 @@
     "summary": "Cancer of the colon or rectum, usually developing from polyps over many years. Screening can find and remove polyps before they become cancer.",
     "symptoms": ["Change in bowel habits", "Blood in stool", "Abdominal pain or cramping", "Unexplained weight loss", "Fatigue or anemia"],
     "riskFactors": ["Older age", "Family history or Lynch syndrome", "Inflammatory bowel disease", "Diets high in red/processed meat", "Smoking, alcohol, obesity, inactivity"],
-    "screening": "Options include colonoscopy and stool-based tests (FIT, stool DNA); many guidelines begin screening at age 45-50 for average-risk adults.",
+    "screening": "The US Preventive Services Task Force (2021) recommends screening for adults 45 to 75. Colonoscopy and stool tests (FIT or stool DNA) are the standard options. FDA-approved blood tests (such as Shield, approved in 2024) find many cancers but miss most precancerous polyps, so they are mainly for people who decline colonoscopy and stool tests. A positive result on any test other than colonoscopy needs a follow-up colonoscopy.",
+    "screeningSource": {"name": "US Preventive Services Task Force", "url": "https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/colorectal-cancer-screening"},
     "treatments": ["Surgery", "Chemotherapy", "Radiation therapy (especially rectal cancer)", "Targeted therapy", "Immunotherapy for MSI-H/dMMR tumors"],
     "medicines": [
       {"name": "Fluorouracil / Capecitabine", "use": "Chemotherapy backbone"},
@@ -82,10 +162,25 @@
       {"name": "Bevacizumab", "use": "Anti-VEGF targeted therapy"},
       {"name": "Cetuximab / Panitumumab", "use": "Anti-EGFR antibodies for RAS wild-type tumors"},
       {"name": "Pembrolizumab", "use": "Immunotherapy for MSI-H/dMMR tumors"},
-      {"name": "Encorafenib + Cetuximab", "use": "For BRAF V600E-mutated metastatic disease"},
-      {"name": "Trifluridine/tipiracil, Regorafenib", "use": "Later-line options"}
+      {"name": "Nivolumab + Ipilimumab", "use": "Immunotherapy combination for advanced MSI-H/dMMR colorectal cancer, age 12 and older"},
+      {"name": "Atezolizumab", "use": "Immunotherapy given with chemotherapy after surgery for stage III dMMR colon cancer (2026)"},
+      {"name": "Dostarlimab", "use": "Immunotherapy for stage II or III dMMR/MSI-H rectal cancer (accelerated approval, 2026)"},
+      {"name": "Encorafenib + Cetuximab", "use": "For BRAF V600E-mutated metastatic disease, including as a first treatment with FOLFOX chemotherapy"},
+      {"name": "Sotorasib + Panitumumab", "use": "For KRAS G12C-mutated metastatic colorectal cancer after chemotherapy"},
+      {"name": "Adagrasib + Cetuximab", "use": "For KRAS G12C-mutated advanced colorectal cancer after chemotherapy (accelerated approval)"},
+      {"name": "Tucatinib", "use": "HER2 inhibitor pill given with trastuzumab for HER2-positive, RAS wild-type metastatic colorectal cancer after chemotherapy (accelerated approval)"},
+      {"name": "Trifluridine/tipiracil, Regorafenib, Fruquintinib", "use": "Later-line options; trifluridine/tipiracil can be given with bevacizumab"}
     ],
-    "query": "colorectal cancer"
+    "approvals": [
+      {"date": "2026-10-19", "drug": "Dostarlimab (Jemperli)", "text": "Accelerated approval for stage II or III locally advanced rectal cancer that is mismatch repair-deficient (dMMR) or MSI-H.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-grants-accelerated-approval-dostarlimab-locally-advanced-rectal-cancer", "source": "FDA"},
+      {"date": "2026-10-08", "drug": "Atezolizumab (Tecentriq) + chemotherapy", "text": "Given after surgery with fluoropyrimidine and oxaliplatin chemotherapy for stage III mismatch repair-deficient (dMMR) colon cancer, in adults and children 2 and older.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-atezolizumab-combination-chemotherapy-stage-iii-mismatch-repair-deficient-colon-cancer", "source": "FDA"},
+      {"date": "2025-04-08", "drug": "Nivolumab (Opdivo) + ipilimumab (Yervoy)", "text": "Approved for unresectable or metastatic MSI-H or dMMR colorectal cancer in adults and children 12 and older.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-nivolumab-ipilimumab-unresectable-or-metastatic-msi-h-or-dmmr-colorectal-cancer", "source": "FDA"},
+      {"date": "2025-01-16", "drug": "Sotorasib (Lumakras) + panitumumab (Vectibix)", "text": "For KRAS G12C-mutated metastatic colorectal cancer after chemotherapy.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-sotorasib-panitumumab-kras-g12c-mutated-colorectal-cancer", "source": "FDA"},
+      {"date": "2024-12-20", "drug": "Encorafenib (Braftovi) + cetuximab + mFOLFOX6", "text": "Accelerated approval as a first treatment for BRAF V600E-mutated metastatic colorectal cancer; converted to full approval in February 2026.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-grants-accelerated-approval-encorafenib-cetuximab-and-mfolfox6-metastatic-colorectal-cancer-braf", "source": "FDA"},
+      {"date": "2024-06-21", "drug": "Adagrasib (Krazati) + cetuximab", "text": "Accelerated approval for KRAS G12C-mutated advanced colorectal cancer already treated with fluoropyrimidine, oxaliplatin and irinotecan chemotherapy.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-grants-accelerated-approval-adagrasib-cetuximab-kras-g12c-mutated-colorectal-cancer", "source": "FDA"}
+    ],
+    "query": "colorectal cancer",
+    "reviewed": "2026-11-12"
   },
   {
     "id": "melanoma",
@@ -96,16 +191,27 @@
     "summary": "Melanoma begins in pigment-producing cells (melanocytes) and is the most serious common skin cancer. Basal and squamous cell skin cancers are more common and usually less aggressive.",
     "symptoms": ["New or changing mole", "Asymmetry, irregular borders, multiple colors", "Diameter larger than a pencil eraser", "Sore that does not heal"],
     "riskFactors": ["UV exposure and sunburns", "Tanning beds", "Fair skin", "Many or atypical moles", "Family history"],
-    "screening": "Regular skin self-checks; clinicians may recommend skin exams for higher-risk people.",
-    "treatments": ["Surgical excision", "Immunotherapy", "Targeted therapy (BRAF/MEK)", "Radiation therapy", "Cell therapy (TIL)"],
+    "screening": "The US Preventive Services Task Force (2023) found not enough evidence to recommend for or against routine skin exams by a clinician for adults without symptoms. Check your own skin and see a clinician about any new, changing or unusual spot or mole.",
+    "screeningSource": {"name": "US Preventive Services Task Force", "url": "https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/skin-cancer-screening"},
+    "treatments": ["Surgical excision", "Immunotherapy", "Targeted therapy (BRAF/MEK)", "Radiation therapy", "Cell therapy (TIL)", "Oncolytic virus therapy"],
     "medicines": [
-      {"name": "Nivolumab / Pembrolizumab", "use": "PD-1 immunotherapy"},
+      {"name": "Nivolumab / Pembrolizumab", "use": "PD-1 immunotherapy for advanced melanoma and after surgery; both can now also be given as an injection under the skin"},
       {"name": "Ipilimumab", "use": "CTLA-4 immunotherapy, often combined with nivolumab"},
       {"name": "Nivolumab + Relatlimab", "use": "PD-1 + LAG-3 combination"},
-      {"name": "Dabrafenib + Trametinib, Encorafenib + Binimetinib", "use": "BRAF/MEK inhibitors for BRAF V600-mutated melanoma"},
-      {"name": "Lifileucel", "use": "Tumor-infiltrating lymphocyte (TIL) cell therapy"}
+      {"name": "Dabrafenib + Trametinib", "use": "BRAF/MEK inhibitors for BRAF V600-mutated melanoma"},
+      {"name": "Encorafenib + Binimetinib", "use": "BRAF/MEK inhibitors for BRAF V600-mutated melanoma"},
+      {"name": "Lifileucel", "use": "Tumor-infiltrating lymphocyte (TIL) cell therapy for advanced melanoma after PD-1 immunotherapy (accelerated approval)", "since": "2024-02-16"},
+      {"name": "Vusolimogene oderparepvec", "use": "Oncolytic virus therapy injected into tumors, given with nivolumab, for advanced melanoma that has grown after PD-1 immunotherapy (accelerated approval)", "since": "2026-08-06"},
+      {"name": "Cemiplimab / Cosibelimab", "use": "Immunotherapy for advanced cutaneous squamous cell skin cancer; cemiplimab is also used after surgery and radiation for high-risk disease, and cosibelimab was approved in December 2024", "since": "2024-12-13"}
     ],
-    "query": "melanoma"
+    "approvals": [
+      {"date": "2026-08-06", "drug": "Vusolimogene oderparepvec (Tudriqev) + nivolumab", "text": "Accelerated approval: an oncolytic virus therapy, given with nivolumab, for advanced melanoma that has grown after PD-1 immunotherapy.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-grants-accelerated-approval-vusolimogene-oderparepvec-wtpg-combination-nivolumab-melanoma", "source": "FDA"},
+      {"date": "2025-10-08", "drug": "Cemiplimab (Libtayo)", "text": "Approved after surgery and radiation for cutaneous squamous cell carcinoma with a high risk of coming back.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-cemiplimab-rwlc-adjuvant-treatment-cutaneous-squamous-cell-carcinoma", "source": "FDA"},
+      {"date": "2024-12-13", "drug": "Cosibelimab (Unloxcyt)", "text": "PD-L1 antibody for metastatic or locally advanced cutaneous squamous cell carcinoma when surgery or radiation isn't an option.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-cosibelimab-ipdl-metastatic-or-locally-advanced-cutaneous-squamous-cell-carcinoma", "source": "FDA"},
+      {"date": "2024-02-16", "drug": "Lifileucel (Amtagvi)", "text": "Accelerated approval of a tumor-infiltrating lymphocyte (TIL) cell therapy made from the patient's own tumor, for advanced melanoma already treated with PD-1 immunotherapy (and a BRAF inhibitor, with or without a MEK inhibitor, if the tumor has a BRAF V600 mutation).", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-grants-accelerated-approval-lifileucel-unresectable-or-metastatic-melanoma", "source": "FDA"}
+    ],
+    "query": "melanoma",
+    "reviewed": "2026-11-12"
   },
   {
     "id": "leukemia",
@@ -120,14 +226,38 @@
     "treatments": ["Chemotherapy", "Targeted therapy", "Immunotherapy and CAR T-cell therapy", "Stem cell transplant", "Watchful waiting (some CLL)"],
     "medicines": [
       {"name": "Imatinib / Dasatinib / Nilotinib", "use": "BCR-ABL tyrosine kinase inhibitors for CML and Ph+ ALL"},
+      {"name": "Asciminib", "use": "BCR-ABL inhibitor for chronic-phase CML, including newly diagnosed disease"},
+      {"name": "Ponatinib", "use": "BCR-ABL inhibitor for CML after other inhibitors, and with chemotherapy for newly diagnosed Ph+ ALL"},
       {"name": "Ibrutinib / Acalabrutinib / Zanubrutinib", "use": "BTK inhibitors for CLL"},
-      {"name": "Venetoclax", "use": "BCL-2 inhibitor for CLL and AML"},
+      {"name": "Pirtobrutinib", "use": "Non-covalent BTK inhibitor for CLL, including after other BTK inhibitors and, since 2026, as a first treatment when there is no known 17p deletion"},
+      {"name": "Venetoclax", "use": "BCL-2 inhibitor for CLL and AML, including all-oral combinations with acalabrutinib (CLL) or decitabine/cedazuridine (AML)"},
       {"name": "Cytarabine + Daunorubicin", "use": "Induction chemotherapy for AML"},
-      {"name": "Midostaurin / Gilteritinib", "use": "FLT3 inhibitors for FLT3-mutated AML"},
-      {"name": "Blinatumomab", "use": "Bispecific antibody for B-cell ALL"},
-      {"name": "Tisagenlecleucel", "use": "CAR T-cell therapy for some B-cell ALL"}
+      {"name": "Midostaurin / Gilteritinib / Quizartinib", "use": "FLT3 inhibitors for FLT3-mutated AML"},
+      {"name": "Ivosidenib / Olutasidenib / Enasidenib", "use": "IDH inhibitors for AML with an IDH1 or IDH2 mutation"},
+      {"name": "Revumenib", "use": "Menin inhibitor for relapsed or refractory acute leukemia with a KMT2A gene change or an NPM1 mutation", "since": "2024-11-15"},
+      {"name": "Ziftomenib", "use": "Menin inhibitor for adults with relapsed or refractory AML with an NPM1 mutation", "since": "2025-11-13"},
+      {"name": "Blinatumomab", "use": "Bispecific antibody for B-cell ALL, including as consolidation after first treatment"},
+      {"name": "Inotuzumab ozogamicin", "use": "Antibody-drug conjugate for relapsed or refractory B-cell ALL"},
+      {"name": "Tisagenlecleucel", "use": "CAR T-cell therapy for some B-cell ALL"},
+      {"name": "Obecabtagene autoleucel", "use": "CAR T-cell therapy for adults with relapsed or refractory B-cell ALL", "since": "2024-11-08"}
     ],
-    "query": "leukemia"
+    "approvals": [
+      {"date": "2026-10-02", "drug": "Pirtobrutinib (Jaypirca)", "text": "Approved as a first treatment for adults with CLL or small lymphocytic lymphoma (SLL) without a known 17p deletion.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-pirtobrutinib-previously-untreated-chronic-lymphocytic-leukemia-or-small-lymphocytic", "source": "FDA"},
+      {"date": "2026-06-30", "drug": "Donor regulatory T-cell therapy (Tregzi)", "text": "Cell therapy given as part of a matched-donor stem cell transplant (after high-dose conditioning) for adults with blood cancers, to rebuild the blood and immune system and improve survival without chronic graft-versus-host disease.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-allogeneic-regulatory-t-cell-based-immunotherapy-hspc-and-t-cells-vldq-use-matched", "source": "FDA"},
+      {"date": "2026-05-13", "drug": "Decitabine and cedazuridine (Inqovi) + venetoclax", "text": "All-oral treatment for newly diagnosed AML in adults 75 or older, or who can't have intensive chemotherapy.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-oral-combination-decitabine-and-cedazuridine-tablets-venetoclax-newly-diagnosed-acute", "source": "FDA"},
+      {"date": "2026-02-19", "drug": "Acalabrutinib (Calquence) + venetoclax", "text": "Oral combination for adults with previously untreated CLL or small lymphocytic lymphoma (SLL).", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-acalabrutinib-venetoclax-chronic-lymphocytic-leukemia-or-small-lymphocytic-lymphoma", "source": "FDA"},
+      {"date": "2025-12-03", "drug": "Pirtobrutinib (Jaypirca)", "text": "Full (traditional) approval for adults with CLL or SLL who were already treated with a BTK inhibitor.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-grants-traditional-approval-pirtobrutinib-chronic-lymphocytic-leukemia-and-small-lymphocytic", "source": "FDA"},
+      {"date": "2025-11-13", "drug": "Ziftomenib (Komzifti)", "text": "Menin inhibitor for adults with relapsed or refractory AML that has an NPM1 mutation.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-ziftomenib-relapsed-or-refractory-acute-myeloid-leukemia-npm1-mutation", "source": "FDA"},
+      {"date": "2025-10-24", "drug": "Revumenib (Revuforj)", "text": "Expanded to relapsed or refractory acute myeloid leukemia (AML) with an NPM1 mutation, in adults and children 1 year and older who have no satisfactory alternative treatments.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-revumenib-relapsed-or-refractory-acute-myeloid-leukemia-susceptible-npm1-mutation", "source": "FDA"},
+      {"date": "2025-01-21", "drug": "Treosulfan (Grafapex) + fludarabine", "text": "Conditioning (preparative) treatment before a donor stem cell transplant for adults and children 1 year and older with AML or myelodysplastic syndrome (MDS).", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-treosulfan-fludarabine-preparative-regimen-allohsct-adult-and-pediatric-patients-aml-or", "source": "FDA"},
+      {"date": "2024-11-15", "drug": "Revumenib (Revuforj)", "text": "First menin inhibitor, for relapsed or refractory acute leukemia with a KMT2A gene change in adults and children 1 year and older.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-revumenib-relapsed-or-refractory-acute-leukemia-kmt2a-translocation", "source": "FDA"},
+      {"date": "2024-11-08", "drug": "Obecabtagene autoleucel (Aucatzyl)", "text": "CAR T-cell therapy for adults with relapsed or refractory B-cell precursor ALL.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-obecabtagene-autoleucel-adults-relapsed-or-refractory-b-cell-precursor-acute", "source": "FDA"},
+      {"date": "2024-10-29", "drug": "Asciminib (Scemblix)", "text": "Accelerated approval for adults with newly diagnosed Philadelphia chromosome-positive CML in chronic phase.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-grants-accelerated-approval-asciminib-newly-diagnosed-chronic-myeloid-leukemia", "source": "FDA"},
+      {"date": "2024-06-14", "drug": "Blinatumomab (Blincyto)", "text": "Approved as consolidation treatment for CD19-positive, Philadelphia chromosome-negative B-cell ALL in adults and children 1 month and older.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-blinatumomab-consolidation-cd19-positive-philadelphia-chromosome-negative-b-cell", "source": "FDA"},
+      {"date": "2024-03-19", "drug": "Ponatinib (Iclusig) + chemotherapy", "text": "Accelerated approval for adults with newly diagnosed Philadelphia chromosome-positive ALL.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-grants-accelerated-approval-ponatinib-chemotherapy-newly-diagnosed-philadelphia-chromosome", "source": "FDA"}
+    ],
+    "query": "leukemia",
+    "reviewed": "2026-11-12"
   },
   {
     "id": "lymphoma",
@@ -143,12 +273,29 @@
     "medicines": [
       {"name": "R-CHOP (rituximab, cyclophosphamide, doxorubicin, vincristine, prednisone)", "use": "Standard regimen for DLBCL"},
       {"name": "Polatuzumab vedotin", "use": "Antibody-drug conjugate for DLBCL"},
-      {"name": "ABVD / Brentuximab vedotin", "use": "Hodgkin lymphoma treatment"},
-      {"name": "Nivolumab / Pembrolizumab", "use": "Immunotherapy for relapsed classical Hodgkin lymphoma"},
-      {"name": "Axicabtagene ciloleucel / Lisocabtagene maraleucel", "use": "CAR T-cell therapies"},
-      {"name": "Glofitamab / Epcoritamab", "use": "CD20xCD3 bispecific antibodies"}
+      {"name": "ABVD / Brentuximab vedotin", "use": "Hodgkin lymphoma treatment; brentuximab is also used for some T-cell lymphomas and, with lenalidomide and rituximab, for relapsed large B-cell lymphoma"},
+      {"name": "Nivolumab / Pembrolizumab", "use": "Immunotherapy for classical Hodgkin lymphoma: nivolumab with AVD chemotherapy as a first treatment for advanced disease (age 12+), and both for relapsed disease"},
+      {"name": "Axicabtagene ciloleucel / Lisocabtagene maraleucel", "use": "CAR T-cell therapies for relapsed B-cell lymphomas; liso-cel is also approved for follicular, mantle cell and marginal zone lymphoma"},
+      {"name": "Glofitamab / Epcoritamab / Mosunetuzumab", "use": "CD20xCD3 bispecific antibodies for relapsed B-cell lymphomas; epcoritamab is also given with lenalidomide and rituximab for follicular lymphoma"},
+      {"name": "Acalabrutinib / Zanubrutinib", "use": "BTK inhibitors for mantle cell and other B-cell lymphomas; acalabrutinib with bendamustine and rituximab is a first treatment for mantle cell lymphoma"},
+      {"name": "Tafasitamab", "use": "Anti-CD19 antibody with lenalidomide for relapsed DLBCL, and with lenalidomide and rituximab for relapsed follicular lymphoma"},
+      {"name": "Sonrotoclax", "use": "BCL-2 inhibitor for relapsed or refractory mantle cell lymphoma after a BTK inhibitor (accelerated approval)", "since": "2026-05-13"}
     ],
-    "query": "lymphoma"
+    "approvals": [
+      {"date": "2026-05-13", "drug": "Sonrotoclax (Beqalzi)", "text": "Accelerated approval: BCL-2 inhibitor for adults with relapsed or refractory mantle cell lymphoma after at least 2 treatments, including a BTK inhibitor.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-grants-accelerated-approval-sonrotoclax-relapsed-or-refractory-mantle-cell-lymphoma", "source": "FDA"},
+      {"date": "2026-03-20", "drug": "Nivolumab (Opdivo) + AVD chemotherapy", "text": "First treatment, with doxorubicin, vinblastine and dacarbazine, for previously untreated stage III or IV classical Hodgkin lymphoma in people 12 and older.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-nivolumab-chemotherapy-previously-untreated-hodgkin-lymphoma", "source": "FDA"},
+      {"date": "2025-12-04", "drug": "Lisocabtagene maraleucel (Breyanzi)", "text": "CAR T-cell therapy approved for adults with relapsed or refractory marginal zone lymphoma.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-lisocabtagene-maraleucel-relapsed-or-refractory-marginal-zone-lymphoma", "source": "FDA"},
+      {"date": "2025-11-18", "drug": "Epcoritamab (Epkinly) + lenalidomide + rituximab", "text": "Approved with lenalidomide and rituximab for relapsed or refractory follicular lymphoma; epcoritamab's follicular lymphoma use also moved to full approval.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-epcoritamab-bysp-follicular-lymphoma-indications", "source": "FDA"},
+      {"date": "2025-06-18", "drug": "Tafasitamab (Monjuvi) + lenalidomide + rituximab", "text": "Approved for adults with relapsed or refractory follicular lymphoma.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-tafasitamab-cxix-relapsed-or-refractory-follicular-lymphoma", "source": "FDA"},
+      {"date": "2025-02-11", "drug": "Brentuximab vedotin (Adcetris) + lenalidomide + rituximab", "text": "For adults with relapsed or refractory large B-cell lymphoma after at least 2 treatments who can't have a stem cell transplant or CAR T-cell therapy.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-brentuximab-vedotin-lenalidomide-and-rituximab-relapsed-or-refractory-large-b-cell", "source": "FDA"},
+      {"date": "2025-01-16", "drug": "Acalabrutinib (Calquence) + bendamustine + rituximab", "text": "First treatment for adults with mantle cell lymphoma who can't have a stem cell transplant.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-acalabrutinib-bendamustine-and-rituximab-previously-untreated-mantle-cell-lymphoma", "source": "FDA"},
+      {"date": "2024-06-26", "drug": "Epcoritamab (Epkinly)", "text": "Accelerated approval for relapsed or refractory follicular lymphoma after at least 2 treatments.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-grants-accelerated-approval-epcoritamab-bysp-relapsed-or-refractory-follicular-lymphoma", "source": "FDA"},
+      {"date": "2024-05-30", "drug": "Lisocabtagene maraleucel (Breyanzi)", "text": "CAR T-cell therapy for relapsed or refractory mantle cell lymphoma after at least 2 treatments, including a BTK inhibitor.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-lisocabtagene-maraleucel-relapsed-or-refractory-mantle-cell-lymphoma", "source": "FDA"},
+      {"date": "2024-05-15", "drug": "Lisocabtagene maraleucel (Breyanzi)", "text": "Accelerated approval of this CAR T-cell therapy for relapsed or refractory follicular lymphoma after at least 2 treatments.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-grants-accelerated-approval-lisocabtagene-maraleucel-follicular-lymphoma", "source": "FDA"},
+      {"date": "2024-03-07", "drug": "Zanubrutinib (Brukinsa) + obinutuzumab", "text": "Accelerated approval for relapsed or refractory follicular lymphoma after at least 2 treatments.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-grants-accelerated-approval-zanubrutinib-relapsed-or-refractory-follicular-lymphoma", "source": "FDA"}
+    ],
+    "query": "lymphoma",
+    "reviewed": "2026-11-12"
   },
   {
     "id": "myeloma",
@@ -164,12 +311,26 @@
     "medicines": [
       {"name": "Lenalidomide / Pomalidomide", "use": "Immunomodulatory drugs"},
       {"name": "Bortezomib / Carfilzomib", "use": "Proteasome inhibitors"},
-      {"name": "Daratumumab", "use": "Anti-CD38 antibody"},
+      {"name": "Daratumumab / Isatuximab", "use": "Anti-CD38 antibodies used in combinations, including for newly diagnosed myeloma; daratumumab is also approved for high-risk smoldering myeloma"},
       {"name": "Dexamethasone", "use": "Corticosteroid used in combinations"},
-      {"name": "Teclistamab / Elranatamab / Talquetamab", "use": "Bispecific antibodies"},
-      {"name": "Idecabtagene vicleucel / Ciltacabtagene autoleucel", "use": "BCMA-directed CAR T-cell therapies"}
+      {"name": "Teclistamab / Elranatamab / Talquetamab", "use": "Bispecific antibodies for relapsed myeloma; teclistamab with daratumumab can be used after 1 prior treatment"},
+      {"name": "Linvoseltamab", "use": "BCMAxCD3 bispecific antibody for myeloma after at least 4 prior treatments (accelerated approval)", "since": "2025-07-02"},
+      {"name": "Idecabtagene vicleucel / Ciltacabtagene autoleucel", "use": "BCMA-directed CAR T-cell therapies, approved in 2024 for use after fewer prior treatments"},
+      {"name": "Belantamab mafodotin", "use": "BCMA antibody-drug conjugate with bortezomib and dexamethasone after at least 2 prior treatments (re-approved in 2025)", "since": "2025-10-23"},
+      {"name": "Iberdomide", "use": "First CELMoD drug, with daratumumab and dexamethasone after at least 1 prior treatment (accelerated approval)", "since": "2026-08-13"}
     ],
-    "query": "multiple myeloma"
+    "approvals": [
+      {"date": "2026-08-13", "drug": "Iberdomide (Zenbexus)", "text": "Accelerated approval of the first CELMoD drug, given with daratumumab and dexamethasone for relapsed or refractory myeloma after at least 1 prior treatment.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-grants-accelerated-approval-iberdomide-daratumumab-and-hyaluronidase-fihj-and-dexamethasone", "source": "FDA"},
+      {"date": "2026-03-05", "drug": "Teclistamab (Tecvayli) + daratumumab", "text": "Approved with daratumumab for relapsed or refractory myeloma after at least 1 prior treatment; teclistamab alone also moved to full approval.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-teclistamab-combination-daratumumab-hyaluronidase-fihj-relapsed-or-refractory-multiple", "source": "FDA"},
+      {"date": "2026-01-27", "drug": "Daratumumab and hyaluronidase (Darzalex Faspro) + VRd", "text": "With bortezomib, lenalidomide and dexamethasone for newly diagnosed myeloma in adults who can't have a stem cell transplant.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-daratumumab-and-hyaluronidase-fihj-bortezomib-lenalidomide-and-dexamethasone-newly", "source": "FDA"},
+      {"date": "2025-11-06", "drug": "Daratumumab and hyaluronidase (Darzalex Faspro)", "text": "First approved treatment for adults with high-risk smoldering multiple myeloma, an early stage that has not yet caused symptoms.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-daratumumab-and-hyaluronidase-fihj-high-risk-smoldering-multiple-myeloma", "source": "FDA"},
+      {"date": "2025-10-23", "drug": "Belantamab mafodotin (Blenrep)", "text": "Re-approved: antibody-drug conjugate given with bortezomib and dexamethasone for relapsed or refractory myeloma after at least 2 prior treatments.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-belantamab-mafodotin-blmf-relapsed-or-refractory-multiple-myeloma", "source": "FDA"},
+      {"date": "2025-07-02", "drug": "Linvoseltamab (Lynozyfic)", "text": "Accelerated approval: BCMAxCD3 bispecific antibody for relapsed or refractory myeloma after at least 4 prior treatments.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-grants-accelerated-approval-linvoseltamab-gcpt-relapsed-or-refractory-multiple-myeloma", "source": "FDA"},
+      {"date": "2024-09-20", "drug": "Isatuximab (Sarclisa) + VRd", "text": "With bortezomib, lenalidomide and dexamethasone for newly diagnosed myeloma in adults who can't have a stem cell transplant.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-isatuximab-irfc-bortezomib-lenalidomide-and-dexamethasone-newly-diagnosed-multiple", "source": "FDA"},
+      {"date": "2024-07-30", "drug": "Daratumumab and hyaluronidase (Darzalex Faspro) + VRd", "text": "With bortezomib, lenalidomide and dexamethasone before and after a stem cell transplant (induction and consolidation) for newly diagnosed myeloma.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-daratumumab-and-hyaluronidase-fihj-bortezomib-lenalidomide-and-dexamethasone-multiple", "source": "FDA"}
+    ],
+    "query": "multiple myeloma",
+    "reviewed": "2026-11-12"
   },
   {
     "id": "pancreatic",
@@ -181,14 +342,26 @@
     "symptoms": ["Jaundice (yellow skin/eyes)", "Abdominal or back pain", "Weight loss and poor appetite", "New-onset diabetes", "Light-colored stools"],
     "riskFactors": ["Smoking", "Obesity", "Long-standing diabetes", "Chronic pancreatitis", "Family history and inherited mutations"],
     "screening": "No routine screening for average-risk people; surveillance may be offered to some high-risk individuals.",
-    "treatments": ["Surgery (e.g., Whipple procedure)", "Chemotherapy", "Radiation therapy", "Targeted therapy for specific mutations"],
+    "treatments": ["Surgery (e.g., Whipple procedure)", "Chemotherapy", "Radiation therapy", "Targeted therapy for specific gene changes", "Targeted drugs and radioligand therapy for neuroendocrine tumors"],
     "medicines": [
-      {"name": "FOLFIRINOX / NALIRIFOX", "use": "Combination chemotherapy"},
+      {"name": "FOLFIRINOX / NALIRIFOX", "use": "Combination chemotherapy; NALIRIFOX (with liposomal irinotecan) was approved as a first treatment for metastatic disease in 2024"},
       {"name": "Gemcitabine + nab-paclitaxel", "use": "Combination chemotherapy"},
+      {"name": "Daraxonrasib", "use": "RAS inhibitor pill for metastatic pancreatic cancer after at least one earlier treatment, or when multi-drug chemotherapy isn't suitable", "since": "2026-08-26"},
       {"name": "Olaparib", "use": "Maintenance for germline BRCA-mutated metastatic disease"},
-      {"name": "Everolimus / Sunitinib", "use": "For pancreatic neuroendocrine tumors"}
+      {"name": "Zenocutuzumab", "use": "HER2/HER3 bispecific antibody for advanced non-small cell lung or pancreatic cancer with an NRG1 gene fusion after earlier treatment (accelerated approval)", "since": "2024-12-04"},
+      {"name": "Everolimus / Sunitinib", "use": "For pancreatic neuroendocrine tumors"},
+      {"name": "Cabozantinib", "use": "For previously treated, advanced well-differentiated pancreatic and other neuroendocrine tumors, in adults and children 12 and older"},
+      {"name": "Lutetium Lu 177 dotatate", "use": "Radioligand therapy for somatostatin receptor-positive gastroenteropancreatic neuroendocrine tumors, in adults and children 12 and older"}
     ],
-    "query": "pancreatic cancer"
+    "approvals": [
+      {"date": "2026-08-26", "drug": "Daraxonrasib (Rasonque)", "text": "First RAS inhibitor for metastatic pancreatic cancer: a pill for adults already treated with at least one earlier therapy, or who can't have multi-drug chemotherapy.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-daraxonrasib-metastatic-pancreatic-adenocarcinoma", "source": "FDA"},
+      {"date": "2025-03-26", "drug": "Cabozantinib (Cabometyx)", "text": "Approved for previously treated, advanced well-differentiated pancreatic and extra-pancreatic neuroendocrine tumors, in adults and children 12 and older.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-cabozantinib-adults-and-pediatric-patients-12-years-age-and-older-pnet-and-epnet", "source": "FDA"},
+      {"date": "2024-12-04", "drug": "Zenocutuzumab (Bizengri)", "text": "Accelerated approval for advanced non-small cell lung cancer or pancreatic cancer with an NRG1 gene fusion that has grown after earlier treatment.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-grants-accelerated-approval-zenocutuzumab-zbco-non-small-cell-lung-cancer-and-pancreatic", "source": "FDA"},
+      {"date": "2024-04-23", "drug": "Lutetium Lu 177 dotatate (Lutathera)", "text": "Expanded to children 12 and older with somatostatin receptor-positive gastroenteropancreatic neuroendocrine tumors (GEP-NETs).", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-lutetium-lu-177-dotatate-pediatric-patients-12-years-and-older-gep-nets", "source": "FDA"},
+      {"date": "2024-02-13", "drug": "Irinotecan liposome (Onivyde) + chemotherapy", "text": "Approved with oxaliplatin, fluorouracil and leucovorin (NALIRIFOX) as a first treatment for metastatic pancreatic cancer.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-irinotecan-liposome-first-line-treatment-metastatic-pancreatic-adenocarcinoma", "source": "FDA"}
+    ],
+    "query": "pancreatic cancer",
+    "reviewed": "2026-11-12"
   },
   {
     "id": "ovarian",
@@ -200,14 +373,26 @@
     "symptoms": ["Bloating", "Pelvic or abdominal pain", "Feeling full quickly", "Urinary urgency or frequency"],
     "riskFactors": ["BRCA1/BRCA2 mutations and Lynch syndrome", "Family history", "Older age", "Endometriosis"],
     "screening": "No proven screening test for average-risk people.",
-    "treatments": ["Surgery (debulking)", "Chemotherapy", "PARP inhibitor maintenance", "Anti-angiogenic therapy", "Antibody-drug conjugates"],
+    "treatments": ["Surgery (debulking)", "Chemotherapy", "PARP inhibitor maintenance", "Anti-angiogenic therapy", "Antibody-drug conjugates", "Targeted therapy (e.g., KRAS-mutated low-grade serous cancer)", "Immunotherapy (some platinum-resistant cancers)"],
     "medicines": [
       {"name": "Carboplatin + Paclitaxel", "use": "First-line chemotherapy"},
-      {"name": "Olaparib / Niraparib / Rucaparib", "use": "PARP inhibitors"},
+      {"name": "Olaparib / Niraparib / Rucaparib", "use": "PARP inhibitors, mainly as maintenance after platinum chemotherapy"},
       {"name": "Bevacizumab", "use": "Anti-VEGF therapy"},
-      {"name": "Mirvetuximab soravtansine", "use": "ADC for folate receptor-alpha-positive platinum-resistant disease"}
+      {"name": "Mirvetuximab soravtansine", "use": "Antibody-drug conjugate for folate receptor-alpha-positive, platinum-resistant disease (full approval since 2024)"},
+      {"name": "Relacorilant", "use": "Glucocorticoid receptor blocker pill given with nab-paclitaxel for platinum-resistant disease after 1 to 3 earlier treatments", "since": "2026-03-25"},
+      {"name": "Pembrolizumab", "use": "Immunotherapy given with paclitaxel, with or without bevacizumab, for PD-L1-positive, platinum-resistant disease"},
+      {"name": "Avutometinib + Defactinib", "use": "Pill combination for recurrent low-grade serous ovarian cancer with a KRAS mutation after earlier treatment (accelerated approval)", "since": "2025-05-08"},
+      {"name": "Trastuzumab deruxtecan", "use": "HER2-directed antibody-drug conjugate for advanced HER2-positive (IHC 3+) solid tumors, including ovarian cancer, after earlier treatment (accelerated approval)"}
     ],
-    "query": "ovarian cancer"
+    "approvals": [
+      {"date": "2026-03-25", "drug": "Relacorilant (Lifyorli) + nab-paclitaxel", "text": "Approved for platinum-resistant ovarian, fallopian tube or primary peritoneal cancer after 1 to 3 earlier treatments, at least one of which included bevacizumab.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-relacorilant-nab-paclitaxel-platinum-resistant-epithelial-ovarian-fallopian-tube-or", "source": "FDA"},
+      {"date": "2026-02-10", "drug": "Pembrolizumab (Keytruda) + paclitaxel", "text": "Approved with paclitaxel, with or without bevacizumab, for platinum-resistant ovarian, fallopian tube or primary peritoneal cancer that is PD-L1-positive (CPS ≥1), after 1 or 2 earlier treatments.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-pembrolizumab-paclitaxel-platinum-resistant-epithelial-ovarian-fallopian-tube-or", "source": "FDA"},
+      {"date": "2025-05-08", "drug": "Avutometinib + defactinib (Avmapki Fakzynja Co-pack)", "text": "Accelerated approval for recurrent low-grade serous ovarian cancer with a KRAS mutation after earlier treatment.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-grants-accelerated-approval-combination-avutometinib-and-defactinib-kras-mutated-recurrent-low", "source": "FDA"},
+      {"date": "2024-04-05", "drug": "Trastuzumab deruxtecan (Enhertu)", "text": "Accelerated approval for advanced HER2-positive (IHC 3+) solid tumors of any type after earlier treatment, when there are no satisfactory alternatives.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-grants-accelerated-approval-fam-trastuzumab-deruxtecan-nxki-unresectable-or-metastatic-her2", "source": "FDA"},
+      {"date": "2024-03-22", "drug": "Mirvetuximab soravtansine (Elahere)", "text": "Full (traditional) approval for folate receptor-alpha (FRα)-positive, platinum-resistant ovarian, fallopian tube or primary peritoneal cancer after 1 to 3 earlier treatments.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-mirvetuximab-soravtansine-gynx-fra-positive-platinum-resistant-epithelial-ovarian", "source": "FDA"}
+    ],
+    "query": "ovarian cancer",
+    "reviewed": "2026-11-12"
   },
   {
     "id": "cervical",
@@ -218,16 +403,24 @@
     "summary": "Cancer of the cervix, almost always caused by long-lasting infection with high-risk types of human papillomavirus (HPV). It is largely preventable through vaccination and screening.",
     "symptoms": ["Often none early", "Abnormal vaginal bleeding", "Pelvic pain", "Pain during intercourse"],
     "riskFactors": ["Persistent HPV infection", "Smoking", "Weakened immune system", "No regular screening"],
-    "screening": "HPV testing and/or Pap tests; HPV vaccination prevents most cases.",
+    "screening": "Ages 21–29: a Pap test every 3 years. Ages 30–65: an HPV test every 5 years, a Pap test every 3 years, or both tests every 5 years. Updated US women's preventive services guidelines (HRSA, 2026) prefer the HPV test, and the American Cancer Society recommends it every 5 years from age 25. The FDA now allows HPV testing on a sample you collect yourself, in a clinic (since 2024) or with an at-home kit (since 2025). HPV vaccination prevents most cases.",
+    "screeningSource": {"name": "HRSA Women's Preventive Services Guidelines", "url": "https://www.hrsa.gov/womens-guidelines"},
     "treatments": ["Surgery", "Chemoradiation", "Immunotherapy", "Targeted therapy", "Antibody-drug conjugates"],
     "medicines": [
       {"name": "HPV vaccine", "use": "Prevention"},
       {"name": "Cisplatin", "use": "Given with radiation (chemoradiation)"},
-      {"name": "Pembrolizumab", "use": "Immunotherapy for PD-L1-positive or locally advanced disease"},
+      {"name": "Pembrolizumab", "use": "Immunotherapy: with chemotherapy, with or without bevacizumab, for PD-L1-positive advanced disease, and since 2024 with chemoradiotherapy for stage III–IVA disease"},
       {"name": "Bevacizumab", "use": "Anti-VEGF therapy for advanced disease"},
-      {"name": "Tisotumab vedotin", "use": "ADC for recurrent or metastatic disease"}
+      {"name": "Tisotumab vedotin", "use": "Antibody-drug conjugate for recurrent or metastatic disease after chemotherapy (full approval since 2024)"},
+      {"name": "Trastuzumab deruxtecan", "use": "HER2-directed antibody-drug conjugate for advanced HER2-positive (IHC 3+) solid tumors, including cervical cancer, after earlier treatment (accelerated approval)"}
     ],
-    "query": "cervical cancer"
+    "approvals": [
+      {"date": "2024-04-29", "drug": "Tisotumab vedotin (Tivdak)", "text": "Full (traditional) approval for recurrent or metastatic cervical cancer that has grown during or after chemotherapy.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-tisotumab-vedotin-tftv-recurrent-or-metastatic-cervical-cancer", "source": "FDA"},
+      {"date": "2024-04-05", "drug": "Trastuzumab deruxtecan (Enhertu)", "text": "Accelerated approval for advanced HER2-positive (IHC 3+) solid tumors of any type after earlier treatment, when there are no satisfactory alternatives.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-grants-accelerated-approval-fam-trastuzumab-deruxtecan-nxki-unresectable-or-metastatic-her2", "source": "FDA"},
+      {"date": "2024-01-12", "drug": "Pembrolizumab (Keytruda) + chemoradiotherapy", "text": "Approved with chemoradiotherapy for stage III–IVA (FIGO 2014) cervical cancer.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-pembrolizumab-chemoradiotherapy-figo-2014-stage-iii-iva-cervical-cancer", "source": "FDA"}
+    ],
+    "query": "cervical cancer",
+    "reviewed": "2026-11-12"
   },
   {
     "id": "uterine",
@@ -239,14 +432,24 @@
     "symptoms": ["Postmenopausal bleeding", "Abnormal vaginal bleeding or discharge", "Pelvic pain"],
     "riskFactors": ["Obesity", "Unopposed estrogen exposure", "Older age", "Lynch syndrome", "Tamoxifen use"],
     "screening": "No routine screening for average-risk people; report abnormal bleeding promptly.",
-    "treatments": ["Surgery (hysterectomy)", "Radiation therapy", "Chemotherapy", "Hormone therapy", "Immunotherapy"],
+    "treatments": ["Surgery (hysterectomy)", "Radiation therapy", "Chemotherapy", "Hormone therapy", "Immunotherapy (often with chemotherapy)", "Targeted therapy"],
     "medicines": [
       {"name": "Carboplatin + Paclitaxel", "use": "Chemotherapy"},
-      {"name": "Dostarlimab / Pembrolizumab / Durvalumab", "use": "Immunotherapy, especially for dMMR/MSI-H tumors"},
-      {"name": "Pembrolizumab + Lenvatinib", "use": "For advanced non-MSI-H disease after prior therapy"},
+      {"name": "Dostarlimab", "use": "Immunotherapy given with carboplatin and paclitaxel for primary advanced or recurrent endometrial cancer (all types since 2024), and alone for dMMR tumors after platinum chemotherapy"},
+      {"name": "Pembrolizumab", "use": "Immunotherapy given with carboplatin and paclitaxel for primary advanced or recurrent endometrial cancer (2024), and alone for MSI-H or dMMR tumors after earlier treatment"},
+      {"name": "Durvalumab", "use": "Immunotherapy given with carboplatin and paclitaxel for primary advanced or recurrent mismatch repair-deficient (dMMR) endometrial cancer"},
+      {"name": "Pembrolizumab + Lenvatinib", "use": "For advanced endometrial cancer that is not MSI-H or dMMR, after earlier treatment"},
+      {"name": "Trastuzumab deruxtecan", "use": "HER2-directed antibody-drug conjugate for advanced HER2-positive (IHC 3+) solid tumors, including uterine (endometrial) cancer, after earlier treatment (accelerated approval)"},
       {"name": "Megestrol / Medroxyprogesterone", "use": "Progestin hormone therapy"}
     ],
-    "query": "endometrial cancer"
+    "approvals": [
+      {"date": "2024-08-01", "drug": "Dostarlimab (Jemperli) + chemotherapy", "text": "Expanded, with carboplatin and paclitaxel, to all primary advanced or recurrent endometrial cancer; the 2023 approval covered only mismatch repair-deficient (dMMR) or MSI-H tumors.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-expands-endometrial-cancer-indication-dostarlimab-gxly-chemotherapy", "source": "FDA"},
+      {"date": "2024-06-17", "drug": "Pembrolizumab (Keytruda) + chemotherapy", "text": "Approved with carboplatin and paclitaxel, then alone, for primary advanced or recurrent endometrial carcinoma.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-pembrolizumab-chemotherapy-primary-advanced-or-recurrent-endometrial-carcinoma", "source": "FDA"},
+      {"date": "2024-06-14", "drug": "Durvalumab (Imfinzi) + chemotherapy", "text": "Approved with carboplatin and paclitaxel, then alone, for primary advanced or recurrent endometrial cancer that is mismatch repair-deficient (dMMR).", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-durvalumab-chemotherapy-mismatch-repair-deficient-primary-advanced-or-recurrent", "source": "FDA"},
+      {"date": "2024-04-05", "drug": "Trastuzumab deruxtecan (Enhertu)", "text": "Accelerated approval for advanced HER2-positive (IHC 3+) solid tumors of any type after earlier treatment, when there are no satisfactory alternatives.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-grants-accelerated-approval-fam-trastuzumab-deruxtecan-nxki-unresectable-or-metastatic-her2", "source": "FDA"}
+    ],
+    "query": "endometrial cancer",
+    "reviewed": "2026-11-12"
   },
   {
     "id": "bladder",
@@ -258,15 +461,37 @@
     "symptoms": ["Blood in urine", "Frequent or painful urination", "Lower back pain"],
     "riskFactors": ["Smoking", "Chemical exposures (dyes, rubber, paint industries)", "Chronic bladder irritation", "Older age"],
     "screening": "No routine screening for average-risk people.",
-    "treatments": ["Transurethral resection (TURBT)", "Intravesical therapy", "Cystectomy", "Chemotherapy", "Immunotherapy and ADCs"],
+    "treatments": ["Transurethral resection (TURBT)", "Intravesical therapy (BCG, chemotherapy, newer drugs and devices)", "Cystectomy", "Chemotherapy", "Immunotherapy and ADCs", "Treatment before and after surgery for muscle-invasive disease"],
     "medicines": [
       {"name": "BCG (intravesical)", "use": "Immunotherapy for non-muscle-invasive disease"},
+      {"name": "Nogapendekin alfa inbakicept", "use": "IL-15 receptor agonist given into the bladder with BCG for BCG-unresponsive non-muscle-invasive bladder cancer (expanded in 2026)", "since": "2024-04-22"},
+      {"name": "Nadofaragene firadenovec", "use": "Gene therapy given into the bladder for BCG-unresponsive non-muscle-invasive bladder cancer with carcinoma in situ"},
+      {"name": "Gemcitabine intravesical system", "use": "Device placed in the bladder that slowly releases gemcitabine, for BCG-unresponsive non-muscle-invasive bladder cancer with carcinoma in situ"},
+      {"name": "Mitomycin (intravesical)", "use": "Chemotherapy given into the bladder, including a ready-to-use solution approved in 2025 for recurrent low-grade, intermediate-risk non-muscle-invasive disease"},
       {"name": "Gemcitabine + Cisplatin", "use": "Chemotherapy"},
-      {"name": "Enfortumab vedotin + Pembrolizumab", "use": "First-line advanced urothelial cancer"},
-      {"name": "Avelumab", "use": "Maintenance immunotherapy"},
-      {"name": "Erdafitinib", "use": "FGFR inhibitor for FGFR3-altered disease"}
+      {"name": "Enfortumab vedotin + Pembrolizumab", "use": "First treatment for advanced urothelial cancer, and since 2025 given before and after surgery for muscle-invasive bladder cancer"},
+      {"name": "Pembrolizumab", "use": "Immunotherapy for advanced urothelial cancer and for BCG-unresponsive non-muscle-invasive bladder cancer with carcinoma in situ; also given with enfortumab vedotin"},
+      {"name": "Nivolumab", "use": "Immunotherapy with cisplatin and gemcitabine as a first treatment for advanced urothelial cancer, and after surgery for cancers at high risk of coming back"},
+      {"name": "Durvalumab", "use": "Immunotherapy given with chemotherapy before and after surgery for muscle-invasive bladder cancer, and since 2026 with BCG for high-risk non-muscle-invasive disease"},
+      {"name": "Atezolizumab", "use": "Immunotherapy after bladder removal surgery when a blood test finds circulating tumor DNA (2026)"},
+      {"name": "Avelumab", "use": "Maintenance immunotherapy after first-line platinum chemotherapy for advanced urothelial cancer"},
+      {"name": "Erdafitinib", "use": "FGFR inhibitor pill for advanced urothelial cancer with an FGFR3 gene change after earlier treatment (full approval since 2024)"}
     ],
-    "query": "bladder cancer"
+    "approvals": [
+      {"date": "2026-10-14", "drug": "Nogapendekin alfa inbakicept (Anktiva) + BCG", "text": "Expanded indication: now for adults with BCG-unresponsive non-muscle-invasive bladder cancer, no longer limited to cancers with carcinoma in situ (CIS).", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-expanded-indication-nogapendekin-alfa-inbakicept-pmln-bcg-unresponsive-non-muscle", "source": "FDA"},
+      {"date": "2026-07-10", "drug": "Pembrolizumab (Keytruda) + enfortumab vedotin (Padcev)", "text": "Given before and after bladder removal surgery for adults with muscle-invasive bladder cancer, expanding the 2025 approval that covered only people who can't have cisplatin.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-pembrolizumab-or-pembrolizumab-and-berahyaluronidase-alfa-pmph-each-enfortumab-vedotin", "source": "FDA"},
+      {"date": "2026-05-28", "drug": "Durvalumab (Imfinzi) + BCG", "text": "Approved with BCG for adults with high-risk non-muscle-invasive bladder cancer who haven't had BCG before.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-durvalumab-combination-bacillus-calmette-guerin-high-risk-non-muscle-invasive-bladder", "source": "FDA"},
+      {"date": "2026-05-15", "drug": "Atezolizumab (Tecentriq)", "text": "Approved after bladder removal surgery for muscle-invasive bladder cancer when an FDA-authorized blood test finds circulating tumor DNA (molecular residual disease).", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-atezolizumab-adjuvant-treatment-muscle-invasive-bladder-cancer-patients-molecular", "source": "FDA"},
+      {"date": "2025-11-21", "drug": "Pembrolizumab (Keytruda) + enfortumab vedotin (Padcev)", "text": "Given before and after bladder removal surgery for adults with muscle-invasive bladder cancer who can't have cisplatin.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-pembrolizumab-enfortumab-vedotin-ejfv-muscle-invasive-bladder-cancer", "source": "FDA"},
+      {"date": "2025-09-09", "drug": "Gemcitabine intravesical system (Inlexzo)", "text": "A device placed in the bladder that releases gemcitabine, for BCG-unresponsive non-muscle-invasive bladder cancer with carcinoma in situ (CIS), with or without papillary tumors.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-gemcitabine-intravesical-system-non-muscle-invasive-bladder-cancer", "source": "FDA"},
+      {"date": "2025-06-12", "drug": "Mitomycin intravesical solution (Zusduri)", "text": "Approved for recurrent low-grade, intermediate-risk non-muscle-invasive bladder cancer.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-mitomycin-intravesical-solution-recurrent-low-grade-intermediate-risk-non-muscle", "source": "FDA"},
+      {"date": "2025-03-28", "drug": "Durvalumab (Imfinzi) + chemotherapy", "text": "Approved with gemcitabine and cisplatin before bladder removal surgery, then alone after it, for muscle-invasive bladder cancer.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-durvalumab-muscle-invasive-bladder-cancer", "source": "FDA"},
+      {"date": "2024-04-22", "drug": "Nogapendekin alfa inbakicept (Anktiva) + BCG", "text": "IL-15 receptor agonist given with BCG for BCG-unresponsive non-muscle-invasive bladder cancer with carcinoma in situ (CIS), with or without papillary tumors.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-nogapendekin-alfa-inbakicept-pmln-bcg-unresponsive-non-muscle-invasive-bladder-cancer", "source": "FDA"},
+      {"date": "2024-03-06", "drug": "Nivolumab (Opdivo) + chemotherapy", "text": "Approved with cisplatin and gemcitabine as a first treatment for unresectable or metastatic urothelial carcinoma.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-nivolumab-combination-cisplatin-and-gemcitabine-unresectable-or-metastatic-urothelial", "source": "FDA"},
+      {"date": "2024-01-19", "drug": "Erdafitinib (Balversa)", "text": "Full (traditional) approval for advanced urothelial carcinoma with an FGFR3 gene change that has grown after at least one earlier treatment.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-erdafitinib-locally-advanced-or-metastatic-urothelial-carcinoma", "source": "FDA"}
+    ],
+    "query": "bladder cancer",
+    "reviewed": "2026-11-12"
   },
   {
     "id": "kidney",
@@ -283,11 +508,16 @@
       {"name": "Pembrolizumab + Axitinib", "use": "First-line advanced RCC"},
       {"name": "Nivolumab + Ipilimumab", "use": "Combination immunotherapy"},
       {"name": "Nivolumab + Cabozantinib, Pembrolizumab + Lenvatinib", "use": "First-line combinations"},
-      {"name": "Pembrolizumab", "use": "Adjuvant therapy after surgery for high-risk RCC"},
-      {"name": "Belzutifan", "use": "HIF-2α inhibitor (VHL-associated and advanced RCC)"},
+      {"name": "Pembrolizumab", "use": "Adjuvant therapy after surgery for high-risk RCC, alone or, since 2026, with belzutifan"},
+      {"name": "Belzutifan", "use": "HIF-2α inhibitor pill for VHL-associated tumors and advanced RCC after earlier treatment; since 2026 also with lenvatinib after immunotherapy, and with pembrolizumab after surgery"},
       {"name": "Sunitinib / Pazopanib", "use": "VEGF-targeted therapy"}
     ],
-    "query": "renal cell carcinoma"
+    "approvals": [
+      {"date": "2026-09-24", "drug": "Belzutifan (Welireg) + lenvatinib", "text": "Approved with lenvatinib for advanced clear cell renal cell carcinoma that has grown after PD-1 or PD-L1 immunotherapy.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-belzutifan-combination-lenvatinib-advanced-renal-cell-carcinoma-clear-cell-component", "source": "FDA"},
+      {"date": "2026-06-12", "drug": "Belzutifan (Welireg) + pembrolizumab", "text": "Approved with pembrolizumab after kidney removal surgery for clear cell renal cell carcinoma at intermediate-high or high risk of coming back.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-belzutifan-pembrolizumab-adjuvant-treatment-renal-cell-carcinoma", "source": "FDA"}
+    ],
+    "query": "renal cell carcinoma",
+    "reviewed": "2026-11-12"
   },
   {
     "id": "liver",
@@ -295,19 +525,34 @@
     "group": "Solid tumors",
     "aliases": ["hepatocellular carcinoma", "HCC", "bile duct", "cholangiocarcinoma"],
     "nci": "https://www.cancer.gov/types/liver",
-    "summary": "Cancer that begins in the liver, most commonly hepatocellular carcinoma, often in people with chronic liver disease.",
+    "summary": "Cancer that begins in the liver, most commonly hepatocellular carcinoma, often in people with chronic liver disease. This page also covers bile duct cancer (cholangiocarcinoma).",
     "symptoms": ["Upper abdominal pain or swelling", "Jaundice", "Weight loss", "Fatigue"],
     "riskFactors": ["Chronic hepatitis B or C", "Cirrhosis", "Heavy alcohol use", "Fatty liver disease", "Aflatoxin exposure"],
     "screening": "Ultrasound surveillance (with or without AFP) is recommended for people with cirrhosis or chronic hepatitis B.",
-    "treatments": ["Surgery or liver transplant", "Ablation", "Embolization (TACE/TARE)", "Immunotherapy", "Targeted therapy"],
+    "treatments": ["Surgery or liver transplant", "Ablation", "Embolization (TACE/TARE)", "Chemotherapy", "Immunotherapy", "Targeted therapy"],
     "medicines": [
       {"name": "Atezolizumab + Bevacizumab", "use": "First-line advanced HCC"},
       {"name": "Durvalumab + Tremelimumab", "use": "First-line advanced HCC"},
+      {"name": "Nivolumab + Ipilimumab", "use": "Combination immunotherapy as a first treatment for advanced HCC (2025)"},
       {"name": "Sorafenib / Lenvatinib", "use": "Multikinase inhibitors"},
       {"name": "Regorafenib / Cabozantinib / Ramucirumab", "use": "Later-line options"},
+      {"name": "Durvalumab", "use": "Immunotherapy with gemcitabine and cisplatin for advanced biliary tract (bile duct and gallbladder) cancer"},
+      {"name": "Pembrolizumab", "use": "Immunotherapy with gemcitabine and cisplatin for advanced biliary tract cancer"},
+      {"name": "Ivosidenib", "use": "IDH1 inhibitor pill for previously treated cholangiocarcinoma with an IDH1 mutation"},
+      {"name": "Pemigatinib / Futibatinib", "use": "FGFR2 inhibitor pills for previously treated cholangiocarcinoma with an FGFR2 gene fusion or rearrangement"},
+      {"name": "Lirafugratinib", "use": "FGFR2 inhibitor pill for previously treated advanced cholangiocarcinoma with an FGFR2 gene fusion or rearrangement", "since": "2026-09-23"},
+      {"name": "Zanidatamab", "use": "HER2 bispecific antibody for previously treated HER2-positive (IHC 3+) biliary tract cancer (accelerated approval)", "since": "2024-11-20"},
+      {"name": "Zenocutuzumab", "use": "HER2/HER3 bispecific antibody for advanced cholangiocarcinoma with an NRG1 gene fusion after earlier treatment (2026)", "since": "2024-12-04"},
       {"name": "Hepatitis B vaccine", "use": "Prevention"}
     ],
-    "query": "hepatocellular carcinoma"
+    "approvals": [
+      {"date": "2026-09-23", "drug": "Lirafugratinib (Lyrfigtu)", "text": "Approved for previously treated, advanced cholangiocarcinoma (bile duct cancer) with an FGFR2 gene fusion or other rearrangement.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-lirafugratinib-previously-treated-unresectable-locally-advanced-or-metastatic", "source": "FDA"},
+      {"date": "2026-05-08", "drug": "Zenocutuzumab (Bizengri)", "text": "Approved for advanced cholangiocarcinoma (bile duct cancer) with an NRG1 gene fusion that has grown after earlier treatment.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-zenocutuzumab-zbco-advanced-unresectable-or-metastatic-cholangiocarcinoma", "source": "FDA"},
+      {"date": "2025-04-11", "drug": "Nivolumab (Opdivo) + ipilimumab (Yervoy)", "text": "Approved as a first treatment for unresectable or metastatic hepatocellular carcinoma (HCC).", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-nivolumab-ipilimumab-unresectable-or-metastatic-hepatocellular-carcinoma", "source": "FDA"},
+      {"date": "2024-11-20", "drug": "Zanidatamab (Ziihera)", "text": "Accelerated approval for previously treated, advanced HER2-positive (IHC 3+) biliary tract cancer.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-grants-accelerated-approval-zanidatamab-hrii-previously-treated-unresectable-or-metastatic-her2", "source": "FDA"}
+    ],
+    "query": "hepatocellular carcinoma",
+    "reviewed": "2026-11-12"
   },
   {
     "id": "stomach",
@@ -319,15 +564,27 @@
     "symptoms": ["Indigestion or heartburn", "Feeling full after small meals", "Nausea", "Unexplained weight loss", "Black stools"],
     "riskFactors": ["H. pylori infection", "Smoking", "Diets high in salted or smoked foods", "Family history"],
     "screening": "Endoscopic screening is used in some high-incidence countries (e.g., Japan, South Korea).",
-    "treatments": ["Surgery (gastrectomy)", "Chemotherapy", "Immunotherapy", "Targeted therapy (HER2, CLDN18.2)"],
+    "treatments": ["Surgery (gastrectomy)", "Chemotherapy", "Immunotherapy", "Targeted therapy (HER2, CLDN18.2)", "Antibody-drug conjugates"],
     "medicines": [
       {"name": "FOLFOX / CAPOX / FLOT", "use": "Chemotherapy regimens"},
-      {"name": "Nivolumab / Pembrolizumab", "use": "Immunotherapy combined with chemotherapy"},
-      {"name": "Trastuzumab", "use": "For HER2-positive disease"},
-      {"name": "Zolbetuximab", "use": "Claudin 18.2-targeted antibody"},
+      {"name": "Nivolumab", "use": "Immunotherapy with chemotherapy as a first treatment for HER2-negative advanced disease whose tumors express PD-L1 (CPS ≥1)"},
+      {"name": "Pembrolizumab", "use": "Immunotherapy with chemotherapy as a first treatment for advanced disease whose tumors express PD-L1 (CPS ≥1), with trastuzumab for HER2-positive tumors"},
+      {"name": "Tislelizumab", "use": "PD-1 immunotherapy with chemotherapy as a first treatment for HER2-negative, PD-L1-positive advanced disease, and with zanidatamab for HER2-positive disease", "since": "2024-03-13"},
+      {"name": "Durvalumab", "use": "Immunotherapy with FLOT chemotherapy before and after surgery for resectable gastric or gastroesophageal junction adenocarcinoma (2025)"},
+      {"name": "Trastuzumab", "use": "For HER2-positive disease, with chemotherapy"},
+      {"name": "Zanidatamab", "use": "HER2 bispecific antibody given with chemotherapy, with or without tislelizumab, as a first treatment for HER2-positive advanced gastric, gastroesophageal junction or esophageal adenocarcinoma (2026)", "since": "2024-11-20"},
+      {"name": "Trastuzumab deruxtecan", "use": "HER2-directed antibody-drug conjugate for HER2-positive advanced gastric or gastroesophageal junction adenocarcinoma after a trastuzumab-based treatment"},
+      {"name": "Zolbetuximab", "use": "Claudin 18.2-targeted antibody given with chemotherapy as a first treatment for HER2-negative, CLDN18.2-positive advanced disease", "since": "2024-10-18"},
       {"name": "Ramucirumab", "use": "Anti-VEGFR2, second line"}
     ],
-    "query": "gastric cancer"
+    "approvals": [
+      {"date": "2026-08-25", "drug": "Zanidatamab (Ziihera) + chemotherapy, with or without tislelizumab (Tevimbra)", "text": "Approved as a first treatment for HER2-positive advanced gastric, gastroesophageal junction or esophageal adenocarcinoma: with chemotherapy and tislelizumab, or with chemotherapy alone for HER2 IHC 3+ tumors.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-zanidatamab-hrii-and-tislelizumab-jsgr-her2-positive-gastric-gastroesophageal-junction", "source": "FDA"},
+      {"date": "2025-11-25", "drug": "Durvalumab (Imfinzi) + FLOT chemotherapy", "text": "Approved with FLOT chemotherapy before and after surgery, then alone, for resectable gastric or gastroesophageal junction adenocarcinoma.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-durvalumab-resectable-gastric-or-gastroesophageal-junction-adenocarcinoma", "source": "FDA"},
+      {"date": "2025-03-19", "drug": "Pembrolizumab (Keytruda) + trastuzumab + chemotherapy", "text": "Full (traditional) approval as a first treatment for HER2-positive advanced gastric or gastroesophageal junction adenocarcinoma whose tumors express PD-L1 (CPS ≥1).", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-pembrolizumab-her2-positive-gastric-or-gastroesophageal-junction-adenocarcinoma", "source": "FDA"},
+      {"date": "2024-10-18", "drug": "Zolbetuximab (Vyloy) + chemotherapy", "text": "Claudin 18.2-targeted antibody approved with chemotherapy as a first treatment for HER2-negative, CLDN18.2-positive advanced gastric or gastroesophageal junction adenocarcinoma.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-zolbetuximab-clzb-chemotherapy-gastric-or-gastroesophageal-junction-adenocarcinoma", "source": "FDA"}
+    ],
+    "query": "gastric cancer",
+    "reviewed": "2026-11-12"
   },
   {
     "id": "esophageal",
@@ -342,11 +599,17 @@
     "treatments": ["Surgery (esophagectomy)", "Chemoradiation", "Immunotherapy", "Targeted therapy"],
     "medicines": [
       {"name": "Carboplatin + Paclitaxel", "use": "Given with radiation before surgery"},
-      {"name": "Nivolumab", "use": "Adjuvant immunotherapy after surgery"},
-      {"name": "Pembrolizumab / Nivolumab + chemotherapy", "use": "Advanced disease"},
-      {"name": "Trastuzumab", "use": "HER2-positive adenocarcinoma"}
+      {"name": "Nivolumab", "use": "Immunotherapy after surgery when cancer remains after chemoradiation, and with chemotherapy (or with ipilimumab for squamous cell carcinoma) as a first treatment for advanced PD-L1-positive cancer"},
+      {"name": "Pembrolizumab", "use": "Immunotherapy with chemotherapy as a first treatment for advanced esophageal or gastroesophageal junction cancer whose tumors express PD-L1 (CPS ≥1)"},
+      {"name": "Tislelizumab", "use": "PD-1 immunotherapy for advanced squamous cell carcinoma: after earlier chemotherapy, or since 2025 with chemotherapy as a first treatment for PD-L1-positive tumors", "since": "2024-03-13"},
+      {"name": "Trastuzumab", "use": "HER2-positive adenocarcinoma"},
+      {"name": "Zanidatamab", "use": "HER2 bispecific antibody given with chemotherapy, with or without tislelizumab, as a first treatment for HER2-positive advanced esophageal, gastric or gastroesophageal junction adenocarcinoma (2026)", "since": "2024-11-20"}
     ],
-    "query": "esophageal cancer"
+    "approvals": [
+      {"date": "2026-08-25", "drug": "Zanidatamab (Ziihera) + chemotherapy, with or without tislelizumab (Tevimbra)", "text": "Approved as a first treatment for HER2-positive advanced gastric, gastroesophageal junction or esophageal adenocarcinoma: with chemotherapy and tislelizumab, or with chemotherapy alone for HER2 IHC 3+ tumors.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-zanidatamab-hrii-and-tislelizumab-jsgr-her2-positive-gastric-gastroesophageal-junction", "source": "FDA"}
+    ],
+    "query": "esophageal cancer",
+    "reviewed": "2026-11-12"
   },
   {
     "id": "head-neck",
@@ -362,10 +625,18 @@
     "medicines": [
       {"name": "Cisplatin", "use": "Given with radiation"},
       {"name": "Cetuximab", "use": "Anti-EGFR antibody"},
-      {"name": "Pembrolizumab / Nivolumab", "use": "Immunotherapy for recurrent or metastatic disease"},
+      {"name": "Pembrolizumab", "use": "Immunotherapy for recurrent or metastatic disease (alone or with chemotherapy), and since 2025 before and after surgery for resectable locally advanced cancer whose tumors express PD-L1 (CPS ≥1)"},
+      {"name": "Nivolumab", "use": "Immunotherapy for recurrent or metastatic disease that has grown after platinum chemotherapy"},
+      {"name": "Toripalimab", "use": "PD-1 immunotherapy for recurrent or metastatic nasopharyngeal cancer: with chemotherapy as a first treatment, or alone after platinum chemotherapy", "since": "2023-10-27"},
+      {"name": "Penpulimab", "use": "PD-1 immunotherapy with chemotherapy as a first treatment for recurrent or metastatic nasopharyngeal cancer", "since": "2025-04-23"},
       {"name": "HPV vaccine", "use": "Prevention of HPV-related cancers"}
     ],
-    "query": "head and neck squamous cell carcinoma"
+    "approvals": [
+      {"date": "2025-06-12", "drug": "Pembrolizumab (Keytruda)", "text": "Approved before and after surgery for resectable locally advanced head and neck squamous cell carcinoma whose tumors express PD-L1 (CPS ≥1): alone before surgery, with radiation (with or without cisplatin) after surgery, then alone.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-neoadjuvant-and-adjuvant-pembrolizumab-resectable-locally-advanced-head-and-neck", "source": "FDA"},
+      {"date": "2025-04-23", "drug": "Penpulimab-kcqx", "text": "PD-1 immunotherapy approved with cisplatin or carboplatin and gemcitabine as a first treatment for recurrent or metastatic non-keratinizing nasopharyngeal carcinoma.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-penpulimab-kcqx-non-keratinizing-nasopharyngeal-carcinoma", "source": "FDA"}
+    ],
+    "query": "head and neck squamous cell carcinoma",
+    "reviewed": "2026-11-12"
   },
   {
     "id": "thyroid",
@@ -382,10 +653,17 @@
       {"name": "Radioactive iodine (I-131)", "use": "Ablation of remaining thyroid tissue"},
       {"name": "Levothyroxine", "use": "Hormone replacement / TSH suppression"},
       {"name": "Lenvatinib / Sorafenib", "use": "For radioactive iodine-refractory disease"},
-      {"name": "Selpercatinib / Pralsetinib", "use": "RET inhibitors"},
+      {"name": "Cabozantinib", "use": "For medullary thyroid cancer, and for radioactive iodine-refractory differentiated thyroid cancer that has grown after earlier VEGF-targeted treatment (age 12 and older)"},
+      {"name": "Selpercatinib", "use": "RET inhibitor pill for RET-mutant medullary thyroid cancer and RET fusion-positive thyroid cancer, in adults and children 2 and older (full approvals in 2024)"},
+      {"name": "Pralsetinib", "use": "RET inhibitor for RET fusion-positive thyroid cancer that doesn't respond to radioactive iodine, age 12 and older (accelerated approval)"},
       {"name": "Dabrafenib + Trametinib", "use": "BRAF V600E-mutated anaplastic thyroid cancer"}
     ],
-    "query": "thyroid cancer"
+    "approvals": [
+      {"date": "2024-09-27", "drug": "Selpercatinib (Retevmo)", "text": "Full (traditional) approval for advanced or metastatic medullary thyroid cancer with a RET mutation that needs systemic treatment, in adults and children 2 and older.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-selpercatinib-medullary-thyroid-cancer-ret-mutation", "source": "FDA"},
+      {"date": "2024-06-12", "drug": "Selpercatinib (Retevmo)", "text": "Full (traditional) approval for advanced or metastatic RET fusion-positive thyroid cancer that needs systemic treatment and doesn't respond to radioactive iodine (when that is appropriate), in adults and children 2 and older.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-selpercatinib-ret-fusion-positive-thyroid-cancer", "source": "FDA"}
+    ],
+    "query": "thyroid cancer",
+    "reviewed": "2026-11-12"
   },
   {
     "id": "brain",
@@ -402,9 +680,18 @@
       {"name": "Temozolomide", "use": "Chemotherapy with radiation for glioblastoma"},
       {"name": "Lomustine", "use": "Chemotherapy"},
       {"name": "Bevacizumab", "use": "For recurrent glioblastoma"},
-      {"name": "Vorasidenib", "use": "IDH1/2 inhibitor for some grade 2 gliomas"}
+      {"name": "Vorasidenib", "use": "IDH1/IDH2 inhibitor for grade 2 astrocytoma or oligodendroglioma with an IDH mutation, after surgery (age 12+)", "since": "2024-08-06"},
+      {"name": "Dordaviprone", "use": "For H3 K27M-mutant diffuse midline glioma that has grown after earlier treatment, age 1 and older (accelerated approval)", "since": "2025-08-06"},
+      {"name": "Tovorafenib", "use": "For relapsed or refractory BRAF-altered low-grade glioma in children 6 months and older (accelerated approval)", "since": "2024-04-23"},
+      {"name": "Dabrafenib + Trametinib", "use": "For BRAF V600E low-grade glioma in children 1 year and older who need medicine treatment"}
     ],
-    "query": "glioblastoma OR glioma"
+    "approvals": [
+      {"date": "2025-08-06", "drug": "Dordaviprone (Modeyso)", "text": "Accelerated approval for diffuse midline glioma with an H3 K27M mutation that has grown after earlier treatment, in adults and children 1 year and older.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-grants-accelerated-approval-dordaviprone-diffuse-midline-glioma", "source": "FDA"},
+      {"date": "2024-08-06", "drug": "Vorasidenib (Voranigo)", "text": "For grade 2 astrocytoma or oligodendroglioma with an IDH1 or IDH2 mutation after surgery, in adults and children 12 and older.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-vorasidenib-grade-2-astrocytoma-or-oligodendroglioma-susceptible-idh1-or-idh2-mutation", "source": "FDA"},
+      {"date": "2024-04-23", "drug": "Tovorafenib (Ojemda)", "text": "Accelerated approval for relapsed or refractory pediatric low-grade glioma with a BRAF gene change, in children 6 months and older.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-grants-accelerated-approval-tovorafenib-patients-relapsed-or-refractory-braf-altered-pediatric", "source": "FDA"}
+    ],
+    "query": "glioblastoma OR glioma",
+    "reviewed": "2026-11-12"
   },
   {
     "id": "sarcoma",
@@ -416,14 +703,24 @@
     "symptoms": ["Painless lump that grows", "Bone pain or swelling", "Abdominal pain (GIST)"],
     "riskFactors": ["Prior radiation", "Inherited syndromes (e.g., Li-Fraumeni)", "Chemical exposures"],
     "screening": "No routine screening.",
-    "treatments": ["Surgery", "Radiation therapy", "Chemotherapy", "Targeted therapy"],
+    "treatments": ["Surgery", "Radiation therapy", "Chemotherapy", "Targeted therapy", "Engineered T-cell therapy (some synovial sarcomas)"],
     "medicines": [
       {"name": "Doxorubicin / Ifosfamide", "use": "Chemotherapy"},
       {"name": "Imatinib", "use": "KIT inhibitor for GIST"},
       {"name": "Pazopanib", "use": "For some advanced soft tissue sarcomas"},
-      {"name": "Trabectedin", "use": "For liposarcoma or leiomyosarcoma"}
+      {"name": "Trabectedin", "use": "For liposarcoma or leiomyosarcoma"},
+      {"name": "Afamitresgene autoleucel", "use": "Engineered T-cell therapy for advanced synovial sarcoma after chemotherapy, for people with a matching HLA type whose tumor has the MAGE-A4 protein (accelerated approval)", "since": "2024-08-02"},
+      {"name": "Larotrectinib / Entrectinib / Repotrectinib", "use": "For solid tumors with an NTRK gene fusion, which includes some sarcomas"},
+      {"name": "Nirogacestat", "use": "For growing desmoid tumors (a related soft-tissue tumor) that need treatment", "since": "2023-11-27"},
+      {"name": "Vimseltinib", "use": "For tenosynovial giant cell tumor (a rare joint tumor) that causes symptoms when surgery isn't a good option", "since": "2025-02-14"}
     ],
-    "query": "sarcoma"
+    "approvals": [
+      {"date": "2025-02-14", "drug": "Vimseltinib (Romvimza)", "text": "For adults with tenosynovial giant cell tumor (a rare, usually non-cancerous joint tumor) that causes symptoms when surgery isn't a good option.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-vimseltinib-symptomatic-tenosynovial-giant-cell-tumor", "source": "FDA"},
+      {"date": "2024-08-02", "drug": "Afamitresgene autoleucel (Tecelra)", "text": "Accelerated approval: engineered T-cell therapy for adults with advanced synovial sarcoma after chemotherapy, whose immune (HLA) type matches and whose tumor has the MAGE-A4 protein.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-grants-accelerated-approval-afamitresgene-autoleucel-unresectable-or-metastatic-synovial-sarcoma", "source": "FDA"},
+      {"date": "2024-06-13", "drug": "Repotrectinib (Augtyro)", "text": "Accelerated approval for adults and children 12 and older with solid tumors that have an NTRK gene fusion, which includes some sarcomas.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-grants-accelerated-approval-repotrectinib-adult-and-pediatric-patients-ntrk-gene-fusion-positive", "source": "FDA"}
+    ],
+    "query": "sarcoma",
+    "reviewed": "2026-11-12"
   },
   {
     "id": "childhood",
@@ -438,9 +735,28 @@
     "treatments": ["Treatment at specialized pediatric cancer centers", "Chemotherapy", "Surgery", "Radiation therapy", "Immunotherapy and CAR T-cell therapy", "Clinical trials"],
     "medicines": [
       {"name": "Dinutuximab", "use": "Anti-GD2 antibody for high-risk neuroblastoma"},
+      {"name": "Naxitamab", "use": "Anti-GD2 antibody with GM-CSF for relapsed or refractory high-risk neuroblastoma in bone or bone marrow, age 1 and older (accelerated approval)"},
+      {"name": "Eflornithine", "use": "Maintenance medicine that lowers the chance of high-risk neuroblastoma coming back after anti-GD2 immunotherapy", "since": "2023-12-13"},
       {"name": "Tisagenlecleucel", "use": "CAR T-cell therapy for relapsed B-cell ALL"},
+      {"name": "Blinatumomab", "use": "Bispecific antibody for B-cell ALL in children 1 month and older, including as consolidation"},
+      {"name": "Inotuzumab ozogamicin", "use": "Antibody-drug conjugate for relapsed or refractory B-cell ALL in children 1 year and older"},
+      {"name": "Revumenib", "use": "Menin inhibitor for relapsed or refractory acute leukemia with a KMT2A gene change or an NPM1 mutation, age 1 and older", "since": "2024-11-15"},
+      {"name": "Tovorafenib", "use": "For relapsed or refractory BRAF-altered low-grade glioma in children 6 months and older (accelerated approval)", "since": "2024-04-23"},
+      {"name": "Dabrafenib + Trametinib", "use": "For BRAF V600E low-grade glioma in children 1 year and older who need medicine treatment"},
+      {"name": "Dordaviprone", "use": "For H3 K27M-mutant diffuse midline glioma that has grown after earlier treatment, age 1 and older (accelerated approval)", "since": "2025-08-06"},
+      {"name": "Mirdametinib", "use": "MEK inhibitor for NF1 plexiform neurofibromas (non-cancerous nerve tumors) that cause symptoms and can't be fully removed, age 2 and older", "since": "2025-02-11"},
       {"name": "Vincristine / Dactinomycin", "use": "Chemotherapy (e.g., Wilms tumor)"}
     ],
-    "query": "pediatric cancer"
+    "approvals": [
+      {"date": "2025-10-24", "drug": "Revumenib (Revuforj)", "text": "Expanded to relapsed or refractory acute myeloid leukemia (AML) with an NPM1 mutation, in adults and children 1 year and older who have no satisfactory alternative treatments.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-revumenib-relapsed-or-refractory-acute-myeloid-leukemia-susceptible-npm1-mutation", "source": "FDA"},
+      {"date": "2025-08-06", "drug": "Dordaviprone (Modeyso)", "text": "Accelerated approval for diffuse midline glioma with an H3 K27M mutation that has grown after earlier treatment, in adults and children 1 year and older.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-grants-accelerated-approval-dordaviprone-diffuse-midline-glioma", "source": "FDA"},
+      {"date": "2025-02-11", "drug": "Mirdametinib (Gomekli)", "text": "For adults and children 2 and older with NF1-related plexiform neurofibromas (non-cancerous nerve tumors) that cause symptoms and can't be fully removed by surgery.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-mirdametinib-adult-and-pediatric-patients-neurofibromatosis-type-1-who-have-symptomatic", "source": "FDA"},
+      {"date": "2024-11-15", "drug": "Revumenib (Revuforj)", "text": "First menin inhibitor, for relapsed or refractory acute leukemia with a KMT2A gene change in adults and children 1 year and older.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-revumenib-relapsed-or-refractory-acute-leukemia-kmt2a-translocation", "source": "FDA"},
+      {"date": "2024-06-14", "drug": "Blinatumomab (Blincyto)", "text": "Approved as consolidation treatment for CD19-positive, Philadelphia chromosome-negative B-cell ALL in adults and children 1 month and older.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-blinatumomab-consolidation-cd19-positive-philadelphia-chromosome-negative-b-cell", "source": "FDA"},
+      {"date": "2024-04-23", "drug": "Tovorafenib (Ojemda)", "text": "Accelerated approval for relapsed or refractory pediatric low-grade glioma with a BRAF gene change, in children 6 months and older.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-grants-accelerated-approval-tovorafenib-patients-relapsed-or-refractory-braf-altered-pediatric", "source": "FDA"},
+      {"date": "2024-03-06", "drug": "Inotuzumab ozogamicin (Besponsa)", "text": "Approved for children 1 year and older with relapsed or refractory CD22-positive B-cell precursor ALL.", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-inotuzumab-ozogamicin-pediatric-patients-acute-lymphoblastic-leukemia", "source": "FDA"}
+    ],
+    "query": "pediatric cancer",
+    "reviewed": "2026-11-12"
   }
 ]

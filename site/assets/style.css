@@ -432,7 +432,7 @@ button.tag { font: inherit; font-size: .74rem; font-weight: 650; cursor: pointer
 .filter .count { opacity: .65; margin-left: .3rem; font-weight: 600; }
 
 /* facts & sources */
-.facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr)); gap: 1rem; }
+.facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap: 1rem; }
 .fact {
   position: relative; overflow: hidden; padding: 1.35rem 1.35rem 1.15rem; border-radius: var(--radius); background: var(--surface); border: 1px solid var(--border); box-shadow: var(--shadow-1);
 }

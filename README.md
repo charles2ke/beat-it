@@ -20,9 +20,9 @@ Beat It is a free, fast, searchable website about cancer. It covers symptoms, ri
   - Every search links to live results on PubMed, ClinicalTrials.gov, cancer.gov and WHO.
 - **A page for every cancer type.** Each page has an overview, symptoms, risk factors, screening, treatment options and example medicines. Recently approved medicines get a **New** badge.
   - Pages also include an approvals timeline, the latest PubMed papers, recruiting trials and tagged news, with section navigation.
-- **What's new.** Recent FDA oncology approvals, each linked to the official announcement.
+- **What's new.** FDA oncology approvals since 2024, each linked to the official announcement. Approvals that cover several cancer types are shown once.
 - **News labelled by source.** Stories are marked **Official** (health agencies and cancer organisations such as WHO, NCI, FDA and Cancer Research UK), **Science** (research news services and journals) or **Press**. They can be filtered, and press coverage is capped so it never crowds out official sources.
-- **Key facts.** Global cancer statistics from WHO / IARC (GLOBOCAN 2022), each linked to its source.
+- **Key facts.** Global cancer statistics from WHO / IARC (GLOBOCAN 2024, released July 2026), each linked to its source.
 - **Design.**
   - Light and dark themes, responsive from 320 px phones to wide desktops.
   - Accessible: skip link, ARIA combobox search, visible focus, and respects reduced-motion settings.
@@ -44,14 +44,21 @@ Beat It is a free, fast, searchable website about cancer. It covers symptoms, ri
 
 | Content | Source | Updated |
 | --- | --- | --- |
-| Cancer type overviews, symptoms, screening, treatments | [NCI](https://www.cancer.gov/types), [WHO](https://www.who.int/health-topics/cancer), [USPSTF](https://www.uspreventiveservicestaskforce.org/) | Reviewed by hand (`reviewed` date per type) |
+| Cancer type overviews, symptoms, screening, treatments | [NCI](https://www.cancer.gov/types), [WHO](https://www.who.int/health-topics/cancer), [USPSTF](https://www.uspreventiveservicestaskforce.org/), [HRSA](https://www.hrsa.gov/womens-guidelines) | Reviewed by hand (`reviewed` date per type) |
 | Medicines and new approvals | [FDA oncology approvals](https://www.fda.gov/drugs/resources-information-approved-drugs/oncology-cancer-hematologic-malignancies-approval-notifications) | Reviewed by hand |
-| Key facts | [WHO / IARC GLOBOCAN 2022](https://gco.iarc.who.int/) | Reviewed by hand |
+| Key facts | [IARC / WHO GLOBOCAN 2024](https://gco.iarc.who.int/today), [WHO cancer fact sheet](https://www.who.int/news-room/fact-sheets/detail/cancer) | Reviewed by hand |
 | Latest research | [PubMed](https://pubmed.ncbi.nlm.nih.gov/) (NCBI E-utilities) | Weekly, automatic |
 | Recruiting trials | [ClinicalTrials.gov](https://clinicaltrials.gov/) API v2 | Weekly, automatic |
-| News | RSS feeds from WHO, ScienceDaily, Medical Xpress and Google News, filtered for cancer topics and tagged by cancer type | Weekly, automatic |
+| News | RSS feeds from NCI, IARC, WHO, ScienceDaily, Medical Xpress and Google News, filtered for cancer topics and tagged by cancer type | Weekly, automatic |
 
 If a source is temporarily unavailable, the updater keeps the last good data for that source (news is kept per feed), so the site never goes blank.
+
+### Latest content review (12 November 2026)
+
+- **Approvals.** 134 FDA oncology approvals from 2024 onward, across 22 cancer types. Each was checked against the text of FDA's approval notice: date, wording, and accelerated or full approval. The notices were read from an archived copy covering announcements up to **26 October 2026**, so later approvals will be added at the next review. Approvals for a new formulation only (such as an under-the-skin version of an existing medicine) are not listed.
+- **Screening.** USPSTF recommendations as currently published (breast 2024, skin 2023, lung 2021, colorectal 2021, prostate 2018) and HRSA's 2026 women's preventive services guidelines for cervical screening. Pages also cover newer options: self-collected HPV tests and blood tests for colorectal screening.
+- **Key facts.** GLOBOCAN 2024 (IARC with the American Cancer Society, July 2026) and the WHO cancer fact sheet.
+- **Links.** `scripts/check_links.py` requests every source link in the curated data. CI runs it on each pull request and lists broken or unverified links in the job summary.
 
 ## Project layout
 
@@ -63,12 +70,13 @@ If a source is temporarily unavailable, the updater keeps the last good data for
 | `site/data/facts.json` | Key global statistics with sources |
 | `site/data/updates.json` | Research, trials and news, **generated weekly**; don't edit by hand |
 | `scripts/update_data.py` | Fetches the latest data (Python standard library only) |
+| `scripts/check_links.py` | Checks that every source link in the curated data still works |
 | `scripts/build.js` | Builds and prerenders the deployable site into `_site/`, plus `sitemap.xml` |
 | `scripts/serve.py` | Local static server (dev mode, or GitHub Pages-like preview) |
 | `scripts/generate-images.js` | Regenerates the PNG icons and social share image |
 | `tests/` | Playwright end-to-end tests (`site.spec.js`, `prerender.spec.js`) |
 | `.github/workflows/pages.yml` | Weekly data refresh, build and deploy to GitHub Pages |
-| `.github/workflows/ci.yml` | PR checks: unit tests, live-source smoke test, build, Playwright |
+| `.github/workflows/ci.yml` | PR checks: unit tests, live-source smoke test, source link check, build, Playwright |
 
 ## Run locally
 
@@ -88,7 +96,8 @@ npm run images         # regenerate icons and the social share image
 ## Tests
 
 ```bash
-npm run test:py        # offline unit tests for the data updater
+npm run test:py        # offline unit tests for the data updater and link checker
+python3 scripts/check_links.py   # check every source link in site/data (needs internet)
 npm test               # build, then Playwright on desktop, mobile and the prerendered site
 ```
 
@@ -113,7 +122,8 @@ One-time setup: in **Settings → Pages**, set **Source** to **GitHub Actions**.
 | `id`, `name`, `group`, `aliases` | Identity, page URL (`type/<id>/`), group (`Solid tumors`, `Blood cancers`, `Childhood cancers`) and search synonyms |
 | `summary`, `symptoms`, `riskFactors`, `screening`, `treatments` | Overview content |
 | `medicines` | `[{ name, use, since? }]`. `since` (ISO date of FDA approval) shows a **New** badge for 24 months |
-| `approvals` | Optional `[{ date, drug, text, url, source }]` timeline, also shown under **What's new** |
+| `screeningSource` | Optional `{ name, url }` of the screening guideline, shown under the screening text |
+| `approvals` | Optional `[{ date, drug, text, url, source }]` timeline, also shown under **What's new**. Approvals shared by several types are merged by `url`, so keep their `drug` and `text` identical |
 | `nci` | Link to the NCI page for the cancer type |
 | `query` | PubMed / ClinicalTrials.gov search query used by the updater |
 | `reviewed` | Optional ISO date the content was last checked against its sources |

@@ -49,6 +49,8 @@ MEDIA_MAX = 20  # press stories must not crowd out health agencies and science n
 # de-duplication. Category None marks an aggregator: each item is classified by
 # its original publisher instead.
 NEWS_FEEDS = [
+    ("NCI", "https://www.cancer.gov/publishedcontent/rss/syndication/rss/ncinewsreleases.rss", "official"),
+    ("IARC", "https://www.iarc.who.int/feed/?post_type=news-events", "official"),
     ("WHO", "https://www.who.int/rss-feeds/news-english.xml", "official"),
     ("ScienceDaily", "https://www.sciencedaily.com/rss/health_medicine/cancer.xml", "research"),
     ("Medical Xpress", "https://medicalxpress.com/rss-feed/cancer-news/", "research"),
