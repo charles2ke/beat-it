@@ -96,7 +96,8 @@
   }
 
   // ---------------------------------------------------------------- formatting
-  const plural = (n, word, many) => n + " " + (n === 1 ? word : many || word + "s");
+  const noun = (n, word, many) => (n === 1 ? word : many || word + "s");
+  const plural = (n, word, many) => n + " " + noun(n, word, many);
   const firstSentence = (s) => { const m = String(s || "").match(/^.*?[.!?](?=\s|$)/); return m ? m[0] : String(s || ""); };
   const shortName = (c) => c.name.replace(/\s*\(.*?\)\s*/g, " ").replace(/\s+cancers?$/i, "").trim();
   const slug = (s) => String(s).toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "").slice(0, 60);
@@ -557,14 +558,14 @@
     const groups = [...new Set(state.cancers.map((c) => c.group))];
     const recent = state.approvals.filter((a) => isRecent(a.date, 24));
     const stats = [
-      ["grid", state.cancers.length, "cancer types explained"],
-      ["sparkles", recent.length, "recent FDA approvals"],
-      ["book", t.papers, "new research papers"],
-      ["flask", t.trials, "recruiting trials"],
+      ["grid", state.cancers.length, "cancer type explained", "cancer types explained"],
+      ["sparkles", recent.length, "recent FDA approval"],
+      ["book", t.papers, "new research paper"],
+      ["flask", t.trials, "recruiting trial"],
     ].filter((s, i) => i !== 1 || s[1] > 0);
-    if (stats.length < 4) stats.push(["news", t.news, "news stories"]);
+    if (stats.length < 4) stats.push(["news", t.news, "news story", "news stories"]);
     const parts = [
-      el("div", { class: "stats" }, stats.map(([ic, n, label]) => el("div", { class: "stat reveal" }, icon(ic), el("b", null, n.toLocaleString("en-US")), el("span", null, label)))),
+      el("div", { class: "stats" }, stats.map(([ic, n, word, many]) => el("div", { class: "stat reveal" }, icon(ic), el("b", null, n.toLocaleString("en-US")), el("span", null, noun(n, word, many))))),
       state.updates.generatedAt
         ? el("p", { class: "updated-chip" }, "Research, trials and news updated " + fmtDate(state.updates.generatedAt) + " · refreshed every Monday")
         : pendingNotice(),
@@ -626,7 +627,7 @@
       ["research", "Research", "book"], ["trials", "Trials", "flask"], ["news", "News", "news"]].filter(Boolean);
     const sec = (id, title, ic, ...content) => el("section", { class: "type-section", id, "aria-labelledby": id + "-h" },
       el("h2", { id: id + "-h" }, el("span", { class: "card-ico" }, icon(ic)), title), ...content);
-    const quick = (n, label) => el("span", null, el("b", null, n), " " + label);
+    const quick = (n, word, many) => el("span", null, el("b", null, n), " " + noun(n, word, many));
 
     v.replaceChildren(el("article", { class: "type-page", "data-accent": c.id },
       el("header", { class: "type-header reveal" },
@@ -643,9 +644,9 @@
           extLink(trialsSearch(c.query), "Find recruiting trials", "btn", true),
           extLink(NCI_DRUGS, "NCI drug lists", "btn", true)),
         el("div", { class: "quick-stats" },
-          quick(c.medicines.length, "medicine groups"),
-          approvals.length ? quick(approvals.length, approvals.length === 1 ? "recent approval" : "recent approvals") : null,
-          quick(research.length, "new papers"), quick(trials.length, "recruiting trials"), quick(news.length, "news stories"))),
+          quick(c.medicines.length, "medicine group"),
+          approvals.length ? quick(approvals.length, "recent approval") : null,
+          quick(research.length, "new paper"), quick(trials.length, "recruiting trial"), quick(news.length, "news story", "news stories"))),
       el("nav", { class: "subnav", "aria-label": "On this page" },
         el("ul", null, tabs.map(([id, label, ic]) => el("li", null, el("a", { href: typeHref(c.id, id), "data-spy": id }, icon(ic), label))))),
       sec("overview", "Overview", "activity", el("div", { class: "two-col" },
