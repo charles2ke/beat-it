@@ -20,7 +20,12 @@ Beat It is a free, fast, searchable website about cancer. It covers symptoms, ri
   - Every search links to live results on PubMed, ClinicalTrials.gov, cancer.gov and WHO.
 - **A page for every cancer type.** Each page has an overview, symptoms, risk factors, screening, treatment options and example medicines. Recently approved medicines get a **New** badge.
   - Pages also include an approvals timeline, the latest PubMed papers, recruiting trials and tagged news, with section navigation.
+  - Papers are labelled by study type (guideline, meta-analysis, randomized trial…) and link to free full text when PubMed Central has it.
+  - Trials show who can join (ages, and sex when only one is eligible) and the countries where they run, with the number of sites.
+  - **Share** and **Print** buttons. Printed pages use a clean light layout and include the address of each paper and trial.
 - **What's new.** FDA oncology approvals since 2024, each linked to the official announcement. Approvals that cover several cancer types are shown once.
+- **Approval feeds.** Follow new approvals in any feed reader: [`feed.xml`](https://charles2ke.github.io/beat-it/feed.xml) for all cancer types, or `type/<id>/feed.xml` for one (e.g. [lung](https://charles2ke.github.io/beat-it/type/lung/feed.xml)). The feeds are Atom and list up to 50 approvals each.
+- **Helpful 404 page.** A mistyped address such as `/type/lungs/` suggests the pages it probably meant.
 - **News labelled by source.** Stories are marked **Official** (health agencies and cancer organisations such as WHO, NCI, FDA and Cancer Research UK), **Science** (research news services and journals) or **Press**. They can be filtered, and press coverage is capped so it never crowds out official sources.
 - **Key facts.** Global cancer statistics from WHO / IARC (GLOBOCAN 2024, released July 2026), each linked to its source.
 - **Design.**
@@ -51,6 +56,9 @@ Beat It is a free, fast, searchable website about cancer. It covers symptoms, ri
 | Recruiting trials | [ClinicalTrials.gov](https://clinicaltrials.gov/) API v2 | Weekly, automatic |
 | News | RSS feeds from NCI, IARC, WHO, ScienceDaily, Medical Xpress and Google News, filtered for cancer topics and tagged by cancer type | Weekly, automatic |
 
+- **Research** lists the most relevant papers added to PubMed in the last 30 days (up to 6 per cancer type, newest first). Corrections, retraction notices, commentary and preprints are left out.
+- **Trials** are recruiting interventional studies, which test a treatment or another intervention such as screening, most recently updated first (up to 5 per cancer type). Observational studies are left out.
+
 If a source is temporarily unavailable, the updater keeps the last good data for that source (news is kept per feed), so the site never goes blank.
 
 ### Latest content review (12 November 2026)
@@ -71,7 +79,7 @@ If a source is temporarily unavailable, the updater keeps the last good data for
 | `site/data/updates.json` | Research, trials and news, **generated weekly**; don't edit by hand |
 | `scripts/update_data.py` | Fetches the latest data (Python standard library only) |
 | `scripts/check_links.py` | Checks that every source link in the curated data still works |
-| `scripts/build.js` | Builds and prerenders the deployable site into `_site/`, plus `sitemap.xml` |
+| `scripts/build.js` | Builds and prerenders the deployable site into `_site/`, plus `sitemap.xml` and the Atom approval feeds |
 | `scripts/serve.py` | Local static server (dev mode, or GitHub Pages-like preview) |
 | `scripts/generate-images.js` | Regenerates the PNG icons and social share image |
 | `tests/` | Playwright end-to-end tests (`site.spec.js`, `prerender.spec.js`) |
@@ -127,6 +135,13 @@ One-time setup: in **Settings → Pages**, set **Source** to **GitHub Actions**.
 | `nci` | Link to the NCI page for the cancer type |
 | `query` | PubMed / ClinicalTrials.gov search query used by the updater |
 | `reviewed` | Optional ISO date the content was last checked against its sources |
+
+`site/data/updates.json` is written by the updater. `byType.<id>` holds the research and trials for each cancer type, and `news` holds the tagged stories:
+
+| Field | Description |
+| --- | --- |
+| `research` | `[{ title, url, journal, date, kind, pmc, pmid }]`. `date` is an ISO date (`YYYY-MM` when PubMed gives no day) and never in the future. `kind` is the study type, e.g. `Randomized trial`. `pmc` is the PubMed Central ID for free full text. Both are `""` when unknown |
+| `trials` | `[{ title, url, nctId, status, phase, updated, ages, sex, countries, sites }]`. `ages` reads like `18 years and older` and `sex` is `Female` or `Male`; `""` means no limit. `countries` lists the countries with the most sites first, and `sites` counts all study locations |
 
 ## Contributing content
 

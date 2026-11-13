@@ -1,7 +1,8 @@
 #!/usr/bin/env node
 // Builds the deployable site into _site/: copies site/, points <base> and absolute URLs at the deploy
 // location, prerenders every page to static HTML with headless Chromium (so search engines and no-JS
-// visitors get real content), and writes 404.html, sitemap.xml and robots.txt.
+// visitors get real content), and writes 404.html, sitemap.xml, robots.txt and Atom feeds of new FDA
+// approvals (feed.xml for the whole site, type/<id>/feed.xml per cancer type).
 //
 //   SITE_URL=https://example.org/path/ node scripts/build.js
 "use strict";
@@ -71,6 +72,7 @@ async function prerender(browser, origin, route) {
       const d = document.documentElement;
       d.removeAttribute("data-ready");
       d.removeAttribute("data-pending");
+      d.removeAttribute("data-js"); // set again by theme.js when the visitor has JavaScript
       document.getElementById("view").classList.remove("animate");
       document.getElementById("topbar").classList.remove("scrolled");
       const status = document.getElementById("status");
@@ -97,6 +99,71 @@ function write(rel, content) {
   fs.writeFileSync(file, content);
 }
 
+// ---------------------------------------------------------------- Atom feeds of new FDA approvals
+const FEED_MAX = 50;
+const xml = (s) => String(s == null ? "" : s)
+  .replace(/[^\t\n\r\u0020-\uD7FF\uE000-\uFFFD\u{10000}-\u{10FFFF}]/gu, "") // not allowed in XML 1.0
+  .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+const atomDate = (d) => (/^\d{4}-\d{2}-\d{2}$/.test(d || "") ? d + "T00:00:00Z" : "");
+
+// Like app.js: an approval listed for several cancer types is a single entry. Newest first.
+function mergedApprovals(cancers) {
+  const merged = new Map();
+  for (const c of cancers) {
+    for (const a of c.approvals || []) {
+      const key = a.url || a.date + " " + String(a.drug).toLowerCase();
+      if (merged.has(key)) merged.get(key).types.push(c.id);
+      else merged.set(key, Object.assign({ types: [c.id] }, a));
+    }
+  }
+  return [...merged.values()].filter((a) => atomDate(a.date)).sort((a, b) => b.date.localeCompare(a.date));
+}
+
+function atomFeed({ rel, title, subtitle, page, approvals, names, fallbackDate }) {
+  const items = approvals.slice(0, FEED_MAX);
+  const entries = items.map((a) => [
+    "  <entry>",
+    `    <id>${xml(a.url || `${page}#${a.date}-${String(a.drug).toLowerCase().replace(/[^a-z0-9]+/g, "-")}`)}</id>`,
+    `    <title>${xml(`${a.drug} – ${a.types.map((id) => names[id]).join(", ")}`)}</title>`,
+    `    <link rel="alternate" type="text/html" href="${xml(a.url || page)}"/>`,
+    `    <published>${atomDate(a.date)}</published>`,
+    `    <updated>${atomDate(a.date)}</updated>`,
+    `    <summary>${xml(a.text)}</summary>`,
+    ...a.types.map((id) => `    <category term="${xml(id)}" label="${xml(names[id])}"/>`),
+    "  </entry>",
+  ].join("\n"));
+  return [
+    '<?xml version="1.0" encoding="utf-8"?>',
+    '<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">',
+    `  <id>${xml(SITE_URL + rel)}</id>`,
+    `  <title>${xml(title)}</title>`,
+    `  <subtitle>${xml(subtitle)}</subtitle>`,
+    `  <link rel="self" type="application/atom+xml" href="${xml(SITE_URL + rel)}"/>`,
+    `  <link rel="alternate" type="text/html" href="${xml(page)}"/>`,
+    // The newest approval date, so an unchanged feed is byte-for-byte identical between builds.
+    `  <updated>${items.length ? atomDate(items[0].date) : atomDate(fallbackDate)}</updated>`,
+    `  <author><name>Beat It</name><uri>${xml(SITE_URL)}</uri></author>`,
+    `  <icon>${xml(SITE_URL)}assets/icon-192.png</icon>`,
+    ...entries,
+    "</feed>",
+    "",
+  ].join("\n");
+}
+
+function writeFeeds(cancers, fallbackDate) {
+  const approvals = mergedApprovals(cancers);
+  const names = Object.fromEntries(cancers.map((c) => [c.id, c.name]));
+  const intro = "New medicines and new uses approved by the U.S. Food and Drug Administration, each linked to the official announcement.";
+  write("feed.xml", atomFeed({ rel: "feed.xml", title: "Beat It – new FDA cancer approvals", subtitle: intro, page: SITE_URL,
+    approvals, names, fallbackDate }));
+  for (const c of cancers) {
+    write(`type/${c.id}/feed.xml`, atomFeed({ rel: `type/${c.id}/feed.xml`, title: `${c.name} – new FDA approvals | Beat It`,
+      subtitle: intro, page: `${SITE_URL}type/${c.id}/`, approvals: approvals.filter((a) => a.types.includes(c.id)), names,
+      fallbackDate: c.reviewed || fallbackDate }));
+  }
+  return 1 + cancers.length;
+}
+
 async function main() {
   const started = Date.now();
   const cancers = JSON.parse(fs.readFileSync(path.join(SRC, "data", "cancers.json"), "utf8"));
@@ -118,7 +185,8 @@ async function main() {
         pages[route] = await prerender(browser, origin, route);
       }
     }));
-    pages["404.html"] = await prerender(browser, origin, "this-page-does-not-exist/");
+    // A path without words, so the static page suggests nothing; app.js adds suggestions for the real URL.
+    pages["404.html"] = await prerender(browser, origin, "404/");
   } finally {
     await browser.close();
     server.close();
@@ -138,7 +206,8 @@ async function main() {
   write("sitemap.xml", `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.join("\n")}\n</urlset>\n`);
   // Crawlers only read robots.txt at the domain root, so this takes effect with a custom domain.
   write("robots.txt", `User-agent: *\nAllow: /\n\nSitemap: ${SITE_URL}sitemap.xml\n`);
-  console.log(`Built ${routes.length} pages + 404.html into ${path.relative(ROOT, OUT) || "."}/ for ${SITE_URL} in ${((Date.now() - started) / 1000).toFixed(1)}s`);
+  const feeds = writeFeeds(cancers, lastmod);
+  console.log(`Built ${routes.length} pages + 404.html and ${feeds} feeds into ${path.relative(ROOT, OUT) || "."}/ for ${SITE_URL} in ${((Date.now() - started) / 1000).toFixed(1)}s`);
 }
 
 main().catch((err) => {

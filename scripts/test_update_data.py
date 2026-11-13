@@ -4,6 +4,7 @@ import datetime as dt
 import json
 import sys
 import unittest
+import urllib.parse
 from pathlib import Path
 from unittest import mock
 
@@ -56,6 +57,12 @@ class FeedTests(unittest.TestCase):
         self.assertIn("https://example.org/a", urls)
         self.assertNotIn("javascript:alert(1)", urls)
         self.assertEqual(items[0]["summary"], "NSCLC study results")
+
+    def test_clean_text_decodes_entities_and_removes_markup(self):
+        self.assertEqual(ud.clean_text("Phase&nbsp;3 &amp; beyond&#8230;"), "Phase 3 & beyond…")
+        self.assertEqual(ud.clean_text("CD8<sup>+</sup> T cells<br/>in &lt;i&gt;KRAS&lt;/i&gt; NSCLC"),
+                         "CD8+ T cells in KRAS NSCLC")
+        self.assertEqual(ud.clean_text("Children &lt;5 years"), "Children <5 years")
 
     def test_parse_atom(self):
         items = ud.parse_feed(ATOM, "Atom")
@@ -126,27 +133,96 @@ class ApiParsingTests(unittest.TestCase):
         self.assertNotIn(url, str(raised.exception))
 
     def test_parse_pubmed_summary(self):
-        data = {"result": {"uids": ["123", "456"],
+        data = {"result": {"uids": ["123", "456", "789", "790", "791"],
                            "123": {"title": "Trial of X", "fulljournalname": "J Onc", "pubdate": "2027 Mar",
-                                   "epubdate": "2026 Oct 9"},
-                           "456": {"title": ""}}}
-        items = ud.parse_pubmed_summary(data)
-        self.assertEqual(len(items), 1)
+                                   "epubdate": "2026 Oct 9",
+                                   "pubtype": ["Journal Article", "Randomized Controlled Trial"],
+                                   "articleids": [{"idtype": "pubmed", "value": "123"},
+                                                  {"idtype": "pmc", "value": "PMC1234567"}]},
+                           "456": {"title": ""},
+                           "789": {"title": "[Corrigendum] Trial of X", "pubtype": ["Journal Article"]},
+                           "790": {"title": "Trial of X", "pubtype": ["Published Erratum"]},
+                           "791": {"title": "Correction of hypercalcemia in myeloma", "pubdate": "2027 Jan",
+                                   "epubdate": "", "pubtype": ["Journal Article", "Review"],
+                                   "history": [{"pubstatus": "received", "date": "2026/05/01 00:00"},
+                                               {"pubstatus": "entrez", "date": "2026/10/02 06:00"}]}}}
+        items = ud.parse_pubmed_summary(data, today=NOW.date())
+        self.assertEqual([i["pmid"] for i in items], ["123", "791"])
         self.assertEqual(items[0]["url"], "https://pubmed.ncbi.nlm.nih.gov/123/")
-        self.assertEqual(items[0]["date"], "2026 Oct 9")
+        self.assertEqual(items[0]["date"], "2026-10-09")
+        self.assertEqual(items[0]["kind"], "Randomized trial")
+        self.assertEqual(items[0]["pmc"], "PMC1234567")
+        # The issue date is in the future and there is no online date, so the day PubMed added it is used.
+        self.assertEqual(items[1]["date"], "2026-10-02")
+        self.assertEqual((items[1]["kind"], items[1]["pmc"]), ("Review", ""))
+
+    def test_notice_titles(self):
+        notices = ["[Corrigendum] Trial of X", 'Corrigendum to "Trial of X" [J Onc 12 (2026) 1-9]',
+                   "Erratum: Trial of X", "Correction to: Trial of X", "Correction: Trial of X",
+                   "Author Correction: Trial of X", "Retraction Note: Trial of X", "RETRACTED: Trial of X",
+                   "Statement of Retraction: Trial of X", "Expression of Concern: Trial of X",
+                   "WITHDRAWN: Trial of X", "Retraction notice to “Trial of X”"]
+        papers = ["Correction of hypercalcemia in myeloma", "Retracted nipple as a sign of breast cancer",
+                  "Retraction of the mesentery in carcinoid tumours", "Erratic growth of low-grade glioma"]
+        self.assertEqual([t for t in notices if not ud.NOTICE_TITLE.match(t)], [])
+        self.assertEqual([t for t in papers if ud.NOTICE_TITLE.match(t)], [])
+
+    def test_pubmed_date(self):
+        cases = {"2026 Oct 9": "2026-10-09", "2026 Oct": "2026-10", "2026 Sep-Oct": "2026-09",
+                 "2026/10/02 06:00": "2026-10-02", "2026 Oct 15": "", "2027 Mar": "", "2026 Fall": "",
+                 "2026 Feb 30": "", "": ""}
+        for value, expected in cases.items():
+            self.assertEqual(ud.pubmed_date(value, NOW.date()), expected, value)
+
+    def test_fetch_pubmed_keeps_most_relevant_papers_newest_first(self):
+        ids = [str(n) for n in range(101, 101 + ud.PUBMED_FETCH)]  # in order of relevance
+        records = {uid: {"title": f"Paper {uid}", "epubdate": f"2020 Oct {int(uid) - 100}"} for uid in ids}
+        records["101"]["title"] = "Erratum: Paper 101"
+        summary = {"result": {"uids": ids[::-1], **records}}
+        with mock.patch.object(ud, "get_json", side_effect=[{"esearchresult": {"idlist": ids}}, summary]) as get, \
+                mock.patch.object(ud.time, "sleep"):
+            papers = ud.fetch_pubmed("lung cancer")
+        search = urllib.parse.parse_qs(urllib.parse.urlparse(get.call_args_list[0][0][0]).query)
+        self.assertEqual((search["sort"], search["datetype"]), (["relevance"], ["edat"]))
+        self.assertIn(" NOT (published erratum[pt] OR ", search["term"][0])
+        self.assertEqual([p["pmid"] for p in papers], ["107", "106", "105", "104", "103", "102"])
 
     def test_parse_trials(self):
         data = {"studies": [
             {"protocolSection": {
                 "identificationModule": {"nctId": "NCT01234567", "briefTitle": "A Study"},
                 "statusModule": {"overallStatus": "RECRUITING", "lastUpdatePostDateStruct": {"date": "2026-10-01"}},
-                "designModule": {"phases": ["PHASE2", "PHASE3"]}}},
+                "designModule": {"phases": ["PHASE2", "PHASE3"]},
+                "eligibilityModule": {"sex": "FEMALE", "minimumAge": "18 Years", "maximumAge": "N/A"},
+                "contactsLocationsModule": {"locations": [
+                    {"country": "Japan"}, {"country": "Korea, Republic of"}, {"country": "United States"},
+                    {"country": "Korea, Republic of"}, {"country": "Iran, Islamic Republic of"}]}}},
             {"protocolSection": {"identificationModule": {"nctId": "bad", "briefTitle": "x"}}},
+            {"protocolSection": {"identificationModule": {"nctId": "NCT07654321", "briefTitle": "B Study"},
+                                 "eligibilityModule": {"sex": "ALL"}}},
         ]}
         items = ud.parse_trials(data)
-        self.assertEqual(len(items), 1)
+        self.assertEqual(len(items), 2)
         self.assertEqual(items[0]["status"], "Recruiting")
         self.assertEqual(items[0]["phase"], "Phase 2, Phase 3")
+        self.assertEqual((items[0]["ages"], items[0]["sex"], items[0]["sites"]), ("18 years and older", "Female", 5))
+        self.assertEqual(items[0]["countries"], ["South Korea", "Japan", "United States", "Iran"])
+        self.assertEqual({k: items[1][k] for k in ("ages", "sex", "countries", "sites")},
+                         {"ages": "", "sex": "", "countries": [], "sites": 0})
+
+    def test_age_range(self):
+        cases = {("18 Years", "75 Years"): "18 to 75 years", ("6 Months", "21 Years"): "6 months to 21 years",
+                 ("18 Years", "N/A"): "18 years and older", (None, "1 Year"): "up to 1 year",
+                 ("0 Years", None): "", ("N/A", "N/A"): ""}
+        for (low, high), expected in cases.items():
+            self.assertEqual(ud.age_range(low, high), expected, (low, high))
+
+    def test_fetch_trials_only_requests_interventional_studies(self):
+        with mock.patch.object(ud, "get_json", return_value={"studies": []}) as get:
+            ud.fetch_trials("lung cancer")
+        query = urllib.parse.parse_qs(urllib.parse.urlparse(get.call_args[0][0]).query)
+        self.assertEqual(query["filter.advanced"], ["AREA[StudyType]INTERVENTIONAL"])
+        self.assertEqual(query["filter.overallStatus"], ["RECRUITING"])
 
 
 class BuildTests(unittest.TestCase):
