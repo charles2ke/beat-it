@@ -132,13 +132,17 @@ def clean_text(text: str | None) -> str:
 # Publication types that are not new findings. Preprints are skipped because they are not peer reviewed.
 PUBMED_SKIP_TYPES = ("published erratum", "retraction of publication", "retracted publication",
                      "expression of concern", "comment", "editorial", "news", "preprint")
-# Correction and retraction notices that are not tagged with one of the types above yet. Words that also
-# start real titles ("Correction of hypercalcemia", "Retracted nipple") only count before ":", "]" or a quote.
+# Correction and retraction notices, and replies to other papers, that are not tagged with one of the types
+# above yet (the newest records often are not). Words that also start real titles ("Correction of
+# hypercalcemia", "Retracted nipple", "Response to chemotherapy") only count in their notice or reply form.
 NOTICE_TITLE = re.compile(
     r"^\W*(?:(?:author|publisher)\s+)?(?:"
     r"corrigend(?:um|a)\b|errat(?:um|a)\b|(?:editorial\s+)?expression\s+of\s+concern\b"
     r"|(?:statement|notice)\s+of\s+(?:retraction|concern)\b|(?:corrections?|retraction)\s+(?:note|notice)\b"
     r"|(?:corrections?|retraction|retracted|withdrawn)(?:\s*[:\]]|\s+(?:to|of|for)\s*[:\"'“‘\[])"
+    r"|(?:in\s+)?reply\b|authors?['’]?s?['’]?\s+(?:reply|response)\b|re\s*:|comment(?:s|ary)?\s+on\b"
+    r"|letter\s*:|letter\s+to\s+the\s+editor\b"
+    r"|response\s+to\s*(?::|(?:the\s+)?(?:letters?|comments?|editor|correspondence)\b)"
     r")",
     re.IGNORECASE,
 )

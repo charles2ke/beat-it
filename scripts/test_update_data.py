@@ -161,9 +161,14 @@ class ApiParsingTests(unittest.TestCase):
                    "Erratum: Trial of X", "Correction to: Trial of X", "Correction: Trial of X",
                    "Author Correction: Trial of X", "Retraction Note: Trial of X", "RETRACTED: Trial of X",
                    "Statement of Retraction: Trial of X", "Expression of Concern: Trial of X",
-                   "WITHDRAWN: Trial of X", "Retraction notice to “Trial of X”"]
+                   "WITHDRAWN: Trial of X", "Retraction notice to “Trial of X”",
+                   'Author\'s Reply Regarding "Trial of X"', "Authors' reply: Trial of X", "Reply to Smith et al.",
+                   "In Reply", "Re: Trial of X", 'Comment on "Trial of X"', "Letter to the Editor regarding X",
+                   "Letter: Trial of X", "Response to letter regarding Trial of X", "Response to: Trial of X"]
         papers = ["Correction of hypercalcemia in myeloma", "Retracted nipple as a sign of breast cancer",
-                  "Retraction of the mesentery in carcinoid tumours", "Erratic growth of low-grade glioma"]
+                  "Retraction of the mesentery in carcinoid tumours", "Erratic growth of low-grade glioma",
+                  "Response to neoadjuvant chemotherapy in breast cancer", "Re-irradiation for recurrent glioma",
+                  "Replication stress in ovarian cancer"]
         self.assertEqual([t for t in notices if not ud.NOTICE_TITLE.match(t)], [])
         self.assertEqual([t for t in papers if ud.NOTICE_TITLE.match(t)], [])
 
