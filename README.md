@@ -56,7 +56,7 @@ Beat It is a free, fast, searchable website about cancer. It covers symptoms, ri
 | Recruiting trials | [ClinicalTrials.gov](https://clinicaltrials.gov/) API v2 | Weekly, automatic |
 | News | RSS feeds from NCI, IARC, WHO, ScienceDaily, Medical Xpress and Google News, filtered for cancer topics and tagged by cancer type | Weekly, automatic |
 
-- **Research** lists the most relevant papers added to PubMed in the last 30 days (up to 6 per cancer type, newest first). Corrections, retraction notices, commentary and preprints are left out.
+- **Research** lists up to 6 papers per cancer type, newest first, from the latest added to PubMed in the last 30 days. Papers whose title names the cancer type are picked before broader papers that only mention it, and corrections, retraction notices, commentary and preprints are left out.
 - **Trials** are recruiting interventional studies, which test a treatment or another intervention such as screening, most recently updated first (up to 5 per cancer type). Observational studies are left out.
 
 If a source is temporarily unavailable, the updater keeps the last good data for that source (news is kept per feed), so the site never goes blank.

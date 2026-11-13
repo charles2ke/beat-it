@@ -515,7 +515,7 @@
     ["National Cancer Institute", "https://www.cancer.gov/", "Cancer type overviews, treatment summaries and drug information (NIH)."],
     ["U.S. FDA", "https://www.fda.gov/drugs/resources-information-approved-drugs/oncology-cancerhematologic-malignancies-approval-notifications", "Official oncology and hematology approval notifications."],
     ["WHO & IARC", "https://gco.iarc.who.int/", "Global cancer statistics (GLOBOCAN) and prevention guidance."],
-    ["PubMed", "https://pubmed.ncbi.nlm.nih.gov/", "The most relevant new peer-reviewed papers for every cancer type, refreshed weekly."],
+    ["PubMed", "https://pubmed.ncbi.nlm.nih.gov/", "Newest peer-reviewed papers for every cancer type, refreshed weekly."],
     ["ClinicalTrials.gov", "https://clinicaltrials.gov/", "Recruiting interventional studies with eligible ages and locations, refreshed weekly."],
   ];
   const POPULAR = ["Immunotherapy", "CAR T-cell therapy", "HPV vaccine", "Lung cancer screening", "BRCA", "Antibody-drug conjugate"];

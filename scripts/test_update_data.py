@@ -174,18 +174,36 @@ class ApiParsingTests(unittest.TestCase):
         for value, expected in cases.items():
             self.assertEqual(ud.pubmed_date(value, NOW.date()), expected, value)
 
-    def test_fetch_pubmed_keeps_most_relevant_papers_newest_first(self):
-        ids = [str(n) for n in range(101, 101 + ud.PUBMED_FETCH)]  # in order of relevance
-        records = {uid: {"title": f"Paper {uid}", "epubdate": f"2020 Oct {int(uid) - 100}"} for uid in ids}
-        records["101"]["title"] = "Erratum: Paper 101"
+    def test_topic_pattern(self):
+        cancers = {c["id"]: c for c in CANCERS}
+        named = {"breast": "Breast tumour microenvironment", "head-neck": "Recurrent head and neck tumours",
+                 "brain": "Gliomas in adults", "sarcoma": "GIST in Turner syndrome", "lung": "EGFR-mutant NSCLC"}
+        unnamed = {"breast": "Breastfeeding after pregnancy", "head-neck": "Head-to-head comparison of antibodies",
+                   "sarcoma": "The gist of cancer care", "lung": "Ferroptosis in health and disease"}
+        for cid, title in named.items():
+            self.assertTrue(ud.topic_pattern(cancers[cid]).search(title), title)
+        for cid, title in unnamed.items():
+            self.assertFalse(ud.topic_pattern(cancers[cid]).search(title), title)
+
+    def test_fetch_pubmed_prefers_latest_papers_that_name_the_cancer_type(self):
+        lung = next(c for c in CANCERS if c["id"] == "lung")
+        ids = [str(n) for n in range(101, 101 + ud.PUBMED_FETCH)]  # most recently added first
+        start = dt.date(2020, 1, 1)
+        records = {uid: {"title": f"Paper {uid}", "epubdate": f"{start + dt.timedelta(days=int(uid)):%Y/%m/%d}"}
+                   for uid in ids}
+        for uid, title in {"102": "Erratum: Lung cancer screening", "104": "EGFR inhibitors in NSCLC",
+                           "120": "Lung adenocarcinoma organoids", "133": "Small cell lung cancer outcomes"}.items():
+            records[uid]["title"] = title
         summary = {"result": {"uids": ids[::-1], **records}}
         with mock.patch.object(ud, "get_json", side_effect=[{"esearchresult": {"idlist": ids}}, summary]) as get, \
                 mock.patch.object(ud.time, "sleep"):
-            papers = ud.fetch_pubmed("lung cancer")
+            papers = ud.fetch_pubmed("lung cancer", ud.topic_pattern(lung))
         search = urllib.parse.parse_qs(urllib.parse.urlparse(get.call_args_list[0][0][0]).query)
-        self.assertEqual((search["sort"], search["datetype"]), (["relevance"], ["edat"]))
+        self.assertNotIn("sort", search)
+        self.assertEqual((search["datetype"], search["retmax"]), (["edat"], [str(ud.PUBMED_FETCH)]))
         self.assertIn(" NOT (published erratum[pt] OR ", search["term"][0])
-        self.assertEqual([p["pmid"] for p in papers], ["107", "106", "105", "104", "103", "102"])
+        # The three papers about lung cancer, then the latest of the rest, shown newest first.
+        self.assertEqual([p["pmid"] for p in papers], ["133", "120", "105", "104", "103", "101"])
 
     def test_parse_trials(self):
         data = {"studies": [

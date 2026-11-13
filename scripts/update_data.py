@@ -6,8 +6,9 @@ Uses only the Python standard library so it runs anywhere (including the
 weekly GitHub Actions job) without installing dependencies.
 
 Sources:
-  * PubMed (NCBI E-utilities)   - the most relevant papers added in the last month per cancer type,
-                                   without corrections, retraction notices, commentary or preprints
+  * PubMed (NCBI E-utilities)   - the latest papers added in the last month per cancer type, preferring
+                                   titles that name the type, without corrections, retraction notices,
+                                   commentary or preprints
   * ClinicalTrials.gov API v2    - recently updated, recruiting interventional trials per cancer type,
                                    with age/sex eligibility and the countries where they run
   * RSS/Atom news feeds          - cancer news from health agencies ("official"),
@@ -44,7 +45,7 @@ TIMEOUT = 30
 
 PUBMED_DAYS = 30
 PUBMED_PER_TYPE = 6
-PUBMED_FETCH = 15  # spare candidates replace notices that only the title check catches
+PUBMED_FETCH = 40  # candidates: notices are dropped and titles that name the cancer type are preferred
 TRIALS_PER_TYPE = 5
 NEWS_DAYS = 14
 NEWS_MAX = 60
@@ -227,7 +228,27 @@ def parse_pubmed_summary(data: dict, today: dt.date | None = None) -> list[dict]
     return items
 
 
-def fetch_pubmed(query: str) -> list[dict]:
+# Trailing words of a search term that do not say which cancer it is about.
+GENERIC_WORDS = {"cancer", "cancers", "carcinoma", "carcinomas", "cell", "neoplasm", "neoplasms",
+                 "squamous", "tumor", "tumors", "tumour", "tumours"}
+
+
+def topic_pattern(cancer: dict) -> re.Pattern[str]:
+    """Matches a title that names the cancer type: its name, an alias or a search term such as "head and neck"."""
+    names = [cancer["name"].split("(")[0], *cancer.get("aliases", [])]
+    for term in re.split(r"\s+OR\s+", cancer.get("query", "")):
+        words = re.sub(r'[()"]', " ", term).split()
+        while words and words[-1].lower() in GENERIC_WORDS:
+            words.pop()
+        names.append(" ".join(words))
+    names = sorted({n.strip() for n in names if len(n.strip()) >= 4 or n.strip().isupper()})
+    # As in tag_types, acronyms only count in capitals so that GIST does not match "the gist".
+    alternatives = [re.escape(n) if n.isupper() else f"(?i:{re.escape(n)})" for n in names]
+    return re.compile(r"\b(?:" + "|".join(alternatives) + r")s?\b")
+
+
+def fetch_pubmed(query: str, topic: re.Pattern[str] | None = None) -> list[dict]:
+    """The latest papers for a search, preferring those whose title matches ``topic``, newest first."""
     base = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/"
     common = {"db": "pubmed", "retmode": "json", "tool": "beat-it"}
     if os.environ.get("NCBI_API_KEY"):
@@ -236,9 +257,9 @@ def fetch_pubmed(query: str) -> list[dict]:
         **common,
         "term": pubmed_term(query),
         "retmax": PUBMED_FETCH,
-        # Best Match among papers added to PubMed in the window. Sorting by publication date instead
-        # surfaced journals that date their print issues months ahead rather than relevant papers.
-        "sort": "relevance",
+        # No "sort", so the papers added to PubMed most recently come first. Best Match ("relevance")
+        # favoured broad reviews that only mention the cancer type, and publication date favoured
+        # journals that date their print issues months ahead.
         "datetype": "edat",
         "reldate": PUBMED_DAYS,
     }))
@@ -248,7 +269,12 @@ def fetch_pubmed(query: str) -> list[dict]:
     time.sleep(0.4)  # stay under NCBI's 3 requests/second limit
     summary = get_json(base + "esummary.fcgi?" + urllib.parse.urlencode({**common, "id": ",".join(ids)}))
     rank = {uid: i for i, uid in enumerate(ids)}
-    papers = sorted(parse_pubmed_summary(summary), key=lambda p: rank.get(p["pmid"], len(rank)))[:PUBMED_PER_TYPE]
+
+    def order(paper: dict) -> tuple[bool, int]:
+        named = bool(topic and topic.search(paper["title"]))
+        return not named, rank.get(paper["pmid"], len(rank))
+
+    papers = sorted(parse_pubmed_summary(summary), key=order)[:PUBMED_PER_TYPE]
     return sorted(papers, key=lambda p: p["date"], reverse=True)
 
 
@@ -490,16 +516,18 @@ def build(cancers: list[dict], previous: dict, now: dt.datetime) -> tuple[dict, 
     by_type = {}
     for cancer in cancers:
         cid, query = cancer["id"], cancer.get("query", cancer["name"])
+        topic = topic_pattern(cancer)
         prev = prev_types.get(cid, {})
         entry = {}
-        for key, fetcher in (("research", fetch_pubmed), ("trials", fetch_trials)):
+        for key, fetcher, args in (("research", fetch_pubmed, (query, topic)), ("trials", fetch_trials, (query,))):
             try:
-                entry[key] = fetcher(query)
+                entry[key] = fetcher(*args)
             except Exception as err:
                 errors.append(f"{key}/{cid}: {err}")
                 entry[key] = prev.get(key, [])
             time.sleep(0.4)
-        log(f"{cid}: {len(entry['research'])} papers, {len(entry['trials'])} trials")
+        named = sum(1 for paper in entry["research"] if topic.search(paper.get("title", "")))
+        log(f"{cid}: {len(entry['research'])} papers ({named} name the type), {len(entry['trials'])} trials")
         by_type[cid] = entry
 
     news, ok_sources, failed_sources = fetch_news(cancers, now, previous.get("news", []))
