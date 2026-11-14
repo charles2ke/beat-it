@@ -139,6 +139,7 @@ NOTICE_TITLE = re.compile(
     r"^\W*(?:(?:author|publisher)\s+)?(?:"
     r"corrigend(?:um|a)\b|errat(?:um|a)\b|(?:editorial\s+)?expression\s+of\s+concern\b"
     r"|(?:statement|notice)\s+of\s+(?:retraction|concern)\b|(?:corrections?|retraction)\s+(?:note|notice)\b"
+    r"|corrections?\s+to\b"
     r"|(?:corrections?|retraction|retracted|withdrawn)(?:\s*[:\]]|\s+(?:to|of|for)\s*[:\"'“‘\[])"
     r"|(?:in\s+)?reply\b|authors?['’]?s?['’]?\s+(?:reply|response)\b|re\s*:|comment(?:s|ary)?\s+on\b"
     r"|letter\s*:|letter\s+to\s+the\s+editor\b"

@@ -133,7 +133,7 @@ class ApiParsingTests(unittest.TestCase):
         self.assertNotIn(url, str(raised.exception))
 
     def test_parse_pubmed_summary(self):
-        data = {"result": {"uids": ["123", "456", "789", "790", "791"],
+        data = {"result": {"uids": ["123", "456", "789", "790", "791", "792"],
                            "123": {"title": "Trial of X", "fulljournalname": "J Onc", "pubdate": "2027 Mar",
                                    "epubdate": "2026 Oct 9",
                                    "pubtype": ["Journal Article", "Randomized Controlled Trial"],
@@ -145,7 +145,9 @@ class ApiParsingTests(unittest.TestCase):
                            "791": {"title": "Correction of hypercalcemia in myeloma", "pubdate": "2027 Jan",
                                    "epubdate": "", "pubtype": ["Journal Article", "Review"],
                                    "history": [{"pubstatus": "received", "date": "2026/05/01 00:00"},
-                                               {"pubstatus": "entrez", "date": "2026/10/02 06:00"}]}}}
+                                               {"pubstatus": "entrez", "date": "2026/10/02 06:00"}]},
+                           "792": {"title": "Correction to Lung cancer screening outcomes",
+                                   "pubtype": ["Journal Article"]}}}
         items = ud.parse_pubmed_summary(data, today=NOW.date())
         self.assertEqual([i["pmid"] for i in items], ["123", "791"])
         self.assertEqual(items[0]["url"], "https://pubmed.ncbi.nlm.nih.gov/123/")
@@ -159,13 +161,15 @@ class ApiParsingTests(unittest.TestCase):
     def test_notice_titles(self):
         notices = ["[Corrigendum] Trial of X", 'Corrigendum to "Trial of X" [J Onc 12 (2026) 1-9]',
                    "Erratum: Trial of X", "Correction to: Trial of X", "Correction: Trial of X",
+                   "Correction to Lung cancer screening outcomes", "Author Corrections to Trial of X",
                    "Author Correction: Trial of X", "Retraction Note: Trial of X", "RETRACTED: Trial of X",
                    "Statement of Retraction: Trial of X", "Expression of Concern: Trial of X",
                    "WITHDRAWN: Trial of X", "Retraction notice to “Trial of X”",
                    'Author\'s Reply Regarding "Trial of X"', "Authors' reply: Trial of X", "Reply to Smith et al.",
                    "In Reply", "Re: Trial of X", 'Comment on "Trial of X"', "Letter to the Editor regarding X",
                    "Letter: Trial of X", "Response to letter regarding Trial of X", "Response to: Trial of X"]
-        papers = ["Correction of hypercalcemia in myeloma", "Retracted nipple as a sign of breast cancer",
+        papers = ["Correction of hypercalcemia in myeloma", "Correction toward normal in myeloma",
+                  "Retracted nipple as a sign of breast cancer",
                   "Retraction of the mesentery in carcinoid tumours", "Erratic growth of low-grade glioma",
                   "Response to neoadjuvant chemotherapy in breast cancer", "Re-irradiation for recurrent glioma",
                   "Replication stress in ovarian cancer"]
