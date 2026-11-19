@@ -44,6 +44,10 @@
     grid: '<rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/>',
     chart: '<path d="M4 20V10M10 20V4M16 20v-7M21 20H3"/>',
     home: '<path d="m3 11 9-8 9 8M5 9.5V20h5v-6h4v6h5V9.5"/>',
+    share: '<circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.6 13.5 6.8 4M15.4 6.5l-6.8 4"/>',
+    print: '<path d="M6 9V3h12v6"/><rect x="3" y="9" width="18" height="8" rx="2"/><path d="M6 14h12v7H6z"/>',
+    rss: '<path d="M4 11a9 9 0 0 1 9 9M4 4a16 16 0 0 1 16 16"/><circle cx="5" cy="19" r="1"/>',
+    pin: '<path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11Z"/><circle cx="12" cy="10" r="2.5"/>',
   };
   const SVG_NS = "http://www.w3.org/2000/svg";
   function icon(name, cls) {
@@ -107,6 +111,9 @@
   const searchHref = (q) => "./?" + new URLSearchParams({ q });
   const pubmedSearch = (q) => "https://pubmed.ncbi.nlm.nih.gov/?" + new URLSearchParams({ term: q, sort: "date" });
   const trialsSearch = (q) => "https://clinicaltrials.gov/search?" + new URLSearchParams({ cond: q, aggFilters: "status:rec" });
+  const pmcHref = (id) => (/^PMC\d+$/.test(String(id || "")) ? "https://pmc.ncbi.nlm.nih.gov/articles/" + id + "/" : "");
+  const feedHref = (id) => (id ? typeHref(id) : "") + "feed.xml";
+  const strings = (v) => (Array.isArray(v) ? v.filter((x) => typeof x === "string" && x) : []);
 
   function parseDate(s) {
     const str = String(s || "");
@@ -315,13 +322,13 @@
       }
       const u = state.updates.byType[c.id] || {};
       for (const r of u.research || []) {
-        addDoc({ kind: "Research", title: r.title, url: r.url, types: [c.id], desc: [r.journal, r.date].filter(Boolean).join(" · "),
-          text: [r.journal, names, "research study paper"].join(" ") });
+        addDoc({ kind: "Research", title: r.title, url: r.url, types: [c.id], desc: [r.kind, r.journal, fmtDate(r.date)].filter(Boolean).join(" · "),
+          text: [r.kind, r.journal, names, "research study paper"].join(" ") });
       }
       for (const t of u.trials || []) {
         addDoc({ kind: "Clinical trial", title: t.title, url: t.url, types: [c.id],
-          desc: [t.nctId, prettyPhase(t.phase), t.status].filter(Boolean).join(" · "),
-          text: [t.nctId, t.phase, t.status, names, "clinical trial study"].join(" ") });
+          desc: [t.nctId, prettyPhase(t.phase), t.status, t.ages ? "ages " + t.ages : ""].filter(Boolean).join(" · "),
+          text: [t.nctId, t.phase, t.status, strings(t.countries), names, "clinical trial study"].flat().join(" ") });
       }
     }
     for (const m of medicines.values()) {
@@ -509,7 +516,7 @@
     ["U.S. FDA", "https://www.fda.gov/drugs/resources-information-approved-drugs/oncology-cancerhematologic-malignancies-approval-notifications", "Official oncology and hematology approval notifications."],
     ["WHO & IARC", "https://gco.iarc.who.int/", "Global cancer statistics (GLOBOCAN) and prevention guidance."],
     ["PubMed", "https://pubmed.ncbi.nlm.nih.gov/", "Newest peer-reviewed papers for every cancer type, refreshed weekly."],
-    ["ClinicalTrials.gov", "https://clinicaltrials.gov/", "Recruiting interventional studies, refreshed weekly."],
+    ["ClinicalTrials.gov", "https://clinicaltrials.gov/", "Recruiting interventional studies with eligible ages and locations, refreshed weekly."],
   ];
   const POPULAR = ["Immunotherapy", "CAR T-cell therapy", "HPV vaccine", "Lung cancer screening", "BRCA", "Antibody-drug conjugate"];
 
@@ -552,6 +559,41 @@
       el("p", null, a.drug),
       el("div", { class: "meta" }, a.text, " ", a.url ? extLink(a.url, a.source || host(a.url), "src-link", true) : null)))));
   }
+  function feedLink(href, what) {
+    return el("a", { class: "feed-link", href, type: "application/atom+xml", title: "Follow " + what + " in a feed reader (Atom)" }, icon("rss"), "RSS feed");
+  }
+  // Share and print work on prerendered pages before the data loads; hidden when JavaScript is off.
+  function pageTools() {
+    return el("div", { class: "page-tools js-only" },
+      el("button", { type: "button", class: "tool", "data-action": "share" }, icon("share"), el("span", null, "Share")),
+      el("button", { type: "button", class: "tool", "data-action": "print" }, icon("print"), el("span", null, "Print")));
+  }
+  function researchItem(r) {
+    const pmc = pmcHref(r.pmc);
+    return el("li", null, extLink(r.url, r.title, "title"),
+      el("div", { class: "meta" },
+        r.kind ? el("span", { class: "badge paper" }, r.kind) : null,
+        r.journal ? el("span", null, r.journal) : null,
+        r.date ? el("span", null, "· " + fmtDate(r.date)) : null,
+        pmc ? extLink(pmc, "Free full text", "src-link", true) : null));
+  }
+  function trialItem(t) {
+    const countries = strings(t.countries);
+    const where = countries.slice(0, 3).join(", ") + (countries.length > 3 ? " +" + (countries.length - 3) + " more" : "");
+    const sites = Number.isInteger(t.sites) && t.sites > 0 ? plural(t.sites, "site") : "";
+    const details = [
+      t.ages ? el("span", null, "Ages " + t.ages) : null,
+      t.sex ? el("span", null, t.sex + " only") : null,
+      countries.length ? el("span", { class: "where", title: countries.join(", ") }, icon("pin"), where + (sites ? " · " + sites : "")) : null,
+    ].filter(Boolean);
+    return el("li", null, extLink(t.url, t.title, "title"),
+      el("div", { class: "meta" },
+        prettyPhase(t.phase) ? el("span", { class: "badge phase" }, prettyPhase(t.phase)) : null,
+        t.status ? el("span", { class: "badge status" }, t.status) : null,
+        t.nctId ? el("span", null, t.nctId) : null,
+        t.updated ? el("span", null, "· updated " + fmtDate(t.updated)) : null),
+      details.length ? el("div", { class: "meta trial-details" }, details) : null);
+  }
 
   function renderHome(v) {
     const t = totals();
@@ -581,7 +623,8 @@
       const grid = el("div", { class: "approvals" });
       const paged = pagedList(grid, recent.map(approvalCard), 6, "data-none");
       parts.push(section("whats-new", "sparkles", "What's new", "Recent FDA approvals",
-        "New medicines and new uses approved by the U.S. Food and Drug Administration, each linked to the official announcement.", null, grid, paged.row));
+        "New medicines and new uses approved by the U.S. Food and Drug Administration, each linked to the official announcement.",
+        feedLink(feedHref(), "new FDA approvals"), grid, paged.row));
     }
 
     const news = state.updates.news || [];
@@ -631,10 +674,12 @@
 
     v.replaceChildren(el("article", { class: "type-page", "data-accent": c.id },
       el("header", { class: "type-header reveal" },
-        el("nav", { "aria-label": "Breadcrumb" }, el("ol", { class: "crumbs" },
-          el("li", null, el("a", { href: "./" }, "Home")),
-          el("li", null, el("a", { href: "./#types" }, c.group)),
-          el("li", { "aria-current": "page" }, c.name))),
+        el("div", { class: "header-row" },
+          el("nav", { "aria-label": "Breadcrumb" }, el("ol", { class: "crumbs" },
+            el("li", null, el("a", { href: "./" }, "Home")),
+            el("li", null, el("a", { href: "./#types" }, c.group)),
+            el("li", { "aria-current": "page" }, c.name))),
+          pageTools()),
         el("div", { class: "type-title" }, el("span", { class: "type-badge" }, icon("ribbon")), el("h1", null, c.name)),
         el("p", { class: "type-summary" }, c.summary),
         c.aliases.length ? el("div", { class: "aka" }, el("span", { class: "aka-label" }, "Also searched as"), c.aliases.map((a) => el("span", null, a))) : null,
@@ -663,19 +708,14 @@
             el("td", null, m.use)))))),
         el("p", { class: "meta" }, "Examples of approved medicines, not a complete list or a recommendation. Eligibility depends on stage, biomarkers and prior treatment. ",
           extLink(NCI_DRUGS, "See NCI's drug lists")))),
-      approvals.length ? sec("approvals", "What's new", "sparkles", timeline(approvals)) : null,
+      approvals.length ? sec("approvals", "What's new", "sparkles", timeline(approvals),
+        el("p", { class: "meta" }, feedLink(feedHref(c.id), "new FDA approvals for " + c.name.charAt(0).toLowerCase() + c.name.slice(1)))) : null,
       sec("research", "Latest research", "book", pendingNotice(), el("div", { class: "card reveal" }, research.length
-        ? [el("ul", { class: "items" }, research.map((r) => el("li", null, extLink(r.url, r.title, "title"),
-          el("div", { class: "meta" }, r.journal ? el("span", null, r.journal) : null, r.date ? el("span", null, "· " + fmtDate(r.date)) : null)))),
+        ? [el("ul", { class: "items" }, research.map(researchItem)),
           el("p", { class: "meta" }, extLink(pubmedSearch(c.query), "More on PubMed", "src-link", true))]
         : el("p", { class: "empty" }, "No recent papers saved yet. ", extLink(pubmedSearch(c.query), "Search PubMed now")))),
       sec("trials", "Recruiting clinical trials", "flask", el("div", { class: "card reveal" }, trials.length
-        ? [el("ul", { class: "items" }, trials.map((t) => el("li", null, extLink(t.url, t.title, "title"),
-          el("div", { class: "meta" },
-            prettyPhase(t.phase) ? el("span", { class: "badge phase" }, prettyPhase(t.phase)) : null,
-            t.status ? el("span", { class: "badge status" }, t.status) : null,
-            t.nctId ? el("span", null, t.nctId) : null,
-            t.updated ? el("span", null, "· updated " + fmtDate(t.updated)) : null)))),
+        ? [el("ul", { class: "items" }, trials.map(trialItem)),
           el("p", { class: "meta" }, extLink(trialsSearch(c.query), "All recruiting trials on ClinicalTrials.gov", "src-link", true))]
         : el("p", { class: "empty" }, "No trials saved yet. ", extLink(trialsSearch(c.query), "Search ClinicalTrials.gov")))),
       sec("news", "News", "news", news.length ? el("div", { class: "news-list" }, news.map(newsItem))
@@ -746,11 +786,40 @@
       grid, paged.row].filter(Boolean));
   }
 
+  // Words from a mistyped or outdated URL, e.g. "type/lungs/" → "lungs".
+  function notFoundWords() {
+    let p = location.pathname;
+    if (p.startsWith(BASE.pathname)) p = p.slice(BASE.pathname.length);
+    try { p = decodeURIComponent(p); } catch (_) { /* keep the raw path */ }
+    return p.split(/[\/_\-.+\s]+/).filter((w) => w && !/^\d+$/.test(w) && !/^(types?|index|html?|www|php|aspx?|search)$/i.test(w)).slice(0, 6);
+  }
+  function notFoundSuggestions() {
+    const words = notFoundWords();
+    // All words first; if together they match nothing, each word on its own (without spelling corrections, which
+    // would turn ordinary words like "page" into unrelated medical terms like "age").
+    const queries = [words.join(" ")].concat(words.length > 1 ? words : []);
+    for (let i = 0; i < queries.length; i++) {
+      const s = queries[i] ? runSearch(queries[i], false) : null;
+      if (!s || !s.re || (i > 0 && s.corrected)) continue;
+      // Only pages whose title has a searched word: a match deep in the text is too weak to suggest.
+      const inTitle = new RegExp(s.re.source + "\\b", "i");
+      const hits = s.results.filter((d) => d.href && inTitle.test(d.title)).slice(0, 3);
+      if (hits.length) return { q: queries[i], hits };
+    }
+    return null;
+  }
   function renderNotFound(v) {
     setStatus("Page not found.");
+    const s = notFoundSuggestions();
     v.replaceChildren(el("div", { class: "search-head empty-state reveal" },
       el("h1", null, "Page not found"),
       el("p", null, "Sorry, that page doesn't exist. It may have moved — try searching above or browse all cancer types."),
+      s ? el("div", { class: "nf-suggest" },
+        el("h2", null, "Were you looking for…"),
+        el("ul", { class: "nf-list" }, s.hits.map((d) => el("li", { "data-accent": d.types[0] || null },
+          el("a", { href: d.href }, el("span", { class: "card-ico" }, icon(KIND_ICON[d.kind])), el("span", null, d.title)),
+          el("span", { class: "kind" }, d.kind)))),
+        el("p", { class: "meta" }, el("a", { href: searchHref(s.q) }, "See all results for “" + s.q + "”"))) : null,
       el("div", { class: "actions" }, el("a", { class: "btn primary", href: "./" }, icon("home"), "Home page"), el("a", { class: "btn", href: "./#types" }, icon("grid"), "All cancer types"))));
   }
 
@@ -819,6 +888,13 @@
     const known = r.name === "home" || r.name === "type" || r.name === "search";
     if (known) setHead('link[rel="canonical"]', () => el("link", { rel: "canonical" }), "href", url);
     else { const canonical = $('link[rel="canonical"]', doc.head); if (canonical) canonical.remove(); }
+    // Each type page also advertises its own approvals feed; the site-wide feed link is static in index.html.
+    const typeFeed = $('link[rel="alternate"][data-feed="type"]', doc.head);
+    if (r.name === "type") {
+      const c = state.byId[r.id];
+      setHead('link[rel="alternate"][data-feed="type"]', () => el("link", { rel: "alternate", type: "application/atom+xml", "data-feed": "type" }), "href", SITE + feedHref(c.id));
+      $('link[data-feed="type"]', doc.head).setAttribute("title", c.name + " – new FDA approvals | " + SITE_NAME);
+    } else if (typeFeed) typeFeed.remove();
     metaProp("og:title", title);
     metaProp("og:description", desc);
     metaProp("og:url", url);
@@ -1074,6 +1150,33 @@
     $("#theme-toggle").setAttribute("aria-label", themeNow() === "dark" ? "Switch to light theme" : "Switch to dark theme");
   }
 
+  // ---------------------------------------------------------------- share & print
+  let copiedTimer = 0;
+  async function sharePage(button) {
+    const canonical = $('link[rel="canonical"]', doc.head);
+    const url = (canonical && canonical.href) || location.href;
+    if (navigator.share) {
+      try { await navigator.share({ title: doc.title, url }); return; }
+      catch (err) { if (err && err.name === "AbortError") return; } // otherwise copy the link instead
+    }
+    try {
+      await navigator.clipboard.writeText(url);
+      const label = $("span", button);
+      label.textContent = "Link copied";
+      clearTimeout(copiedTimer);
+      copiedTimer = setTimeout(() => { label.textContent = "Share"; }, 2500);
+      setStatus("Link copied to clipboard.", false);
+    } catch (_) {
+      setStatus("Copy this link: " + url, true);
+    }
+  }
+  function onToolClick(e) {
+    const b = e.target.closest("button[data-action]");
+    if (!b) return;
+    if (b.getAttribute("data-action") === "share") sharePage(b);
+    else if (b.getAttribute("data-action") === "print") window.print();
+  }
+
   // ---------------------------------------------------------------- init
   function submitSearch(q) {
     navigate(q ? searchHref(q) : "./");
@@ -1088,6 +1191,7 @@
     const fitPlaceholder = () => { input.placeholder = narrow && narrow.matches ? "Cancer, drug, symptom…" : fullPlaceholder; };
     if (narrow) { fitPlaceholder(); narrow.addEventListener("change", fitPlaceholder); }
     doc.addEventListener("click", onLinkClick);
+    doc.addEventListener("click", onToolClick);
     $("#search-form").addEventListener("submit", (e) => {
       e.preventDefault();
       const q = input.value.trim();
