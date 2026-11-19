@@ -32,6 +32,8 @@ test.describe("without JavaScript", () => {
     await expect(page.locator('meta[name="description"]')).toHaveAttribute("content", /lung/i);
     const ld = JSON.parse(await page.locator("#ld-json").textContent() || "{}");
     expect(ld["@graph"].map((n) => n["@type"])).toEqual(expect.arrayContaining(["MedicalCondition", "BreadcrumbList"]));
+    await expect(page.locator("#approvals").getByRole("link", { name: "RSS feed" })).toBeVisible();
+    await expect(page.locator(".page-tools")).toBeHidden(); // Share and Print need JavaScript
     await shot(page, "type-lung-no-js");
   });
 });
@@ -42,6 +44,41 @@ test("unknown paths return the styled 404 page", async ({ page }) => {
   await expect(page.getByRole("heading", { level: 1, name: "Page not found" })).toBeVisible();
   await expect(page.locator('meta[name="robots"]')).toHaveAttribute("content", /noindex/);
   await expect(page.locator(".topbar")).toHaveCSS("position", "sticky");
+  // Suggestions depend on the requested URL, so the shared 404.html has none built in.
+  expect(fs.readFileSync(path.join(SITE, "404.html"), "utf8")).not.toContain("nf-suggest");
+  await page.goto("type/lungs/");
+  const suggestion = page.locator(".nf-list li").first();
+  await expect(suggestion).toContainText("Lung cancer");
+  await suggestion.getByRole("link").click();
+  await expect(page).toHaveURL(/\/beat-it\/type\/lung\/$/);
+});
+
+test("Atom feeds of new FDA approvals are valid and linked from the pages", async ({ page, request }) => {
+  const lung = CANCERS.find((c) => c.id === "lung");
+  const feeds = [["feed.xml", 0], ["type/lung/feed.xml", Math.min(50, new Set(lung.approvals.map((a) => a.url)).size)]];
+  for (const [rel, count] of feeds) {
+    const res = await request.get(rel);
+    expect(res.ok()).toBe(true);
+    const feed = await page.evaluate((xml) => {
+      const atom = "http://www.w3.org/2005/Atom";
+      const d = new DOMParser().parseFromString(xml, "application/xml");
+      const entries = [...d.getElementsByTagNameNS(atom, "entry")];
+      const text = (node, tag) => ((node.getElementsByTagNameNS(atom, tag)[0] || {}).textContent || "").trim();
+      return { errors: d.getElementsByTagName("parsererror").length, ns: d.documentElement.namespaceURI, entries: entries.length,
+        self: (d.querySelector('feed > link[rel="self"]') || { getAttribute: () => "" }).getAttribute("href"),
+        complete: entries.every((e) => ["id", "title", "updated", "summary"].every((tag) => text(e, tag))) };
+    }, await res.text());
+    expect(feed).toMatchObject({ errors: 0, ns: "http://www.w3.org/2005/Atom", complete: true });
+    expect(feed.self).toMatch(new RegExp("/beat-it/" + rel.replace(/\./g, "\\.") + "$"));
+    if (count) expect(feed.entries).toBe(count);
+    else expect(feed.entries).toBeGreaterThan(0);
+  }
+  await page.goto("type/lung/");
+  await expect(page.getByRole("button", { name: "Share" })).toBeVisible();
+  const href = await page.locator("#approvals").getByRole("link", { name: "RSS feed" }).evaluate((a) => a.href);
+  expect(href).toMatch(/\/beat-it\/type\/lung\/feed\.xml$/);
+  expect((await request.get(href)).ok()).toBe(true);
+  await expect(page.locator('link[rel="alternate"][data-feed="type"]')).toHaveAttribute("href", /\/beat-it\/type\/lung\/feed\.xml$/);
 });
 
 test("sitemap lists every page", async ({ request }) => {

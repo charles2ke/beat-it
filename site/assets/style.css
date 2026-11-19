@@ -390,7 +390,17 @@ button.tag { font: inherit; font-size: .74rem; font-weight: 650; cursor: pointer
 .badge.media { background: var(--bg-soft); color: var(--text-2); }
 .badge.new { background: var(--brand-grad); color: #fff; }
 .badge.phase { background: var(--info-soft); color: var(--info); }
-.badge.status { background: var(--ok-soft); color: var(--ok); }
+.badge.status { background: var(--ok-soft); color: var(--ok); margin: 0; } /* not the #status message's margin */
+.badge.paper { background: color-mix(in srgb, var(--brand) 11%, var(--surface)); color: var(--brand-ink); }
+.feed-link {
+  display: inline-flex; align-items: center; gap: .35rem; padding: .36rem .8rem; border-radius: 999px; white-space: nowrap;
+  border: 1px solid var(--border-strong); background: var(--surface); color: var(--text-2); font-size: .84rem; font-weight: 650; text-decoration: none;
+  transition: border-color .2s, color .2s;
+}
+.feed-link:hover { color: var(--brand-ink); border-color: var(--brand); }
+.feed-link .ico { width: 15px; height: 15px; color: #f97316; }
+/* Controls that need JavaScript; theme.js sets data-js before the first paint. */
+html:not([data-js]) .js-only { display: none !important; }
 
 /* news */
 .news-tools { display: flex; flex-wrap: wrap; gap: .4rem; }
@@ -476,6 +486,15 @@ details.faq > a { display: inline-block; margin-top: .5rem; margin-bottom: 1rem;
   -webkit-mask: var(--ribbon) center / contain no-repeat; mask: var(--ribbon) center / contain no-repeat;
 }
 .crumbs { display: flex; flex-wrap: wrap; align-items: center; gap: .4rem; margin: 0; padding: 0; list-style: none; font-size: .86rem; color: var(--muted); }
+.header-row { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .5rem 1rem; }
+.page-tools { display: flex; gap: .4rem; margin-left: auto; }
+.tool {
+  display: inline-flex; align-items: center; gap: .35rem; padding: .32rem .75rem; border-radius: 999px; cursor: pointer;
+  border: 1px solid var(--border-strong); background: var(--surface); color: var(--text-2); font-size: .82rem; font-weight: 650;
+  transition: border-color .2s, color .2s;
+}
+.tool:hover { color: var(--text); border-color: var(--text-2); }
+.tool .ico { width: 15px; height: 15px; }
 .crumbs li + li::before { content: "/"; margin-right: .4rem; opacity: .6; }
 .crumbs a { color: var(--muted); text-decoration: none; }
 .crumbs a:hover { color: var(--text); text-decoration: underline; }
@@ -529,6 +548,9 @@ table.meds .badge { margin-left: .4rem; vertical-align: .12em; }
 .items li:first-child { padding-top: .2rem; }
 .items li:last-child { border-bottom: 0; padding-bottom: .2rem; }
 .items .meta { margin-top: .25rem; display: flex; flex-wrap: wrap; align-items: center; gap: .3rem .55rem; }
+.items .trial-details { margin-top: .4rem; gap: .35rem; }
+.trial-details > span { display: inline-flex; align-items: center; gap: .3rem; padding: .12rem .6rem; border-radius: 999px; background: var(--bg-soft); color: var(--text-2); font-size: .8rem; }
+.trial-details .ico { width: 14px; height: 14px; }
 .reviewed { margin-top: 2rem; font-size: .86rem; color: var(--muted); }
 
 /* search results */
@@ -551,6 +573,15 @@ table.meds .badge { margin-left: .4rem; vertical-align: .12em; }
 .empty-state { text-align: center; padding: 2.5rem 1rem; }
 .empty-state h2 { margin: .5rem 0; }
 .empty-state .ext { justify-content: center; margin-top: 1rem; }
+.empty-state .actions { justify-content: center; }
+.nf-suggest { max-width: 480px; margin: 1.5rem auto .25rem; text-align: left; }
+.nf-suggest h2 { margin: 0 0 .7rem; font-size: 1.05rem; text-align: center; }
+.nf-suggest .meta { margin-top: .7rem; text-align: center; }
+.nf-list { list-style: none; margin: 0; padding: 0; display: grid; gap: .5rem; }
+.nf-list li { display: flex; align-items: center; justify-content: space-between; gap: .75rem; padding: .5rem .75rem .5rem .5rem; border: 1px solid var(--border); border-radius: 14px; background: var(--surface-2); }
+.nf-list a { display: inline-flex; align-items: center; gap: .65rem; min-width: 0; font-weight: 650; color: var(--text); text-decoration: none; }
+.nf-list a:hover { color: var(--brand-ink); text-decoration: underline; }
+.nf-list .kind { align-self: center; flex: none; }
 
 /* misc */
 .skeleton { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); margin-top: 2rem; }
@@ -614,8 +645,20 @@ table.meds .badge { margin-left: .4rem; vertical-align: .12em; }
 }
 
 @media print {
-  .topbar, .hero, .subnav, .to-top, .footer-grid, .actions, .filters { display: none !important; }
+  /* Always print the light palette: dark-theme text colours are unreadable on paper. */
+  :root, :root[data-theme], :root:not([data-theme="light"]) {
+    color-scheme: light;
+    --bg: #fff; --bg-soft: #f2f2f2; --surface: #fff; --surface-2: #fff;
+    --text: #111; --text-2: #333; --muted: #555; --border: #ccc; --border-strong: #bbb;
+    --brand: #c2185b; --brand-ink: #9d1150; --ok: #047857; --ok-soft: #d1fae5; --info: #1e40af; --info-soft: #dbeafe;
+    --warn-bg: #fff8e6; --warn-border: #f2d38b; --mark: #ffe58a; --mark-text: inherit; --shadow-1: none; --shadow-2: none; --shadow-3: none;
+  }
+  .topbar, .hero, .subnav, .to-top, .footer-grid, .actions, .filters, .news-tools, .more-row, .skip, .js-only, .feed-link { display: none !important; }
   body { background: #fff; color: #000; }
   .card, .type-header { box-shadow: none; border-color: #ccc; }
-  .type-header { margin-top: 0; }
+  .type-header, .search-head { margin-top: 0; }
+  .items li, .timeline li, .card, .news-item, .result, .approval, .fact, details.faq { break-inside: avoid; }
+  h2, h3 { break-after: avoid; }
+  /* Paper has no links: show where research papers and trials can be found. */
+  .items a.title[href^="http"]::after { content: " " attr(href); font-weight: 400; font-size: .8em; color: var(--muted); overflow-wrap: anywhere; }
 }
